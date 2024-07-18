@@ -1,8 +1,22 @@
+---
+layout: archive
+title: "Recommendations"
+permalink: /recommendations/
+author_profile: true
+redirect_from:
+  - /wordpress/recommendations/
+
+---
+
 {% include base_path %}
 {% assign navigation = site.data.navigation[include.nav] %}
 
 <nav class="nav__list">
-  {% if page.sidebar.title %}<header><h4 class="nav__title" style="padding: 0;">{{ page.sidebar.title }}</h4></header>{% endif %}
+  {% if page.sidebar.title %}
+    <header>
+      <h4 class="nav__title">{{ page.sidebar.title }}</h4>
+    </header>
+  {% endif %}
   <ul>
     {% for nav in navigation %}
       <li>
@@ -44,3 +58,76 @@
     {% endfor %}
   </ul>
 </nav>
+
+<style>
+  .nav__list {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+  }
+
+  .nav__list header {
+    margin-bottom: 10px;
+  }
+
+  .nav__title {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+
+  .nav__list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav__list li {
+    margin-bottom: 10px;
+  }
+
+  .nav__list a {
+    text-decoration: none;
+    color: #007bff;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .nav__list a:hover,
+  .nav__list .active {
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  .nav__sub-title {
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+
+  .nav__list ul ul {
+    margin-left: 20px;
+    margin-top: 10px;
+    border-left: 2px solid #007bff;
+    padding-left: 10px;
+  }
+
+  .nav__list ul ul li {
+    margin-bottom: 5px;
+  }
+
+  .nav__list ul ul a {
+    font-size: 1em;
+    color: #555;
+  }
+
+  .nav__list ul ul a:hover,
+  .nav__list ul ul .active {
+    background-color: #0056b3;
+    color: #fff;
+  }
+</style>
