@@ -16,12 +16,8 @@ redirect_from:
 
 ## About Me
 
-### Background ✨
-My academic journey began with a Bachelor of Engineering (B.Eng.) in Software Engineering from [Concordia University](https://www.concordia.ca/). This degree equipped me with a strong foundation in software development, which I am now applying in my Master's thesis research at Concordia. My research focuses on the intersection of AI and healthcare, specifically exploring how machine learning algorithms can improve the accuracy of medical detection systems. This area of study has the potential to revolutionize healthcare outcomes, a cause I am proud to contribute to.
-
-
-### Master's Thesis 
-Earlier this year, I had the privilege of receiving the highly competitive [NSERC CGS-M](https://www.nserc-crsng.gc.ca/Students-Etudiants/PG-CS/CGSM-BESCM_eng.asp) tri-agency federal award to pursue my Master's, further solidifying my commitment to this field. My current Master's thesis research focuses on the intersection of Machine Learning and healthcare, aligning with my dedication to improving early detection, patient experiences, and outcomes. Through my thesis, I aim to develop innovative solutions that leverage AI to enhance healthcare delivery and patient care.
+### Academic Background ✨
+My academic journey began with a Bachelor of Engineering (B.Eng.) in Software Engineering from [Concordia University](https://www.concordia.ca/). This degree equipped me with a strong foundation in software development, which I am now applying in my Master's thesis research at Concordia. My research focuses on the intersection of AI and healthcare, specifically exploring how machine learning algorithms can improve the accuracy of medical detection systems. This area of study has the potential to revolutionize healthcare outcomes, a cause I am proud to contribute to. Earlier this year, I had the privilege of receiving the highly competitive [NSERC CGS-M](https://www.nserc-crsng.gc.ca/Students-Etudiants/PG-CS/CGSM-BESCM_eng.asp) tri-agency federal award to pursue my Master's, further solidifying my commitment to the field. 
 
 ### Tech Stewardship and AI Ethics 🏛️
 As a committed Tech Steward, I strive to advance my understanding of AI bias and promote the ethical development of this transformative technology. By continuously deepening my knowledge, challenging limited narratives, and practicing deliberate values, I aim to shape a more responsible and inclusive technological future.
