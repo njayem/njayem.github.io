@@ -15,8 +15,8 @@ redirect_from:
 <br>
 
 <div style="text-align: center;">
-    <div class="glow-frame" style="position: relative; display: inline-block; border: 10px solid #F8DBB1; border-radius: 15px; box-shadow: 0 0 25px rgba(0, 123, 255, 0.7); animation: glow 3s ease-in-out infinite;">
-        <img src="/images/website-photo-1.jpg" alt="Illustration of ML For Speech Classification" style="width: 340px; height: 340px; border-radius: 10px;">
+    <div class="glow-frame" style="position: relative; display: inline-block; border: 10px solid #F8DBB1; box-shadow: 0 0 10px rgba(0, 123, 255, 0.7); animation: glow 3s ease-in-out infinite; overflow: hidden;">
+        <img src="/images/website-photo-1.jpg" alt="Illustration of ML For Speech Classification" class="zoom-img" style="width: 340px; height: 340px; transition: transform 0.5s;">
     </div>
     <br>
     <em>Source: DALL-E</em>
@@ -25,14 +25,18 @@ redirect_from:
 <style>
     @keyframes glow {
         0% {
-            box-shadow: 0 0 25px rgba(0, 123, 255, 0.7);
+            box-shadow: 0 0 10px rgba(0, 123, 255, 0.7);
         }
         50% {
-            box-shadow: 0 0 35px rgba(0, 123, 255, 1);
+            box-shadow: 0 0 15px rgba(0, 123, 255, 1);
         }
         100% {
-            box-shadow: 0 0 25px rgba(0, 123, 255, 0.7);
+            box-shadow: 0 0 10px rgba(0, 123, 255, 0.7);
         }
+    }
+    
+    .glow-frame:hover .zoom-img {
+        transform: scale(1.1);
     }
 </style>
 
