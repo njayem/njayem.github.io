@@ -15,23 +15,34 @@ redirect_from:
 <br>
 
 <div style="text-align: center;">
-    <div style="position: relative; display: inline-block; padding: 15px; border: 5px solid #00FF00; border-radius: 15px; box-shadow: 0 0 20px rgba(0,255,0,0.5); animation: glow 1.5s infinite alternate;">
-        <img src="/images/website-photo-1.jpg" alt="Illustration of ML For Speech Classification" style="width: 325px; height: 325px; border-radius: 10px;">
+    <div class="electric-frame" style="position: relative; display: inline-block; width: 325px; height: 325px;">
+        <img src="/images/website-photo-1.jpg" alt="Illustration of ML For Speech Classification" style="width: 100%; height: 100%; border-radius: 10px;">
+        <div class="spark" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: 5px solid #00FF00; border-radius: 10px; box-shadow: 0 0 20px rgba(0,255,0,0.5); animation: electric 2s infinite;">
+        </div>
     </div>
     <br>
     <em>Source: DALL-E</em>
 </div>
 
 <style>
-    @keyframes glow {
-        from {
-            box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
-        }
-        to {
-            box-shadow: 0 0 20px rgba(0, 255, 0, 1);
-        }
+    @keyframes electric {
+        0% { box-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00, 0 0 30px #00FF00, 0 0 40px #00FF00; }
+        25% { box-shadow: 0 0 20px #00FF00, 0 0 30px #00FF00, 0 0 40px #00FF00, 0 0 50px #00FF00; }
+        50% { box-shadow: 0 0 30px #00FF00, 0 0 40px #00FF00, 0 0 50px #00FF00, 0 0 60px #00FF00; }
+        75% { box-shadow: 0 0 20px #00FF00, 0 0 30px #00FF00, 0 0 40px #00FF00, 0 0 50px #00FF00; }
+        100% { box-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00, 0 0 30px #00FF00, 0 0 40px #00FF00; }
+    }
+
+    .electric-frame:hover .spark {
+        animation: electric-hover 0.5s infinite alternate;
+    }
+
+    @keyframes electric-hover {
+        from { box-shadow: 0 0 40px #00FF00, 0 0 60px #00FF00, 0 0 80px #00FF00, 0 0 100px #00FF00; }
+        to { box-shadow: 0 0 20px #00FF00, 0 0 30px #00FF00, 0 0 40px #00FF00, 0 0 50px #00FF00; }
     }
 </style>
+
 
 ## About Me
 
