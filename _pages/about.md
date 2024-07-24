@@ -15,8 +15,11 @@ redirect_from:
 <br>
 
 <div style="text-align: center;">
-    <div class="glow-frame" style="position: relative; display: inline-block; border: 10px solid #F8DBB1; border-radius: 50%; box-shadow: 0 0 15px rgba(0, 0, 255, 0.7); animation: glow 3s ease-in-out infinite; overflow: hidden;">
-        <img src="/images/website-photo-1.jpg" alt="Illustration of ML For Speech Classification" class="zoom-img" style="width: 374px; height: 374px; border-radius: 50%; transition: transform 0.5s;">
+    <div class="polaroid-frame" style="position: relative; display: inline-block; padding: 10px; background: white; border: 10px solid #F8DBB1; box-shadow: 0 0 15px rgba(0, 0, 139, 0.7); border-radius: 5px; width: 360px; height: 400px; overflow: hidden;">
+        <img src="/images/website-photo-1.jpg" alt="Illustration of ML For Speech Classification" class="polaroid-img" style="width: 100%; height: auto; display: block; border-radius: 5px; transition: transform 0.5s;">
+        <div class="polaroid-caption" style="text-align: center; font-family: 'Courier New', Courier, monospace; color: #333; padding-top: 10px;">
+            Diagnosis
+        </div>
     </div>
     <br>
     <em>Source: DALL-E</em>
@@ -25,18 +28,48 @@ redirect_from:
 <style>
     @keyframes glow {
         0% {
-            box-shadow: 0 0 15px rgba(0, 0, 255, 0.7);
+            box-shadow: 0 0 15px rgba(0, 0, 139, 0.7);
         }
         50% {
-            box-shadow: 0 0 20px rgba(0, 0, 255, 1);
+            box-shadow: 0 0 20px rgba(0, 0, 139, 1);
         }
         100% {
-            box-shadow: 0 0 15px rgba(0, 0, 255, 0.7);
+            box-shadow: 0 0 15px rgba(0, 0, 139, 0.7);
         }
     }
-    
-    .glow-frame:hover .zoom-img {
+
+    .polaroid-frame:hover .polaroid-img {
         transform: scale(1.1);
+        transition: transform 0.5s;
+    }
+
+    .polaroid-frame {
+        position: relative;
+        display: inline-block;
+        padding: 10px;
+        background: white;
+        border: 10px solid #F8DBB1;
+        box-shadow: 0 0 15px rgba(0, 0, 139, 0.7);
+        border-radius: 5px;
+        width: 360px; /* Adjusted for the Polaroid look */
+        height: 400px; /* Adjusted for the Polaroid look */
+    }
+
+    .polaroid-img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 5px;
+        transition: transform 0.5s;
+    }
+
+    .polaroid-caption {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        color: #333;
     }
 </style>
 
