@@ -17,31 +17,22 @@ redirect_from:
 <div style="text-align: center; position: relative; width: 350px; margin: auto;">
     <div class="photo-frame" style="position: relative; display: inline-block; width: 350px; height: 350px; border: 2.5px solid black; overflow: visible;">
         <img src="/images/website-photo-1.jpg" alt="Illustration of ML For Speech Classification" class="photo-img" style="width: 100%; height: 100%; display: block;">
-        <div class="tape tape1" style="position: absolute; top: -20px; left: -20px; width: 100px; height: 20px; background: rgba(255, 255, 255, 0.8); box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); transform: rotate(-45deg);"></div>
-        <div class="tape tape2" style="position: absolute; top: -20px; right: -20px; width: 100px; height: 20px; background: rgba(255, 255, 255, 0.8); box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); transform: rotate(45deg);"></div>
-        <div class="tape tape3" style="position: absolute; bottom: -20px; left: -20px; width: 100px; height: 20px; background: rgba(255, 255, 255, 0.8); box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); transform: rotate(45deg);"></div>
-        <div class="tape tape4" style="position: absolute; bottom: -20px; right: -20px; width: 100px; height: 20px; background: rgba(255, 255, 255, 0.8); box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); transform: rotate(-45deg);"></div>
+        <div class="tape tape1" style="position: absolute; top: 5px; left: 5px; width: 100px; height: 20px; background: rgba(255, 255, 255, 0.8); box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); transform: rotate(-45deg);"></div>
+        <div class="tape tape2" style="position: absolute; top: 5px; right: 5px; width: 100px; height: 20px; background: rgba(255, 255, 255, 0.8); box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); transform: rotate(45deg);"></div>
+        <div class="tape tape3" style="position: absolute; bottom: 5px; left: 5px; width: 100px; height: 20px; background: rgba(255, 255, 255, 0.8); box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); transform: rotate(45deg);"></div>
+        <div class="tape tape4" style="position: absolute; bottom: 5px; right: 5px; width: 100px; height: 20px; background: rgba(255, 255, 255, 0.8); box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); transform: rotate(-45deg);"></div>
     </div>
     <br>
     <em>Source: DALL-E</em>
 </div>
 
 <style>
-    @keyframes tape-flicker {
-        0%, 100% {
-            opacity: 0.9;
-        }
-        50% {
-            opacity: 1;
-        }
-    }
-
     .photo-frame {
         position: relative;
         display: inline-block;
         width: 350px;
         height: 350px;
-        border: 5px solid black;
+        border: 2.5px solid black;
         overflow: visible; /* Allow tape to extend beyond the frame */
     }
 
@@ -55,32 +46,31 @@ redirect_from:
         position: absolute;
         background: rgba(255, 255, 255, 0.8);
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-        animation: tape-flicker 2s infinite;
         width: 100px;
         height: 20px;
     }
 
     .tape1 {
-        top: -100px;
-        left: -100px;
+        top: 5px; /* Adjusted to move to the southwest */
+        left: 5px; /* Adjusted to move to the southwest */
         transform: rotate(-45deg);
     }
 
     .tape2 {
-        top: -40px;
-        right: -40px;
+        top: 5px; /* Adjusted to move to the southeast */
+        right: 5px; /* Adjusted to move to the southeast */
         transform: rotate(45deg);
     }
 
     .tape3 {
-        bottom: -40px;
-        left: -40px;
+        bottom: 5px; /* Adjusted to move to the northwest */
+        left: 5px; /* Adjusted to move to the northwest */
         transform: rotate(45deg);
     }
 
     .tape4 {
-        bottom: -40px;
-        right: -40px;
+        bottom: 5px; /* Adjusted to move to the northeast */
+        right: 5px; /* Adjusted to move to the northeast */
         transform: rotate(-45deg);
     }
 </style>
