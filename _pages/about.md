@@ -12,7 +12,12 @@ redirect_from:
 
 # 👋🏼 Hello there, I'm Nadine!
 
-![Illustration of ML For Speech Classification](/images/sample-website-photo.jpg){: .align-center width="300px"}
+<br>
+
+<div style="text-align: center;">
+  ![Illustration of ML For Speech Classification](/images/sample-website-photo.jpg){: .align-center width="300px"}
+  <figcaption>Source: DALL-E</figcaption>
+</div>
 
 ## About Me
 

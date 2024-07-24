@@ -17,4 +17,4 @@ Download a copy of Nadine El-Mufti's CV [<a href="https://njayem.github.io/files
 
 <br>
 
-<embed src="https://njayem.github.io/files/nadine-el-mufti-cv.pdf" type="application/pdf" width="100%" />
+<embed src="https://njayem.github.io/files/Nadine-El-Mufti-CV.pdf" type="application/pdf" width="100%" />
