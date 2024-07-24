@@ -15,7 +15,7 @@ redirect_from:
 <br>
 
 <div style="text-align: center;">
-    <div class="wobble-frame" style="position: relative; display: inline-block; padding: 15px; border: 5px solid #FF8C00; border-radius: 15px; box-shadow: 0 0 20px rgba(255, 140, 0, 0.5); animation: wobble 2s infinite;">
+    <div class="pulse-frame" style="position: relative; display: inline-block; padding: 15px; border: 5px solid #F8DBB1; border-radius: 15px; box-shadow: 0 0 20px rgba(248, 219, 177, 0.5); animation: pulsate 10s infinite;">
         <img src="/images/website-photo-1.jpg" alt="Illustration of ML For Speech Classification" style="width: 325px; height: 325px; border-radius: 10px;">
     </div>
     <br>
@@ -23,24 +23,31 @@ redirect_from:
 </div>
 
 <style>
-    @keyframes wobble {
-        0%, 100% {
-            transform: rotate(0deg);
+    @keyframes pulsate {
+        0% {
+            transform: scale(1);
+            box-shadow: 0 0 20px rgba(248, 219, 177, 0.5);
         }
-        15% {
-            transform: rotate(-5deg);
+        50% {
+            transform: scale(1.02);
+            box-shadow: 0 0 30px rgba(248, 219, 177, 0.7);
         }
-        30% {
-            transform: rotate(3deg);
+        100% {
+            transform: scale(1);
+            box-shadow: 0 0 20px rgba(248, 219, 177, 0.5);
         }
-        45% {
-            transform: rotate(-3deg);
+    }
+    .pulse-frame:hover {
+        animation: pulsate-hover 5s infinite alternate;
+    }
+    @keyframes pulsate-hover {
+        from {
+            transform: scale(1);
+            box-shadow: 0 0 25px rgba(248, 219, 177, 0.5);
         }
-        60% {
-            transform: rotate(2deg);
-        }
-        75% {
-            transform: rotate(-1deg);
+        to {
+            transform: scale(1.05);
+            box-shadow: 0 0 35px rgba(248, 219, 177, 0.7);
         }
     }
 </style>
