@@ -55,6 +55,7 @@ redirect_from:
         top: -20px; /* Adjusted to move diagonally down and left */
         left: -20px; /* Adjusted to move diagonally down and left */
         transform: rotate(-45deg);
+        top-margin: 10px;
     }
 
     .tape2 {
