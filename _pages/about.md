@@ -15,10 +15,24 @@ redirect_from:
 <br>
 
 <div style="text-align: center;">
-  <img src="/images/website-photo-1.jpg" alt="Illustration of ML For Speech Classification" style="width: 325px; height:325px;">
-  <br>
-  <em>Source: DALL-E</em>
+    <div style="position: relative; display: inline-block; width: 325px; height: 325px;">
+        <img src="/mnt/data/A_square_photo_frame_with_robotic_and_AI-inspired_.png" alt="Robotic AI-inspired photo frame" style="width: 100%; height: 100%; animation: rotate 5s linear infinite;">
+        <img src="/images/website-photo-1.jpg" alt="Illustration of ML For Speech Classification" style="position: absolute; top: 12.5px; left: 12.5px; width: 300px; height: 300px;">
+    </div>
+    <br>
+    <em>Source: DALL-E</em>
 </div>
+
+<style>
+    @keyframes rotate {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+</style>
 
 ## About Me
 
