@@ -15,21 +15,20 @@ redirect_from:
 <br>
 
 <div style="text-align: center;">
-    <div style="position: relative; display: inline-block; width: 325px; height: 325px;">
-        <img src="/mnt/data/A_square_photo_frame_with_robotic_and_AI-inspired_.png" alt="Robotic AI-inspired photo frame" style="width: 100%; height: 100%; animation: rotate 5s linear infinite;">
-        <img src="/images/website-photo-1.jpg" alt="Illustration of ML For Speech Classification" style="position: absolute; top: 12.5px; left: 12.5px; width: 300px; height: 300px;">
+    <div style="position: relative; display: inline-block; padding: 15px; border: 5px solid #00FF00; border-radius: 15px; box-shadow: 0 0 20px rgba(0,255,0,0.5); animation: glow 1.5s infinite alternate;">
+        <img src="/images/website-photo-1.jpg" alt="Illustration of ML For Speech Classification" style="width: 325px; height: 325px; border-radius: 10px;">
     </div>
     <br>
     <em>Source: DALL-E</em>
 </div>
 
 <style>
-    @keyframes rotate {
-        0% {
-            transform: rotate(0deg);
+    @keyframes glow {
+        from {
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
         }
-        100% {
-            transform: rotate(360deg);
+        to {
+            box-shadow: 0 0 20px rgba(0, 255, 0, 1);
         }
     }
 </style>
