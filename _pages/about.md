@@ -15,7 +15,7 @@ redirect_from:
 <br>
 
 <div style="text-align: center;">
-  <img src="/images/sample-website-photo.jpg" alt="Illustration of ML For Speech Classification" style="width: 300px;">
+  <img src="/images/website-photo-1.jpg" alt="Illustration of ML For Speech Classification">
   <br>
   <em>Source: DALL-E</em>
 </div>
