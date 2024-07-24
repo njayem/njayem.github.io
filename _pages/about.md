@@ -14,8 +14,8 @@ redirect_from:
 
 <br>
 
-<div style="text-align: center;">
-    <div class="electric-frame" style="position: relative; display: inline-block; padding: 15px; border: 5px solid #00FFFF; border-radius: 15px; box-shadow: 0 0 20px rgba(0, 255, 255, 0.5); animation: electric 2s infinite;">
+<<div style="text-align: center;">
+    <div class="electric-frame" style="position: relative; display: inline-block; padding: 15px; border: 5px solid #FF8C00; border-radius: 15px; box-shadow: 0 0 20px rgba(255, 140, 0, 0.5); animation: electric 2s infinite;">
         <img src="/images/website-photo-1.jpg" alt="Illustration of ML For Speech Classification" style="width: 325px; height: 325px; border-radius: 10px;">
     </div>
     <br>
@@ -24,11 +24,11 @@ redirect_from:
 
 <style>
     @keyframes electric {
-        0% { box-shadow: 0 0 10px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.5), 0 0 30px rgba(0, 255, 255, 0.5), 0 0 40px rgba(0, 255, 255, 0.5); }
-        25% { box-shadow: 0 0 20px rgba(0, 255, 255, 0.7), 0 0 30px rgba(0, 255, 255, 0.7), 0 0 40px rgba(0, 255, 255, 0.7); }
-        50% { box-shadow: 0 0 30px rgba(0, 255, 255, 1), 0 0 40px rgba(0, 255, 255, 1), 0 0 50px rgba(0, 255, 255, 1); }
-        75% { box-shadow: 0 0 20px rgba(0, 255, 255, 0.7), 0 0 30px rgba(0, 255, 255, 0.7), 0 0 40px rgba(0, 255, 255, 0.7); }
-        100% { box-shadow: 0 0 10px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.5), 0 0 30px rgba(0, 255, 255, 0.5), 0 0 40px rgba(0, 255, 255, 0.5); }
+        0% { box-shadow: 0 0 5px rgba(0, 0, 255, 0.5), 0 0 10px rgba(0, 0, 255, 0.5), 0 0 15px rgba(0, 0, 255, 0.5); }
+        25% { box-shadow: 0 0 10px rgba(0, 0, 255, 0.7), 0 0 15px rgba(0, 0, 255, 0.7), 0 0 20px rgba(0, 0, 255, 0.7); }
+        50% { box-shadow: 0 0 15px rgba(0, 0, 255, 1), 0 0 20px rgba(0, 0, 255, 1), 0 0 25px rgba(0, 0, 255, 1); }
+        75% { box-shadow: 0 0 10px rgba(0, 0, 255, 0.7), 0 0 15px rgba(0, 0, 255, 0.7), 0 0 20px rgba(0, 0, 255, 0.7); }
+        100% { box-shadow: 0 0 5px rgba(0, 0, 255, 0.5), 0 0 10px rgba(0, 0, 255, 0.5), 0 0 15px rgba(0, 0, 255, 0.5); }
     }
 
     .electric-frame:hover .spark {
@@ -36,10 +36,11 @@ redirect_from:
     }
 
     @keyframes electric-hover {
-        from { box-shadow: 0 0 50px rgba(0, 255, 255, 1), 0 0 60px rgba(0, 255, 255, 1), 0 0 70px rgba(0, 255, 255, 1); }
-        to { box-shadow: 0 0 30px rgba(0, 255, 255, 0.7), 0 0 40px rgba(0, 255, 255, 0.7), 0 0 50px rgba(0, 255, 255, 0.7); }
+        from { box-shadow: 0 0 30px rgba(0, 0, 255, 1), 0 0 40px rgba(0, 0, 255, 1), 0 0 50px rgba(0, 0, 255, 1); }
+        to { box-shadow: 0 0 20px rgba(0, 0, 255, 0.7), 0 0 30px rgba(0, 0, 255, 0.7), 0 0 40px rgba(0, 0, 255, 0.7); }
     }
 </style>
+
 
 
 ## About Me
