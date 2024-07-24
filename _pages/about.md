@@ -17,7 +17,7 @@ redirect_from:
 <div style="text-align: center; position: relative; width: 350px; margin: auto;">
     <div class="photo-frame" style="position: relative; display: inline-block; width: 350px; height: 350px; border: 2.5px solid black; overflow: visible;">
         <img src="/images/website-photo-1.jpg" alt="Illustration of ML For Speech Classification" class="photo-img" style="width: 100%; height: 100%; display: block;">
-        <div class="tape" style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); width: 150px; height: 20px; background: rgba(255, 255, 255, 0.8); box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);"></div>
+        <div class="tape" style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); width: 50px; height: 50px; background: rgba(255, 255, 255, 0.8); box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);"></div>
     </div>
     <br>
     <em>Source: DALL-E</em>
@@ -43,8 +43,8 @@ redirect_from:
         position: absolute;
         background: rgba(255, 255, 255, 0.8);
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-        width: 150px;
-        height: 20px;
+        width: 50px; /* Adjusted to be more square */
+        height: 50px; /* Adjusted to be more square */
         top: -15px;
         left: 50%;
         transform: translateX(-50%);
