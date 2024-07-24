@@ -61,8 +61,8 @@ redirect_from:
     }
 
     .tape1 {
-        top: -80px;
-        left: -80px;
+        top: -100px;
+        left: -100px;
         transform: rotate(-45deg);
     }
 
