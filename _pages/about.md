@@ -15,7 +15,7 @@ redirect_from:
 <br>
 
 <div style="text-align: center;">
-    <div class="electric-frame" style="position: relative; display: inline-block; padding: 15px; border: 5px solid #FF8C00; border-radius: 15px; box-shadow: 0 0 20px rgba(255, 140, 0, 0.5); animation: electric 2s infinite;">
+    <div class="wobble-frame" style="position: relative; display: inline-block; padding: 15px; border: 5px solid #FF8C00; border-radius: 15px; box-shadow: 0 0 20px rgba(255, 140, 0, 0.5); animation: wobble 2s infinite;">
         <img src="/images/website-photo-1.jpg" alt="Illustration of ML For Speech Classification" style="width: 325px; height: 325px; border-radius: 10px;">
     </div>
     <br>
@@ -23,24 +23,27 @@ redirect_from:
 </div>
 
 <style>
-    @keyframes electric {
-        0% { box-shadow: 0 0 5px rgba(0, 0, 255, 0.5), 0 0 10px rgba(0, 0, 255, 0.5), 0 0 15px rgba(0, 0, 255, 0.5); }
-        25% { box-shadow: 0 0 10px rgba(0, 0, 255, 0.7), 0 0 15px rgba(0, 0, 255, 0.7), 0 0 20px rgba(0, 0, 255, 0.7); }
-        50% { box-shadow: 0 0 15px rgba(0, 0, 255, 1), 0 0 20px rgba(0, 0, 255, 1), 0 0 25px rgba(0, 0, 255, 1); }
-        75% { box-shadow: 0 0 10px rgba(0, 0, 255, 0.7), 0 0 15px rgba(0, 0, 255, 0.7), 0 0 20px rgba(0, 0, 255, 0.7); }
-        100% { box-shadow: 0 0 5px rgba(0, 0, 255, 0.5), 0 0 10px rgba(0, 0, 255, 0.5), 0 0 15px rgba(0, 0, 255, 0.5); }
-    }
-
-    .electric-frame:hover .spark {
-        animation: electric-hover 0.5s infinite alternate;
-    }
-
-    @keyframes electric-hover {
-        from { box-shadow: 0 0 30px rgba(0, 0, 255, 1), 0 0 40px rgba(0, 0, 255, 1), 0 0 50px rgba(0, 0, 255, 1); }
-        to { box-shadow: 0 0 20px rgba(0, 0, 255, 0.7), 0 0 30px rgba(0, 0, 255, 0.7), 0 0 40px rgba(0, 0, 255, 0.7); }
+    @keyframes wobble {
+        0%, 100% {
+            transform: rotate(0deg);
+        }
+        15% {
+            transform: rotate(-5deg);
+        }
+        30% {
+            transform: rotate(3deg);
+        }
+        45% {
+            transform: rotate(-3deg);
+        }
+        60% {
+            transform: rotate(2deg);
+        }
+        75% {
+            transform: rotate(-1deg);
+        }
     }
 </style>
-
 
 
 ## About Me
