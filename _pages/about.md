@@ -14,7 +14,6 @@ redirect_from:
 
 <br>
 
-
 <div style="text-align: center; position: relative; width: 350px; margin: auto;">
     <div class="photo-frame" style="position: relative; display: inline-block; width: 350px; height: 350px; border: 2.5px solid black; overflow: visible;">
         <img src="/images/website-photo-1.jpg" alt="Illustration of ML For Speech Classification" class="photo-img" style="width: 100%; height: 100%; display: block;">
@@ -52,26 +51,26 @@ redirect_from:
     }
 
     .tape1 {
-        top: -10px; /* Adjusted to move diagonally down and left */
-        left: -10px; /* Adjusted to move diagonally down and left */
+        top: -15px; /* Adjusted to cover both the top and left sides */
+        left: -15px; /* Adjusted to cover both the top and left sides */
         transform: rotate(-45deg);
     }
 
     .tape2 {
-        top: -10px; /* Adjusted to move diagonally down and right */
-        right: -10px; /* Adjusted to move diagonally down and right */
+        top: -15px; /* Adjusted to cover both the top and right sides */
+        right: -15px; /* Adjusted to cover both the top and right sides */
         transform: rotate(45deg);
     }
 
     .tape3 {
-        bottom: -10px; /* Adjusted to move diagonally up and left */
-        left: -10px; /* Adjusted to move diagonally up and left */
+        bottom: -15px; /* Adjusted to cover both the bottom and left sides */
+        left: -15px; /* Adjusted to cover both the bottom and left sides */
         transform: rotate(45deg);
     }
 
     .tape4 {
-        bottom: -10px; /* Adjusted to move diagonally up and right */
-        right: -10px; /* Adjusted to move diagonally up and right */
+        bottom: -15px; /* Adjusted to cover both the bottom and right sides */
+        right: -15px; /* Adjusted to cover both the bottom and right sides */
         transform: rotate(-45deg);
     }
 </style>
