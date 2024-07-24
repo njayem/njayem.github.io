@@ -12,7 +12,7 @@ redirect_from:
 
 # 👋🏼 Hello there, I'm Nadine!
 
-<!-- ![Illustration of combining vision and language modalities](/images/image_to_text_vis.png){: .align-center width="300px"} -->
+![Illustration of ML For Speech Classification](/images/sample-website-photo.jpg){: .align-center width="300px"}
 
 ## About Me
 
