@@ -15,8 +15,8 @@ redirect_from:
 <br>
 
 <div style="text-align: center;">
-    <div class="polaroid-frame" style="position: relative; display: inline-block; padding: 10px; background: black; border-radius: 5px; width: 360px; height: 400px; overflow: hidden;">
-        <img src="/images/website-photo-1.jpg" alt="Illustration of ML For Speech Classification" class="polaroid-img" style="width: 100%; height: auto; display: block; border-radius: 5px; transition: transform 0.5s;">
+    <div class="polaroid-frame" style="position: relative; display: inline-block; padding: 15px; background: grey; border-radius: 5px; width: 340px; height: 400px; overflow: hidden;">
+        <img src="/images/website-photo-1.jpg" alt="Illustration of ML For Speech Classification" class="polaroid-img" style="width: 100%; height: auto; display: block; transition: transform 0.5s;">
         <div class="polaroid-caption" style="text-align: center; font-family: 'Comic Sans MS', cursive, sans-serif; color: white; padding-top: 10px;">
             Diagnosis
         </div>
@@ -34,24 +34,23 @@ redirect_from:
     .polaroid-frame {
         position: relative;
         display: inline-block;
-        padding: 10px;
-        background: black;
+        padding: 15px;
+        background: grey;
         border-radius: 5px;
-        width: 360px; /* Adjusted for the Polaroid look */
-        height: 400px; /* Adjusted for the Polaroid look */
+        width: 340px; /* Adjusted for a more rectangular Polaroid look */
+        height: 400px; /* Adjusted for a more rectangular Polaroid look */
     }
 
     .polaroid-img {
         width: 100%;
         height: auto;
         display: block;
-        border-radius: 5px;
         transition: transform 0.5s;
     }
 
     .polaroid-caption {
         position: absolute;
-        bottom: 10px;
+        bottom: 15px;
         width: 100%;
         text-align: center;
         font-family: 'Comic Sans MS', cursive, sans-serif;
