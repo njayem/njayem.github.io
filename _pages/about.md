@@ -13,38 +13,54 @@ redirect_from:
 # 👋🏼 Hello there, I'm Nadine!
 
 <br>
-
-<div style="text-align: center;">
-    <div class="polaroid-frame" style="position: relative; display: inline-block; padding: 20px 20px 50px; background: white; border: 2.5px solid black; border-radius: 5px; width: 340px; height: 400px; overflow: hidden;">
-        <img src="/images/website-photo-1.jpg" alt="Illustration of ML For Speech Classification" class="polaroid-img" style="width: 100%; height: auto; display: block; transition: transform 0.5s;">
+<div style="text-align: center; position: relative;">
+    <div class="nail" style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); width: 10px; height: 10px; background: #555; border-radius: 50%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);"></div>
+    <div class="photo-frame" style="position: relative; display: inline-block; width: 300px; height: 300px; border: 2.5px solid black; overflow: hidden; animation: move 3s ease-in-out infinite;">
+        <img src="/images/website-photo-1.jpg" alt="Illustration of ML For Speech Classification" class="photo-img" style="width: 100%; height: 100%; display: block;">
     </div>
     <br>
     <em>Source: DALL-E</em>
 </div>
 
 <style>
-    .polaroid-frame:hover .polaroid-img {
-        transform: scale(1.1);
-        transition: transform 0.5s;
+    @keyframes move {
+        0% {
+            transform: translateX(0);
+        }
+        50% {
+            transform: translateX(10px);
+        }
+        100% {
+            transform: translateX(0);
+        }
     }
 
-    .polaroid-frame {
+    .photo-frame {
         position: relative;
         display: inline-block;
-        padding: 20px 20px 50px; /* Increased padding to create Polaroid look */
-        background: white;
-        border: 2.5px solid black; /* Thinner black border */
-        border-radius: 5px;
-        width: 340px; /* Adjusted for the Polaroid look */
-        height: 400px; /* Adjusted for the Polaroid look */
+        width: 300px;
+        height: 300px;
+        border: 2.5px solid black;
         overflow: hidden;
+        animation: move 3s ease-in-out infinite;
     }
 
-    .polaroid-img {
+    .photo-img {
         width: 100%;
-        height: auto;
+        height: 100%;
         display: block;
-        transition: transform 0.5s;
+    }
+
+    .nail {
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 10px;
+        height: 10px;
+        background: #555;
+        border-radius: 50%;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     }
 </style>
 
