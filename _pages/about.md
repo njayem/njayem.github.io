@@ -15,8 +15,8 @@ redirect_from:
 <br>
 
 <div style="text-align: center; position: relative; width: 350px; margin: auto;">
-    <div class="nail" style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); width: 10px; height: 10px; background: #555; border-radius: 50%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);"></div>
-    <div class="photo-frame" style="position: relative; display: inline-block; width: 350px; height: 350px; border: 2.5px solid black; overflow: hidden; animation: hammer 0.2s infinite;">
+    <div class="tape" style="position: absolute; top: -20px; left: 50%; transform: translateX(-50%) rotate(-10deg); width: 60px; height: 20px; background: rgba(255, 255, 255, 0.8); box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); z-index: 1;"></div>
+    <div class="photo-frame" style="position: relative; display: inline-block; width: 350px; height: 350px; border: 2.5px solid black; overflow: hidden; animation: tapeSwing 2s infinite;">
         <img src="/images/website-photo-1.jpg" alt="Illustration of ML For Speech Classification" class="photo-img" style="width: 100%; height: 100%; display: block;">
     </div>
     <br>
@@ -24,21 +24,15 @@ redirect_from:
 </div>
 
 <style>
-    @keyframes hammer {
+    @keyframes tapeSwing {
         0% {
             transform: rotate(0deg);
         }
-        25% {
+        50% {
             transform: rotate(2deg);
         }
-        50% {
-            transform: rotate(0deg);
-        }
-        75% {
-            transform: rotate(-2deg);
-        }
         100% {
-            transform: rotate(0deg);
+            transform: rotate(-2deg);
         }
     }
 
@@ -49,7 +43,7 @@ redirect_from:
         height: 350px;
         border: 2.5px solid black;
         overflow: hidden;
-        animation: hammer 0.2s infinite;
+        animation: tapeSwing 2s infinite;
     }
 
     .photo-img {
@@ -58,16 +52,16 @@ redirect_from:
         display: block;
     }
 
-    .nail {
+    .tape {
         position: absolute;
-        top: -10px;
+        top: -20px;
         left: 50%;
-        transform: translateX(-50%);
-        width: 10px;
-        height: 10px;
-        background: #555;
-        border-radius: 50%;
+        transform: translateX(-50%) rotate(-10deg);
+        width: 60px;
+        height: 20px;
+        background: rgba(255, 255, 255, 0.8);
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        z-index: 1;
     }
 </style>
 
