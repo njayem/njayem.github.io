@@ -14,7 +14,7 @@ redirect_from:
 
 <br>
 
-<<div style="text-align: center;">
+<div style="text-align: center;">
     <div class="electric-frame" style="position: relative; display: inline-block; padding: 15px; border: 5px solid #FF8C00; border-radius: 15px; box-shadow: 0 0 20px rgba(255, 140, 0, 0.5); animation: electric 2s infinite;">
         <img src="/images/website-photo-1.jpg" alt="Illustration of ML For Speech Classification" style="width: 325px; height: 325px; border-radius: 10px;">
     </div>
