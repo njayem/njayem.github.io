@@ -15,43 +15,26 @@ redirect_from:
 <br>
 
 <div style="text-align: center;">
-    <div class="pulse-frame" style="position: relative; display: inline-block; padding: 15px; border: 5px solid #F8DBB1; border-radius: 15px; box-shadow: 0 0 20px rgba(248, 219, 177, 0.5); animation: pulsate 10s infinite;">
-        <img src="/images/website-photo-1.jpg" alt="Illustration of ML For Speech Classification" style="width: 325px; height: 325px; border-radius: 10px;">
+    <div class="glow-frame" style="position: relative; display: inline-block; border: 5px solid #F8DBB1; border-radius: 15px; box-shadow: 0 0 15px rgba(248, 219, 177, 0.7); animation: glow 3s ease-in-out infinite;">
+        <img src="/images/website-photo-1.jpg" alt="Illustration of ML For Speech Classification" style="width: 340px; height: 340px; border-radius: 10px;">
     </div>
     <br>
     <em>Source: DALL-E</em>
 </div>
 
 <style>
-    @keyframes pulsate {
+    @keyframes glow {
         0% {
-            transform: scale(1);
-            box-shadow: 0 0 20px rgba(248, 219, 177, 0.5);
+            box-shadow: 0 0 15px rgba(248, 219, 177, 0.7);
         }
         50% {
-            transform: scale(1.02);
-            box-shadow: 0 0 30px rgba(248, 219, 177, 0.7);
+            box-shadow: 0 0 25px rgba(248, 219, 177, 1);
         }
         100% {
-            transform: scale(1);
-            box-shadow: 0 0 20px rgba(248, 219, 177, 0.5);
-        }
-    }
-    .pulse-frame:hover {
-        animation: pulsate-hover 5s infinite alternate;
-    }
-    @keyframes pulsate-hover {
-        from {
-            transform: scale(1);
-            box-shadow: 0 0 25px rgba(248, 219, 177, 0.5);
-        }
-        to {
-            transform: scale(1.05);
-            box-shadow: 0 0 35px rgba(248, 219, 177, 0.7);
+            box-shadow: 0 0 15px rgba(248, 219, 177, 0.7);
         }
     }
 </style>
-
 
 ## About Me
 
