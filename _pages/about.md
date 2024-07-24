@@ -15,7 +15,7 @@ redirect_from:
 <br>
 
 <div style="text-align: center;">
-    <div class="glow-frame" style="position: relative; display: inline-block; border: 5px solid #F8DBB1; border-radius: 15px; box-shadow: 0 0 15px rgba(248, 219, 177, 0.7); animation: glow 3s ease-in-out infinite;">
+    <div class="glow-frame" style="position: relative; display: inline-block; border: 5px solid #F8DBB1; border-radius: 15px; box-shadow: 0 0 15px rgba(0, 123, 255, 0.7); animation: glow 3s ease-in-out infinite;">
         <img src="/images/website-photo-1.jpg" alt="Illustration of ML For Speech Classification" style="width: 340px; height: 340px; border-radius: 10px;">
     </div>
     <br>
@@ -25,13 +25,13 @@ redirect_from:
 <style>
     @keyframes glow {
         0% {
-            box-shadow: 0 0 15px rgba(248, 219, 177, 0.7);
+            box-shadow: 0 0 15px rgba(0, 123, 255, 0.7);
         }
         50% {
-            box-shadow: 0 0 25px rgba(248, 219, 177, 1);
+            box-shadow: 0 0 25px rgba(0, 123, 255, 1);
         }
         100% {
-            box-shadow: 0 0 15px rgba(248, 219, 177, 0.7);
+            box-shadow: 0 0 15px rgba(0, 123, 255, 0.7);
         }
     }
 </style>
