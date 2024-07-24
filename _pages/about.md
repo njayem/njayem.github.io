@@ -13,13 +13,13 @@ redirect_from:
 # 👋🏼 Hello there, I'm Nadine!
 
 <br>
+
 <div style="text-align: center;">
-    <div class="polaroid-frame" style="position: relative; display: inline-block; padding: 20px 20px 50px; background: white; border: 5px solid black; border-radius: 5px; width: 340px; height: auto; overflow: hidden;">
+    <div class="polaroid-frame" style="position: relative; display: inline-block; padding: 20px 20px 50px; background: white; border: 2.5px solid black; border-radius: 5px; width: 340px; height: 400px; overflow: hidden;">
         <img src="/images/website-photo-1.jpg" alt="Illustration of ML For Speech Classification" class="polaroid-img" style="width: 100%; height: auto; display: block; transition: transform 0.5s;">
-        <div class="polaroid-caption" style="display: none; position: absolute; bottom: 10px; width: 100%; text-align: center; font-family: 'Courier New', Courier, monospace; color: black;">
-            Source: DALL-E
-        </div>
     </div>
+    <br>
+    <em>Source: DALL-E</em>
 </div>
 
 <style>
@@ -28,19 +28,16 @@ redirect_from:
         transition: transform 0.5s;
     }
 
-    .polaroid-frame:hover .polaroid-caption {
-        display: block;
-    }
-
     .polaroid-frame {
         position: relative;
         display: inline-block;
         padding: 20px 20px 50px; /* Increased padding to create Polaroid look */
         background: white;
-        border: 5px solid black; /* Thicker black border */
+        border: 2.5px solid black; /* Thinner black border */
         border-radius: 5px;
         width: 340px; /* Adjusted for the Polaroid look */
-        height: auto;
+        height: 400px; /* Adjusted for the Polaroid look */
+        overflow: hidden;
     }
 
     .polaroid-img {
@@ -48,16 +45,6 @@ redirect_from:
         height: auto;
         display: block;
         transition: transform 0.5s;
-    }
-
-    .polaroid-caption {
-        display: none;
-        position: absolute;
-        bottom: 10px;
-        width: 100%;
-        text-align: center;
-        font-family: 'Courier New', Courier, monospace;
-        color: black;
     }
 </style>
 
