@@ -75,7 +75,7 @@ In 2022, I co-published a [conference paper](https://link.springer.com/chapter/1
 
 ### Leadership & Community Engagement 🌟
 - Ambassador
-  School of Graduate Studies, Concordia University
+  School of Graduate Studies, Concordia University <br>
   August 2024 – Present
 
 
