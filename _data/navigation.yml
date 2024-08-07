@@ -10,11 +10,11 @@ main:
   - title: "Publications"
     url: "https://scholar.google.ca/citations?user=zIzmwbcAAAAJ&hl=en"
 
-  # - title: "Blog"
-  #   url: /year-archive/
-
   # - title: "Talks"
   #   url: /talks/    
     
   - title: "Recommendations"
     url: /recommendations/   
+
+  #  - title: "Blog"
+  #    url: /year-archive/
