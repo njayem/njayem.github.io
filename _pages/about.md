@@ -74,7 +74,7 @@ Other research interests include leveraging machine learning to address Climate 
 In 2022, I co-published a [conference paper](https://link.springer.com/chapter/10.1007/978-3-031-23223-7_5) after receiving an [NSERC USRA](https://www.nserc-crsng.gc.ca/Students-Etudiants/UG-PC/USRA-BRPC_eng.asp) federal award to pursue a research project under the supervision of Dr. Marta Kersten-Oertel at her [Applied Perception Lab](https://ap-lab.ca/) in Montreal, Quebec. The project focused on identifying and addressing surgeons' workflow challenges, developing Ventriculostomy prototypes to improve surgical workflow efficiency. The project culminated in a conference paper for [MICCAI's 2022](https://conferences.miccai.org/2022/en/MICCAI2022-WORKSHOPS.html) [EPIMI](https://sites.google.com/view/epimi) workshop, where my team and I presented a comprehensive User-Centered Design approach to identify and address Ventriculostomy surgeons' workflow challenges to improve surgical efficiency.
 
 ### Leadership & Community Engagement 🌟
-<br>
+<div style="margin-top: 10px;"></div>
 
 <table border="1">
   <tr style="background-color: #f2f2f2;">
