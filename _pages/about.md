@@ -87,6 +87,11 @@ In 2022, I co-published a [conference paper](https://link.springer.com/chapter/1
     <td>School of Graduate Studies, Concordia University</td>
     <td>September 2024 – Present</td>
   </tr>
+    <tr>
+    <td>Mentee</td>
+    <td>GEMinAI Program, Applied AI Institute</td>
+    <td>October 2024 – Present</td>
+  </tr>
 </table>
 
 
