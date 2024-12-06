@@ -101,9 +101,9 @@ As an advocate for social justice, I am passionate about working on AI applicati
 
 <table border="1">
   <tr>
-    <td><img src="https://drive.google.com/file/d/1UprcfA_F0Ef_xiaKEm3yabpMUPt-_yRp/view?usp=sharing"></td>  
-    <td><img src="https://drive.google.com/file/d/1yY-o43-rQhZp6U_EgoJJ0eNmWLasVja6/view?usp=sharing"></td>
-    <td><img src="https://drive.google.com/file/d/1Dd7GlHn0Lvh_QLhknM4-M-JPMIoyOsUS/view?usp=sharing"></td>
+    <td><img src="http://drive.google.com/uc?export=view&id=1UprcfA_F0Ef_xiaKEm3yabpMUPt-_yRp"></td>  
+    <td><img src="http://drive.google.com/uc?export=view&id=1yY-o43-rQhZp6U_EgoJJ0eNmWLasVja6"></td>
+    <td><img src="http://drive.google.com/uc?export=view&id=1Dd7GlHn0Lvh_QLhknM4-M-JPMIoyOsUS"></td>
   </tr>
 </table>
 
