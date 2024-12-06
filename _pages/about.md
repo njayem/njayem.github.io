@@ -100,10 +100,10 @@ As an advocate for social justice, I am passionate about working on AI applicati
 <div style="margin-top: 20px;">
 <table border="1">
   <tr>
-    <td><img src="http://drive.google.com/uc?export=view&id=1UprcfA_F0Ef_xiaKEm3yabpMUPt-_yRp"></td> 
-    <td><img src="http://drive.google.com/uc?export=view&id=1Xfi4023kArGnnvenQHJN4OLBKNtaVSea"></td>
-    <td><img src="http://drive.google.com/uc?export=view&id=1yY-o43-rQhZp6U_EgoJJ0eNmWLasVja6"></td>
-    <td><img src="http://drive.google.com/uc?export=view&id=1Dd7GlHn0Lvh_QLhknM4-M-JPMIoyOsUS"></td>
+    <td><img src="https://drive.google.com/uc?id=1UprcfA_F0Ef_xiaKEm3yabpMUPt-_yRp" alt="Image 1"></td> 
+    <td><img src="https://drive.google.com/uc?id=1Xfi4023kArGnnvenQHJN4OLBKNtaVSea" alt="Image 2"></td>
+    <td><img src="https://drive.google.com/uc?id=1yY-o43-rQhZp6U_EgoJJ0eNmWLasVja6" alt="Image 3"></td>
+    <td><img src="https://drive.google.com/uc?id=1Dd7GlHn0Lvh_QLhknM4-M-JPMIoyOsUS" alt="Image 4"></td>
   </tr>
 </table>
 </div>
