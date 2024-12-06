@@ -96,7 +96,7 @@ As an advocate for social justice, I am passionate about working on AI applicati
   </tr>
 </table>
 
-### Curret Affiliations 🌐
+<!-- ### Curret Affiliations 🌐
 <div style="margin-top: 20px;">
 <table border="1">
   <tr>
@@ -106,7 +106,7 @@ As an advocate for social justice, I am passionate about working on AI applicati
     <td><img src="https://drive.google.com/uc?id=1Dd7GlHn0Lvh_QLhknM4-M-JPMIoyOsUS" alt="Image 4"></td>
   </tr>
 </table>
-</div>
+</div> -->
 
 
 <!-- # Current Projects
