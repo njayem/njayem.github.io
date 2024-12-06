@@ -96,6 +96,17 @@ As an advocate for social justice, I am passionate about working on AI applicati
   </tr>
 </table>
 
+### Curret Affiliations 🌐
+<div style="margin-top: 20px;"></div>
+
+<table border="1">
+  <tr>
+    <td><a href="https://drive.google.com/file/d/1UprcfA_F0Ef_xiaKEm3yabpMUPt-_yRp/view?usp=sharing"></a></td>  
+    <td><a href="https://drive.google.com/file/d/1yY-o43-rQhZp6U_EgoJJ0eNmWLasVja6/view?usp=sharing"></a></td>
+    <td><a href="https://drive.google.com/file/d/1Dd7GlHn0Lvh_QLhknM4-M-JPMIoyOsUS/view?usp=sharing"></a></td>
+  </tr>
+</table>
+
 
 <!-- # Current Projects
 
