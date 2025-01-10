@@ -91,7 +91,7 @@ As an advocate for social justice, I’m passionate about AI applications that d
   </tr>  
   <tr>
     <td><a href="https://www.concordia.ca/research/applied-ai-institute/initiatives/geminai.html">Mentee</a></td>
-    <td>GEMinAI Program, Applied AI Institute</td>
+    <td>GEMinAI Program, Concordia University's Applied AI Institute</td>
     <td>October 2024 – Present</td>
   </tr>
   <tr>
