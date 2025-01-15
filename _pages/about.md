@@ -86,7 +86,7 @@ As an advocate for social justice, I’m passionate about AI applications that d
   </tr>
   <tr>
     <td><a href="https://www.concordia.ca/research/applied-ai-institute/initiatives/geminai.html">Member</a></td>
-    <td>Concordia Council on Student Life (CCSL), Concordia University</td>
+    <td>Concordia Council on Student Life (CCSL) Subcommittee, Concordia University</td>
     <td>January 2025 – Present</td>
   </tr>  
   <tr>
