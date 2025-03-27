@@ -30,8 +30,8 @@ redirect_from:
     .photo-frame {
         position: relative;
         display: inline-block;
-        width: 350px;
-        height: 350px;
+        width:500px;
+        height: 500px;
         border: 2.5px solid black;
         overflow: visible; /* Allow tape to extend beyond the frame */
     }
