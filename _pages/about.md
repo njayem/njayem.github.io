@@ -20,7 +20,7 @@ redirect_from:
         <div class="tape" style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); width: 100px; height: 30px; background: rgba(255, 255, 255, 0.8); box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);"></div>
     </div>
     <br>
-    <em>Source: My own creation!/em>
+    <em>Source: My own creation!</em>
 </div>
 
 <!-- Import Animate.css -->
@@ -38,7 +38,8 @@ redirect_from:
 
     .photo-img {
         width: 100%;
-        height: auto;
+        height: 100%;
+        object-fit: contain;
         display: block;
     }
 
