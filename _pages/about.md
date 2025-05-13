@@ -91,19 +91,18 @@ As an advocate for social justice, I’m passionate about AI applications that d
   <tr>
     <td><a href="https://www.concordia.ca/research/applied-ai-institute/initiatives/geminai.html">Member</a></td>
     <td>Concordia Council on Student Life (CCSL) Subcommittee, Concordia University</td>
-    <td>January 2025 – Present</td>
+    <td>January 2025 – April 2025</td>
   </tr>  
   <tr>
     <td><a href="https://www.concordia.ca/research/applied-ai-institute/initiatives/geminai.html">Mentee</a></td>
     <td>GEMinAI Program, Concordia University's Applied AI Institute</td>
-    <td>October 2024 – Present</td>
+    <td>October 2024 – April 2025</td>
   </tr>
   <tr>
     <td><a href="https://api.unibuddy.co/og/concordia-university-postgraduate/buddies/students/66df5f6635b519411372b26b?buddyPosition=share">Ambassador</a></td>
     <td>School of Graduate Studies, Concordia University</td>
     <td>September 2024 – Present</td>
   </tr>
-
 </table>
 
 <!-- ### Curret Affiliations 🌐
