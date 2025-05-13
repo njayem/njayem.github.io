@@ -28,7 +28,7 @@ redirect_from:
   <span style="font-size: 2.5em; line-height: 0; vertical-align: bottom;">”</span>
   <br>
   <span style="font-size: 0.75em; color: #fff; background: #CC3D34; padding: 5px 12px; border-radius: 15px; display: inline-block; margin-top: 0.6em;">
-    Source: My own creation!
+    <strong> Source: My own creation! </strong>
   </span>
 </div>
 
