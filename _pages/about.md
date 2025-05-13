@@ -144,7 +144,7 @@ Feel free to look at my specific [portfolio entry](https://sudo-boris.github.io/
 
 ## Machine Learning Projects -->
 
-<h2 style="text-align: center;">Affiliation 🏛️</h2>
+<h2>Affiliation 🏛️</h2>
 
 <!-- Image -->
 <div style="text-align: center; margin: 1em auto 0;">
@@ -158,7 +158,7 @@ Feel free to look at my specific [portfolio entry](https://sudo-boris.github.io/
     padding: 6px 14px;
     border-radius: 20px;
     display: inline-block;
-    margin: 6px 6px 0 0;
+    margin: 0px 10px;
     text-decoration: none !important; 
     transition: transform 0.2s ease, background 0.2s ease;
   }
