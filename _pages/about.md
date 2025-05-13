@@ -20,8 +20,9 @@ redirect_from:
     <img src="/images/website-photo-2.jpg" alt="Visual of Parkinson's research pipeline from voice to machine learning model" class="photo-img" style="width: 100%; height: 100%; display: block; object-fit: cover;">
     <div class="tape" style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); width: 100px; height: 30px; background: rgba(255, 255, 255, 0.8); box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);"></div>
   </div>
-  <em>Source: My own creation</em>
 </div>
+
+<em>Source: My own creation</em>
 
 <!-- Blockquote outside the animation and wider than image -->
 <div style="max-width: 1200px; margin: 2em auto; padding: 0 1em;">
