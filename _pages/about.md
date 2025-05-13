@@ -142,10 +142,17 @@ Feel free to look at my specific [portfolio entry](https://sudo-boris.github.io/
 <hr style="margin-top: 4em;">
 
 <div style="text-align: center; margin-top: 2em;">
-  <img src="/images/website-footer.png" alt="Visual of Parkinson's research pipeline from voice to machine learning model" style="max-width: 100%; height: auto; border: 1px solid #ccc; padding: 5px;">
+  <img src="/images/website-footer.png" alt="Visual of Parkinson's research pipeline from voice to machine learning model" style="max-width: 100%; height: auto; padding: 5px;">
   
-<p style="max-width: 900px; margin: 1em auto 0; color: #555; font-size: 0.95em; line-height: 1.6;">
-  <em><strong>Affiliation:</strong> Concordia University — The Centre for Research on Brain, Language and Music (CRBLM) — Conversational AI Lab — Mila — Applied Perception Lab</em>
+<p style="max-width: 900px; margin: 1em auto 0; font-size: 0.95em; line-height: 1.6; text-align: center;">
+  <em>
+    <strong style="color: #555;">Affiliation:</strong>
+    <span style="color: #922338;"> Concordia University</span> — 
+    <span style="color: #244883;">The Centre for Research on Brain, Language and Music (CRBLM)</span> — 
+    <span style="color: #328de7;">Conversational AI Lab</span> — 
+    <span style="color: #63287d;">Mila</span> — 
+    <span style="color: #3f968a;">Applied Perception Lab</span>
+  </em>
 </p>
 </div>
 
