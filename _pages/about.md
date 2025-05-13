@@ -22,9 +22,11 @@ redirect_from:
   </div>
 </div>
 
-<div style="text-align: center;">
-  <em>Source: My own creation!</em>
+<div style="text-align: center; font-style: italic; margin-top: 1em;">
+  Her voice shakes, not with weakness but with everything left unsaid.<br>
+  <span style="font-size: 0.9em; color: #777;">Source: My own creation!</span>
 </div>
+
 
 <!-- Blockquote outside the animation and wider than image -->
 <div style="max-width: 1200px; margin: 2em auto; padding: 0 1em;">
