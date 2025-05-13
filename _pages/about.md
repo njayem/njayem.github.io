@@ -25,14 +25,17 @@ redirect_from:
 <div style="text-align: center; font-style: italic; margin-top: 1em; font-size: 1.2em; position: relative;">
   <span style="font-size: 2.5em; line-height: 0; vertical-align: top;">“</span>
   Her voice shakes, not with weakness but with everything left unsaid.
-  <span style="font-size: 2.5em; line-height: 0; vertical-align: bottom;">”</span><br>
-  <span style="font-size: 0.9em; color: #777;">Source: My own creation!</span>
+  <span style="font-size: 2.5em; line-height: 0; vertical-align: bottom;">”</span>
+  <br>
+  <span style="font-size: 0.9em; color: #fff; background: #CC3D34; padding: 5px 12px; border-radius: 15px; display: inline-block; margin-top: 0.6em;">
+    Source: My own creation!
+  </span>
 </div>
 
 <!-- Blockquote outside the animation and wider than image -->
 <div style="max-width: 1200px; margin: 2em auto; padding: 0 1em;">
   <blockquote style="border-left: 4px solid #ccc; padding-left: 1em; color: #555; margin: 1em 0; width: 100%; line-height: 1.6;">
-    Parkinson’s disease affects individuals from all walks of life, often around the age of 60. Yet, in the struggles of those affected, research tends to amplify men's voices over others. <strong>“Through her Voice”</strong> transforms silence into a symphony. A woman’s lips become a voice recorder, capturing untold stories in the tremble of her voice. Behind her sits a wall of vertical speech waves — the same pattern that coats her lips — symbolizing how machine learning algorithms translate voices into insights, unraveling Parkinson’s complex layers and aiding in early diagnosis. The red tulip, a symbol for Parkinson’s, honors the struggles of those affected. This piece goes beyond disease; it’s about inclusion. By recognizing diverse voices, our research bridges the gap between human fragility and technology’s potential. <em>Through her voice—and his, and theirs—we hear not just the disease, but hope.</em>
+    Parkinson’s disease affects individuals from all walks of life, often around the age of 60. Yet, in the struggles of those affected, research tends to amplify men's voices over others. <strong>“Through her Voice”</strong> transforms silence into a symphony. A woman’s lips become a voice recorder, capturing untold stories in the tremble of her voice. Behind her sits a wall of vertical speech waves — the same pattern that coats her lips — symbolizing how machine learning algorithms translate voices into insights, unraveling Parkinson’s complex layers and aiding in early diagnosis. The red tulip, a symbol for Parkinson’s, honors the struggles of those affected. This piece goes beyond disease; it’s about inclusion. By recognizing diverse voices, our research bridges the gap between human fragility and technology’s potential. <em>Through her voice — and his, and theirs — we hear not just the disease, but hope.</em>
     <br><br>
   </blockquote>
 </div>
