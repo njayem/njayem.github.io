@@ -163,7 +163,7 @@ Feel free to look at my specific [portfolio entry](https://sudo-boris.github.io/
     border-radius: 20px;
     display: inline-block;
     margin: 6px 6px 0 0;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     transition: transform 0.2s ease, background 0.2s ease;
   }
 
