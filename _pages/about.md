@@ -159,8 +159,8 @@ Feel free to look at my specific [portfolio entry](https://sudo-boris.github.io/
 <p style="max-width: 900px; margin: 1em auto 0; font-size: 0.95em; line-height: 1.6; text-align: center;">
   <em>
     <strong style="color: #FFFF;"></strong>
-    <span style="font-size: 0.9em; color: #fff; background: #CC3D34; padding: 5px 12px; border-radius: 15px; display: inline-block; margin-top: 0.6em;">
-      Affiliation:
+    <span style="font-size: 0.9em; color: #fff; background:rgb(0, 0, 0); padding: 5px 12px; border-radius: 15px; display: inline-block; margin-top: 0.6em;">
+     <strong> Affiliation: </strong>
     </span>
     <span style="color: #922338;"> Concordia University</span> — 
     <span style="color: #244883;">The Centre for Research on Brain, Language and Music (CRBLM)</span> — 
