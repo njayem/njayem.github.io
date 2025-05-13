@@ -22,7 +22,9 @@ redirect_from:
   </div>
 </div>
 
-<em>Source: My own creation</em>
+<div style="text-align: center;">
+  <em>Source: My own creation</em>
+</div>
 
 <!-- Blockquote outside the animation and wider than image -->
 <div style="max-width: 1200px; margin: 2em auto; padding: 0 1em;">
