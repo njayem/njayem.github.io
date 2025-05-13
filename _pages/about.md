@@ -160,13 +160,13 @@ Feel free to look at my specific [portfolio entry](https://sudo-boris.github.io/
   <em>
     <strong style="color: #FFFF;"></strong>
     <span style="font-size: 0.9em; color: #fff; background:rgb(0, 0, 0); padding: 5px 12px; border-radius: 15px; display: inline-block; margin-top: 0.6em;">
-     <strong> Affiliation: </strong>
+      <strong>Affiliation:</strong>
     </span>
-    <span style="color: #922338;"> Concordia University</span> 🔗 
-    <span style="color: #244883;">The Centre for Research on Brain, Language and Music (CRBLM)</span> 🔗
-    <span style="color: #328de7;">Conversational AI Lab</span> 🔗 
-    <span style="color: #63287d;">Mila</span> 🔗 
-    <span style="color: #3f968a;">Applied Perception Lab</span>
+    <a href="https://www.concordia.ca/" style="color: #922338; text-decoration: none;" target="_blank">Concordia University</a> 🔗 
+    <a href="https://crblm.ca/" style="color: #244883; text-decoration: none;" target="_blank">The Centre for Research on Brain, Language and Music (CRBLM)</a> 🔗 
+    <a href="https://sites.google.com/site/mircoravanelli/students" style="color: #328de7; text-decoration: none;" target="_blank">Conversational AI Lab</a> 🔗 
+    <a href="https://mila.quebec/en" style="color: #63287d; text-decoration: none;" target="_blank">Mila</a> 🔗 
+    <a href="https://ap-lab.ca/" style="color: #3f968a; text-decoration: none;" target="_blank">Applied Perception Lab</a>
   </em>
 </p>
 
