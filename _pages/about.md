@@ -165,8 +165,8 @@ Feel free to look at my specific [portfolio entry](https://sudo-boris.github.io/
     border-radius: 20px;
     display: inline-block;
     margin: 6px 6px 0 0;
-    /* text-decoration: underline; */
     font-weight: bold;
+    text-decoration: none; /* 👈 removes underline */
     transition: transform 0.2s ease, background 0.2s ease;
   }
 
@@ -174,6 +174,7 @@ Feel free to look at my specific [portfolio entry](https://sudo-boris.github.io/
     transform: scale(1.08);
     cursor: pointer;
     font-weight: bold;
+    text-decoration: underline;
   }
 
   .concordia { background: #922338; }
@@ -182,6 +183,7 @@ Feel free to look at my specific [portfolio entry](https://sudo-boris.github.io/
   .mila { background: #63287d; }
   .aplab { background: #3f968a; }
 </style>
+
 
 <!-- Colored affiliation line -->
 <p style="max-width: 900px; margin: 1em auto 0; font-size: 0.95em; line-height: 1.6; text-align: center;">
