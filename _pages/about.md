@@ -18,7 +18,7 @@ redirect_from:
   <div class="photo-frame" style="position: relative; display: inline-block; width: 400px; height: 400px; border: 2.5px solid black; overflow: visible;">
     <!-- Centered image -->
     <div style="text-align: center; margin-top: 2em;">
-      <img src="/images/website-photo-2.png" alt="Visual of Parkinson's research pipeline from voice to machine learning model" style="max-width: 100%; height: auto; border: 1px solid #ccc; padding: 5px;">
+      <img src="/images/website-photo-2.jpg" alt="Visual of Parkinson's research pipeline from voice to machine learning model" style="max-width: 100%; height: auto; border: 1px solid #ccc; padding: 5px;">
     </div>
     <div class="tape" style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); width: 100px; height: 30px; background: rgba(255, 255, 255, 0.8); box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);"></div>
   </div>
