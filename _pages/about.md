@@ -131,6 +131,16 @@ Feel free to look at my specific [portfolio entry](https://sudo-boris.github.io/
 ## Machine Learning Projects -->
 
 
+<hr style="margin-top: 4em;">
+
+<div style="text-align: center; margin-top: 2em;">
+  <img src="/images/website-footer.png" alt="Visual of Parkinson's research pipeline from voice to machine learning model" style="max-width: 100%; height: auto; border: 1px solid #ccc; padding: 5px;">
+  
+  <p style="max-width: 900px; margin: 1em auto 0; color: #555; font-size: 0.95em; line-height: 1.6;">
+    <strong>“Through her Voice”</strong> — A visual representation of my research on detecting Parkinson’s disease through speech. From signal to insight, this work bridges human fragility with the power of machine learning.  
+    <br><em>Affiliation: Concordia University, Mila, Applied AI Institute | Source: My own creation</em>
+  </p>
+</div>
 
 
 
