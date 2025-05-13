@@ -155,23 +155,42 @@ Feel free to look at my specific [portfolio entry](https://sudo-boris.github.io/
 <!-- Subtle divider -->
 <hr style="border: none; border-top: 1px solid #ddd; width: 60%; margin: 1.5em auto;">
 
+<style>
+  .affiliation-tag {
+    font-size: 0.9em;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    text-decoration: underline;
+    transition: transform 0.2s ease, background 0.2s ease;
+  }
+
+  .affiliation-tag:hover {
+    transform: scale(1.08);
+    cursor: pointer;
+  }
+
+  .concordia { background: #922338; }
+  .crblm { background: #244883; }
+  .convai { background: #328de7; }
+  .mila { background: #63287d; }
+  .aplab { background: #3f968a; }
+</style>
+
 <!-- Colored affiliation line -->
 <p style="max-width: 900px; margin: 1em auto 0; font-size: 0.95em; line-height: 1.6; text-align: center;">
   <em>
-    <strong style="color: #FFFF;"></strong>
     <span style="font-size: 0.9em; color: #fff; background:rgb(0, 0, 0); padding: 5px 12px; border-radius: 15px; display: inline-block; margin-top: 0.6em;">
       <strong>Affiliation:</strong>
-    </span>
-    <a href="https://www.concordia.ca/" style="color: #922338; text-decoration: none;" target="_blank">Concordia University</a> 🔗 
-    <a href="https://crblm.ca/" style="color: #244883; text-decoration: none;" target="_blank">The Centre for Research on Brain, Language and Music (CRBLM)</a> 🔗 
-    <a href="https://sites.google.com/site/mircoravanelli/students" style="color: #328de7; text-decoration: none;" target="_blank">Conversational AI Lab</a> 🔗 
-    <a href="https://mila.quebec/en" style="color: #63287d; text-decoration: none;" target="_blank">Mila</a> 🔗 
-    <a href="https://ap-lab.ca/" style="color: #3f968a; text-decoration: none;" target="_blank">Applied Perception Lab</a>
+    </span><br>
+    <a href="https://www.concordia.ca/" class="affiliation-tag concordia" target="_blank">Concordia University</a>
+    <a href="https://crblm.ca/" class="affiliation-tag crblm" target="_blank">CRBLM</a>
+    <a href="https://sites.google.com/site/mircoravanelli/students" class="affiliation-tag convai" target="_blank">Conversational AI Lab</a>
+    <a href="https://mila.quebec/en" class="affiliation-tag mila" target="_blank">Mila</a>
+    <a href="https://ap-lab.ca/" class="affiliation-tag aplab" target="_blank">Applied Perception Lab</a>
   </em>
 </p>
-
-
-
-
 
 
