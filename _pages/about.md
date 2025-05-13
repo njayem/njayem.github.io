@@ -146,16 +146,10 @@ Feel free to look at my specific [portfolio entry](https://sudo-boris.github.io/
 
 <h2 style="text-align: center;">Affiliation 🏛️</h2>
 
-<!-- Subtle divider -->
-<hr style="border: none; border-top: 1px solid #ddd; width: 60%; margin: 1.5em auto;">
-
 <!-- Image -->
 <div style="text-align: center; margin: 1em auto 0;">
   <img src="/images/website-footer.png" alt="Visual of Parkinson's research pipeline from voice to machine learning model" style="max-width: 100%; height: auto; padding: 0;">
 </div>
-
-<!-- Subtle divider -->
-<hr style="border: none; border-top: 1px solid #ddd; width: 60%; margin: 1.5em auto;">
 
 <style>
   .affiliation-tag {
