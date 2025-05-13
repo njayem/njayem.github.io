@@ -140,8 +140,8 @@ Feel free to look at my specific [portfolio entry](https://sudo-boris.github.io/
 
 ## Machine Learning Projects -->
 
-
-<hr style="margin-top: 4em;">
+<!-- Subtle divider -->
+<hr style="border: none; border-top: 1px solid #ddd; width: 60%; margin: 1.5em auto;">
 
 <!-- Image -->
 <div style="text-align: center; margin-top: 2em;">
