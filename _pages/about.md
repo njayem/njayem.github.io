@@ -23,7 +23,7 @@ redirect_from:
 </div>
 
 <div style="text-align: center;">
-  <em>Source: My own creation</em>
+  <em>Source: My own creation!</em>
 </div>
 
 <!-- Blockquote outside the animation and wider than image -->
@@ -32,7 +32,6 @@ redirect_from:
     Parkinson’s disease affects individuals from all walks of life, often around the age of 60. Yet, in the struggles of those affected, research tends to amplify men's voices over others. <strong>“Through her Voice”</strong> transforms silence into a symphony. A woman’s lips become a voice recorder, capturing untold stories in the tremble of her voice. Behind her sits a wall of vertical speech waves — the same pattern that coats her lips — symbolizing how machine learning algorithms translate voices into insights, unraveling Parkinson’s complex layers and aiding in early diagnosis. The red tulip, a symbol for Parkinson’s, honors the struggles of those affected. This piece goes beyond disease; it’s about inclusion. By recognizing diverse voices, our research bridges the gap between human fragility and technology’s potential. <em>Through her voice—and his, and theirs—we hear not just the disease, but hope.</em>
     <br><br>
   </blockquote>
-</div>
 </div>
 
 <!-- Import Animate.css -->
