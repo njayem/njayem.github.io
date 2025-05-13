@@ -144,6 +144,8 @@ Feel free to look at my specific [portfolio entry](https://sudo-boris.github.io/
 
 ## Machine Learning Projects -->
 
+<h2 style="text-align: center;">Affiliation 🏛️</h2>
+
 <!-- Subtle divider -->
 <hr style="border: none; border-top: 1px solid #ddd; width: 60%; margin: 1.5em auto;">
 
