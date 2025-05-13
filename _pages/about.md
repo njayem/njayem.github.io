@@ -158,7 +158,10 @@ Feel free to look at my specific [portfolio entry](https://sudo-boris.github.io/
 <!-- Colored affiliation line -->
 <p style="max-width: 900px; margin: 1em auto 0; font-size: 0.95em; line-height: 1.6; text-align: center;">
   <em>
-    <strong style="color: #444;">Affiliation:</strong>
+    <strong style="color: #FFFF;"></strong>
+    <span style="font-size: 0.9em; color: #fff; background: #CC3D34; padding: 5px 12px; border-radius: 15px; display: inline-block; margin-top: 0.6em;">
+      Affiliation:
+    </span>
     <span style="color: #922338;"> Concordia University</span> — 
     <span style="color: #244883;">The Centre for Research on Brain, Language and Music (CRBLM)</span> — 
     <span style="color: #328de7;">Conversational AI Lab</span> — 
