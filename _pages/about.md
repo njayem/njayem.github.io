@@ -162,10 +162,10 @@ Feel free to look at my specific [portfolio entry](https://sudo-boris.github.io/
     <span style="font-size: 0.9em; color: #fff; background:rgb(0, 0, 0); padding: 5px 12px; border-radius: 15px; display: inline-block; margin-top: 0.6em;">
      <strong> Affiliation: </strong>
     </span>
-    <span style="color: #922338;"> Concordia University</span> — 
-    <span style="color: #244883;">The Centre for Research on Brain, Language and Music (CRBLM)</span> — 
-    <span style="color: #328de7;">Conversational AI Lab</span> — 
-    <span style="color: #63287d;">Mila</span> — 
+    <span style="color: #922338;"> Concordia University</span> 🔗 
+    <span style="color: #244883;">The Centre for Research on Brain, Language and Music (CRBLM)</span> 🔗
+    <span style="color: #328de7;">Conversational AI Lab</span> 🔗 
+    <span style="color: #63287d;">Mila</span> 🔗 
     <span style="color: #3f968a;">Applied Perception Lab</span>
   </em>
 </p>
