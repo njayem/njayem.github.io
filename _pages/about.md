@@ -22,11 +22,12 @@ redirect_from:
   </div>
 </div>
 
-<div style="text-align: center; font-style: italic; margin-top: 1em;">
-  Her voice shakes, not with weakness but with everything left unsaid.<br>
+<div style="text-align: center; font-style: italic; margin-top: 1em; font-size: 1.2em; position: relative;">
+  <span style="font-size: 2.5em; line-height: 0; vertical-align: top;">“</span>
+  Her voice shakes, not with weakness but with everything left unsaid.
+  <span style="font-size: 2.5em; line-height: 0; vertical-align: bottom;">”</span><br>
   <span style="font-size: 0.9em; color: #777;">Source: My own creation!</span>
 </div>
-
 
 <!-- Blockquote outside the animation and wider than image -->
 <div style="max-width: 1200px; margin: 2em auto; padding: 0 1em;">
