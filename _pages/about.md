@@ -170,6 +170,7 @@ Feel free to look at my specific [portfolio entry](https://sudo-boris.github.io/
   .affiliation-tag:hover {
     transform: scale(1.08);
     cursor: pointer;
+    font-weight: bold;
   }
 
   .concordia { background: #922338; }
