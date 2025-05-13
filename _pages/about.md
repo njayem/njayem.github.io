@@ -166,6 +166,7 @@ Feel free to look at my specific [portfolio entry](https://sudo-boris.github.io/
     display: inline-block;
     margin: 6px 6px 0 0;
     /* text-decoration: underline; */
+    font-weight: bold;
     transition: transform 0.2s ease, background 0.2s ease;
   }
 
@@ -185,9 +186,6 @@ Feel free to look at my specific [portfolio entry](https://sudo-boris.github.io/
 <!-- Colored affiliation line -->
 <p style="max-width: 900px; margin: 1em auto 0; font-size: 0.95em; line-height: 1.6; text-align: center;">
   <em>
-    <span style="font-size: 0.9em; color: #fff; background:rgb(0, 0, 0); padding: 5px 12px; border-radius: 15px; display: inline-block; margin-top: 0.6em;">
-      <strong>Affiliation:</strong>
-    </span><br>
     <a href="https://www.concordia.ca/" class="affiliation-tag concordia" target="_blank">Concordia University</a>
     <a href="https://crblm.ca/" class="affiliation-tag crblm" target="_blank">CRBLM</a>
     <a href="https://sites.google.com/site/mircoravanelli/students" class="affiliation-tag convai" target="_blank">Conversational AI Lab</a>
