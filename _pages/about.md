@@ -158,7 +158,7 @@ Feel free to look at my specific [portfolio entry](https://sudo-boris.github.io/
     padding: 6px 14px;
     border-radius: 20px;
     display: inline-block;
-    margin: 0px 7px;
+    margin: 0px 6px;
     text-decoration: none !important; 
     transition: transform 0.2s ease, background 0.2s ease;
   }
