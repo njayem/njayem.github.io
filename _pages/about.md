@@ -153,7 +153,7 @@ Feel free to look at my specific [portfolio entry](https://sudo-boris.github.io/
 
 <style>
   .affiliation-tag {
-    font-size: 0.9em;
+    font-size: 0.8em;
     color: white;
     padding: 6px 14px;
     border-radius: 20px;
