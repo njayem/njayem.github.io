@@ -14,15 +14,19 @@ redirect_from:
 
 <br>
 
-<!-- Animated image section only -->
-<div class="animate__animated animate__swing" style="text-align: center; margin: auto;">
-  <div class="photo-frame" style="position: relative; display: inline-block; width: 400px; height: 400px; border: 2.5px solid black; overflow: visible;">
-    <img src="/images/website-photo-2.jpg" alt="Visual of Parkinson's research pipeline from voice to machine learning model" class="photo-img" style="width: 100%; height: 100%; display: block; object-fit: cover;">
-    <div class="tape" style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); width: 100px; height: 30px; background: rgba(255, 255, 255, 0.8); box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);"></div>
+<!-- Animate.css (keep this to enable animations) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<!-- Responsive Photo Frame with Tape -->
+<div class="animate__animated animate__swing" style="text-align: center;">
+  <div class="photo-frame">
+    <img src="/images/website-photo-2.jpg" alt="Visual of Parkinson's research pipeline from voice to machine learning model" class="photo-img">
+    <div class="tape"></div>
   </div>
 </div>
 
-<div style="text-align: center; font-style: italic; margin-top: 1em; font-size: 1.2em; position: relative;">
+<!-- Caption Quote Below Image -->
+<div style="text-align: center; font-style: italic; margin-top: 1em; font-size: 1.2em;">
   <span style="font-size: 2.5em; line-height: 0; vertical-align: top;">“</span>
   Her voice shakes, not with weakness but with everything left unsaid.
   <span style="font-size: 2.5em; line-height: 0; vertical-align: bottom;">”</span>
@@ -32,49 +36,42 @@ redirect_from:
   </span>
 </div>
 
-<!-- Blockquote outside the animation and wider than image -->
+<!-- Blockquote Text Description -->
 <div style="max-width: 1200px; margin: 2em auto; padding: 0 1em;">
-  <blockquote style="border-left: 4px solid #ccc; padding-left: 1em; color: #555; margin: 1em 0; width: 100%; line-height: 1.6;">
+  <blockquote style="border-left: 4px solid #ccc; padding-left: 1em; color: #555; margin: 1em 0; line-height: 1.6;">
     Parkinson’s disease affects individuals from all walks of life, often around the age of 60. Yet, in the struggles of those affected, research tends to amplify men's voices over others. <strong>“Through her Voice”</strong> transforms silence into a symphony. A woman’s lips become a voice recorder, capturing untold stories in the tremble of her voice. Behind her sits a wall of vertical speech waves — the same pattern that coats her lips — symbolizing how machine learning algorithms translate voices into insights, unraveling Parkinson’s complex layers and aiding in early diagnosis. The red tulip, a symbol for Parkinson’s, honors the struggles of those affected. This piece goes beyond disease; it’s about inclusion. By recognizing diverse voices, our research bridges the gap between human fragility and technology’s potential. <em>Through her voice — and his, and theirs — we hear not just the disease, but hope.</em>
-    <br><br>
   </blockquote>
 </div>
 
-<!-- Import Animate.css -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
+<!-- Responsive Styling -->
 <style>
-    .photo-frame {
-        position: relative;
-        display: inline-block;
-        width: 700px;
-        height: 700px;
-        border: 2.5px solid black;
-        overflow: visible; /* Allow tape to extend beyond the frame */
-    }
+  .photo-frame {
+    position: relative;
+    display: inline-block;
+    width: 90vw;               /* Responsive width */
+    max-width: 400px;          /* Limits size on desktop */
+    aspect-ratio: 1 / 1;       /* Keeps image square */
+    border: 2.5px solid black;
+    overflow: visible;
+  }
 
-    .photo-img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-    }
+  .photo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
 
-    .tape {
-        position: absolute;
-        background: rgba(255, 255, 255, 0.8);
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-        width: 100px; /* Width remains the same */
-        height: 30px; /* Increased height */
-        top: -15px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .hover-animate:hover {
-        animation: animate__bounceInDown; /* Use Animate.css bounceInDown effect */
-        animation-duration: 0.5s; /* Adjust duration as needed */
-    }
+  .tape {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    width: 25%;              /* Proportional to container */
+    height: 8%;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 </style>
 
 ## About Me
