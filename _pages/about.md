@@ -182,8 +182,8 @@ Feel free to look at my specific [portfolio entry](https://sudo-boris.github.io/
   <em>
     <a href="https://www.concordia.ca/" class="affiliation-tag concordia" target="_blank">Concordia University</a>
     <a href="https://crblm.ca/" class="affiliation-tag crblm" target="_blank">CRBLM</a>
-    <a href="https://sites.google.com/site/mircoravanelli/students" class="affiliation-tag convai" target="_blank">Conversational AI Lab</a>
     <a href="https://mila.quebec/en" class="affiliation-tag mila" target="_blank">Mila</a>
+    <a href="https://sites.google.com/site/mircoravanelli/students" class="affiliation-tag convai" target="_blank">Conversational AI Lab</a>
     <a href="https://ap-lab.ca/" class="affiliation-tag aplab" target="_blank">Applied Perception Lab</a>
   </em>
 </div>
