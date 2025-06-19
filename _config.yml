@@ -21,7 +21,7 @@ repository               : "njayem/njayem.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.jpg"
+  avatar           : "profile.png"
   name             : "Nadine El-Mufti"
   pronouns         : "(she/her)"  
   bio              : "Multimodal Clinical AI | Foundation Models for Healthcare | Mila × Concordia"
