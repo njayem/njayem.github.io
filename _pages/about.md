@@ -117,7 +117,7 @@ As an advocate for social justice, I’m passionate about AI applications that d
     <td>September 2025 – Present</td>
   </tr>
     <tr>
-    <td><a href="https://www.concordia.ca/research/applied-ai-institute/initiatives/geminai.html">Member</a></td>
+    <td><a href="">Organizer</a></td>
     <td> BrainHack MTL 2025, Concordia University x McGill University x Mila</td>
     <td>July 2025 – Present</td>
   </tr>    
