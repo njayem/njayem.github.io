@@ -199,7 +199,7 @@ Feel free to look at my specific [portfolio entry](https://sudo-boris.github.io/
 
 
 <!-- Colored affiliation line -->
-<div style="display: flex; justify-content: center; align-items: center; gap: 16px; white-space: nowrap; overflow-x: auto; padding: 1em 0;">
+<div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 12px; padding: 1em;">
   <em>
     <a href="https://www.concordia.ca/" class="affiliation-tag concordia" target="_blank">Concordia University</a>
     <a href="https://crblm.ca/" class="affiliation-tag crblm" target="_blank">CRBLM</a>
