@@ -198,16 +198,17 @@ Feel free to look at my specific [portfolio entry](https://sudo-boris.github.io/
 </style>
 
 
-<!-- Colored affiliation line -->
-<div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 12px; padding: 1em;">
-  <em>
+<!-- Colored affiliation line with horizontal scroll -->
+<div style="overflow-x: auto; white-space: nowrap; padding: 1em 0; -webkit-overflow-scrolling: touch;">
+  <div style="display: inline-flex; gap: 12px; padding: 0 1em;">
     <a href="https://www.concordia.ca/" class="affiliation-tag concordia" target="_blank">Concordia University</a>
     <a href="https://crblm.ca/" class="affiliation-tag crblm" target="_blank">CRBLM</a>
     <a href="https://mila.quebec/en" class="affiliation-tag mila" target="_blank">Mila</a>
     <a href="https://sites.google.com/site/mircoravanelli/students" class="affiliation-tag convai" target="_blank">Conversational AI Lab</a>
     <a href="https://ap-lab.ca/" class="affiliation-tag aplab" target="_blank">Applied Perception Lab</a>
     <a href="https://douglas.research.mcgill.ca/" class="affiliation-tag drc" target="_blank">The Douglas Research Centre</a>
-  </em>
+  </div>
 </div>
+
 
 
