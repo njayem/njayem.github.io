@@ -92,7 +92,7 @@ In 2022, I received an [NSERC USRA](https://www.nserc-crsng.gc.ca/Students-Etudi
 
 As an advocate for social justice, I’m passionate about AI applications that drive social impact. At the [Applied Perception Lab](https://ap-lab.ca/), I conduct research at the intersection of AI, ethics, and EDI, developing frameworks to address societal challenges and promote responsible healthcare technology. Additionally, at [Mila](https://mila.quebec/en/directory/nadine-el-mufti), I’m conducting novel research in Medical Machine Learning, focusing on early disease detection through speech analysis to improve diagnostic accuracy.
 
-### Leadership & Community Engagement 🌟
+### Leadership, Service and Engagement 🌟
 <div style="margin-top: 20px;"></div>
 
 <table border="1">
@@ -101,6 +101,16 @@ As an advocate for social justice, I’m passionate about AI applications that d
     <th>Affiliation</th>
     <th>Dates of Service</th>
   </tr>
+  <tr>
+    <td><a href="https://www.concordia.ca/about/administration-governance/board-senate/senate/membership.html">Member</a></td>
+    <td> Senate Standing Committee on Research, Concordia University</td>
+    <td>September 2025 – Present</td>
+  </tr>
+    <tr>
+    <td><a href="https://www.concordia.ca/research/applied-ai-institute/initiatives/geminai.html">Member</a></td>
+    <td> BrainHack MTL 2025, Concordia University x McGill University x Mila</td>
+    <td>July 2025 – Present</td>
+  </tr>    
   <tr>
     <td><a href="https://www.concordia.ca/research/applied-ai-institute/initiatives/geminai.html">Member</a></td>
     <td>Concordia Council on Student Life (CCSL) Subcommittee, Concordia University</td>
@@ -174,6 +184,7 @@ Feel free to look at my specific [portfolio entry](https://sudo-boris.github.io/
   .convai { background: #328de7; }
   .mila { background: #63287d; }
   .aplab { background: #3f968a; }
+  .drc { background: #102e70; }
 </style>
 
 
@@ -185,6 +196,7 @@ Feel free to look at my specific [portfolio entry](https://sudo-boris.github.io/
     <a href="https://mila.quebec/en" class="affiliation-tag mila" target="_blank">Mila</a>
     <a href="https://sites.google.com/site/mircoravanelli/students" class="affiliation-tag convai" target="_blank">Conversational AI Lab</a>
     <a href="https://ap-lab.ca/" class="affiliation-tag aplab" target="_blank">Applied Perception Lab</a>
+    <a href="https://douglas.research.mcgill.ca/" class="affiliation-tag drc" target="_blank">The Douglas Research Centre</a>
   </em>
 </div>
 
