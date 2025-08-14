@@ -8,6 +8,16 @@ redirect_from:
   - /about.html
 ---
 
+---
+title: ""
+permalink: /
+excerpt: "About me"
+author_profile: true
+redirect_from: 
+  - /about/
+  - /about.html
+---
+
 <br>
 
 # 👋🏼 Hello there, I'm Nadine!
@@ -72,6 +82,70 @@ redirect_from:
     left: 50%;
     transform: translateX(-50%);
   }
+
+  /* Affiliation tags base styles */
+  .affiliation-tag {
+    font-size: 0.8em;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 0px 7px;
+    text-decoration: none !important; 
+    transition: transform 0.2s ease, background 0.2s ease;
+    white-space: nowrap;
+  }
+
+  .affiliation-tag:hover {
+    transform: scale(1.08);
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .concordia { background: #922338; }
+  .crblm { background: #244883; }
+  .convai { background: #328de7; }
+  .mila { background: #63287d; }
+  .aplab { background: #3f968a; }
+  .drc { background: #102e70; }
+
+  /* Marquee container: hides native scroll, no user interaction needed */
+  .affiliation-marquee {
+    overflow: hidden;
+    width: 100%;
+    padding: 1em 0;
+  }
+
+  /* Track: two copies of the content placed inline for seamless loop */
+  .affiliation-track {
+    display: inline-flex;
+    gap: 12px;
+    width: max-content;
+    padding: 0 1em;
+    will-change: transform;
+    animation: marquee-ltr 28s linear infinite;
+  }
+
+  /* Move left -> right forever using duplicated content */
+  @keyframes marquee-ltr {
+    0%   { transform: translateX(-50%); }
+    100% { transform: translateX(0%); }
+  }
+
+  /* Pause on hover/focus for accessibility */
+  .affiliation-marquee:hover .affiliation-track,
+  .affiliation-marquee:focus-within .affiliation-track {
+    animation-play-state: paused;
+  }
+
+  /* Respect reduced-motion preference */
+  @media (prefers-reduced-motion: reduce) {
+    .affiliation-track {
+      animation: none;
+      transform: none;
+    }
+  }
 </style>
 
 ## About Me
@@ -100,7 +174,7 @@ These efforts contribute to the **MOTS+ initiative**, a digital relapse detectio
 
 In 2022, I received an [NSERC USRA](https://www.nserc-crsng.gc.ca/Students-Etudiants/UG-PC/USRA-BRPC_eng.asp) federal award to pursue a research project under the supervision of Dr. Marta Kersten-Oertel at her Applied Perception Lab in Montreal, Quebec. The project focused on identifying and addressing surgeons' workflow challenges, developing Ventriculostomy prototypes to improve surgical workflow efficiency. The project culminated in a [publication](https://link.springer.com/chapter/10.1007/978-3-031-23223-7_5) for [MICCAI's 2022](https://conferences.miccai.org/2022/en/MICCAI2022-WORKSHOPS.html) [EPIMI](https://sites.google.com/view/epimi) workshop, where my team and I presented a comprehensive User-Centered Design approach to identify and address Ventriculostomy surgeons' workflow challenges to improve surgical efficiency.
 
-As an advocate for social justice, I’m passionate about AI applications that drive social impact. At the [Applied Perception Lab](https://ap-lab.ca/), I conduct research at the intersection of AI, ethics, and EDI, developing frameworks to address societal challenges and promote responsible healthcare technology. Additionally, at [Mila](https://mila.quebec/en/directory/nadine-el-mufti), I’m conducting novel research in Medical Machine Learning, focusing on early disease detection through speech analysis to improve diagnostic accuracy.
+As an advocate for social justice, I’m passionate about AI applications that drive social impact. At the [Applied Perception Lab](https://ap-lab.ca/), I drive research at the intersection of AI, ethics, and equity, diversity, and inclusion (EDI) to develop actionable frameworks that address pressing societal challenges and advance responsible, human-centered healthcare technology. Additionally, at [Mila](https://mila.quebec/en/directory/nadine-el-mufti), I lead novel research in Medical Machine Learning focusing on early disease detection through speech analysis, covering the entire ML lifecycle from dataset curation to model training, evaluation, optimization, and deployment, to improve diagnostic accuracy.
 
 ### Leadership, Service and Engagement 🌟
 <div style="margin-top: 20px;"></div>
@@ -116,7 +190,7 @@ As an advocate for social justice, I’m passionate about AI applications that d
     <td> Senate Standing Committee on Research, Concordia University</td>
     <td>September 2025 – Present</td>
   </tr>
-    <tr>
+  <tr>
     <td><a href="">Organizer</a></td>
     <td> BrainHack MTL 2025, Concordia University x McGill University x Mila</td>
     <td>July 2025 – Present</td>
@@ -138,31 +212,6 @@ As an advocate for social justice, I’m passionate about AI applications that d
   </tr>
 </table>
 
-<!-- ### Curret Affiliations 🌐
-<div style="margin-top: 20px;">
-<table border="1">
-  <tr>
-    <td><img src="https://drive.google.com/uc?id=1UprcfA_F0Ef_xiaKEm3yabpMUPt-_yRp" alt="Image 1"></td> 
-    <td><img src="https://drive.google.com/uc?id=1Xfi4023kArGnnvenQHJN4OLBKNtaVSea" alt="Image 2"></td>
-    <td><img src="https://drive.google.com/uc?id=1yY-o43-rQhZp6U_EgoJJ0eNmWLasVja6" alt="Image 3"></td>
-    <td><img src="https://drive.google.com/uc?id=1Dd7GlHn0Lvh_QLhknM4-M-JPMIoyOsUS" alt="Image 4"></td>
-  </tr>
-</table>
-</div> -->
-
-
-<!-- # Current Projects
-
-## Reimplementing and Reproducing Machine Learning Research Papers
-
-I have experience with independent research. I have implemented the Reward Constrained Policy Optimization paper into stable-baselines3 PPO and reproduced the original results by running and tracking experiments.
-
-To accompany this work, I have submitted a blog post to the **ICLR** Blogposts Track communicating the paper's theory and my results.
-
-Feel free to look at my specific [portfolio entry](https://sudo-boris.github.io/portfolio/RCPPO/).
-
-## Machine Learning Projects -->
-
 <h2>Affiliation ✨</h2>
 
 <!-- Image -->
@@ -170,45 +219,23 @@ Feel free to look at my specific [portfolio entry](https://sudo-boris.github.io/
   <img src="/images/website-footer.png" alt="Visual of Parkinson's research pipeline from voice to machine learning model" style="max-width: 100%; height: auto; padding: 0;">
 </div>
 
-<style>
-  .affiliation-tag {
-    font-size: 0.8em;
-    color: white;
-    padding: 6px 14px;
-    border-radius: 20px;
-    display: inline-block;
-    margin: 0px 7px;
-    text-decoration: none !important; 
-    transition: transform 0.2s ease, background 0.2s ease;
-  }
-
-  .affiliation-tag:hover {
-    transform: scale(1.08);
-    cursor: pointer;
-    font-weight: bold;
-    text-decoration: underline;
-  }
-
-  .concordia { background: #922338; }
-  .crblm { background: #244883; }
-  .convai { background: #328de7; }
-  .mila { background: #63287d; }
-  .aplab { background: #3f968a; }
-  .drc { background: #102e70; }
-</style>
-
-
-<!-- Colored affiliation line with horizontal scroll -->
-<div style="overflow-x: auto; white-space: nowrap; padding: 1em 0; -webkit-overflow-scrolling: touch;">
-  <div style="display: inline-flex; gap: 12px; padding: 0 1em;">
+<!-- Affiliation marquee: smooth left-to-right loop -->
+<div class="affiliation-marquee" aria-label="Affiliations">
+  <div class="affiliation-track">
+    <!-- 1st copy -->
     <a href="https://www.concordia.ca/" class="affiliation-tag concordia" target="_blank">Concordia University</a>
     <a href="https://crblm.ca/" class="affiliation-tag crblm" target="_blank">CRBLM</a>
     <a href="https://mila.quebec/en" class="affiliation-tag mila" target="_blank">Mila</a>
     <a href="https://sites.google.com/site/mircoravanelli/students" class="affiliation-tag convai" target="_blank">Conversational AI Lab</a>
     <a href="https://ap-lab.ca/" class="affiliation-tag aplab" target="_blank">Applied Perception Lab</a>
     <a href="https://douglas.research.mcgill.ca/" class="affiliation-tag drc" target="_blank">The Douglas Research Centre</a>
+
+    <!-- 2nd copy (duplicate for seamless loop) -->
+    <a href="https://www.concordia.ca/" class="affiliation-tag concordia" target="_blank" aria-hidden="true">Concordia University</a>
+    <a href="https://crblm.ca/" class="affiliation-tag crblm" target="_blank" aria-hidden="true">CRBLM</a>
+    <a href="https://mila.quebec/en" class="affiliation-tag mila" target="_blank" aria-hidden="true">Mila</a>
+    <a href="https://sites.google.com/site/mircoravanelli/students" class="affiliation-tag convai" target="_blank" aria-hidden="true">Conversational AI Lab</a>
+    <a href="https://ap-lab.ca/" class="affiliation-tag aplab" target="_blank" aria-hidden="true">Applied Perception Lab</a>
+    <a href="https://douglas.research.mcgill.ca/" class="affiliation-tag drc" target="_blank" aria-hidden="true">The Douglas Research Centre</a>
   </div>
 </div>
-
-
-
