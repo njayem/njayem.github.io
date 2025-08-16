@@ -8,16 +8,6 @@ redirect_from:
   - /about.html
 ---
 
----
-title: ""
-permalink: /
-excerpt: "About me"
-author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
----
-
 <br>
 
 # 👋🏼 Hello there, I'm Nadine!
