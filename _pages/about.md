@@ -178,7 +178,11 @@ As an advocate for social justice, I’m passionate about AI applications that d
   <tr>
     <td><a href="https://www.concordia.ca/about/administration-governance/board-senate/senate/membership.html">Member</a></td>
     <td> Senate Standing Committee on Research, Concordia University</td>
+<<<<<<< HEAD
     <td>September 2025 – Present</td>
+=======
+    <td>October 2025 – Present</td>
+>>>>>>> 3520093eb63ced380bdbd28faac395fb071b3773
   </tr>
     <tr>
     <td><a href="">Arbour Foundation Scholar</a></td>
