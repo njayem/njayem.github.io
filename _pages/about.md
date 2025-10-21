@@ -187,7 +187,7 @@ As an advocate for social justice, I’m passionate about AI applications that d
   </tr>  
   <tr>
     <td><a href="">Organizer</a></td>
-    <td> BrainHack MTL 2025, Concordia University x McGill University x Mila</td>
+    <td> BrainHack MTL 2026, Concordia University x McGill University x Mila</td>
     <td>July 2025 – Present</td>
   </tr>    
   <tr>
