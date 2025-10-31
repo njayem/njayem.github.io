@@ -176,8 +176,8 @@ As an advocate for social justice, I’m passionate about AI applications that d
     <th>Dates of Service</th>
   </tr>
   <tr>
-    <td><a href="https://www.concordia.ca/about/administration-governance/board-senate/senate/membership.html">Member</a></td>
-    <td> Membre de l’Association Étudiante de Mila (AÉM), Mila - Quebec AI Institute</td>
+    <td><a href="https://www.concordia.ca/about/administration-governance/board-senate/senate/membership.html">Membre</a></td>
+    <td>Association Étudiante de Mila (AÉM), Mila - Quebec AI Institute</td>
     <td>Oct 2025 – Present</td>
   </tr>
   <tr>
