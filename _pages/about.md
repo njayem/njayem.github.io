@@ -186,13 +186,13 @@ As an advocate for social justice, I’m passionate about AI applications that d
     <td>Sep 2025 – Present</td>
   </tr>
     <tr>
-    <td><a href="">Arbour Foundation Scholar</a></td>
+    <td><a href="https://www.fondationarbour.com/en/">Arbour Foundation Scholar</a></td>
     <td> Fondation Arbour</td>
     <td>Sep 2025 – Present</td>
   </tr>  
   <tr>
-    <td><a href="">Organizer</a></td>
-    <td> BrainHack MTL 2026, Concordia University x McGill University x Mila</td>
+    <td><a href="https://brainhackmtl.github.io/winter2026/">Organizer</a></td>
+    <td> Brainhack MTL 2026, Concordia University x McGill University x Mila</td>
     <td>July 2025 – Present</td>
   </tr>    
   <tr>
