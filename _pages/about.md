@@ -17,13 +17,13 @@ redirect_from:
 <!-- Animate.css (keep this to enable animations)
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
 
-<!-- Responsive Photo Frame with Tape
+<!-- Responsive Photo Frame with Tape -->
 <div class="animate__animated animate__swing" style="text-align: center;">
   <div class="photo-frame">
-    <img src="/images/website-photo-2.jpg" alt="Visual of Parkinson's research pipeline from voice to machine learning model" class="photo-img">
+    <img src="/images/academic-headshot.png" alt="Visual of Parkinson's research pipeline from voice to machine learning model" class="photo-img">
     <div class="tape"></div>
   </div>
-</div> -->
+</div> 
 
 <!-- Caption Quote Below Image
 <div style="text-align: center; font-style: italic; margin-top: 1em; font-size: 1.2em;">
