@@ -157,13 +157,6 @@ Through the World Health Organization (WHO) Academy course [Ethics and Governanc
 
 In addition, I participated in [Mila’s Trustworthy and Responsible AI Learning (TRAIL) program](https://www.virtualbadge.io/certificate-validator?credential=dc595055-6e7c-485b-a3c9-bb7fd8eec548), where I learned to integrate ethical reflection, impact assessment, and risk mitigation throughout the machine learning research lifecycle, from problem formulation to downstream evaluation.
 
-
-### Climate Change Initiatives ♻️
-Other research interests include applying machine learning to address climate change, an area I have actively engaged with through both academic and hands-on experiences. I am particularly interested in how data-driven approaches can support environmental decision-making while aligning with the United Nations’ Sustainable Development Goals (SDGs), recognizing climate action as a lever for addressing interconnected global challenges.
-
-My engagement with sustainability has been ongoing, including involvement in sustainability initiatives at Concordia University since 2019. More recently, I participated in a hands-on AI for Climate Change program through [Climate Change AI](https://www.climatechange.ai/), where I explored how machine learning can be used to analyze climate data, surface actionable insights, and inform evidence-based environmental policy.
-
-
 ### Research Experience 🔍  
 
 I am currently a Research Assistant with the [Centre of Excellence in Youth Mental Health (CEYMH)](https://ceymh-cesmj.ca/) at the [Douglas Research Centre](https://douglas.research.mcgill.ca/), working under the supervision of [Dr. Lena Palaniyappan](https://scholar.google.com/citations?user=rDdsjwwAAAAJ&hl=en) and [Dr. Alban Voppel](https://scholar.google.nl/citations?user=eb-aB2kAAAAJ&hl=en). I contribute to a multi-site research initiative focused on the early detection of relapse in youth experiencing psychosis.
@@ -176,6 +169,10 @@ My introduction to healthcare research began in 2022, when I received an [NSERC 
 
 The project culminated in a [publication](https://link.springer.com/chapter/10.1007/978-3-031-23223-7_5) presented at [MICCAI 2022](https://conferences.miccai.org/2022/en/MICCAI2022-WORKSHOPS.html)’s [EPIMI](https://sites.google.com/view/epimi) workshop. Through this work, I developed an interest in applied healthcare research and in examining how design choices, evaluation practices, and decision-making processes shape who benefits from clinical technologies and whose perspectives are represented.
 
+### Climate Change Initiatives ♻️
+Other research interests include applying machine learning to address climate change, an area I have actively engaged with through both academic and hands-on experiences. I am particularly interested in how data-driven approaches can support environmental decision-making while aligning with the United Nations’ Sustainable Development Goals (SDGs), recognizing climate action as a lever for addressing interconnected global challenges.
+
+My engagement with sustainability has been ongoing, including involvement in sustainability initiatives at Concordia University since 2019. More recently, I participated in a hands-on AI for Climate Change program through [Climate Change AI](https://www.climatechange.ai/), where I explored how machine learning can be used to analyze climate data, surface actionable insights, and inform evidence-based environmental policy.
 
 ### Leadership, Service and Engagement 🌟
 <div style="margin-top: 20px;"></div>
