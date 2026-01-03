@@ -10,7 +10,7 @@ redirect_from:
 
 <br>
 
-# 👋🏼 Hello there, I'm Nadine!
+# 👋🏻 Hello there, I'm Nadine!
 
 <br>
 
