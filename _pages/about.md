@@ -51,7 +51,7 @@ redirect_from:
     width: 90vw;               /* Responsive width */
     max-width: 400px;          /* Limits size on desktop */
     aspect-ratio: 1 / 1;       /* Keeps image square */
-    border: 2.5px solid black;
+    border: 4.5px solid black;
     overflow: visible;
   }
 
