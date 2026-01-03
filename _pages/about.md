@@ -14,18 +14,18 @@ redirect_from:
 
 <br>
 
-<!-- Animate.css (keep this to enable animations) -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<!-- Animate.css (keep this to enable animations)
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
 
-<!-- Responsive Photo Frame with Tape -->
+<!-- Responsive Photo Frame with Tape
 <div class="animate__animated animate__swing" style="text-align: center;">
   <div class="photo-frame">
     <img src="/images/website-photo-2.jpg" alt="Visual of Parkinson's research pipeline from voice to machine learning model" class="photo-img">
     <div class="tape"></div>
   </div>
-</div>
+</div> -->
 
-<!-- Caption Quote Below Image -->
+<!-- Caption Quote Below Image
 <div style="text-align: center; font-style: italic; margin-top: 1em; font-size: 1.2em;">
   <span style="font-size: 2.5em; line-height: 0; vertical-align: top;">“</span>
   Her voice shakes, not with weakness but with everything left unsaid.
@@ -34,14 +34,14 @@ redirect_from:
   <span style="font-size: 0.75em; color: #fff; background: #CC3D34; padding: 5px 12px; border-radius: 15px; display: inline-block; margin-top: 0.6em;">
     <strong> Source: My own creation! </strong>
   </span>
-</div>
+</div> -->
 
 <!-- Blockquote Text Description -->
-<div style="max-width: 1200px; margin: 2em auto; padding: 0 1em;">
+<!-- <div style="max-width: 1200px; margin: 2em auto; padding: 0 1em;">
   <blockquote style="border-left: 4px solid #ccc; padding-left: 1em; color: #555; margin: 1em 0; line-height: 1.6;">
     Parkinson’s disease affects individuals from all walks of life, often around the age of 60. Yet, in the struggles of those affected, research tends to amplify men's voices over others. <strong>“Through her Voice”</strong> transforms silence into a symphony. A woman’s lips become a voice recorder, capturing untold stories in the tremble of her voice. Behind her sits a wall of vertical speech waves — the same pattern that coats her lips — symbolizing how machine learning algorithms translate voices into insights, unraveling Parkinson’s complex layers and aiding in early diagnosis. The red tulip, a symbol for Parkinson’s, honors the struggles of those affected. This piece goes beyond disease; it’s about inclusion. By recognizing diverse voices, our research bridges the gap between human fragility and technology’s potential. <em>Through her voice — and his, and theirs — we hear not just the disease, but hope.</em>
   </blockquote>
-</div>
+</div> -->
 
 <!-- Responsive Styling -->
 <style>
@@ -141,30 +141,41 @@ redirect_from:
 ## About Me
 
 ### Academic Background ✨
-My academic journey began with a Bachelor of Engineering (B.Eng.) in Software Engineering from [Concordia University](https://www.concordia.ca/), where I built a strong foundation in problem-solving, critical thinking, and human-centered systems design. I’m now expanding on that foundation in my Master’s research at Concordia and [Mila](https://mila.quebec/en), under the supervision of [Dr. Mirco Ravanelli](https://sites.google.com/site/mircoravanelli/) and [Dr. Marta Kersten-Oertel](https://www.concordia.ca/next-gen/kersten-oertel.html).
+My academic journey began with a Bachelor of Engineering (B.Eng.) in Software Engineering from [Concordia University](https://www.concordia.ca/), where I built a strong foundation in problem-solving, critical thinking, and human-centered systems design. I am now expanding on that foundation through my Master’s research at Concordia University and [Mila](https://mila.quebec/en), under the supervision of [Dr. Mirco Ravanelli](https://sites.google.com/site/mircoravanelli/) and [Dr. Marta Kersten-Oertel](https://www.concordia.ca/next-gen/kersten-oertel.html), where I design clinically grounded AI systems that leverage speech as a biomarker across a range of physical and mental health conditions, with a focus on early detection, continuous monitoring, and equitable care delivery. I work closely with clinicians and researchers to ensure these systems are grounded in real-world workflows, co-designed with their users, and never positioned to replace clinician or human judgment.
 
-My research focuses on developing responsible clinical AI systems that leverage speech as a biomarker — with the goal of supporting early disease detection, continuous monitoring, and equitable care delivery. I work closely with clinicians and researchers to ensure these systems are grounded in real-world workflows, co-designed with their users, and never positioned to replace clinical judgment. While my primary thesis work explores diffusion models and counterfactual reasoning in voice-based diagnostics, I’m also contributing to multimodal efforts that integrate medical speech and imaging for comprehensive decision support.
+My work sits at the intersection of machine learning, medicine, and ethics, with an emphasis on building explainable, uncertainty-aware systems that can adapt to diverse patient populations. I am especially passionate about creating technologies that prioritize collaboration over automation, and care over convenience. As an advocate for social impact, I am driven by projects that use AI not just to optimize, but to care.
 
-This work sits at the intersection of machine learning, medicine, and ethics — with an emphasis on building explainable, uncertainty-aware systems that can adapt to diverse patient populations. I’m especially passionate about creating technologies that prioritize collaboration over automation, and care over convenience.
-
-Earlier this year, I received the [NSERC CGS-M](https://www.nserc-crsng.gc.ca/Students-Etudiants/PG-CS/CGSM-BESCM_eng.asp) federal award to support my research, further affirming my commitment to using AI to make healthcare more inclusive, accessible, and accountable.
+My thesis is supported by the [NSERC CGS-M](https://www.nserc-crsng.gc.ca/Students-Etudiants/PG-CS/CGSM-BESCM_eng.asp) federal award and the [Arbour Foundation](https://www.fondationarbour.com/en/), reflecting the rigor, originality, and broader significance of this research in advancing clinically responsible AI.
 
 ### Shaping Technology and Research with Ethics, Accountability, and Inclusion 🏛️
-As a committed [Tech Steward](https://credentials.techstewardship.com/en/verify/88109651148606), I strive to advance my understanding of systemic bias in tech and promote the ethical development of transformative technologies. By deepening my knowledge, challenging limited narratives, and practicing deliberate values, I aim to shape a more responsible and inclusive technological future. I am dedicated to using technology for social transformation and addressing pressing social issues. In addition to my work in tech ethics, I hold a [TCPS 2: CORE-2022](https://drive.google.com/file/d/1rCDIrcQ7AjrW7oXkmqn8QLVimUWgWjr2/view?usp=sharing) certification in research ethics, focusing on the ethical conduct of research involving human participants. This certification reinforces my commitment to conducting data collection in an inclusive, ethical, and transparent manner, while incorporating diverse perspectives to achieve equitable outcomes.
+
+My approach to technology and research is shaped by formal training and hands-on learning in ethics, governance, and responsible AI. As a committed [Tech Steward](https://credentials.techstewardship.com/en/verify/88109651148606), I developed a deeper understanding of systemic bias in technology and the role of values-driven practice in shaping more responsible and inclusive technological systems.
+
+I hold a [TCPS 2: CORE-2022](https://drive.google.com/file/d/1rCDIrcQ7AjrW7oXkmqn8QLVimUWgWjr2/view?usp=sharing) certification in research ethics, where I learned best practices for the ethical conduct of research involving human participants, including informed consent, privacy, and fairness. This training directly informs how I approach data collection and participant-centered research in practice.
+
+Through the World Health Organization (WHO) Academy course [Ethics and Governance of Artificial Intelligence for Health](https://whoacademy.org/achievements/b51dcc17-84cc-47f3-b5b5-cd6b7f8e4a1e), I gained exposure to global ethical principles, governance frameworks, and regulatory considerations guiding the design and deployment of AI systems in healthcare, with an emphasis on human rights and public benefit.
+
+In addition, I participated in [Mila’s Trustworthy and Responsible AI Learning (TRAIL) program](https://www.virtualbadge.io/certificate-validator?credential=dc595055-6e7c-485b-a3c9-bb7fd8eec548), where I learned to integrate ethical reflection, impact assessment, and risk mitigation throughout the machine learning research lifecycle, from problem formulation to downstream evaluation.
+
 
 ### Climate Change Initiatives ♻️
-Other research interests include leveraging machine learning to address Climate Change, a cause deeply important to me. This focus not only tackles environmental concerns but also aligns with the United Nations' Sustainable Development Goals (SDGs), highlighting how addressing Climate Change can solve multiple global issues. My journey in sustainability has been ongoing, and I have actively pursued sustainability initiatives at Concordia University since 2019. This commitment led me to participate in a hands-on AI for Climate Change program through [Climate Change AI](https://www.climatechange.ai/), where I'm witnessing the transformative power of Machine Learning to analyze climate data and influence environmental policy through actionable insights.
+Other research interests include applying machine learning to address climate change, an area I have actively engaged with through both academic and hands-on experiences. I am particularly interested in how data-driven approaches can support environmental decision-making while aligning with the United Nations’ Sustainable Development Goals (SDGs), recognizing climate action as a lever for addressing interconnected global challenges.
+
+My engagement with sustainability has been ongoing, including involvement in sustainability initiatives at Concordia University since 2019. More recently, I participated in a hands-on AI for Climate Change program through [Climate Change AI](https://www.climatechange.ai/), where I explored how machine learning can be used to analyze climate data, surface actionable insights, and inform evidence-based environmental policy.
+
 
 ### Research Experience 🔍  
-In 2025, I joined the [Centre of Excellence in Youth Mental Health (CEYMH)](https://ceymh-cesmj.ca/) as a Research Assistant under the supervision of [Dr. Lena Palaniyappan](https://scholar.google.com/citations?user=rDdsjwwAAAAJ&hl=en) and [Dr. Alban Voppel](https://scholar.google.nl/citations?user=eb-aB2kAAAAJ&hl=en). I contribute to a multi-site initiative focused on the early detection of relapse in youth experiencing psychosis.
 
-My role involves curating and analyzing bilingual clinical speech data to support the development of speech-based diagnostic tools. I coordinate multisite data collection using REDCap workflows and help power the **Québec Speech Bank** by engineering pipelines to clean, align, and structure longitudinal speech recordings across diverse studies. This work enables multimodal insights into the relationship between voice, symptoms, and cognition, paving the way for more predictive, compassionate mental health care.
+I am currently a Research Assistant with the [Centre of Excellence in Youth Mental Health (CEYMH)](https://ceymh-cesmj.ca/) at the [Douglas Research Centre](https://douglas.research.mcgill.ca/), working under the supervision of [Dr. Lena Palaniyappan](https://scholar.google.com/citations?user=rDdsjwwAAAAJ&hl=en) and [Dr. Alban Voppel](https://scholar.google.nl/citations?user=eb-aB2kAAAAJ&hl=en). I contribute to a multi-site research initiative focused on the early detection of relapse in youth experiencing psychosis.
 
-These efforts contribute to the **MOTS+ initiative**, a digital relapse detection platform funded by [CIHR](https://cihr-irsc.gc.ca/e/193.html), [FRQS](https://frq.gouv.qc.ca/en/), and the [Wellcome Trust](https://wellcome.org/), with a strong emphasis on clinical relevance, accessibility, and innovation in youth mental health.
+My role involves coordinating multisite data collection using REDCap workflows, processing and analyzing bilingual clinical speech data, and supporting the **Québec Speech Bank** by engineering and analyzing pipelines to clean, align, and structure longitudinal speech recordings across diverse studies. This work enables multimodal analyses of the relationships between voice, symptoms, and cognition, with the goal of supporting more predictive and compassionate mental health care.
 
-In 2022, I received an [NSERC USRA](https://www.nserc-crsng.gc.ca/Students-Etudiants/UG-PC/USRA-BRPC_eng.asp) federal award to pursue a research project under the supervision of Dr. Marta Kersten-Oertel at her Applied Perception Lab in Montreal, Quebec. The project focused on identifying and addressing surgeons' workflow challenges, developing Ventriculostomy prototypes to improve surgical workflow efficiency. The project culminated in a [publication](https://link.springer.com/chapter/10.1007/978-3-031-23223-7_5) for [MICCAI's 2022](https://conferences.miccai.org/2022/en/MICCAI2022-WORKSHOPS.html) [EPIMI](https://sites.google.com/view/epimi) workshop, where my team and I presented a comprehensive User-Centered Design approach to identify and address Ventriculostomy surgeons' workflow challenges to improve surgical efficiency.
+Alongside this work, I am engaged in research at the [Applied Perception Lab](https://ap-lab.ca/) focused on the future of AI-driven surgical innovation and the ethical principles that should guide its development. This work explores how rapid advances in surgical AI raise questions about values, trade-offs, and decision-making as these technologies move from research into clinical practice.
 
-As an advocate for social justice, I’m passionate about AI applications that drive social impact. At the [Applied Perception Lab](https://ap-lab.ca/), I drive research at the intersection of AI, ethics, and equity, diversity, and inclusion (EDI) to develop actionable frameworks that address pressing societal challenges and advance responsible, human-centered healthcare technology. Additionally, at [Mila](https://mila.quebec/en/directory/nadine-el-mufti), I lead novel research in Medical Machine Learning focusing on early disease detection through speech analysis, covering the entire ML lifecycle from dataset curation to model training, evaluation, optimization, and deployment, to improve diagnostic accuracy.
+My introduction to healthcare research began in 2022, when I received an [NSERC USRA](https://www.nserc-crsng.gc.ca/Students-Etudiants/UG-PC/USRA-BRPC_eng.asp) federal award to pursue my first research project under the supervision of [Dr. Marta Kersten-Oertel](https://www.concordia.ca/next-gen/kersten-oertel.html) at the Applied Perception Lab in Montreal. This project focused on understanding surgeons’ workflow challenges through a user-centered design approach, including the development of ventriculostomy prototypes to improve surgical efficiency.
+
+The project culminated in a [publication](https://link.springer.com/chapter/10.1007/978-3-031-23223-7_5) presented at [MICCAI 2022](https://conferences.miccai.org/2022/en/MICCAI2022-WORKSHOPS.html)’s [EPIMI](https://sites.google.com/view/epimi) workshop. Through this work, I developed an interest in applied healthcare research and in examining how design choices, evaluation practices, and decision-making processes shape who benefits from clinical technologies and whose perspectives are represented.
+
 
 ### Leadership, Service and Engagement 🌟
 <div style="margin-top: 20px;"></div>
