@@ -145,7 +145,7 @@ My academic journey began with a Bachelor of Engineering (B.Eng.) in Software En
 
 My work sits at the intersection of machine learning, medicine, and ethics, with an emphasis on building explainable, uncertainty-aware systems that can adapt to diverse patient populations. I am especially passionate about creating technologies that prioritize collaboration over automation, and care over convenience. As an advocate for social impact, I am driven by projects that use AI not just to optimize, but to care.
 
-My thesis is supported by the [NSERC CGS-M](https://www.nserc-crsng.gc.ca/Students-Etudiants/PG-CS/CGSM-BESCM_eng.asp) federal award and the [Arbour Foundation](https://www.fondationarbour.com/en/), reflecting the rigor, originality, and broader significance of this research in advancing clinically responsible AI.
+This research is generously supported by the [NSERC CGS-M](https://www.nserc-crsng.gc.ca/Students-Etudiants/PG-CS/CGSM-BESCM_eng.asp) federal award and the [Arbour Foundation](https://www.fondationarbour.com/en/).
 
 ### Shaping Technology and Research with Ethics, Accountability, and Inclusion 🏛️
 
@@ -165,7 +165,7 @@ My role involves coordinating multisite data collection using REDCap workflows, 
 
 Alongside this work, I am engaged in research at the [Applied Perception Lab](https://ap-lab.ca/) focused on the future of AI-driven surgical innovation and the ethical principles that should guide its development. This work explores how rapid advances in surgical AI raise questions about values, trade-offs, and decision-making as these technologies move from research into clinical practice.
 
-My introduction to healthcare research began in 2022, when I received an [NSERC USRA](https://www.nserc-crsng.gc.ca/Students-Etudiants/UG-PC/USRA-BRPC_eng.asp) federal award to pursue my first research project under the supervision of [Dr. Marta Kersten-Oertel](https://www.concordia.ca/next-gen/kersten-oertel.html) at the Applied Perception Lab in Montreal. This project focused on understanding surgeons’ workflow challenges through a user-centered design approach, including the development of ventriculostomy prototypes to improve surgical efficiency.
+My introduction to healthcare research began in 2022, when I received an [NSERC USRA](https://www.nserc-crsng.gc.ca/Students-Etudiants/UG-PC/USRA-BRPC_eng.asp) federal award to pursue my first research project under the supervision of [Dr. Marta Kersten-Oertel](https://www.concordia.ca/next-gen/kersten-oertel.html) at Concordia's Applied Perception Lab. This project focused on understanding surgeons’ workflow challenges through a user-centered design approach, including the development of ventriculostomy prototypes to improve surgical efficiency.
 
 The project culminated in a [publication](https://link.springer.com/chapter/10.1007/978-3-031-23223-7_5) presented at [MICCAI 2022](https://conferences.miccai.org/2022/en/MICCAI2022-WORKSHOPS.html)’s [EPIMI](https://sites.google.com/view/epimi) workshop. Through this work, I developed an interest in applied healthcare research and in examining how design choices, evaluation practices, and decision-making processes shape who benefits from clinical technologies and whose perspectives are represented.
 
