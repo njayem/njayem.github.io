@@ -140,12 +140,14 @@ redirect_from:
 
 ## About Me
 
+
 ### Academic Background ✨
 My academic journey began with a Bachelor of Engineering (B.Eng.) in Software Engineering from [Concordia University](https://www.concordia.ca/), where I built a strong foundation in problem-solving, critical thinking, and human-centered systems design. I am now expanding on that foundation through my Master’s research at Concordia University and [Mila](https://mila.quebec/en), under the supervision of [Dr. Mirco Ravanelli](https://sites.google.com/site/mircoravanelli/) and [Dr. Marta Kersten-Oertel](https://www.concordia.ca/next-gen/kersten-oertel.html), where I design clinically grounded AI systems that leverage speech as a biomarker across a range of physical and mental health conditions, with a focus on early detection, continuous monitoring, and equitable care delivery. I work closely with clinicians and researchers to ensure these systems are grounded in real-world workflows, co-designed with their users, and never positioned to replace clinician or human judgment.
 
 My work sits at the intersection of machine learning, medicine, and ethics, with an emphasis on building explainable, uncertainty-aware systems that can adapt to diverse patient populations. I am especially passionate about creating technologies that prioritize collaboration over automation, and care over convenience. As an advocate for social impact, I am driven by projects that use AI not just to optimize, but to care.
 
 This research is generously supported by the [NSERC CGS-M](https://www.nserc-crsng.gc.ca/Students-Etudiants/PG-CS/CGSM-BESCM_eng.asp) federal award and the [Arbour Foundation](https://www.fondationarbour.com/en/).
+
 
 ### Shaping Technology and Research with Ethics, Accountability, and Inclusion 🏛️
 
@@ -157,9 +159,10 @@ Through the World Health Organization (WHO) Academy course [Ethics and Governanc
 
 In addition, I participated in [Mila’s Trustworthy and Responsible AI Learning (TRAIL) program](https://www.virtualbadge.io/certificate-validator?credential=dc595055-6e7c-485b-a3c9-bb7fd8eec548), where I learned to integrate ethical reflection, impact assessment, and risk mitigation throughout the machine learning research lifecycle, from problem formulation to downstream evaluation.
 
+
 ### Research Experience 🔍  
 
-I am currently a Research Assistant with the [Centre of Excellence in Youth Mental Health (CEYMH)](https://ceymh-cesmj.ca/) at the [Douglas Research Centre](https://douglas.research.mcgill.ca/), working under the supervision of [Dr. Lena Palaniyappan](https://scholar.google.com/citations?user=rDdsjwwAAAAJ&hl=en) and [Dr. Alban Voppel](https://scholar.google.nl/citations?user=eb-aB2kAAAAJ&hl=en). I contribute to a multi-site research initiative focused on the early detection of relapse in youth experiencing psychosis.
+I am currently a Research Assistant with the [Centre of Excellence in Youth Mental Health (CEYMH)](https://ceymh-cesmj.ca/) at the [Douglas Research Centre](https://douglas.research.mcgill.ca/), working under the supervision of [Dr. Lena Palaniyappan](https://scholar.google.com/citations?user=rDdsjwwAAAAJ&hl=en) and [Dr. Alban Voppel](https://scholar.google.nl/citations?user=eb-aB2kAAAAJ&hl=en). I contribute to a multi-site research initiative focused on the early detection of relapse in individuals experiencing psychosis.
 
 My role involves coordinating multisite data collection using REDCap workflows, processing and analyzing bilingual clinical speech data, and supporting the **Québec Speech Bank** by engineering and analyzing pipelines to clean, align, and structure longitudinal speech recordings across diverse studies. This work enables multimodal analyses of the relationships between voice, symptoms, and cognition, with the goal of supporting more predictive and compassionate mental health care.
 
@@ -169,10 +172,28 @@ My introduction to healthcare research began in 2022, when I received an [NSERC 
 
 The project culminated in a [publication](https://link.springer.com/chapter/10.1007/978-3-031-23223-7_5) presented at [MICCAI 2022](https://conferences.miccai.org/2022/en/MICCAI2022-WORKSHOPS.html)’s [EPIMI](https://sites.google.com/view/epimi) workshop. Through this work, I developed an interest in applied healthcare research and in examining how design choices, evaluation practices, and decision-making processes shape who benefits from clinical technologies and whose perspectives are represented.
 
-### Climate Change Initiatives ♻️
-Other research interests include applying machine learning to address climate change, an area I have actively engaged with through both academic and hands-on experiences. I am particularly interested in how data-driven approaches can support environmental decision-making while aligning with the United Nations’ Sustainable Development Goals (SDGs), recognizing climate action as a lever for addressing interconnected global challenges.
 
-My engagement with sustainability has been ongoing, including involvement in sustainability initiatives at Concordia University since 2019. More recently, I participated in a hands-on AI for Climate Change program through [Climate Change AI](https://www.climatechange.ai/), where I explored how machine learning can be used to analyze climate data, surface actionable insights, and inform evidence-based environmental policy.
+### Honors & Awards 🏆
+
+- **Arbour Foundation Master's Scholarship** — Fondation Arbour (Sep 2025)
+
+- **FRQNT B1X Award Competition** — Ranked 9th (92/100), Fonds de recherche du Québec (Apr 2025)
+
+- **NSERC Canada Graduate Scholarship – Master’s (CGS-M)** — Natural Sciences and Engineering Research Council of Canada (Apr 2024)
+
+- **Concordia University Special Entrance Award** (Oct 2024)
+
+- **Bourse d’Excellence en Génie** — Quebec Ministry of Education (Jun 2022)
+
+- **NSERC Undergraduate Student Research Award (USRA)** — NSERC (May 2022)
+
+
+### Climate & Sustainability ♻️
+
+Beyond clinical AI, I am deeply interested in how machine learning can support climate resilience and environmental decision-making. I am particularly drawn to interdisciplinary efforts that align technical innovation with the United Nations’ Sustainable Development Goals (SDGs), recognizing climate action as interconnected with public health, equity, and long-term systems sustainability.
+
+My engagement with sustainability has included involvement in Concordia-led initiatives since 2019 and participation in a hands-on AI for Climate Change program through [Climate Change AI](https://www.climatechange.ai/). These experiences strengthened my belief that responsible AI must extend beyond healthcare and actively engage with global challenges that shape collective wellbeing.
+
 
 ### Leadership, Service and Engagement 🌟
 <div style="margin-top: 20px;"></div>
@@ -184,28 +205,33 @@ My engagement with sustainability has been ongoing, including involvement in sus
     <th>Dates of Service</th>
   </tr>
   <tr>
-    <td><a href="https://www.concordia.ca/about/administration-governance/board-senate/senate/membership.html">Membre</a></td>
+    <td><a href="https://levantine-connect--thelevantines.replit.app/">Member</a></td>
+    <td>The Levantines</td>
+    <td>Feb 2026 – Present</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.concordia.ca/about/administration-governance/board-senate/senate/membership.html">Member</a></td>
     <td>Association Étudiante de Mila (AÉM), Mila - Quebec AI Institute</td>
     <td>Oct 2025 – Present</td>
   </tr>
   <tr>
     <td><a href="https://www.concordia.ca/about/administration-governance/board-senate/senate/membership.html">Member</a></td>
-    <td> Senate Standing Committee on Research, Concordia University</td>
+    <td>Standing Committee on Research, Graduate Students' Association (GSA), Concordia University</td>
     <td>Sep 2025 – Present</td>
   </tr>
-    <tr>
-    <td><a href="https://www.fondationarbour.com/en/">Arbour Foundation Scholar</a></td>
-    <td> Fondation Arbour</td>
+  <tr>
+    <td><a href="https://www.fondationarbour.com/en/">Member</a></td>
+    <td>Arbour Foundation Scholars</td>
     <td>Sep 2025 – Present</td>
   </tr>  
   <tr>
     <td><a href="https://brainhackmtl.github.io/winter2026/">Organizer</a></td>
-    <td> Brainhack MTL 2026, Concordia University x McGill University x Mila</td>
+    <td>Brainhack MTL, Concordia University x McGill University</td>
     <td>July 2025 – Present</td>
   </tr>    
   <tr>
-    <td><a href="https://www.concordia.ca/research/applied-ai-institute/initiatives/geminai.html">Member</a></td>
-    <td>Concordia Council on Student Life (CCSL) Subcommittee, Concordia University</td>
+    <td><a href="https://www.concordia.ca/offices/ccsl.html">Subcommittee Member</a></td>
+    <td>Concordia Council on Student Life (CCSL), Graduate Students' Association (GSA), Concordia University</td>
     <td>January 2025 – April 2025</td>
   </tr>  
   <tr>
@@ -219,6 +245,24 @@ My engagement with sustainability has been ongoing, including involvement in sus
     <td>September 2024 – Present</td>
   </tr>
 </table>
+
+
+### Certifications 📜
+
+- **Ethics and Governance of Artificial Intelligence for Health** — WHO Academy (Jan 2026)
+
+- **Quebec Scientific Entrepreneurship Program (QcSE)** — V1 Studio (Jun 2025)
+
+- **TRAIL Research: Trustworthy and Responsible AI Learning Certificate** — Mila – Quebec AI Institute (Mar 2025)
+
+- **Strategic Public Communications Training** — GradProSkills, Concordia University (Mar 2025)
+
+- **TCPS 2: CORE-2022 (Research Ethics Certification)** — Government of Canada (Jan 2025)
+
+- **Tech Stewardship Practice Program (TSPP)** — Tech Stewardship (Jul 2024)
+
+- **Enterprise Design Thinking Practitioner** — IBM (Aug 2022)
+
 
 <h2>Affiliation ✨</h2>
 
