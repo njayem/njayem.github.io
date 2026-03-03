@@ -86,11 +86,20 @@ redirect_from:
 
   /* Your theme is making h3 feel oversized; bring it back in line */
   .page__content h3 {
-    font-size: 1.08em;
-    font-weight: 700;
-    margin-top: 1.6em;
-    margin-bottom: 0.6em;
-  }
+  display: inline-block;
+  font-size: 1.05em;
+  font-weight: 900;
+  margin-top: 1.7em;
+  margin-bottom: 0.9em;
+
+  padding: 0.28em 0.65em;
+  border-radius: 4px;
+
+  background: #111;          /* black background */
+  color: #ffffff;            /* white text */
+  border: 1.5px solid #ffffff; /* white edge */
+  letter-spacing: 0.03em;
+}
 
   /* Lists: tighten spacing so they don't look like giant blocks */
   .page__content ul {
