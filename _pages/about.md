@@ -244,7 +244,7 @@ Beyond clinical AI, I am deeply interested in how machine learning can support c
 My engagement with sustainability has included involvement in Concordia-led initiatives since 2019 and participation in a hands-on AI for Climate Change program through [Climate Change AI](https://www.climatechange.ai/). These experiences strengthened my belief that responsible AI must extend beyond healthcare and actively engage with global challenges that shape collective wellbeing.
 
 
-### Honors & Awards
+## Honors & Awards
 
 <a href="https://www.fondationarbour.com/en/">
   <strong>Arbour Foundation Master’s Scholarship</strong>
@@ -283,7 +283,7 @@ Natural Sciences and Engineering Research Council of Canada
 May 2022  
 
 
-### Leadership, Service and Engagement
+## Leadership, Service and Engagement
 <div style="margin-top: 20px;"></div>
 
 <table border="1">
@@ -335,7 +335,7 @@ May 2022
 </table>
 
 
-### Licenses & Certifications
+## Licenses & Certifications
 
 <a href="https://whoacademy.org/achievements/b51dcc17-84cc-47f3-b5b5-cd6b7f8e4a1e">
   <strong>Ethics and Governance of Artificial Intelligence for Health</strong>
