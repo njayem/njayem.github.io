@@ -112,6 +112,14 @@ redirect_from:
     letter-spacing: 0.03em;
   }
 
+  .page__content h3 {
+  transition: color 0.2s ease;
+  }
+
+  .page__content h3:hover {
+  color: #ffffc5;
+  }
+
   .page__content ul {
     margin-top: 0.6em;
     margin-bottom: 1.2em;
