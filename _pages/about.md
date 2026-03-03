@@ -52,7 +52,7 @@ redirect_from:
     max-width: 400px;
     aspect-ratio: 1 / 1;
     border: 6.5px solid black;
-    overflow: hidden;
+    overflow: visible;
     background: #fff;
   }
 
