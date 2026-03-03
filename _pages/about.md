@@ -43,14 +43,15 @@ redirect_from:
   </blockquote>
 </div> -->
 
-<!-- Responsive Styling -->
+
+<style>
 <style>
   .photo-frame {
     position: relative;
     display: inline-block;
-    width: 90vw;               /* Responsive width */
-    max-width: 400px;          /* Limits size on desktop */
-    aspect-ratio: 1 / 1;       /* Keeps image square */
+    width: 90vw;
+    max-width: 400px;
+    aspect-ratio: 1 / 1;
     border: 6.5px solid black;
     overflow: visible;
   }
@@ -62,141 +63,20 @@ redirect_from:
     display: block;
   }
 
-.tape {
-  position: absolute;
-  z-index: 2;
-  pointer-events: none;
-
-  background: rgba(255, 255, 255, 0.82);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
-  border-radius: 2px;
-
-  width: 26%;
-  height: 9%;
-
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -55%);
-}
-
-  /* --- Make "new sections" fit the existing typography rhythm --- */
-  .page__content h2 {
-    margin-top: 2.2em;
+  .tape {
+    position: absolute;
+    z-index: 2;
+    pointer-events: none;
+    background: rgba(255, 255, 255, 0.82);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    width: 26%;
+    height: 9%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -55%);
   }
 
-  /* Your theme is making h3 feel oversized; bring it back in line */
-  .page__content h3 {
-  display: inline-block;
-  font-size: 1.05em;
-  font-weight: 900;
-  margin-top: 1.7em;
-  margin-bottom: 0.9em;
-
-  padding: 0.28em 0.65em;
-  border-radius: 4px;
-
-  background: #111;          /* black background */
-  color: #ffffff;            /* white text */
-  border: 1.5px solid #ffffff; /* white edge */
-  letter-spacing: 0.03em;
-}
-
-  /* Lists: tighten spacing so they don't look like giant blocks */
-  .page__content ul {
-    margin-top: 0.6em;
-    margin-bottom: 1.2em;
-  }
-  .page__content ul li {
-    margin-bottom: 0.55em;
-  }
-
-  /* Tables: match the site style (lighter borders, better padding) */
-  .page__content table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 0.95em;
-  }
-  .page__content th,
-  .page__content td {
-    padding: 10px 12px;
-    border: 1px solid #e6e6e6 !important;
-    vertical-align: top;
-  }
-  .page__content th {
-    background: #f2f2f2;
-    font-weight: 700;
-  }
-
-  /* Affiliation tags base styles */
-  .affiliation-tag {
-    font-size: 0.8em;
-    color: white;
-    padding: 6px 14px;
-    border-radius: 20px;
-    display: inline-block;
-    margin: 0px 7px;
-    text-decoration: none !important; 
-    transition: transform 0.2s ease, background 0.2s ease;
-    white-space: nowrap;
-  }
-
-  .affiliation-tag:hover {
-    transform: scale(1.08);
-    cursor: pointer;
-    font-weight: bold;
-    text-decoration: underline;
-  }
-
-  .concordia { background: #922338; }
-  .crblm { background: #244883; }
-  .convai { background: #328de7; }
-  .mila { background: #63287d; }
-  .aplab { background: #3f968a; }
-  .drc { background: #102e70; }
-
-  /* Marquee container: hides native scroll, no user interaction needed */
-  .affiliation-marquee {
-    overflow: hidden;
-    width: 100%;
-    padding: 1em 0;
-  }
-
-  /* Track: two copies of the content placed inline for seamless loop */
-  .affiliation-track {
-    display: inline-flex;
-    gap: 12px;
-    width: max-content;
-    padding: 0 1em;
-    will-change: transform;
-    animation: marquee-ltr 28s linear infinite;
-  }
-
-  /* Move left -> right forever using duplicated content */
-  @keyframes marquee-ltr {
-    0%   { transform: translateX(-50%); }
-    100% { transform: translateX(0%); }
-  }
-
-  /* Pause on hover/focus for accessibility */
-  .affiliation-marquee:hover .affiliation-track,
-  .affiliation-marquee:focus-within .affiliation-track {
-    animation-play-state: paused;
-  }
-
-  /* Respect reduced-motion preference */
-  @media (prefers-reduced-motion: reduce) {
-    .affiliation-track {
-      animation: none;
-      transform: none;
-    }
-  }
-
-  /* =========================
-     Academic section hierarchy
-     Makes MAIN subsections (H2) stand out
-     ========================= */
-
-  /* Academic heading color */
   .page__content h2,
   .page__content h3 {
     color: #1f2a44;
@@ -215,19 +95,103 @@ redirect_from:
     margin-top: 1.6em;
   }
 
-  /* Combined subtitle style: subtle highlight + underline */
   .page__content h3 {
     display: inline-block;
     font-size: 1.05em;
     font-weight: 900;
     margin-top: 1.7em;
-    margin-bottom: 0.85em;
+    margin-bottom: 0.9em;
+    padding: 0.28em 0.65em;
+    border-radius: 4px;
+    background: #111;
+    color: #ffffff;
+    border: 1.5px solid #ffffff;
+    letter-spacing: 0.03em;
+  }
 
-    padding: 0.22em 0.55em;
-    border-radius: 6px;
-    background: #f5f5f5;
-    border-bottom: 2px solid #111;
-    letter-spacing: 0.02em;
+  .page__content ul {
+    margin-top: 0.6em;
+    margin-bottom: 1.2em;
+  }
+
+  .page__content ul li {
+    margin-bottom: 0.55em;
+  }
+
+  .page__content table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95em;
+  }
+
+  .page__content th,
+  .page__content td {
+    padding: 10px 12px;
+    border: 1px solid #e6e6e6 !important;
+    vertical-align: top;
+  }
+
+  .page__content th {
+    background: #f2f2f2;
+    font-weight: 700;
+  }
+
+  .affiliation-tag {
+    font-size: 0.8em;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 0px 7px;
+    text-decoration: none !important;
+    transition: transform 0.2s ease, background 0.2s ease;
+    white-space: nowrap;
+  }
+
+  .affiliation-tag:hover {
+    transform: scale(1.08);
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .concordia { background: #922338; }
+  .crblm { background: #244883; }
+  .convai { background: #328de7; }
+  .mila { background: #63287d; }
+  .aplab { background: #3f968a; }
+  .drc { background: #102e70; }
+
+  .affiliation-marquee {
+    overflow: hidden;
+    width: 100%;
+    padding: 1em 0;
+  }
+
+  .affiliation-track {
+    display: inline-flex;
+    gap: 12px;
+    width: max-content;
+    padding: 0 1em;
+    will-change: transform;
+    animation: marquee-ltr 28s linear infinite;
+  }
+
+  @keyframes marquee-ltr {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0%); }
+  }
+
+  .affiliation-marquee:hover .affiliation-track,
+  .affiliation-marquee:focus-within .affiliation-track {
+    animation-play-state: paused;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .affiliation-track {
+      animation: none;
+      transform: none;
+    }
   }
 
   .page__content p {
@@ -235,6 +199,7 @@ redirect_from:
     margin-bottom: 1em;
   }
 </style>
+
 
 ## About Me
 
