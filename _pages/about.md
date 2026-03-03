@@ -182,35 +182,36 @@ redirect_from:
     }
   }
 
-  /* Credibility Sections */
-.cred-block {
-  margin: 1.5em 0 2.5em;
-  padding: 1.25em 1.5em;
-  border: 1px solid #e6e6e6;
-  border-left: 4px solid #111;
-  background: #fafafa;
-  border-radius: 8px;
-}
+  /* =========================
+     Academic section hierarchy
+     Makes MAIN subsections (H2) stand out
+     ========================= */
+  .page__content h2 {
+    margin-top: 2.6em;
+    margin-bottom: 0.9em;
+    padding-bottom: 0.35em;
+    border-bottom: 1px solid #e6e6e6;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+  }
 
-.cred-item {
-  margin-bottom: 1.25em;
-}
+  .page__content h2:first-of-type {
+    margin-top: 1.6em;
+  }
 
-.cred-item:last-child {
-  margin-bottom: 0;
-}
+  .page__content h3 {
+    font-size: 1.02em;
+    font-weight: 700;
+    margin-top: 1.4em;
+    margin-bottom: 0.55em;
+    padding-left: 0.6em;
+    border-left: 3px solid #111;
+  }
 
-.cred-title {
-  font-weight: 700;
-  margin: 0;
-}
-
-.cred-entity,
-.cred-date {
-  margin: 0.2em 0 0;
-  color: #555;
-  font-size: 0.95em;
-}
+  .page__content p {
+    line-height: 1.65;
+    margin-bottom: 1em;
+  }
 </style>
 
 ## About Me
@@ -254,59 +255,43 @@ Beyond clinical AI, I am deeply interested in how machine learning can support c
 My engagement with sustainability has included involvement in Concordia-led initiatives since 2019 and participation in a hands-on AI for Climate Change program through [Climate Change AI](https://www.climatechange.ai/). These experiences strengthened my belief that responsible AI must extend beyond healthcare and actively engage with global challenges that shape collective wellbeing.
 
 
-### Honors & Awards
+### Honors & Awards 🏆
 
-<div class="cred-block">
-
-<div class="cred-item">
 <a href="https://www.fondationarbour.com/en/">
-  <strong class="cred-title">Arbour Foundation Master’s Scholarship</strong>
-</a>
-<p class="cred-entity">Fondation Arbour</p>
-<p class="cred-date">September 2025</p>
-</div>
+  <strong>Arbour Foundation Master’s Scholarship</strong>
+</a>  
+Fondation Arbour  
+September 2025  
 
-<div class="cred-item">
 <a href="https://frq.gouv.qc.ca/en/program/scholarships-2nd-and-3rd-cycle-2022-2023/">
-  <strong class="cred-title">FRQNT B1X Award Competition</strong>
-</a>
-<p class="cred-entity">Fonds de recherche du Québec</p>
-<p class="cred-date">April 2025</p>
-</div>
+  <strong>FRQNT B1X Award Competition</strong>
+</a>  
+Fonds de recherche du Québec  
+April 2025  
 
-<div class="cred-item">
 <a href="https://nserc-crsng.canada.ca/en/funding-opportunity/canada-graduate-research-scholarship-masters-program">
-  <strong class="cred-title">NSERC Canada Graduate Scholarship – Master’s (CGS-M)</strong>
-</a>
-<p class="cred-entity">Natural Sciences and Engineering Research Council of Canada</p>
-<p class="cred-date">April 2024</p>
-</div>
+  <strong>NSERC Canada Graduate Scholarship – Master’s (CGS-M)</strong>
+</a>  
+Natural Sciences and Engineering Research Council of Canada  
+April 2024  
 
-<div class="cred-item">
 <a href="https://www.concordia.ca/gradstudies/funding/external/special-entrance.html">
-  <strong class="cred-title">Concordia University Special Entrance Award</strong>
-</a>
-<p class="cred-entity">Concordia University</p>
-<p class="cred-date">October 2024</p>
-</div>
+  <strong>Concordia University Special Entrance Award</strong>
+</a>  
+Concordia University  
+October 2024  
 
-<div class="cred-item">
 <a href="https://www.quebec.ca/education/etudier-quebec/aide-financiere-etudiants-internationaux/bourses-excellence-gouvernement-quebec">
-  <strong class="cred-title">Bourse d’Excellence en Génie</strong>
-</a>
-<p class="cred-entity">Quebec Ministry of Education</p>
-<p class="cred-date">June 2022</p>
-</div>
+  <strong>Bourse d’Excellence en Génie</strong>
+</a>  
+Quebec Ministry of Education  
+June 2022  
 
-<div class="cred-item">
 <a href="https://nserc-crsng.canada.ca/en/funding-opportunity/undergraduate-student-research-awards">
-  <strong class="cred-title">NSERC Undergraduate Student Research Award (USRA)</strong>
-</a>
-<p class="cred-entity">Natural Sciences and Engineering Research Council of Canada</p>
-<p class="cred-date">May 2022</p>
-</div>
-
-</div>
+  <strong>NSERC Undergraduate Student Research Award (USRA)</strong>
+</a>  
+Natural Sciences and Engineering Research Council of Canada  
+May 2022  
 
 
 ### Leadership, Service and Engagement 🌟
@@ -363,65 +348,53 @@ My engagement with sustainability has included involvement in Concordia-led init
 
 ### Licenses & Certifications
 
-<div class="cred-block">
-
-<div class="cred-item">
 <a href="https://whoacademy.org/achievements/b51dcc17-84cc-47f3-b5b5-cd6b7f8e4a1e">
-  <strong class="cred-title">Ethics and Governance of Artificial Intelligence for Health</strong>
-</a>
-<p class="cred-entity">WHO Academy</p>
-<p class="cred-date">January 2026</p>
-</div>
+  <strong>Ethics and Governance of Artificial Intelligence for Health</strong>
+</a>  
+WHO Academy  
+January 2026  
 
-<div class="cred-item">
 <a href="https://verified.sertifier.com/en/verify/14899124979984/">
-  <strong class="cred-title">Quebec Scientific Entrepreneurship Program (QcSE)</strong>
-</a>
-<p class="cred-entity">V1 Studio</p>
-<p class="cred-date">June 2025</p>
-</div>
+  <strong>Quebec Scientific Entrepreneurship Program (QcSE)</strong>
+</a>  
+V1 Studio  
+June 2025  
 
-<div class="cred-item">
 <a href="https://www.virtualbadge.io/certificate-validator?credential=dc595055-6e7c-485b-a3c9-bb7fd8eec548">
-  <strong class="cred-title">TRAIL Research: Trustworthy and Responsible AI Learning Certificate</strong>
-</a>
-<p class="cred-entity">Mila – Quebec AI Institute</p>
-<p class="cred-date">March 2025</p>
-</div>
+  <strong>TRAIL Research: Trustworthy and Responsible AI Learning Certificate</strong>
+</a>  
+Mila – Quebec AI Institute  
+March 2025  
 
-<div class="cred-item">
 <a href="https://app-ca.clickdimensions.com/blob/concordiaca-a8jj7/files/nadineelmufti_spct.pdf">
-  <strong class="cred-title">Strategic Public Communications Training</strong>
-</a>
-<p class="cred-entity">GradProSkills, Concordia University</p>
-<p class="cred-date">March 2025</p>
-</div>
+  <strong>Strategic Public Communications Training</strong>
+</a>  
+GradProSkills, Concordia University  
+March 2025  
 
-<div class="cred-item">
 <a href="https://drive.google.com/file/d/1rCDIrcQ7AjrW7oXkmqn8QLVimUWgWjr2/view?usp=sharing">
-  <strong class="cred-title">TCPS 2: CORE-2022 (Research Ethics Certification)</strong>
-</a>
-<p class="cred-entity">Government of Canada</p>
-<p class="cred-date">January 2025</p>
-</div>
+  <strong>TCPS 2: CORE-2022 (Research Ethics Certification)</strong>
+</a>  
+Government of Canada  
+January 2025  
 
-<div class="cred-item">
+<a href="https://drive.google.com/file/d/13m7Vtn1vXnPvK0c-UG-B_teOFsR2jd6E/view?usp=sharing">
+  <strong>Climate Change AI Summer School</strong>
+</a>  
+Climate Change AI  
+September 2024  
+
 <a href="https://credentials.techstewardship.com/en/verify/88109651148606">
-  <strong class="cred-title">Tech Stewardship Practice Program (TSPP)</strong>
-</a>
-<p class="cred-entity">Tech Stewardship</p>
-<p class="cred-date">July 2024</p>
-</div>
+  <strong>Tech Stewardship Practice Program (TSPP)</strong>
+</a>  
+Tech Stewardship  
+July 2024  
 
-<div class="cred-item">
 <a href="https://www.credly.com/badges/93d98be4-1b0e-42cc-9e97-2227a0296959/public_url">
-  <strong class="cred-title">Enterprise Design Thinking Practitioner</strong>
-</a>
-<p class="cred-entity">IBM</p>
-<p class="cred-date">August 2022</p>
-</div>
-
-</div>
+  <strong>Enterprise Design Thinking Practitioner</strong>
+</a>  
+IBM  
+August 2022  
 
 
 <h2>Affiliation ✨</h2>
