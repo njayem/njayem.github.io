@@ -76,8 +76,8 @@ redirect_from:
     height: 9%;
 
     left: 50%;
-    top: 6.5px;
-    transform: translate(-50%, -50%);
+    top: 0;
+    transform: translate(-50%, -65%);
   }
 
   .page__content h2,
