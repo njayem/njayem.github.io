@@ -62,23 +62,22 @@ redirect_from:
     display: block;
   }
 
-  .tape {
-    position: absolute;
-    z-index: 2;
-    pointer-events: none;
+.tape {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
 
-    background: rgba(255, 255, 255, 0.82);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
-    border-radius: 2px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
 
-    width: 26%;
-    height: 9%;
+  width: 26%;
+  height: 9%;
 
-    /* Anchor to the OUTER edge of the frame (incl. border) */
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -35%) rotate(-3deg);
-  }
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -55%);
+}
 
   /* --- Make "new sections" fit the existing typography rhythm --- */
   .page__content h2 {
@@ -220,12 +219,42 @@ The project culminated in a [publication](https://link.springer.com/chapter/10.1
 
 
 ### Honors & Awards 🏆
-- **Arbour Foundation Master's Scholarship** — Fondation Arbour (Sep 2025)
-- **FRQNT B1X Award Competition** — Ranked 9th (92/100), Fonds de recherche du Québec (Apr 2025)
-- **NSERC Canada Graduate Scholarship – Master’s (CGS-M)** — Natural Sciences and Engineering Research Council of Canada (Apr 2024)
-- **Concordia University Special Entrance Award** (Oct 2024)
-- **Bourse d’Excellence en Génie** — Quebec Ministry of Education (Jun 2022)
-- **NSERC Undergraduate Student Research Award (USRA)** — NSERC (May 2022)
+
+<a href="https://www.fondationarbour.com/en/">
+  <strong>Arbour Foundation Master’s Scholarship</strong>
+</a>  
+Fondation Arbour  
+September 2025  
+
+<a href="https://frq.gouv.qc.ca/en/program/scholarships-2nd-and-3rd-cycle-2022-2023/">
+  <strong>FRQNT B1X Award Competition</strong>
+</a>  
+Fonds de recherche du Québec  
+April 2025  
+
+<a href="https://nserc-crsng.canada.ca/en/funding-opportunity/canada-graduate-research-scholarship-masters-program">
+  <strong>NSERC Canada Graduate Scholarship – Master’s (CGS-M)</strong>
+</a>  
+Natural Sciences and Engineering Research Council of Canada  
+April 2024  
+
+<a href="https://www.concordia.ca/gradstudies/funding/external/special-entrance.html">
+  <strong>Concordia University Special Entrance Award</strong>
+</a>  
+Concordia University  
+October 2024  
+
+<a href="https://www.quebec.ca/education/etudier-quebec/aide-financiere-etudiants-internationaux/bourses-excellence-gouvernement-quebec">
+  <strong>Bourse d’Excellence en Génie</strong>
+</a>  
+Quebec Ministry of Education  
+June 2022  
+
+<a href="https://nserc-crsng.canada.ca/en/funding-opportunity/undergraduate-student-research-awards">
+  <strong>NSERC Undergraduate Student Research Award (USRA)</strong>
+</a>  
+Natural Sciences and Engineering Research Council of Canada  
+May 2022  
 
 
 ### Climate & Sustainability ♻️
@@ -286,14 +315,55 @@ My engagement with sustainability has included involvement in Concordia-led init
 </table>
 
 
-### Certifications 📜
-- **Ethics and Governance of Artificial Intelligence for Health** — WHO Academy (Jan 2026)
-- **Quebec Scientific Entrepreneurship Program (QcSE)** — V1 Studio (Jun 2025)
-- **TRAIL Research: Trustworthy and Responsible AI Learning Certificate** — Mila – Quebec AI Institute (Mar 2025)
-- **Strategic Public Communications Training** — GradProSkills, Concordia University (Mar 2025)
-- **TCPS 2: CORE-2022 (Research Ethics Certification)** — Government of Canada (Jan 2025)
-- **Tech Stewardship Practice Program (TSPP)** — Tech Stewardship (Jul 2024)
-- **Enterprise Design Thinking Practitioner** — IBM (Aug 2022)
+### Licenses & Certifications
+
+<a href="https://whoacademy.org/achievements/b51dcc17-84cc-47f3-b5b5-cd6b7f8e4a1e">
+  <strong>Ethics and Governance of Artificial Intelligence for Health</strong>
+</a>  
+WHO Academy  
+January 2026  
+
+<a href="https://verified.sertifier.com/en/verify/14899124979984/">
+  <strong>Quebec Scientific Entrepreneurship Program (QcSE)</strong>
+</a>  
+V1 Studio  
+June 2025  
+
+<a href="https://www.virtualbadge.io/certificate-validator?credential=dc595055-6e7c-485b-a3c9-bb7fd8eec548">
+  <strong>TRAIL Research: Trustworthy and Responsible AI Learning Certificate</strong>
+</a>  
+Mila – Quebec AI Institute  
+March 2025  
+
+<a href="https://app-ca.clickdimensions.com/blob/concordiaca-a8jj7/files/nadineelmufti_spct.pdf">
+  <strong>Strategic Public Communications Training</strong>
+</a>  
+GradProSkills, Concordia University  
+March 2025  
+
+<a href="https://drive.google.com/file/d/1rCDIrcQ7AjrW7oXkmqn8QLVimUWgWjr2/view?usp=sharing">
+  <strong>TCPS 2: CORE-2022 (Research Ethics Certification)</strong>
+</a>  
+Government of Canada  
+January 2025  
+
+<a href="https://drive.google.com/file/d/13m7Vtn1vXnPvK0c-UG-B_teOFsR2jd6E/view?usp=sharing">
+  <strong>Climate Change AI Summer School</strong>
+</a>  
+Climate Change AI  
+September 2024  
+
+<a href="https://credentials.techstewardship.com/en/verify/88109651148606">
+  <strong>Tech Stewardship Practice Program (TSPP)</strong>
+</a>  
+Tech Stewardship  
+July 2024  
+
+<a href="https://www.credly.com/badges/93d98be4-1b0e-42cc-9e97-2227a0296959/public_url">
+  <strong>Enterprise Design Thinking Practitioner</strong>
+</a>  
+IBM  
+August 2022  
 
 
 <h2>Affiliation ✨</h2>
