@@ -67,14 +67,17 @@ redirect_from:
     position: absolute;
     z-index: 2;
     pointer-events: none;
-    background: rgba(255, 255, 255, 0.82);
+
+    background: rgba(255, 255, 255, 0.85);
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
     border-radius: 2px;
+
     width: 26%;
     height: 9%;
-    top: -2%;
+
+    top: 0;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
   }
 
   .page__content h2,
