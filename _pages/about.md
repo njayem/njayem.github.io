@@ -45,7 +45,6 @@ redirect_from:
 
 
 <style>
-<style>
   .photo-frame {
     position: relative;
     display: inline-block;
@@ -53,7 +52,8 @@ redirect_from:
     max-width: 400px;
     aspect-ratio: 1 / 1;
     border: 6.5px solid black;
-    overflow: visible;
+    overflow: hidden;
+    background: #fff;
   }
 
   .photo-img {
@@ -72,9 +72,9 @@ redirect_from:
     border-radius: 2px;
     width: 26%;
     height: 9%;
-    top: 0;
+    top: -2%;
     left: 50%;
-    transform: translate(-50%, -55%);
+    transform: translateX(-50%);
   }
 
   .page__content h2,
