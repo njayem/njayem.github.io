@@ -77,7 +77,7 @@ redirect_from:
 
     left: 50%;
     top: 0;
-    transform: translate(-50%, -65%);
+    transform: translate(-50%, -58%);
   }
 
   .page__content h2,
