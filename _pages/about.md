@@ -113,11 +113,12 @@ redirect_from:
   }
 
   .page__content h3 {
-  transition: color 0.2s ease;
+    transition: color 0.2s ease;
   }
 
   .page__content h3:hover {
-  color: #ffffc5;
+    color: #ffffc5;
+    cursor: pointer;
   }
 
   .page__content ul {
