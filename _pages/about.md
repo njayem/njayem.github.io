@@ -75,8 +75,8 @@ redirect_from:
     width: 26%;
     height: 9%;
 
-    top: 0;
     left: 50%;
+    top: 6.5px;
     transform: translate(-50%, -50%);
   }
 
