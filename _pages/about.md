@@ -64,13 +64,59 @@ redirect_from:
 
   .tape {
     position: absolute;
-    background: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    width: 25%;              /* Proportional to container */
-    height: 8%;
-    top: -10px;
+    z-index: 2;
+    pointer-events: none;
+
+    background: rgba(255, 255, 255, 0.82);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
+    border-radius: 2px;
+
+    width: 26%;
+    height: 9%;
+
+    /* Anchor to the OUTER edge of the frame (incl. border) */
+    top: 0;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -35%) rotate(-3deg);
+  }
+
+  /* --- Make "new sections" fit the existing typography rhythm --- */
+  .page__content h2 {
+    margin-top: 2.2em;
+  }
+
+  /* Your theme is making h3 feel oversized; bring it back in line */
+  .page__content h3 {
+    font-size: 1.08em;
+    font-weight: 700;
+    margin-top: 1.6em;
+    margin-bottom: 0.6em;
+  }
+
+  /* Lists: tighten spacing so they don't look like giant blocks */
+  .page__content ul {
+    margin-top: 0.6em;
+    margin-bottom: 1.2em;
+  }
+  .page__content ul li {
+    margin-bottom: 0.55em;
+  }
+
+  /* Tables: match the site style (lighter borders, better padding) */
+  .page__content table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95em;
+  }
+  .page__content th,
+  .page__content td {
+    padding: 10px 12px;
+    border: 1px solid #e6e6e6 !important;
+    vertical-align: top;
+  }
+  .page__content th {
+    background: #f2f2f2;
+    font-weight: 700;
   }
 
   /* Affiliation tags base styles */
@@ -174,22 +220,15 @@ The project culminated in a [publication](https://link.springer.com/chapter/10.1
 
 
 ### Honors & Awards 🏆
-
 - **Arbour Foundation Master's Scholarship** — Fondation Arbour (Sep 2025)
-
 - **FRQNT B1X Award Competition** — Ranked 9th (92/100), Fonds de recherche du Québec (Apr 2025)
-
 - **NSERC Canada Graduate Scholarship – Master’s (CGS-M)** — Natural Sciences and Engineering Research Council of Canada (Apr 2024)
-
 - **Concordia University Special Entrance Award** (Oct 2024)
-
 - **Bourse d’Excellence en Génie** — Quebec Ministry of Education (Jun 2022)
-
 - **NSERC Undergraduate Student Research Award (USRA)** — NSERC (May 2022)
 
 
 ### Climate & Sustainability ♻️
-
 Beyond clinical AI, I am deeply interested in how machine learning can support climate resilience and environmental decision-making. I am particularly drawn to interdisciplinary efforts that align technical innovation with the United Nations’ Sustainable Development Goals (SDGs), recognizing climate action as interconnected with public health, equity, and long-term systems sustainability.
 
 My engagement with sustainability has included involvement in Concordia-led initiatives since 2019 and participation in a hands-on AI for Climate Change program through [Climate Change AI](https://www.climatechange.ai/). These experiences strengthened my belief that responsible AI must extend beyond healthcare and actively engage with global challenges that shape collective wellbeing.
@@ -248,19 +287,12 @@ My engagement with sustainability has included involvement in Concordia-led init
 
 
 ### Certifications 📜
-
 - **Ethics and Governance of Artificial Intelligence for Health** — WHO Academy (Jan 2026)
-
 - **Quebec Scientific Entrepreneurship Program (QcSE)** — V1 Studio (Jun 2025)
-
 - **TRAIL Research: Trustworthy and Responsible AI Learning Certificate** — Mila – Quebec AI Institute (Mar 2025)
-
 - **Strategic Public Communications Training** — GradProSkills, Concordia University (Mar 2025)
-
 - **TCPS 2: CORE-2022 (Research Ethics Certification)** — Government of Canada (Jan 2025)
-
 - **Tech Stewardship Practice Program (TSPP)** — Tech Stewardship (Jul 2024)
-
 - **Enterprise Design Thinking Practitioner** — IBM (Aug 2022)
 
 
