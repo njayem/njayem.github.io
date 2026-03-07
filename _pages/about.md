@@ -106,7 +106,7 @@ redirect_from:
     margin-bottom: 0.9em;
     padding: 0.28em 0.65em;
     border-radius: 4px;
-    background: #111;
+    background: #111;x
     color: #ffffff;
     border: 1.5px solid #ffffff;
     letter-spacing: 0.03em;
@@ -312,7 +312,7 @@ May 2022
     <td>Oct 2025 – Present</td>
   </tr>
   <tr>
-    <td><a href="https://www.concordia.ca/about/administration-governance/board-senate/senate/membership.html">Member</a></td>
+    <td><a href="https://www.concordia.ca/about/administration-governance/board-senate/senate/membership.html">Subcommittee Member</a></td>
     <td>Standing Committee on Research, Graduate Students' Association (GSA), Concordia University</td>
     <td>Sep 2025 – Present</td>
   </tr>
