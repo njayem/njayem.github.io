@@ -82,7 +82,7 @@ redirect_from:
 
   .page__content h2,
   .page__content h3 {
-    color: #1f2a44;
+    color: #ffffff;
   }
 
   .page__content h2 {
