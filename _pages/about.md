@@ -261,12 +261,6 @@ My engagement with sustainability has included involvement in Concordia-led init
 Fondation Arbour  
 September 2025  
 
-<a href="https://frq.gouv.qc.ca/en/program/scholarships-2nd-and-3rd-cycle-2022-2023/">
-  <strong>FRQNT B1X Award Competition</strong>
-</a>  
-Fonds de recherche du Québec  
-April 2025  
-
 <a href="https://nserc-crsng.canada.ca/en/funding-opportunity/canada-graduate-research-scholarship-masters-program">
   <strong>NSERC Canada Graduate Scholarship – Master’s (CGS-M)</strong>
 </a>  
