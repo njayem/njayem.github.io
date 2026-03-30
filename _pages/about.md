@@ -316,6 +316,11 @@ May 2022
     <td>Sep 2025 – Present</td>
   </tr>  
   <tr>
+    <td><a href="https://www.goldenkey.org/">Member</a></td>
+    <td>Golden Key International Honour Society</td>
+    <td>Sep 2025 – Present</td>
+  </tr>  
+  <tr>
     <td><a href="https://brainhackmtl.github.io/winter2026/">Organizer</a></td>
     <td>Brainhack MTL, Concordia University x McGill University</td>
     <td>July 2025 – Present</td>
