@@ -45,6 +45,11 @@ redirect_from:
 
 
 <style>
+
+  .page__content {
+    color: #000;
+  }
+
   .photo-frame {
     position: relative;
     display: inline-block;
@@ -67,25 +72,18 @@ redirect_from:
     position: absolute;
     z-index: 2;
     pointer-events: none;
-
     background: rgba(255, 255, 255, 0.85);
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
     border-radius: 2px;
-
     width: 26%;
     height: 9%;
-
     left: 50%;
     top: 0;
     transform: translate(-50%, -58%);
   }
 
-  .page__content h2,
-  .page__content h3 {
-    color: #ffffff;
-  }
-
   .page__content h2 {
+    color: #000000 !important;
     margin-top: 2.6em;
     margin-bottom: 0.9em;
     padding-bottom: 0.35em;
@@ -106,13 +104,10 @@ redirect_from:
     margin-bottom: 0.9em;
     padding: 0.28em 0.65em;
     border-radius: 4px;
-    background: #111;x
+    background: #111;
     color: #ffffff;
     border: 1.5px solid #ffffff;
     letter-spacing: 0.03em;
-  }
-
-  .page__content h3 {
     transition: color 0.2s ease;
   }
 
@@ -210,10 +205,11 @@ redirect_from:
     line-height: 1.65;
     margin-bottom: 1em;
   }
+
 </style>
 
 
-## About Me
+<h2> About Me </h2>
 
 ### Academic Background
 My academic journey began with a Bachelor of Engineering (B.Eng.) in Software Engineering from [Concordia University](https://www.concordia.ca/), where I built a strong foundation in problem-solving, critical thinking, and human-centered systems design. I am now expanding on that foundation through my Master’s research at Concordia University and [Mila](https://mila.quebec/en), under the supervision of [Dr. Mirco Ravanelli](https://sites.google.com/site/mircoravanelli/) and [Dr. Marta Kersten-Oertel](https://www.concordia.ca/next-gen/kersten-oertel.html), where I design clinically grounded AI systems that leverage speech as a biomarker across a range of physical and mental health conditions, with a focus on early detection, continuous monitoring, and equitable care delivery. I work closely with clinicians and researchers to ensure these systems are grounded in real-world workflows, co-designed with their users, and never positioned to replace clinician or human judgment.
