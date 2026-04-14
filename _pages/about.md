@@ -341,6 +341,12 @@ May 2022
 
 ## Licenses & Certifications
 
+<a href="https://drive.usercontent.google.com/download?id=1SUeRwVuyuFKPxJKPpHpWoUmnoTlIysZK&authuser=0&acrobatPromotionSource=gdrive_chrome-list">
+  <strong>Bell x Mila x Buzz HPC x Kids Help Phone Hackathon</strong>
+</a>  
+Mila – Quebec AI Institute  
+April 2026   
+
 <a href="https://whoacademy.org/achievements/b51dcc17-84cc-47f3-b5b5-cd6b7f8e4a1e">
   <strong>Ethics and Governance of Artificial Intelligence for Health</strong>
 </a>  
