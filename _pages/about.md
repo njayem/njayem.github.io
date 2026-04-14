@@ -262,36 +262,40 @@ The project culminated in a [publication](https://link.springer.com/chapter/10.1
 
 
 ## Honors & Awards
+<div style="margin-top: 20px;"></div>
 
-<a href="https://www.fondationarbour.com/en/">
-  <strong>Arbour Foundation Master's Scholarship</strong>
-</a>  
-Fondation Arbour  
-September 2025  
-
-<a href="https://nserc-crsng.canada.ca/en/funding-opportunity/canada-graduate-research-scholarship-masters-program">
-  <strong>NSERC Canada Graduate Scholarship – Master's (CGS-M)</strong>
-</a>  
-Natural Sciences and Engineering Research Council of Canada  
-April 2024  
-
-<a href="https://www.concordia.ca/gradstudies/funding/external/special-entrance.html">
-  <strong>Concordia University Special Entrance Award</strong>
-</a>  
-Concordia University  
-October 2024  
-
-<a href="https://www.quebec.ca/education/etudier-quebec/aide-financiere-etudiants-internationaux/bourses-excellence-gouvernement-quebec">
-  <strong>Bourse d'Excellence en Génie</strong>
-</a>  
-Quebec Ministry of Education  
-June 2022  
-
-<a href="https://nserc-crsng.canada.ca/en/funding-opportunity/undergraduate-student-research-awards">
-  <strong>NSERC Undergraduate Student Research Award (USRA)</strong>
-</a>  
-Natural Sciences and Engineering Research Council of Canada  
-May 2022  
+<table border="1">
+  <tr style="background-color: #f2f2f2;">
+    <th>Award</th>
+    <th>Issuer</th>
+    <th>Date</th>
+  </tr>
+  <tr>
+    <td><a href="https://www.fondationarbour.com/en/"><strong>Arbour Foundation Master's Scholarship</strong></a></td>
+    <td>Fondation Arbour</td>
+    <td>Sep 2025</td>
+  </tr>
+  <tr>
+    <td><a href="https://nserc-crsng.canada.ca/en/funding-opportunity/canada-graduate-research-scholarship-masters-program"><strong>NSERC Canada Graduate Scholarship – Master's (CGS-M)</strong></a></td>
+    <td>Natural Sciences and Engineering Research Council of Canada</td>
+    <td>Apr 2024</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.concordia.ca/gradstudies/funding/external/special-entrance.html"><strong>Concordia University Special Entrance Award</strong></a></td>
+    <td>Concordia University</td>
+    <td>Oct 2024</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.quebec.ca/education/etudier-quebec/aide-financiere-etudiants-internationaux/bourses-excellence-gouvernement-quebec"><strong>Bourse d'Excellence en Génie</strong></a></td>
+    <td>Quebec Ministry of Education</td>
+    <td>Jun 2022</td>
+  </tr>
+  <tr>
+    <td><a href="https://nserc-crsng.canada.ca/en/funding-opportunity/undergraduate-student-research-awards"><strong>NSERC Undergraduate Student Research Award (USRA)</strong></a></td>
+    <td>Natural Sciences and Engineering Research Council of Canada</td>
+    <td>May 2022</td>
+  </tr>
+</table>
 
 
 <h3 class="badge-heading">Shaping Technology and Research with Ethics, Accountability, and Inclusion</h3>
@@ -422,10 +426,4 @@ July 2024
   <strong>Enterprise Design Thinking Practitioner</strong>
 </a>  
 IBM  
-August 2022  
-
-
-<!-- Image -->
-<div style="text-align: center; margin: 1em auto 0;">
-  <img src="/images/website-footer.png" alt="Visual of Parkinson's research pipeline from voice to machine learning model" style="max-width: 100%; height: auto; padding: 0;">
-</div>
+August 2022
