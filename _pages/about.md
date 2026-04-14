@@ -97,23 +97,13 @@ redirect_from:
   }
 
   .page__content h3 {
-    display: inline-block;
+    display: block;
     font-size: 1.05em;
     font-weight: 900;
     margin-top: 1.7em;
     margin-bottom: 0.9em;
-    padding: 0.28em 0.65em;
-    border-radius: 4px;
-    background: #111;
-    color: #ffffff;
-    border: 1.5px solid #ffffff;
+    color: #000000;
     letter-spacing: 0.03em;
-    transition: color 0.2s ease;
-  }
-
-  .page__content h3:hover {
-    color: #ffffc5;
-    cursor: pointer;
   }
 
   .page__content ul {
@@ -208,6 +198,8 @@ redirect_from:
 
 </style>
 
+
+## Affiliation
 
 <!-- Affiliation marquee: smooth left-to-right loop -->
 <div class="affiliation-marquee" aria-label="Affiliations">
