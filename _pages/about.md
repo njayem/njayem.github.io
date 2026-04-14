@@ -294,7 +294,7 @@ Natural Sciences and Engineering Research Council of Canada
 May 2022  
 
 
-### Shaping Technology and Research with Ethics, Accountability, and Inclusion
+<h3 class="badge-heading">Shaping Technology and Research with Ethics, Accountability, and Inclusion</h3>
 
 My approach to technology and research is shaped by formal training and hands-on learning in ethics, governance, and responsible AI. As a committed [Tech Steward](https://credentials.techstewardship.com/en/verify/88109651148606), I developed a deeper understanding of systemic bias in technology and the role of values-driven practice in shaping more responsible and inclusive technological systems.
 
@@ -305,7 +305,7 @@ Through the World Health Organization (WHO) Academy course [Ethics and Governanc
 In addition, I participated in [Mila's Trustworthy and Responsible AI Learning (TRAIL) program](https://www.virtualbadge.io/certificate-validator?credential=dc595055-6e7c-485b-a3c9-bb7fd8eec548), where I learned to integrate ethical reflection, impact assessment, and risk mitigation throughout the machine learning research lifecycle, from problem formulation to downstream evaluation.
 
 
-### Climate & Sustainability
+<h3 class="badge-heading">Climate & Sustainability</h3>
 Beyond clinical AI, I am deeply interested in how machine learning can support climate resilience and environmental decision-making. I am particularly drawn to interdisciplinary efforts that align technical innovation with the United Nations' Sustainable Development Goals (SDGs), recognizing climate action as interconnected with public health, equity, and long-term systems sustainability.
 
 My engagement with sustainability has included involvement in Concordia-led initiatives since 2019 and participation in a hands-on AI for Climate Change program through [Climate Change AI](https://www.climatechange.ai/). These experiences strengthened my belief that responsible AI must extend beyond healthcare and actively engage with global challenges that shape collective wellbeing.
