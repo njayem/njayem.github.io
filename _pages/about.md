@@ -106,6 +106,21 @@ redirect_from:
     letter-spacing: 0.03em;
   }
 
+  .page__content h3.badge-heading {
+    display: inline-block;
+    padding: 0.28em 0.65em;
+    border-radius: 4px;
+    background: #111;
+    color: #ffffff;
+    border: 1.5px solid #ffffff;
+    transition: color 0.2s ease;
+  }
+
+  .page__content h3.badge-heading:hover {
+    color: #ffffc5;
+    cursor: pointer;
+  }
+
   .page__content ul {
     margin-top: 0.6em;
     margin-bottom: 1.2em;
@@ -225,7 +240,7 @@ redirect_from:
 
 <h2> About Me </h2>
 
-### Academic Background
+<h3 class="badge-heading">Academic Background</h3>
 My academic journey began with a Bachelor of Engineering (B.Eng.) in Software Engineering from [Concordia University](https://www.concordia.ca/), where I built a strong foundation in problem-solving, critical thinking, and human-centered systems design. I am now expanding on that foundation through my Master's research at Concordia University and [Mila](https://mila.quebec/en), under the supervision of [Dr. Mirco Ravanelli](https://scholar.google.com/citations?hl=en&user=-6Pj3IYAAAAJ) and [Dr. Marta Kersten-Oertel](https://scholar.google.com/citations?user=fy4CeBoAAAAJ&hl=en), where I design clinically grounded AI systems that leverage speech as a biomarker across a range of physical and mental health conditions, with a focus on early detection, continuous monitoring, and equitable care delivery. I work closely with clinicians and researchers to ensure these systems are grounded in real-world workflows, co-designed with their users, and never positioned to replace clinician or human judgment.
 
 My work sits at the intersection of machine learning, medicine, and ethics, with an emphasis on building explainable, uncertainty-aware systems that can adapt to diverse patient populations. I am especially passionate about creating technologies that prioritize collaboration over automation, and care over convenience. As an advocate for social impact, I am driven by projects that use AI not just to optimize, but to care.
@@ -233,7 +248,7 @@ My work sits at the intersection of machine learning, medicine, and ethics, with
 This research is generously supported by the [NSERC CGS-M](https://www.nserc-crsng.gc.ca/Students-Etudiants/PG-CS/CGSM-BESCM_eng.asp) federal award and the [Arbour Foundation](https://www.fondationarbour.com/en/).
 
 
-### Research Experience  
+<h3 class="badge-heading">Research Experience</h3>
 
 I am currently a Research Assistant with the [Centre of Excellence in Youth Mental Health (CEYMH)](https://ceymh-cesmj.ca/) at the [Douglas Research Centre](https://douglas.research.mcgill.ca/), working under the supervision of [Dr. Lena Palaniyappan](https://scholar.google.com/citations?user=rDdsjwwAAAAJ&hl=en) and [Dr. Alban Voppel](https://scholar.google.nl/citations?user=eb-aB2kAAAAJ&hl=en). I contribute to a multi-site research initiative focused on the early detection of relapse in individuals experiencing psychosis.
 
