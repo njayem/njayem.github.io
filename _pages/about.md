@@ -271,27 +271,27 @@ The project culminated in a [publication](https://link.springer.com/chapter/10.1
     <th>Date</th>
   </tr>
   <tr>
-    <td><a href="https://www.fondationarbour.com/en/"><strong>Arbour Foundation Master's Scholarship</strong></a></td>
+    <td><a href="https://www.fondationarbour.com/en/">Arbour Foundation Master's Scholarship</a></td>
     <td>Fondation Arbour</td>
     <td>Sep 2025</td>
   </tr>
   <tr>
-    <td><a href="https://nserc-crsng.canada.ca/en/funding-opportunity/canada-graduate-research-scholarship-masters-program"><strong>NSERC Canada Graduate Scholarship – Master's (CGS-M)</strong></a></td>
+    <td><a href="https://nserc-crsng.canada.ca/en/funding-opportunity/canada-graduate-research-scholarship-masters-program">NSERC Canada Graduate Scholarship – Master's (CGS-M)</a></td>
     <td>Natural Sciences and Engineering Research Council of Canada</td>
     <td>Apr 2024</td>
   </tr>
   <tr>
-    <td><a href="https://www.concordia.ca/gradstudies/funding/external/special-entrance.html"><strong>Concordia University Special Entrance Award</strong></a></td>
+    <td><a href="https://www.concordia.ca/gradstudies/funding/external/special-entrance.html">Concordia University Special Entrance Award</a></td>
     <td>Concordia University</td>
     <td>Oct 2024</td>
   </tr>
   <tr>
-    <td><a href="https://www.quebec.ca/education/etudier-quebec/aide-financiere-etudiants-internationaux/bourses-excellence-gouvernement-quebec"><strong>Bourse d'Excellence en Génie</strong></a></td>
+    <td><a href="https://www.quebec.ca/education/etudier-quebec/aide-financiere-etudiants-internationaux/bourses-excellence-gouvernement-quebec">Bourse d'Excellence en Génie</a></td>
     <td>Quebec Ministry of Education</td>
     <td>Jun 2022</td>
   </tr>
   <tr>
-    <td><a href="https://nserc-crsng.canada.ca/en/funding-opportunity/undergraduate-student-research-awards"><strong>NSERC Undergraduate Student Research Award (USRA)</strong></a></td>
+    <td><a href="https://nserc-crsng.canada.ca/en/funding-opportunity/undergraduate-student-research-awards">NSERC Undergraduate Student Research Award (USRA)</a></td>
     <td>Natural Sciences and Engineering Research Council of Canada</td>
     <td>May 2022</td>
   </tr>
