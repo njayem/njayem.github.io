@@ -324,6 +324,11 @@ My engagement with sustainability has included involvement in Concordia-led init
     <th>Affiliation</th>
     <th>Dates of Service</th>
   </tr>
+    <tr>
+    <td><a href="https://www.arabsinneuro.org/join/">Member</a></td>
+    <td>Arabs in Neuroscience (AiN)</td>
+    <td>Apr 2026 – Present</td>
+  </tr>
   <tr>
     <td><a href="https://levantine-connect--thelevantines.replit.app/">Member</a></td>
     <td>The Levantines</td>
