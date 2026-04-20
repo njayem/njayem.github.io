@@ -325,7 +325,7 @@ My engagement with sustainability has included involvement in Concordia-led init
     <th>Dates of Service</th>
   </tr>
     <tr>
-    <td><a href="https://www.arabsinneuro.org/join/">Member</a></td>
+    <td><a href="https://www.arabsinneuro.org/about/">Member</a></td>
     <td>Arabs in Neuroscience (AiN)</td>
     <td>Apr 2026 – Present</td>
   </tr>
