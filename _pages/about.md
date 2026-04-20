@@ -362,7 +362,7 @@ My engagement with sustainability has included involvement in Concordia-led init
   <tr>
     <td><a href="https://www.concordia.ca/research/applied-ai-institute/initiatives/geminai.html">Mentee</a></td>
     <td>GEMinAI Program, Concordia University's Applied AI Institute</td>
-    <td>October 2024 – April 2025</td>
+    <td>October 2024 – May 2025</td>
   </tr>
   <tr>
     <td><a href="https://api.unibuddy.co/og/concordia-university-postgraduate/buddies/students/66df5f6635b519411372b26b?buddyPosition=share">Ambassador</a></td>
