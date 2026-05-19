@@ -372,7 +372,7 @@ My engagement with sustainability has included involvement in Concordia-led init
   <tr>
     <td><a href="https://api.unibuddy.co/og/concordia-university-postgraduate/buddies/students/66df5f6635b519411372b26b?buddyPosition=share">Ambassador</a></td>
     <td>School of Graduate Studies, Concordia University</td>
-    <td>September 2024 – Present</td>
+    <td>September 2024 – May 2026</td>
   </tr>
 </table>
 
