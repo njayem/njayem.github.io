@@ -379,6 +379,12 @@ My engagement with sustainability has included involvement in Concordia-led init
 
 ## Licenses & Certifications
 
+<a href="https://www.udemy.com/certificate/UC-5ff80b22-9c07-4620-892c-dbea70246ebc/">
+  <strong>Foundations in Responsible AI & AI Ethics</strong>
+</a>  
+Mila – Quebec AI Institute  
+May 2026   
+
 <a href="https://drive.usercontent.google.com/download?id=1SUeRwVuyuFKPxJKPpHpWoUmnoTlIysZK&authuser=0&acrobatPromotionSource=gdrive_chrome-list">
   <strong>Bell x Mila x Buzz HPC x Kids Help Phone Hackathon</strong>
 </a>  
