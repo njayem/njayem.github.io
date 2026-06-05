@@ -271,6 +271,11 @@ The project culminated in a [publication](https://link.springer.com/chapter/10.1
     <th>Date</th>
   </tr>
   <tr>
+    <td><a href="https://www.concordia.ca/gradstudies/funding/in-program/donor-awards.html">Power Corporation Of Canada Graduate Fellowship Graduate Award</a></td>
+    <td>Concordia University</td>
+    <td>Jun 2026</td>
+  </tr>
+  <tr>
     <td><a href="https://www.fondationarbour.com/en/">Arbour Foundation Master's Scholarship</a></td>
     <td>Fondation Arbour</td>
     <td>Sep 2025</td>
