@@ -384,6 +384,12 @@ My engagement with sustainability has included involvement in Concordia-led init
 
 ## Licenses & Certifications
 
+<a href="https://learn.wiseupcommunications.com/verify/Certificate1295">
+  <strong>Master AI Tools for Research</strong>
+</a>  
+WiseUp Communications  
+June 2026   
+
 <a href="https://www.udemy.com/certificate/UC-5ff80b22-9c07-4620-892c-dbea70246ebc/">
   <strong>Foundations in Responsible AI & AI Ethics</strong>
 </a>  
