@@ -29,13 +29,13 @@ redirect_from:
 <div style="text-align: center; margin: 1.8em 0 0.5em 0;">
   <p style="font-size: 0.75em; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #555; margin-bottom: 0.8em;">Research Topics</p>
   <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
-    <span style="background: #922338; color: white; padding: 6px 16px; border-radius: 20px; font-size: 0.8em; font-weight: 600;">Applied Clinical AI</span>
-    <span style="background: #328de7; color: white; padding: 6px 16px; border-radius: 20px; font-size: 0.8em; font-weight: 600;">Speech Processing</span>
-    <span style="background: #63287d; color: white; padding: 6px 16px; border-radius: 20px; font-size: 0.8em; font-weight: 600;">Interpretability & XAI</span>
-    <span style="background: #3f968a; color: white; padding: 6px 16px; border-radius: 20px; font-size: 0.8em; font-weight: 600;">Fairness & Equity</span>
-    <span style="background: #244883; color: white; padding: 6px 16px; border-radius: 20px; font-size: 0.8em; font-weight: 600;">AI Governance</span>
-    <span style="background: #102e70; color: white; padding: 6px 16px; border-radius: 20px; font-size: 0.8em; font-weight: 600;">Cyber & AI</span>
-    <span style="background: #5a5a5a; color: white; padding: 6px 16px; border-radius: 20px; font-size: 0.8em; font-weight: 600;">HCI</span>
+    <span class="research-tag">Applied Clinical AI</span>
+    <span class="research-tag">Speech Processing</span>
+    <span class="research-tag">Interpretability & XAI</span>
+    <span class="research-tag">Fairness & Equity</span>
+    <span class="research-tag">AI Governance</span>
+    <span class="research-tag">Cyber & AI</span>
+    <span class="research-tag">HCI</span>
   </div>
 </div>
 
@@ -204,6 +204,23 @@ redirect_from:
   .page__content p {
     line-height: 1.65;
     margin-bottom: 1em;
+  }
+
+  .research-tag {
+    background: #2D5016;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: 600;
+    display: inline-block;
+    transition: transform 0.2s ease, background 0.2s ease;
+    cursor: default;
+  }
+
+  .research-tag:hover {
+    transform: translateY(-3px) scale(1.05);
+    background: #3a6b1e;
   }
 
 </style>
