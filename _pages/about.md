@@ -212,7 +212,8 @@ redirect_from:
 ## Research Topics
 
 <div>
-  Applied Clinical AI · Speech Processing · Interpretability & XAI · Fairness & Equity · AI Governance ·<br>AI & Cybersecurity · HCI
+  <span>Applied Clinical AI · Speech Processing · Interpretability & XAI · Fairness & Equity · AI Governance ·</span><br>
+  <span>AI & Cybersecurity · HCI</span>
 </div>
 
 ## Affiliation
