@@ -14,29 +14,40 @@ redirect_from:
 
 <br>
 
-<!-- Animate.css (keep this to enable animations)
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+<!-- Word Cloud + Photo -->
+<div style="position: relative; width: 90vw; max-width: 400px; margin: 0 auto; height: 420px;">
 
-<!-- Responsive Photo Frame with Tape -->
-<div class="animate__animated animate__swing" style="text-align: center;">
-  <div class="photo-frame">
-    <img src="/images/academic-headshot.png" alt="Visual of Parkinson's research pipeline from voice to machine learning model" class="photo-img">
+  <!-- Photo Frame -->
+  <div class="photo-frame" style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);">
+    <img src="/images/academic-headshot.png" alt="Nadine El-Mufti" class="photo-img">
     <div class="tape"></div>
   </div>
-</div>
 
-<!-- Research Topics -->
-<div style="text-align: center; margin: 1.8em 0 0.5em 0;">
-  <p style="font-size: 0.75em; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #555; margin-bottom: 0.8em;">Research Topics</p>
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
-    <span class="research-tag">Applied Clinical AI</span>
-    <span class="research-tag">Speech Processing</span>
-    <span class="research-tag">Interpretability & XAI</span>
-    <span class="research-tag">Fairness & Equity</span>
-    <span class="research-tag">AI Governance</span>
-    <span class="research-tag">Cyber & AI</span>
-    <span class="research-tag">HCI</span>
-  </div>
+  <!-- Word Cloud — top and right only -->
+  <svg viewBox="0 0 400 420" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: visible;" xmlns="http://www.w3.org/2000/svg">
+
+    <!-- LARGEST -->
+    <text x="0" y="48" font-size="19" font-weight="700" fill="#111" font-family="sans-serif">Applied Clinical AI</text>
+    <text x="210" y="72" font-size="18" font-weight="700" fill="#111" font-family="sans-serif">Speech Processing</text>
+
+    <!-- LARGE -->
+    <text transform="translate(370,30) rotate(90)" font-size="16" font-weight="700" fill="#222" font-family="sans-serif">AI Governance</text>
+    <text x="205" y="30" font-size="15" font-weight="600" fill="#222" font-family="sans-serif">Interpretability & XAI</text>
+
+    <!-- MEDIUM -->
+    <text x="10" y="88" font-size="13" font-weight="600" fill="#333" font-family="sans-serif">Fairness & Equity</text>
+    <text transform="translate(390,100) rotate(90)" font-size="12" font-weight="600" fill="#333" font-family="sans-serif">Responsible AI</text>
+    <text x="215" y="105" font-size="12" font-weight="500" fill="#333" font-family="sans-serif">Cyber & AI</text>
+
+    <!-- SMALLER -->
+    <text x="0" y="118" font-size="11" font-weight="500" fill="#444" font-family="sans-serif">Domain Adaptation</text>
+    <text transform="translate(355,80) rotate(90)" font-size="10" font-weight="500" fill="#444" font-family="sans-serif">Biomarkers</text>
+    <text x="215" y="125" font-size="10" font-weight="400" fill="#555" font-family="sans-serif">HCI</text>
+    <text x="60" y="18" font-size="10" font-weight="400" fill="#555" font-family="sans-serif">Psychosis</text>
+    <text x="155" y="18" font-size="10" font-weight="400" fill="#555" font-family="sans-serif">Parkinson's</text>
+    <text x="0" y="18" font-size="10" font-weight="400" fill="#555" font-family="sans-serif">ASR</text>
+
+  </svg>
 </div>
 
 <style>
