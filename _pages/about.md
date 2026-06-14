@@ -208,7 +208,6 @@ redirect_from:
 
 </style>
 
-
 ## Research Topics
 
 <div>
