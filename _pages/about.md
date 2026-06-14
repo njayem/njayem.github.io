@@ -23,26 +23,21 @@ redirect_from:
     <img src="/images/academic-headshot.png" alt="Visual of Parkinson's research pipeline from voice to machine learning model" class="photo-img">
     <div class="tape"></div>
   </div>
-</div> 
+</div>
 
-<!-- Caption Quote Below Image
-<div style="text-align: center; font-style: italic; margin-top: 1em; font-size: 1.2em;">
-  <span style="font-size: 2.5em; line-height: 0; vertical-align: top;">"</span>
-  Her voice shakes, not with weakness but with everything left unsaid.
-  <span style="font-size: 2.5em; line-height: 0; vertical-align: bottom;">"</span>
-  <br>
-  <span style="font-size: 0.75em; color: #fff; background: #CC3D34; padding: 5px 12px; border-radius: 15px; display: inline-block; margin-top: 0.6em;">
-    <strong> Source: My own creation! </strong>
-  </span>
-</div> -->
-
-<!-- Blockquote Text Description -->
-<!-- <div style="max-width: 1200px; margin: 2em auto; padding: 0 1em;">
-  <blockquote style="border-left: 4px solid #ccc; padding-left: 1em; color: #555; margin: 1em 0; line-height: 1.6;">
-    Parkinson's disease affects individuals from all walks of life, often around the age of 60. Yet, in the struggles of those affected, research tends to amplify men's voices over others. <strong>"Through her Voice"</strong> transforms silence into a symphony. A woman's lips become a voice recorder, capturing untold stories in the tremble of her voice. Behind her sits a wall of vertical speech waves — the same pattern that coats her lips — symbolizing how machine learning algorithms translate voices into insights, unraveling Parkinson's complex layers and aiding in early diagnosis. The red tulip, a symbol for Parkinson's, honors the struggles of those affected. This piece goes beyond disease; it's about inclusion. By recognizing diverse voices, our research bridges the gap between human fragility and technology's potential. <em>Through her voice — and his, and theirs — we hear not just the disease, but hope.</em>
-  </blockquote>
-</div> -->
-
+<!-- Research Topics -->
+<div style="text-align: center; margin: 1.8em 0 0.5em 0;">
+  <p style="font-size: 0.75em; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #555; margin-bottom: 0.8em;">Research Topics</p>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+    <span style="background: #922338; color: white; padding: 6px 16px; border-radius: 20px; font-size: 0.8em; font-weight: 600;">Applied Clinical AI</span>
+    <span style="background: #328de7; color: white; padding: 6px 16px; border-radius: 20px; font-size: 0.8em; font-weight: 600;">Speech Processing</span>
+    <span style="background: #63287d; color: white; padding: 6px 16px; border-radius: 20px; font-size: 0.8em; font-weight: 600;">Interpretability & XAI</span>
+    <span style="background: #3f968a; color: white; padding: 6px 16px; border-radius: 20px; font-size: 0.8em; font-weight: 600;">Fairness & Equity</span>
+    <span style="background: #244883; color: white; padding: 6px 16px; border-radius: 20px; font-size: 0.8em; font-weight: 600;">AI Governance</span>
+    <span style="background: #102e70; color: white; padding: 6px 16px; border-radius: 20px; font-size: 0.8em; font-weight: 600;">Cyber & AI</span>
+    <span style="background: #5a5a5a; color: white; padding: 6px 16px; border-radius: 20px; font-size: 0.8em; font-weight: 600;">HCI</span>
+  </div>
+</div>
 
 <style>
 
@@ -250,15 +245,11 @@ This research is generously supported by the [NSERC CGS-M](https://www.nserc-crs
 
 <h3 class="badge-heading">Research Experience</h3>
 
-I am currently a Research Assistant with the [Centre of Excellence in Youth Mental Health (CEYMH)](https://ceymh-cesmj.ca/) at the [Douglas Research Centre](https://douglas.research.mcgill.ca/), working under the supervision of [Dr. Lena Palaniyappan](https://scholar.google.com/citations?user=rDdsjwwAAAAJ&hl=en) and [Dr. Alban Voppel](https://scholar.google.nl/citations?user=eb-aB2kAAAAJ&hl=en). I contribute to a multi-site research initiative focused on the early detection of relapse in individuals experiencing psychosis.
+I am currently a Research Assistant at the [Centre of Excellence for Youth Mental Health (CEYMH)](https://ceymh-cesmj.ca/), Douglas Research Centre, McGill University, working under the supervision of [Dr. Lena Palaniyappan](https://scholar.google.com/citations?user=rDdsjwwAAAAJ&hl=en) and [Dr. Alban Voppel](https://scholar.google.nl/citations?user=eb-aB2kAAAAJ&hl=en). My work focuses on powering the **Voici Speech Bank** by engineering and maintaining pipelines to clean, align, and structure longitudinal clinical speech data across diverse multisite studies, and maintaining data collection workflows using REDCap. This infrastructure supports research into speech-based markers of psychosis and relapse risk, enabling multimodal analyses of the relationships between voice, symptoms, and cognition. Alongside this, I co-authored a paper evaluating the performance of state-of-the-art ASR models on psychiatric speech across clinical populations, demographic groups, and task types, currently under review at Digital Psychiatry and Neuroscience (Nature Portfolio).
 
-My role involves coordinating multisite data collection using REDCap workflows, processing and analyzing bilingual clinical speech data, and supporting the **Voici Speech Bank** by engineering and analyzing pipelines to clean, align, and structure longitudinal speech recordings across diverse studies. This work enables multimodal analyses of the relationships between voice, symptoms, and cognition, with the goal of supporting more predictive and compassionate mental health care.
+At the [Applied Perception Lab](https://ap-lab.ca/), I am engaged in two concurrent AI governance projects examining whose values get embedded in clinical AI systems, and what it takes to make those conflicts visible and actionable before they become crises. One investigates anticipatory fairness in surgical AI futures through speculative design methods. The other develops empirical ethical personas for healthcare AI governance, derived from data collected across a deliberately diverse set of stakeholders spanning patients, clinicians, students, and technologists. Both are grounded in the conviction that governance cannot be an afterthought.
 
-Alongside this work, I am engaged in research at the [Applied Perception Lab](https://ap-lab.ca/) on a question that sits at the heart of healthcare AI, whose values get embedded in the systems we build, and whose voice gets heard when those decisions are made? Through participatory methods combining focus groups and large-scale empirical surveys, I investigate why existing governance frameworks fail to surface the value conflicts that precede crisis, and develop tools that make those conflicts visible and actionable before committees vote. A central finding drives this work: demographics explain only 12.5% of how people reason through ethical trade-offs. What someone does for a living turns out to be the wrong question entirely.
-
-My introduction to healthcare research began in 2022, when I received an [NSERC USRA](https://www.nserc-crsng.canada.ca/Students-Etudiants/UG-PC/USRA-BRPC_eng.asp) federal award to pursue my first research project under the supervision of [Dr. Marta Kersten-Oertel](https://www.concordia.ca/next-gen/kersten-oertel.html) at Concordia's Applied Perception Lab. This project focused on understanding surgeons' workflow challenges through a user-centered design approach, including the development of ventriculostomy prototypes to improve surgical efficiency.
-
-The project culminated in a [publication](https://link.springer.com/chapter/10.1007/978-3-031-23223-7_5) presented at [MICCAI 2022](https://conferences.miccai.org/2022/en/MICCAI2022-WORKSHOPS.html)'s [EPIMI](https://sites.google.com/view/epimi) workshop. Through this work, I developed an interest in applied healthcare research and in examining how design choices, evaluation practices, and decision-making processes shape who benefits from clinical technologies and whose perspectives are represented.
+My introduction to healthcare research began in 2022, when I received an [NSERC USRA](https://www.nserc-crsng.canada.ca/Students-Etudiants/UG-PC/USRA-BRPC_eng.asp) federal award to pursue my first research project under the supervision of [Dr. Marta Kersten-Oertel](https://www.concordia.ca/next-gen/kersten-oertel.html) at Concordia's Applied Perception Lab. This project focused on understanding surgeons' workflow challenges through a user-centered design approach, including the development of ventriculostomy prototypes to improve surgical efficiency. The project culminated in a [publication](https://link.springer.com/chapter/10.1007/978-3-031-23223-7_5) presented at [MICCAI 2022](https://conferences.miccai.org/2022/en/MICCAI2022-WORKSHOPS.html)'s [EPIMI](https://sites.google.com/view/epimi) workshop. Through this work, I developed an enduring interest in how design choices and evaluation practices shape who benefits from clinical technologies and whose perspectives are represented.
 
 
 ## Honors & Awards
@@ -281,14 +272,14 @@ The project culminated in a [publication](https://link.springer.com/chapter/10.1
     <td>Sep 2025</td>
   </tr>
   <tr>
-    <td><a href="https://nserc-crsng.canada.ca/en/funding-opportunity/canada-graduate-research-scholarship-masters-program">NSERC Canada Graduate Scholarship – Master's (CGS-M)</a></td>
-    <td>Natural Sciences and Engineering Research Council of Canada</td>
-    <td>Apr 2024</td>
-  </tr>
-  <tr>
     <td><a href="https://www.concordia.ca/gradstudies/funding/external/special-entrance.html">Concordia University Special Entrance Award</a></td>
     <td>Concordia University</td>
     <td>Oct 2024</td>
+  </tr>
+  <tr>
+    <td><a href="https://nserc-crsng.canada.ca/en/funding-opportunity/canada-graduate-research-scholarship-masters-program">NSERC Canada Graduate Scholarship – Master's (CGS-M)</a></td>
+    <td>Natural Sciences and Engineering Research Council of Canada</td>
+    <td>Apr 2024</td>
   </tr>
   <tr>
     <td><a href="https://www.quebec.ca/education/etudier-quebec/aide-financiere-etudiants-internationaux/bourses-excellence-gouvernement-quebec">Bourse d'Excellence en Génie</a></td>
@@ -303,7 +294,7 @@ The project culminated in a [publication](https://link.springer.com/chapter/10.1
 </table>
 
 
-<h3 class="badge-heading">Shaping Technology and Research with Ethics, Accountability, and Inclusion</h3>
+<h3 class="badge-heading">Ethics, Governance & Responsible AI</h3>
 
 My approach to technology and research is shaped by formal training and hands-on learning in ethics, governance, and responsible AI. As a committed [Tech Steward](https://credentials.techstewardship.com/en/verify/88109651148606), I developed a deeper understanding of systemic bias in technology and the role of values-driven practice in shaping more responsible and inclusive technological systems.
 
@@ -313,11 +304,11 @@ Through the World Health Organization (WHO) Academy course [Ethics and Governanc
 
 In addition, I participated in [Mila's Trustworthy and Responsible AI Learning (TRAIL) program](https://www.virtualbadge.io/certificate-validator?credential=dc595055-6e7c-485b-a3c9-bb7fd8eec548), where I learned to integrate ethical reflection, impact assessment, and risk mitigation throughout the machine learning research lifecycle, from problem formulation to downstream evaluation.
 
+I actively keep up with evolving best practices in responsible AI through continued certification, most recently completing [Foundations in Responsible AI & AI Ethics](https://www.udemy.com/certificate/UC-5ff80b22-9c07-4620-892c-dbea70246ebc/) through Mila and [Master AI Tools for Research](https://learn.wiseupcommunications.com/verify/Certificate1295) through WiseUp Communications. This is an area I treat as ongoing practice, not a checkbox.
 
-<h3 class="badge-heading">Climate & Sustainability</h3>
-Beyond clinical AI, I am deeply interested in how machine learning can support climate resilience and environmental decision-making. I am particularly drawn to interdisciplinary efforts that align technical innovation with the United Nations' Sustainable Development Goals (SDGs), recognizing climate action as interconnected with public health, equity, and long-term systems sustainability.
 
-My engagement with sustainability has included involvement in Concordia-led initiatives since 2019 and participation in a hands-on AI for Climate Change program through [Climate Change AI](https://www.climatechange.ai/). These experiences strengthened my belief that responsible AI must extend beyond healthcare and actively engage with global challenges that shape collective wellbeing.
+<h3 class="badge-heading">Emerging Interests</h3>
+I am increasingly drawn to the intersection of AI and cybersecurity, particularly around agentic AI systems, resilient infrastructures, and cyber-physical systems. As AI becomes more autonomous and more deeply embedded in critical infrastructure, the questions of how these systems fail, how they are attacked, and how they are made robust feel both urgent and underexplored. This is an area I am actively learning in and hope to contribute to. Earlier interests, including participation in the [Climate Change AI Summer School](https://drive.google.com/file/d/13m7Vtn1vXnPvK0c-UG-B_teOFsR2jd6E/view?usp=sharing), shaped how I think about systems-level risk and the societal consequences of technological decisions — a thread that runs through everything I work on today.
 
 
 ## Leadership, Service and Engagement
@@ -329,7 +320,7 @@ My engagement with sustainability has included involvement in Concordia-led init
     <th>Affiliation</th>
     <th>Dates of Service</th>
   </tr>
-    <tr>
+  <tr>
     <td><a href="https://www.arabsinneuro.org/about/">Member</a></td>
     <td>Arabs in Neuroscience (AiN)</td>
     <td>Apr 2026 – Present</td>
@@ -353,22 +344,22 @@ My engagement with sustainability has included involvement in Concordia-led init
     <td><a href="https://www.fondationarbour.com/en/">Member</a></td>
     <td>Arbour Foundation Scholars</td>
     <td>Sep 2025 – Present</td>
-  </tr>  
+  </tr>
   <tr>
     <td><a href="https://www.goldenkey.org/">Member</a></td>
     <td>Golden Key International Honour Society</td>
     <td>Sep 2025 – Present</td>
-  </tr>  
+  </tr>
   <tr>
     <td><a href="https://brainhackmtl.github.io/winter2026/">Organizer</a></td>
     <td>Brainhack MTL, Concordia University x McGill University</td>
     <td>July 2025 – Present</td>
-  </tr>    
+  </tr>
   <tr>
     <td><a href="https://www.concordia.ca/offices/ccsl.html">Subcommittee Member</a></td>
     <td>Concordia Council on Student Life (CCSL), Graduate Students' Association (GSA), Concordia University</td>
     <td>January 2025 – April 2025</td>
-  </tr>  
+  </tr>
   <tr>
     <td><a href="https://www.concordia.ca/research/applied-ai-institute/initiatives/geminai.html">Mentee</a></td>
     <td>GEMinAI Program, Concordia University's Applied AI Institute</td>
