@@ -321,7 +321,7 @@ As my work in ethics, governance, and responsible AI has grown, so has my curios
 
 <strong>El-Mufti, N.</strong>, Mackinley, M., Dzialoszynski, P., Palaniyappan, L., & Voppel, A.* <em>Automatic Speech Recognition Performance in Psychiatric Speech: Linguistic, Clinical, and Architectural Factors</em>. NPP—Digital Psychiatry and Neuroscience (DPN), Nature Portfolio. (Full manuscript invited)
 
-<strong>El-Mufti, N.</strong>, Drouin, S., Jannin, P., & Kersten-Oertel, M.* <em>Futures Before Failures: Design Fictions for Anticipatory Fairness in Surgical Care</em>. EPIMI Workshop, MICCAI 2026.
+<strong>El-Mufti, N.</strong>, Drouin, S., Jannin, P., & Kersten-Oertel, M.* <em>Futures Before Failures: Design Fictions for Anticipatory Fairness in Surgical Care</em>. (Under Review)
 
 <h3 class="badge-heading">In Preparation</h3>
 
@@ -332,7 +332,6 @@ As my work in ethics, governance, and responsible AI has grown, so has my curios
 Reyes, J., <strong>El-Mufti, N.</strong>, Gorman, S., Xie, D., & Kersten-Oertel, M.* (2022). <em>User-Centered Design for Surgical Innovations: A Ventriculostomy Case Study</em>. EPIMI Workshop, MICCAI 2022. Lecture Notes in Computer Science, vol. 13755, pp. 51–62. Springer, Cham. <a href="https://doi.org/10.1007/978-3-031-23223-7_5">DOI</a>
 
 <p style="font-size: 0.85em; color: #555;">* Senior author</p>
-
 
 ## Leadership, Service and Engagement
 <div style="margin-top: 20px;"></div>
