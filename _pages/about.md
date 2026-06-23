@@ -329,9 +329,9 @@ As my work in ethics, governance, and responsible AI has grown, so has my curios
 
 <h3 class="badge-heading">Peer-Reviewed</h3>
 
-Reyes, J., <strong>El-Mufti, N.</strong>, Gorman, S., Xie, D., & Kersten-Oertel, M. (2022). <em>User-Centered Design for Surgical Innovations: A Ventriculostomy Case Study</em>. EPIMI Workshop, MICCAI 2022. Lecture Notes in Computer Science, vol. 13755, pp. 51–62. Springer, Cham. <a href="https://doi.org/10.1007/978-3-031-23223-7_5">DOI</a>
+Reyes, J., <strong>El-Mufti, N.</strong>, Gorman, S., Xie, D., & Kersten-Oertel, M.* (2022). <em>User-Centered Design for Surgical Innovations: A Ventriculostomy Case Study</em>. EPIMI Workshop, MICCAI 2022. Lecture Notes in Computer Science, vol. 13755, pp. 51–62. Springer, Cham. <a href="https://doi.org/10.1007/978-3-031-23223-7_5">DOI</a>
 
-<p style="font-size: 0.85em; color: #555;">* Corresponding / senior author. For Celebs4PD, M. Kersten-Oertel and M. Ravanelli are co-senior authors.</p>
+<p style="font-size: 0.85em; color: #555;">* Senior author</p>
 
 
 ## Leadership, Service and Engagement
