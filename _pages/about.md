@@ -315,6 +315,24 @@ I actively keep up with evolving best practices in responsible AI through contin
 <h3 class="badge-heading">Emerging Interests</h3>
 As my work in ethics, governance, and responsible AI has grown, so has my curiosity about the intersection of AI and cybersecurity, particularly around agentic AI systems, resilient infrastructures, and cyber-physical systems. As AI becomes more autonomous and more deeply embedded in critical infrastructure, the questions of how these systems fail, how they are attacked, and how they are made robust feel both urgent and underexplored. This is an area I am actively learning in and hope to contribute to. Earlier interests, including participation in the [Climate Change AI Summer School](https://drive.google.com/file/d/13m7Vtn1vXnPvK0c-UG-B_teOFsR2jd6E/view?usp=sharing), shaped how I think about systems-level risk and the societal consequences of technological decisions, a thread that runs through everything I work on today.
 
+## Publications
+
+<h3 class="badge-heading">Under Review</h3>
+
+<strong>El-Mufti, N.</strong>, Mackinley, M., Dzialoszynski, P., Palaniyappan, L., & Voppel, A.* <em>Automatic Speech Recognition Performance in Psychiatric Speech: Linguistic, Clinical, and Architectural Factors</em>. NPP—Digital Psychiatry and Neuroscience (DPN), Nature Portfolio. (Full manuscript invited)
+
+<strong>El-Mufti, N.</strong>, Drouin, S., Jannin, P., & Kersten-Oertel, M.* <em>Futures Before Failures: Design Fictions for Anticipatory Fairness in Surgical Care</em>. EPIMI Workshop, MICCAI 2026.
+
+<h3 class="badge-heading">In Preparation</h3>
+
+<strong>El-Mufti, N.</strong>, Kersten-Oertel, M.*, & Ravanelli, M.* <em>Enhancing Speech-Based Parkinson's Detection with Celebs4PD: A Corpus of Natural, In-the-Wild, Longitudinal Celebrity Speech</em>.
+
+<h3 class="badge-heading">Peer-Reviewed</h3>
+
+Reyes, J., <strong>El-Mufti, N.</strong>, Gorman, S., Xie, D., & Kersten-Oertel, M. (2022). <em>User-Centered Design for Surgical Innovations: A Ventriculostomy Case Study</em>. EPIMI Workshop, MICCAI 2022. Lecture Notes in Computer Science, vol. 13755, pp. 51–62. Springer, Cham. <a href="https://doi.org/10.1007/978-3-031-23223-7_5">DOI</a>
+
+<p style="font-size: 0.85em; color: #555;">* Corresponding / senior author. For Celebs4PD, M. Kersten-Oertel and M. Ravanelli are co-senior authors.</p>
+
 
 ## Leadership, Service and Engagement
 <div style="margin-top: 20px;"></div>
@@ -379,6 +397,11 @@ As my work in ethics, governance, and responsible AI has grown, so has my curios
 
 
 ## Licenses & Certifications
+<a href="https://drive.usercontent.google.com/download?id=14UtPQtYGmGh87HtZ6hAssUyGRmDHljjG&authuser=0&acrobatPromotionSource=gdrive_chrome-list">
+  <strong>Transatlantic Summer School</strong>
+</a>  
+Université de Montréal (UdeM) x Ludwig-Maximilians-Universität München (LMU)
+June 2026  
 
 <a href="https://learn.wiseupcommunications.com/verify/Certificate1295">
   <strong>Master AI Tools for Research</strong>
