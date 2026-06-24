@@ -399,7 +399,7 @@ Reyes, J., <strong>El-Mufti, N.</strong>, Gorman, S., Xie, D., & Kersten-Oertel,
 <a href="https://drive.usercontent.google.com/download?id=14UtPQtYGmGh87HtZ6hAssUyGRmDHljjG&authuser=0&acrobatPromotionSource=gdrive_chrome-list">
   <strong>Transatlantic Summer School</strong>
 </a>  
-Université de Montréal (UdeM) x Ludwig-Maximilians-Universität München (LMU)
+Université de Montréal (UdeM) x Ludwig-Maximilians-Universität München (LMU)  
 June 2026  
 
 <a href="https://learn.wiseupcommunications.com/verify/Certificate1295">
