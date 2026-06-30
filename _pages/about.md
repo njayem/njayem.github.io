@@ -111,9 +111,15 @@ redirect_from:
     background: #f2f2f2;
     font-weight: 700;
   }
+  .affiliation-tag,
+  .page__content a.affiliation-tag,
+  .page__content .affiliation-tag:visited,
+  .page__content .affiliation-tag:hover {
+    color: white !important;
+  }
   .affiliation-tag {
     font-size: 0.8em;
-    color: white;
+    color: white !important;
     padding: 6px 14px;
     border-radius: 20px;
     display: inline-block;
@@ -135,28 +141,13 @@ redirect_from:
   .aplab { background: #3f968a; }
   .drc { background: #102e70; }
   .affiliation-marquee {
-    overflow-x: auto;
+    overflow-x: hidden;
     overflow-y: hidden;
     width: 100%;
     padding: 1em 0 0.5em 0;
     scrollbar-width: none;
   }
-  .affiliation-marquee::-webkit-scrollbar { height: 0; }
-  .affiliation-marquee.scrollbar-visible {
-    scrollbar-width: thin;
-    scrollbar-color: #000 #e0e0e0;
-  }
-  .affiliation-marquee.scrollbar-visible::-webkit-scrollbar {
-    height: 4px;
-  }
-  .affiliation-marquee.scrollbar-visible::-webkit-scrollbar-track {
-    background: #e0e0e0;
-    border-radius: 2px;
-  }
-  .affiliation-marquee.scrollbar-visible::-webkit-scrollbar-thumb {
-    background: #000;
-    border-radius: 2px;
-  }
+  .affiliation-marquee::-webkit-scrollbar { display: none; }
   .affiliation-track {
     display: inline-flex;
     gap: 12px;
@@ -262,7 +253,7 @@ redirect_from:
 <script>
 (function() {
   var el = document.getElementById('aff-marquee');
-  var speed = 0.6;
+  var speed = 1.0;
   var paused = false;
   function autoScroll() {
     if (!paused) {
@@ -271,26 +262,28 @@ redirect_from:
     }
     requestAnimationFrame(autoScroll);
   }
-  el.addEventListener('mouseenter', function() { paused = true; el.classList.add('scrollbar-visible'); });
-  el.addEventListener('mouseleave', function() { paused = false; el.classList.remove('scrollbar-visible'); });
+  el.addEventListener('mouseenter', function() { paused = true; });
+  el.addEventListener('mouseleave', function() { paused = false; });
   el.addEventListener('mousedown', function() { paused = true; });
   el.addEventListener('mouseup', function() { paused = false; });
-  el.addEventListener('touchstart', function() { paused = true; el.classList.add('scrollbar-visible'); }, { passive: true });
-  el.addEventListener('touchend', function() { paused = false; el.classList.remove('scrollbar-visible'); });
+  el.addEventListener('touchstart', function() { paused = true; }, { passive: true });
+  el.addEventListener('touchend', function() { paused = false; });
   requestAnimationFrame(autoScroll);
-  var sectionColors = [{ hex: '102e70', color: '#102e70' }, { hex: '3f968a', color: '#3f968a' }, { hex: '63287d', color: '#63287d', driveOverride: '#328de7' }];
-  document.querySelectorAll('.page__content span').forEach(function(span) {
-    var style = span.getAttribute('style') || '';
-    sectionColors.forEach(function(def) {
-      if (style.indexOf(def.hex) !== -1) {
-        var parent = span.parentElement;
-        var next = parent ? parent.nextElementSibling : null;
-        if (next && next.tagName === 'P') {
-          next.querySelectorAll('a').forEach(function(a) {
-            if (def.driveOverride && a.href.indexOf('drive.google.com') !== -1) { a.style.color = def.driveOverride; } else { a.style.color = def.color; }
-          });
+  document.addEventListener('DOMContentLoaded', function() {
+    var sectionColors = [{ hex: '102e70', color: '#102e70' }, { hex: '3f968a', color: '#3f968a' }, { hex: '63287d', color: '#63287d', driveOverride: '#328de7' }];
+    document.querySelectorAll('.page__content span').forEach(function(span) {
+      var style = span.getAttribute('style') || '';
+      sectionColors.forEach(function(def) {
+        if (style.indexOf(def.hex) !== -1) {
+          var parent = span.parentElement;
+          var next = parent ? parent.nextElementSibling : null;
+          if (next && next.tagName === 'P') {
+            next.querySelectorAll('a').forEach(function(a) {
+              if (def.driveOverride && a.href.indexOf('drive.google.com') !== -1) { a.style.color = def.driveOverride; } else { a.style.color = def.color; }
+            });
+          }
         }
-      }
+      });
     });
   });
 })();
