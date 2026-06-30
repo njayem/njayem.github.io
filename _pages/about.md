@@ -209,7 +209,7 @@ redirect_from:
   }
   .table-btn {
     display: inline-block;
-    background: #000;
+    background: #328de7;
     color: #fff !important;
     font-weight: 700;
     font-size: 0.8em;
@@ -219,13 +219,13 @@ redirect_from:
     transition: background 0.18s ease, transform 0.18s ease;
   }
   .table-btn:hover {
-    background: #333;
+    background: #1a7de8;
     transform: scale(1.06);
     color: #fff !important;
     text-decoration: none !important;
   }
   .page__content table th {
-    background: #000 !important;
+    background: #808080 !important;
     color: #fff !important;
     font-weight: 800 !important;
   }
