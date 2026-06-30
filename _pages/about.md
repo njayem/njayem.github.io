@@ -210,7 +210,7 @@ redirect_from:
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    margin: 0.8em 0 0.6em 0;
+    margin: 0.8em 0 2.4em 0;
   }
 
   .tag-douglas {
