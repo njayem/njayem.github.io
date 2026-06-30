@@ -8,26 +8,63 @@ author_profile: true
 {% include base_path %}
 
 <style>
+  .research-cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
   .pub-card {
-    background: #fff;
-    border: 1px solid #e8e8e8;
-    border-radius: 6px;
-    padding: 1.8em 2em;
-    margin-bottom: 1.2em;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    background: #f9f9f9;
+    border: none;
+    border-radius: 12px;
+    padding: 2em 2.2em 1.8em 2.2em;
+    margin-bottom: 1.8em;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 82%;
+    position: relative;
   }
 
   .pub-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    transform: scale(1.02);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.15);
+  }
+
+  .pub-status-label {
+    position: absolute;
+    top: -12px;
+    left: -10px;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 0.72em;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    z-index: 10;
+  }
+
+  .label-under-review {
+    background: #c17900;
+    color: white;
+  }
+
+  .label-in-preparation {
+    background: #1a56c4;
+    color: white;
+  }
+
+  .label-peer-reviewed {
+    background: #2a7d30;
+    color: white;
   }
 
   .pub-title {
     font-size: 1.05em;
     font-weight: 700;
     color: #000;
-    margin: 0 0 0.5em 0;
+    margin: 0.6em 0 0.5em 0;
     line-height: 1.4;
     text-decoration: none !important;
   }
@@ -45,14 +82,15 @@ author_profile: true
 
   .pub-divider {
     border: none;
-    border-top: 1px solid #f0f0f0;
+    border-top: 1px solid #e4e4e4;
     margin: 1em 0;
+    width: 40%;
   }
 
   .pub-abstract-label {
-    font-size: 0.8em;
-    font-weight: 600;
-    color: #aaa;
+    font-size: 0.78em;
+    font-weight: 700;
+    color: #bbb;
     text-transform: uppercase;
     letter-spacing: 0.08em;
     margin: 0 0 0.4em 0;
@@ -79,34 +117,6 @@ author_profile: true
     margin-top: 1.2em;
   }
 
-  .pub-badge {
-    display: inline-block;
-    font-size: 0.73em;
-    font-weight: 600;
-    padding: 0.25em 0.85em;
-    border-radius: 20px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-  }
-
-  .badge-under-review {
-    background: #fff8e1;
-    color: #c17900;
-    border: 1px solid #ffe082;
-  }
-
-  .badge-in-preparation {
-    background: #e8f0fe;
-    color: #1a56c4;
-    border: 1px solid #b3c8f5;
-  }
-
-  .badge-peer-reviewed {
-    background: #e8f5e9;
-    color: #2a7d30;
-    border: 1px solid #a5d6a7;
-  }
-
   .pub-access {
     font-size: 0.85em;
     color: #3B9AFF;
@@ -124,9 +134,10 @@ author_profile: true
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: #bbb;
-    margin: 2.2em 0 0.8em 0;
+    margin: 2.5em 0 1.2em 0;
     padding-bottom: 0.5em;
     border-bottom: 1px solid #eee;
+    width: 82%;
   }
 </style>
 
@@ -135,10 +146,13 @@ author_profile: true
 {% assign prep   = sorted_pubs | where: "status", "in-preparation" | where_exp: "item", "item.hidden != true" %}
 {% assign peer   = sorted_pubs | where: "status", "peer-reviewed" | where_exp: "item", "item.hidden != true" %}
 
+<div class="research-cards-wrapper">
+
 {% if review.size > 0 %}
 <p class="section-heading">Under Review</p>
 {% for pub in review %}
 <div class="pub-card">
+  <span class="pub-status-label label-under-review">Under Review</span>
   <p class="pub-title">{{ pub.title }}</p>
   <p class="pub-meta"><strong style="color:#aaa; font-weight:600;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip }}</span></p>
   <p class="pub-meta"><strong style="color:#aaa; font-weight:600;">Venue:</strong> <span>{{ pub.venue }}</span></p>
@@ -150,9 +164,6 @@ author_profile: true
   {% else %}
     <p class="pub-abstract-text">{{ raw }}</p>
   {% endif %}
-  <div class="pub-footer">
-    <span class="pub-badge badge-under-review">Under Review</span>
-  </div>
 </div>
 {% endfor %}
 {% endif %}
@@ -161,6 +172,7 @@ author_profile: true
 <p class="section-heading">In Preparation</p>
 {% for pub in prep %}
 <div class="pub-card">
+  <span class="pub-status-label label-in-preparation">In Preparation</span>
   <p class="pub-title">{{ pub.title }}</p>
   <p class="pub-meta"><strong style="color:#aaa; font-weight:600;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip }}</span></p>
   <hr class="pub-divider">
@@ -171,9 +183,6 @@ author_profile: true
   {% else %}
     <p class="pub-abstract-text">{{ raw }}</p>
   {% endif %}
-  <div class="pub-footer">
-    <span class="pub-badge badge-in-preparation">In Preparation</span>
-  </div>
 </div>
 {% endfor %}
 {% endif %}
@@ -182,6 +191,7 @@ author_profile: true
 <p class="section-heading">Peer-Reviewed</p>
 {% for pub in peer %}
 <div class="pub-card">
+  <span class="pub-status-label label-peer-reviewed">Peer-Reviewed</span>
   <p class="pub-title">{{ pub.title }}</p>
   <p class="pub-meta"><strong style="color:#aaa; font-weight:600;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip }}</span></p>
   <p class="pub-meta"><strong style="color:#aaa; font-weight:600;">Venue:</strong> <span>{{ pub.venue }}</span></p>
@@ -193,10 +203,13 @@ author_profile: true
   {% else %}
     <p class="pub-abstract-text">{{ raw }}</p>
   {% endif %}
+  {% if pub.paperurl %}
   <div class="pub-footer">
-    <span class="pub-badge badge-peer-reviewed">Peer-Reviewed</span>
-    {% if pub.paperurl %}<a class="pub-access" href="{{ pub.paperurl }}" target="_blank">Access Here</a>{% endif %}
+    <a class="pub-access" href="{{ pub.paperurl }}" target="_blank">Access Here</a>
   </div>
+  {% endif %}
 </div>
 {% endfor %}
 {% endif %}
+
+</div>
