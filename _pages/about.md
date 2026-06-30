@@ -157,7 +157,7 @@ redirect_from:
     overflow-y: hidden;
     width: 100%;
     padding: 1em 0 0.5em 0;
-    scrollbar-width: thin;
+    scrollbar-width: none;
     scrollbar-color: #000 #e0e0e0;
   }
 
@@ -166,13 +166,25 @@ redirect_from:
   }
 
   .affiliation-marquee::-webkit-scrollbar-track {
-    background: #e0e0e0;
+    background: transparent;
     border-radius: 2px;
   }
 
   .affiliation-marquee::-webkit-scrollbar-thumb {
-    background: #000;
+    background: transparent;
     border-radius: 2px;
+  }
+
+  .affiliation-marquee:hover {
+    scrollbar-width: thin;
+  }
+
+  .affiliation-marquee:hover::-webkit-scrollbar-track {
+    background: #e0e0e0;
+  }
+
+  .affiliation-marquee:hover::-webkit-scrollbar-thumb {
+    background: #000;
   }
 
   .affiliation-track {
