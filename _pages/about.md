@@ -208,8 +208,11 @@ redirect_from:
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    margin: 0 0 2em 0;
+    margin: 0.8em 0 2em 0;
   }
+
+  .mila-content a { color: #63287d !important; }
+  .mila-content a[href*="drive.google.com"] { color: #3B9AFF !important; }
 
   .tag-douglas {
     background: #6287AF;
@@ -266,11 +269,17 @@ redirect_from:
 (function() {
   var el = document.getElementById('aff-marquee');
   var speed = 0.6;
-  var userScrolling = false;
-  var timeout;
+  var paused = false;
+  var resumeTimeout;
+
+  function pause() {
+    paused = true;
+    clearTimeout(resumeTimeout);
+    resumeTimeout = setTimeout(function() { paused = false; }, 2000);
+  }
 
   function autoScroll() {
-    if (!userScrolling) {
+    if (!paused) {
       el.scrollLeft += speed;
       if (el.scrollLeft >= el.scrollWidth - el.clientWidth) {
         el.scrollLeft = 0;
@@ -279,13 +288,11 @@ redirect_from:
     requestAnimationFrame(autoScroll);
   }
 
-  el.addEventListener('mouseenter', function() { userScrolling = true; });
-  el.addEventListener('mouseleave', function() { userScrolling = false; });
-  el.addEventListener('scroll', function() {
-    userScrolling = true;
-    clearTimeout(timeout);
-    timeout = setTimeout(function() { userScrolling = false; }, 2000);
-  });
+  el.addEventListener('mouseenter', function() { paused = true; clearTimeout(resumeTimeout); });
+  el.addEventListener('mouseleave', function() { paused = false; });
+  el.addEventListener('mousedown', pause);
+  el.addEventListener('touchstart', pause, { passive: true });
+  el.addEventListener('touchend', pause);
 
   requestAnimationFrame(autoScroll);
 })();
@@ -324,7 +331,11 @@ I am currently a Research Assistant at the [Douglas Research Centre](https://dou
 
 <span style="color: #63287d; font-weight: 900; font-size: 1.15em; text-transform: uppercase; letter-spacing: 0.07em; display: block; margin-top: 0; margin-bottom: 0.8em; -webkit-text-stroke: 0.7px #63287d;">Mila</span>
 
+<div class="mila-content">
+
 I am currently a collaborating researcher and Master's student at [Mila](https://mila.quebec/en), Quebec's AI Institute, working in the Conversational AI Lab under the supervision of [Dr. Mirco Ravanelli](https://sites.google.com/site/mircoravanelli/students). I joined the lab as an intern in fall 2024, before beginning my Master's. Beyond settling on a thesis project, I spent that time building a custom Parkinson's speech dataset from the ground up, including the scripts and metadata to construct and reproduce it from scratch, and reaching out to research groups and clinical consortia across the world to bring in data that is as clinically and demographically diverse as possible. Working alongside clinicians through this process shifted something in how I think. They bring questions that no model can answer on its own, grounding the work in real use, real constraints, and real people, and that is what has brought fairness and explainability to the centre of my thesis. This field runs on collaboration, and I have come to believe that deeply. It takes a village to advance science at this scale, and I got a first glimpse of what that looks like through Dr. Ravanelli and the community he built around [SpeechBrain](https://speechbrain.github.io/). I have also served as a Teaching Assistant for Concordia's Machine Learning course (COMP 432), something that reflects a belief I have long carried and that Dr. Ravanelli embodies in how he leads his lab. You only truly know a subject when you can explain it to someone else. Supporting students in building intuition for core ML concepts and giving them honest, constructive feedback has been as much a part of my own learning as theirs.
+
+</div>
 
 <div class="research-section-tags">
   <span class="tag-mila">AI and Healthcare</span>
