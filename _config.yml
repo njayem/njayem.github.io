@@ -64,6 +64,7 @@ author:
   semantic         : # URL
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : "https://www.researchgate.net/profile/Nadine-El-Mufti-2"
+  openreview       : "https://openreview.net/profile?id=%7ENadine_El-Mufti1"
 
   # Repositories and software development
   bitbucket        : # Username - Update with your username on the site
