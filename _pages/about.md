@@ -248,7 +248,7 @@ redirect_from:
 ## Research Topics
 
 <div>
-  <span><a href="https://scholar.google.ca/citations?hl=en&view_op=search_authors&mauthors=label:ai_and_healthcare">AI and Healthcare</a> · AI and Cybersecurity · <a href="https://scholar.google.ca/citations?hl=en&view_op=search_authors&mauthors=label:conversational_ai">Conversational AI</a> · <a href="https://scholar.google.ca/citations?hl=en&view_op=search_authors&mauthors=label:responsible_ai">Responsible AI</a> · <a href="https://scholar.google.ca/citations?hl=en&view_op=search_authors&mauthors=label:human_computer_interaction">Human-Computer Interaction</a></span>
+  <span>AI and Healthcare · AI and Cybersecurity · Conversational AI · Responsible AI · Human-Computer Interaction</span>
 </div>
 
 ## Affiliation
