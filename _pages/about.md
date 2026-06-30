@@ -146,7 +146,7 @@ redirect_from:
     padding: 1em 0 0.5em 0;
   }
   .affiliation-marquee:hover .affiliation-track { animation-play-state: paused; }
-  @keyframes affScroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+  @keyframes affScroll { 0% { transform: translateX(-50%); } 100% { transform: translateX(0); } }
   .affiliation-track {
     display: inline-flex;
     gap: 12px;
