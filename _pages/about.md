@@ -297,7 +297,7 @@ I am currently a Research Assistant at the [Centre of Excellence for Youth Menta
   <span class="tag-douglas">Data Science</span>
 </div>
 
-<div style="text-align: center; margin: 1.8em 0;">
+<div style="text-align: center; margin: 0.8em 0;">
   <span style="display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #ccc; margin: 0 5px;"></span>
   <span style="display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #ccc; margin: 0 5px;"></span>
   <span style="display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #ccc; margin: 0 5px;"></span>
@@ -314,7 +314,7 @@ I am currently a Research Assistant at the [Centre of Excellence for Youth Menta
   <span class="tag-aplab">LLM Behaviour</span>
 </div>
 
-<div style="text-align: center; margin: 1.8em 0;">
+<div style="text-align: center; margin: 0.8em 0;">
   <span style="display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #ccc; margin: 0 5px;"></span>
   <span style="display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #ccc; margin: 0 5px;"></span>
   <span style="display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #ccc; margin: 0 5px;"></span>
