@@ -277,13 +277,9 @@ redirect_from:
 
 ## About Me
 
-<h3>Academic Background</h3>
-
 My academic journey began with a Bachelor of Engineering in Software Engineering from [Concordia University](https://www.concordia.ca/), where I built a solid foundation in problem-solving, critical thinking, and human-centered systems design. I am now an interdisciplinary researcher and Master's student at Concordia University and [Mila](https://mila.quebec/en), under the supervision of [Dr. Mirco Ravanelli](https://scholar.google.com/citations?hl=en&user=-6Pj3IYAAAAJ) and [Dr. Marta Kersten-Oertel](https://scholar.google.com/citations?user=fy4CeBoAAAAJ&hl=en), where my thesis focuses on speech-based Parkinson's disease detection.
 
 My interests have grown well beyond that. I have never been able to look at a technical problem without also seeing its social and ethical dimensions. Technology is not a neutral artifact, and once you understand that, the questions follow naturally. Why does this fail for certain populations? What moral values are embedded in the systems we are building? Who gets to define what responsible deployment actually looks like? That curiosity is what keeps pulling me across so many different disciplines. The work I care about most lives at the intersection of all of them.
-
-<h3>Research Experience</h3>
 
 <span style="color: #102e70; font-weight: 900; font-size: 1.15em; text-transform: uppercase; letter-spacing: 0.07em; display: block; margin-top: 0; margin-bottom: 0.5em; -webkit-text-stroke: 0.7px #102e70;">The Douglas Research Centre, Centre of Excellence for Youth Mental Health</span>
 
@@ -321,7 +317,8 @@ I am currently a collaborating researcher and Master's student at [Mila](https:/
   <span class="tag-mila">Algorithmic Fairness</span>
 </div>
 
-<h3>Emerging Interests</h3>
+<span style="color: #000; font-weight: 900; font-size: 1.15em; text-transform: uppercase; letter-spacing: 0.07em; display: block; margin-top: 0; margin-bottom: 0.5em; -webkit-text-stroke: 0.7px #000;">Emerging Interests</span>
+
 As my work in ethics, governance, and responsible AI has grown, so has my curiosity about the intersection of AI and cybersecurity, particularly around agentic AI systems, resilient infrastructures, and cyber-physical systems. As AI becomes more autonomous and more deeply embedded in critical infrastructure, the questions of how these systems fail, how they are attacked, and how they are made robust feel both urgent and underexplored. This is an area I am actively learning in and hope to contribute to. Earlier interests, including participation in the [Climate Change AI Summer School](https://drive.google.com/file/d/13m7Vtn1vXnPvK0c-UG-B_teOFsR2jd6E/view?usp=sharing), shaped how I think about systems-level risk and the societal consequences of technological decisions, a thread that runs through everything I work on today.
 
 ## Honors & Awards
