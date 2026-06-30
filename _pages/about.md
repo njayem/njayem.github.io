@@ -257,82 +257,6 @@ At the [Applied Perception Lab](https://ap-lab.ca/), I am engaged in two concurr
 My introduction to healthcare research began in 2022, when I received an [NSERC USRA](https://www.nserc-crsng.canada.ca/Students-Etudiants/UG-PC/USRA-BRPC_eng.asp) federal award to pursue my first research project under the supervision of [Dr. Marta Kersten-Oertel](https://ap-lab.ca/) at Concordia's Applied Perception Lab. This project focused on understanding surgeons' workflow challenges through a user-centered design approach, including the development of ventriculostomy prototypes to improve surgical efficiency. The project culminated in a [publication](https://link.springer.com/chapter/10.1007/978-3-031-23223-7_5) presented at [MICCAI 2022](https://conferences.miccai.org/2022/en/MICCAI2022-WORKSHOPS.html)'s [EPIMI](https://sites.google.com/view/epimi) workshop. Through this work, I developed an enduring interest in how design choices and evaluation practices shape who benefits from clinical technologies and whose perspectives are represented.
 
 
-## Honors & Awards
-<div style="margin-top: 20px;"></div>
-
-<table border="1">
-  <tr style="background-color: #f2f2f2;">
-    <th>Award</th>
-    <th>Issuer</th>
-    <th>Date</th>
-  </tr>
-  <tr>
-    <td><a href="https://www.concordia.ca/gradstudies/funding/in-program/donor-awards.html">Power Corporation Of Canada Graduate Fellowship Graduate Award</a></td>
-    <td>Concordia University</td>
-    <td>Jun 2026</td>
-  </tr>
-  <tr>
-    <td><a href="https://www.fondationarbour.com/en/">Arbour Foundation Master's Scholarship</a></td>
-    <td>Fondation Arbour</td>
-    <td>Sep 2025</td>
-  </tr>
-  <tr>
-    <td><a href="https://www.concordia.ca/gradstudies/funding/external/special-entrance.html">Concordia University Special Entrance Award</a></td>
-    <td>Concordia University</td>
-    <td>Oct 2024</td>
-  </tr>
-  <tr>
-    <td><a href="https://nserc-crsng.canada.ca/en/funding-opportunity/canada-graduate-research-scholarship-masters-program">NSERC Canada Graduate Scholarship – Master's (CGS-M)</a></td>
-    <td>Natural Sciences and Engineering Research Council of Canada</td>
-    <td>Apr 2024</td>
-  </tr>
-  <tr>
-    <td><a href="https://www.quebec.ca/education/etudier-quebec/aide-financiere-etudiants-internationaux/bourses-excellence-gouvernement-quebec">Bourse d'Excellence en Génie</a></td>
-    <td>Quebec Ministry of Education</td>
-    <td>Jun 2022</td>
-  </tr>
-  <tr>
-    <td><a href="https://nserc-crsng.canada.ca/en/funding-opportunity/undergraduate-student-research-awards">NSERC Undergraduate Student Research Award (USRA)</a></td>
-    <td>Natural Sciences and Engineering Research Council of Canada</td>
-    <td>May 2022</td>
-  </tr>
-</table>
-
-
-<h3 class="badge-heading">Ethics, Governance & Responsible AI</h3>
-
-My approach to technology and research is shaped by formal training and hands-on learning in ethics, governance, and responsible AI. As a committed [Tech Steward](https://credentials.techstewardship.com/en/verify/88109651148606), I developed a deeper understanding of systemic bias in technology and the role of values-driven practice in shaping more responsible and inclusive technological systems.
-
-I hold a [TCPS 2: CORE-2022](https://drive.google.com/file/d/1rCDIrcQ7AjrW7oXkmqn8QLVimUWgWjr2/view?usp=sharing) certification in research ethics, where I learned best practices for the ethical conduct of research involving human participants, including informed consent, privacy, and fairness. This training directly informs how I approach data collection and participant-centered research in practice.
-
-Through the World Health Organization (WHO) Academy course [Ethics and Governance of Artificial Intelligence for Health](https://whoacademy.org/achievements/b51dcc17-84cc-47f3-b5b5-cd6b7f8e4a1e), I gained exposure to global ethical principles, governance frameworks, and regulatory considerations guiding the design and deployment of AI systems in healthcare, with an emphasis on human rights and public benefit.
-
-In addition, I participated in [Mila's Trustworthy and Responsible AI Learning (TRAIL) program](https://www.virtualbadge.io/certificate-validator?credential=dc595055-6e7c-485b-a3c9-bb7fd8eec548), where I learned to integrate ethical reflection, impact assessment, and risk mitigation throughout the machine learning research lifecycle, from problem formulation to downstream evaluation.
-
-I actively keep up with evolving best practices in responsible AI through continued certification, most recently completing [Foundations in Responsible AI & AI Ethics](https://www.udemy.com/certificate/UC-5ff80b22-9c07-4620-892c-dbea70246ebc/) through Mila and [Master AI Tools for Research](https://learn.wiseupcommunications.com/verify/Certificate1295) through WiseUp Communications. This is an area I treat as ongoing practice, not a checkbox.
-
-
-<h3 class="badge-heading">Emerging Interests</h3>
-As my work in ethics, governance, and responsible AI has grown, so has my curiosity about the intersection of AI and cybersecurity, particularly around agentic AI systems, resilient infrastructures, and cyber-physical systems. As AI becomes more autonomous and more deeply embedded in critical infrastructure, the questions of how these systems fail, how they are attacked, and how they are made robust feel both urgent and underexplored. This is an area I am actively learning in and hope to contribute to. Earlier interests, including participation in the [Climate Change AI Summer School](https://drive.google.com/file/d/13m7Vtn1vXnPvK0c-UG-B_teOFsR2jd6E/view?usp=sharing), shaped how I think about systems-level risk and the societal consequences of technological decisions, a thread that runs through everything I work on today.
-
-## Publications
-
-<h3 class="badge-heading">Under Review</h3>
-
-<strong>El-Mufti, N.</strong>, Mackinley, M., Dzialoszynski, P., Palaniyappan, L., & Voppel, A.* <em>Automatic Speech Recognition Performance in Psychiatric Speech: Linguistic, Clinical, and Architectural Factors</em>. NPP—Digital Psychiatry and Neuroscience (DPN), Nature Portfolio. (Full manuscript invited)
-
-<strong>El-Mufti, N.</strong>, Drouin, S., Jannin, P., & Kersten-Oertel, M.* <em>Futures Before Failures: Design Fictions for Anticipatory Fairness in Surgical Care</em>. (Under Review)
-
-<h3 class="badge-heading">In Preparation</h3>
-
-<strong>El-Mufti, N.</strong>, Kersten-Oertel, M.*, & Ravanelli, M.* <em>Enhancing Speech-Based Parkinson's Detection with Celebs4PD: A Corpus of Natural, In-the-Wild, Longitudinal Celebrity Speech</em>.
-
-<h3 class="badge-heading">Peer-Reviewed</h3>
-
-Reyes, J., <strong>El-Mufti, N.</strong>, Gorman, S., Xie, D., & Kersten-Oertel, M.* (2022). <em>User-Centered Design for Surgical Innovations: A Ventriculostomy Case Study</em>. EPIMI Workshop, MICCAI 2022. Lecture Notes in Computer Science, vol. 13755, pp. 51–62. Springer, Cham. <a href="https://doi.org/10.1007/978-3-031-23223-7_5">DOI</a>
-
-<p style="font-size: 0.85em; color: #555;">* Senior author</p>
-
 ## Leadership, Service and Engagement
 <div style="margin-top: 20px;"></div>
 
@@ -395,75 +319,61 @@ Reyes, J., <strong>El-Mufti, N.</strong>, Gorman, S., Xie, D., & Kersten-Oertel,
 </table>
 
 
-## Licenses & Certifications
-<a href="https://drive.usercontent.google.com/download?id=14UtPQtYGmGh87HtZ6hAssUyGRmDHljjG&authuser=0&acrobatPromotionSource=gdrive_chrome-list">
-  <strong>Transatlantic Summer School</strong>
-</a>  
-Université de Montréal (UdeM) x Ludwig-Maximilians-Universität München (LMU)  
-June 2026  
+## Honors & Awards
+<div style="margin-top: 20px;"></div>
 
-<a href="https://learn.wiseupcommunications.com/verify/Certificate1295">
-  <strong>Master AI Tools for Research</strong>
-</a>  
-WiseUp Communications  
-June 2026   
+<table border="1">
+  <tr style="background-color: #f2f2f2;">
+    <th>Award</th>
+    <th>Issuer</th>
+    <th>Date</th>
+  </tr>
+  <tr>
+    <td><a href="https://www.concordia.ca/gradstudies/funding/in-program/donor-awards.html">Power Corporation Of Canada Graduate Fellowship Graduate Award</a></td>
+    <td>Concordia University</td>
+    <td>Jun 2026</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.fondationarbour.com/en/">Arbour Foundation Master's Scholarship</a></td>
+    <td>Fondation Arbour</td>
+    <td>Sep 2025</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.concordia.ca/gradstudies/funding/external/special-entrance.html">Concordia University Special Entrance Award</a></td>
+    <td>Concordia University</td>
+    <td>Oct 2024</td>
+  </tr>
+  <tr>
+    <td><a href="https://nserc-crsng.canada.ca/en/funding-opportunity/canada-graduate-research-scholarship-masters-program">NSERC Canada Graduate Scholarship – Master's (CGS-M)</a></td>
+    <td>Natural Sciences and Engineering Research Council of Canada</td>
+    <td>Apr 2024</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.quebec.ca/education/etudier-quebec/aide-financiere-etudiants-internationaux/bourses-excellence-gouvernement-quebec">Bourse d'Excellence en Génie</a></td>
+    <td>Quebec Ministry of Education</td>
+    <td>Jun 2022</td>
+  </tr>
+  <tr>
+    <td><a href="https://nserc-crsng.canada.ca/en/funding-opportunity/undergraduate-student-research-awards">NSERC Undergraduate Student Research Award (USRA)</a></td>
+    <td>Natural Sciences and Engineering Research Council of Canada</td>
+    <td>May 2022</td>
+  </tr>
+</table>
 
-<a href="https://www.udemy.com/certificate/UC-5ff80b22-9c07-4620-892c-dbea70246ebc/">
-  <strong>Foundations in Responsible AI & AI Ethics</strong>
-</a>  
-Mila – Quebec AI Institute  
-May 2026   
 
-<a href="https://drive.usercontent.google.com/download?id=1SUeRwVuyuFKPxJKPpHpWoUmnoTlIysZK&authuser=0&acrobatPromotionSource=gdrive_chrome-list">
-  <strong>Bell x Mila x Buzz HPC x Kids Help Phone Hackathon</strong>
-</a>  
-Mila – Quebec AI Institute  
-April 2026   
+<h3 class="badge-heading">Ethics, Governance & Responsible AI</h3>
 
-<a href="https://whoacademy.org/achievements/b51dcc17-84cc-47f3-b5b5-cd6b7f8e4a1e">
-  <strong>Ethics and Governance of Artificial Intelligence for Health</strong>
-</a>  
-WHO Academy  
-January 2026  
+My approach to technology and research is shaped by formal training and hands-on learning in ethics, governance, and responsible AI. As a committed [Tech Steward](https://credentials.techstewardship.com/en/verify/88109651148606), I developed a deeper understanding of systemic bias in technology and the role of values-driven practice in shaping more responsible and inclusive technological systems.
 
-<a href="https://verified.sertifier.com/en/verify/14899124979984/">
-  <strong>Quebec Scientific Entrepreneurship Program (QcSE)</strong>
-</a>  
-V1 Studio  
-June 2025  
+I hold a [TCPS 2: CORE-2022](https://drive.google.com/file/d/1rCDIrcQ7AjrW7oXkmqn8QLVimUWgWjr2/view?usp=sharing) certification in research ethics, where I learned best practices for the ethical conduct of research involving human participants, including informed consent, privacy, and fairness. This training directly informs how I approach data collection and participant-centered research in practice.
 
-<a href="https://www.virtualbadge.io/certificate-validator?credential=dc595055-6e7c-485b-a3c9-bb7fd8eec548">
-  <strong>TRAIL Research: Trustworthy and Responsible AI Learning Certificate</strong>
-</a>  
-Mila – Quebec AI Institute  
-March 2025  
+Through the World Health Organization (WHO) Academy course [Ethics and Governance of Artificial Intelligence for Health](https://whoacademy.org/achievements/b51dcc17-84cc-47f3-b5b5-cd6b7f8e4a1e), I gained exposure to global ethical principles, governance frameworks, and regulatory considerations guiding the design and deployment of AI systems in healthcare, with an emphasis on human rights and public benefit.
 
-<a href="https://app-ca.clickdimensions.com/blob/concordiaca-a8jj7/files/nadineelmufti_spct.pdf">
-  <strong>Strategic Public Communications Training</strong>
-</a>  
-GradProSkills, Concordia University  
-March 2025  
+In addition, I participated in [Mila's Trustworthy and Responsible AI Learning (TRAIL) program](https://www.virtualbadge.io/certificate-validator?credential=dc595055-6e7c-485b-a3c9-bb7fd8eec548), where I learned to integrate ethical reflection, impact assessment, and risk mitigation throughout the machine learning research lifecycle, from problem formulation to downstream evaluation.
 
-<a href="https://drive.google.com/file/d/1rCDIrcQ7AjrW7oXkmqn8QLVimUWgWjr2/view?usp=sharing">
-  <strong>TCPS 2: CORE-2022 (Research Ethics Certification)</strong>
-</a>  
-Government of Canada  
-January 2025  
+I actively keep up with evolving best practices in responsible AI through continued certification, most recently completing [Foundations in Responsible AI & AI Ethics](https://www.udemy.com/certificate/UC-5ff80b22-9c07-4620-892c-dbea70246ebc/) through Mila and [Master AI Tools for Research](https://learn.wiseupcommunications.com/verify/Certificate1295) through WiseUp Communications. This is an area I treat as ongoing practice, not a checkbox.
 
-<a href="https://drive.google.com/file/d/13m7Vtn1vXnPvK0c-UG-B_teOFsR2jd6E/view?usp=sharing">
-  <strong>Climate Change AI Summer School</strong>
-</a>  
-Climate Change AI  
-September 2024  
 
-<a href="https://credentials.techstewardship.com/en/verify/88109651148606">
-  <strong>Tech Stewardship Practice Program (TSPP)</strong>
-</a>  
-Tech Stewardship  
-July 2024  
+<h3 class="badge-heading">Emerging Interests</h3>
+As my work in ethics, governance, and responsible AI has grown, so has my curiosity about the intersection of AI and cybersecurity, particularly around agentic AI systems, resilient infrastructures, and cyber-physical systems. As AI becomes more autonomous and more deeply embedded in critical infrastructure, the questions of how these systems fail, how they are attacked, and how they are made robust feel both urgent and underexplored. This is an area I am actively learning in and hope to contribute to. Earlier interests, including participation in the [Climate Change AI Summer School](https://drive.google.com/file/d/13m7Vtn1vXnPvK0c-UG-B_teOFsR2jd6E/view?usp=sharing), shaped how I think about systems-level risk and the societal consequences of technological decisions, a thread that runs through everything I work on today.
 
-<a href="https://www.credly.com/badges/93d98be4-1b0e-42cc-9e97-2227a0296959/public_url">
-  <strong>Enterprise Design Thinking Practitioner</strong>
-</a>  
-IBM  
-August 2022
