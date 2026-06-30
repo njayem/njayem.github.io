@@ -7,7 +7,204 @@ author_profile: true
 
 {% include base_path %}
 
+<style>
+  .pub-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.4em;
+    margin-top: 1.5em;
+  }
+
+  .pub-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.6em 1.8em;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  .pub-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .pub-title {
+    font-size: 1.05em;
+    font-weight: 700;
+    color: #000;
+    margin: 0 0 0.4em 0;
+    line-height: 1.4;
+  }
+
+  .pub-authors {
+    font-size: 0.88em;
+    color: #444;
+    margin: 0 0 0.5em 0;
+    line-height: 1.5;
+  }
+
+  .pub-authors strong {
+    color: #000;
+    font-weight: 700;
+  }
+
+  .pub-venue {
+    font-size: 0.83em;
+    color: #666;
+    font-style: italic;
+    margin: 0 0 0.9em 0;
+  }
+
+  .pub-abstract {
+    font-size: 0.88em;
+    color: #333;
+    line-height: 1.65;
+    margin: 0.8em 0 1em 0;
+    border-left: 3px solid #e0e0e0;
+    padding-left: 0.9em;
+  }
+
+  .pub-abstract-placeholder {
+    font-size: 0.85em;
+    color: #aaa;
+    font-style: italic;
+    margin: 0.6em 0 1em 0;
+  }
+
+  .pub-footer {
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
+    flex-wrap: wrap;
+    margin-top: 0.4em;
+  }
+
+  .pub-badge {
+    display: inline-block;
+    font-size: 0.75em;
+    font-weight: 600;
+    padding: 0.25em 0.8em;
+    border-radius: 20px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  .badge-peer-reviewed {
+    background: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #a5d6a7;
+  }
+
+  .badge-under-review {
+    background: #fff8e1;
+    color: #f57f17;
+    border: 1px solid #ffe082;
+  }
+
+  .badge-in-preparation {
+    background: #e3f2fd;
+    color: #1565c0;
+    border: 1px solid #90caf9;
+  }
+
+  .pub-doi {
+    font-size: 0.78em;
+    color: #888;
+    text-decoration: none;
+  }
+
+  .pub-doi:hover {
+    color: #555;
+    text-decoration: underline;
+  }
+
+  .pub-section-label {
+    font-size: 0.75em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #999;
+    margin: 2em 0 0.6em 0;
+    padding-bottom: 0.4em;
+    border-bottom: 1px solid #eee;
+  }
+</style>
+
 {% assign sorted_pubs = site.publications | sort: 'date' | reverse %}
-{% for post in sorted_pubs %}
-  {% include archive-single.html %}
-{% endfor %}
+
+{% assign peer = sorted_pubs | where: "status", "peer-reviewed" | where_exp: "item", "item.hidden != true" %}
+{% assign review = sorted_pubs | where: "status", "under-review" | where_exp: "item", "item.hidden != true" %}
+{% assign prep = sorted_pubs | where: "status", "in-preparation" | where_exp: "item", "item.hidden != true" %}
+
+{% if review.size > 0 %}
+<p class="pub-section-label">Under Review</p>
+<div class="pub-grid">
+  {% for pub in review %}
+  <a class="pub-card" href="{{ pub.paperurl | default: pub.url }}" {% if pub.paperurl %}target="_blank"{% endif %}>
+    <p class="pub-title">{{ pub.title }}</p>
+    <p class="pub-authors">{{ pub.citation | split: '(' | first }}</p>
+    <p class="pub-venue">{{ pub.venue }}</p>
+    {% if pub.content and pub.content != "\n<p>Paste abstract here.</p>\n" %}
+      <p class="pub-abstract">{{ pub.content | strip_html | truncatewords: 80 }}</p>
+    {% else %}
+      <p class="pub-abstract-placeholder">Abstract coming soon.</p>
+    {% endif %}
+    <div class="pub-footer">
+      <span class="pub-badge badge-under-review">Under Review</span>
+      {% if pub.paperurl %}<a class="pub-doi" href="{{ pub.paperurl }}" target="_blank">↗ Access Publication</a>{% endif %}
+    </div>
+  </a>
+  {% endfor %}
+</div>
+{% endif %}
+
+{% if prep.size > 0 %}
+<p class="pub-section-label">In Preparation</p>
+<div class="pub-grid">
+  {% for pub in prep %}
+  <a class="pub-card" href="{{ pub.url }}">
+    <p class="pub-title">{{ pub.title }}</p>
+    <p class="pub-authors">{{ pub.citation | split: '(' | first }}</p>
+    {% if pub.show_date != false %}
+    <p class="pub-venue">{{ pub.venue }}</p>
+    {% endif %}
+    {% if pub.content and pub.content != "\n<p>Paste abstract here.</p>\n" %}
+      <p class="pub-abstract">{{ pub.content | strip_html | truncatewords: 80 }}</p>
+    {% else %}
+      <p class="pub-abstract-placeholder">Abstract coming soon.</p>
+    {% endif %}
+    <div class="pub-footer">
+      <span class="pub-badge badge-in-preparation">In Preparation</span>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+{% endif %}
+
+{% if peer.size > 0 %}
+<p class="pub-section-label">Peer-Reviewed</p>
+<div class="pub-grid">
+  {% for pub in peer %}
+  <a class="pub-card" href="{{ pub.paperurl | default: pub.url }}" {% if pub.paperurl %}target="_blank"{% endif %}>
+    <p class="pub-title">{{ pub.title }}</p>
+    <p class="pub-authors">{{ pub.citation | split: '(' | first }}</p>
+    <p class="pub-venue">{{ pub.venue }}</p>
+    {% if pub.content and pub.content != "\n<p>Paste abstract here.</p>\n" %}
+      <p class="pub-abstract">{{ pub.content | strip_html | truncatewords: 80 }}</p>
+    {% else %}
+      <p class="pub-abstract-placeholder">Abstract coming soon.</p>
+    {% endif %}
+    <div class="pub-footer">
+      <span class="pub-badge badge-peer-reviewed">Peer-Reviewed</span>
+      {% if pub.paperurl %}<a class="pub-doi" href="{{ pub.paperurl }}" target="_blank">↗ DOI</a>{% endif %}
+    </div>
+  </a>
+  {% endfor %}
+</div>
+{% endif %}
