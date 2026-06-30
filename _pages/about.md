@@ -210,7 +210,7 @@ redirect_from:
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    margin: 0.8em 0 1.2em 0;
+    margin: 0.8em 0 0 0;
   }
 
   .tag-douglas {
@@ -285,7 +285,7 @@ My interests have grown well beyond that. I have never been able to look at a te
 
 <h3 class="badge-heading">Research Experience</h3>
 
-<span style="color: #102e70; font-weight: 900; font-size: 1.1em; text-transform: uppercase; letter-spacing: 0.07em; display: block; -webkit-text-stroke: 0.4px #102e70;">The Douglas Research Centre, Centre of Excellence for Youth Mental Health</span>
+<span style="color: #102e70; font-weight: 900; font-size: 1.15em; text-transform: uppercase; letter-spacing: 0.07em; display: block; -webkit-text-stroke: 0.7px #102e70;">The Douglas Research Centre, Centre of Excellence for Youth Mental Health</span>
 
 I am currently a Research Assistant at the [Centre of Excellence for Youth Mental Health (CEYMH)](https://ceymh-cesmj.ca/), the [Douglas Research Centre](https://douglas.research.mcgill.ca/), Canada's second largest mental health research centre with over 400 scientific publications per year, under the supervision of [Dr. Alban Voppel](https://scholar.google.nl/citations?user=eb-aB2kAAAAJ&hl=en), Assistant Professor in AI and Psychiatry at McGill University, and [Dr. Lena Palaniyappan](https://scholar.google.com/citations?user=rDdsjwwAAAAJ&hl=en), Director of the Douglas Research Centre. My work focuses on powering the Voici Speech Bank by engineering and maintaining pipelines to clean, align, and structure longitudinal clinical speech and transcript data across diverse multisite studies, and maintaining data collection workflows using REDCap. I also run rigorous statistical analyses to detect anomalies and patterns across patient cohorts and controls. This infrastructure supports research into speech and language biomarkers of psychosis and relapse risk, enabling multimodal analyses that bring together acoustic, lexical, and discourse features to study the relationships between speech, symptoms, and cognitive state, accounting for demographic and clinical confounds, part of which feeds into work currently under review on ASR performance in psychiatric speech.
 
@@ -297,13 +297,13 @@ I am currently a Research Assistant at the [Centre of Excellence for Youth Menta
   <span class="tag-douglas">Data Science</span>
 </div>
 
-<div style="text-align: center; margin: 0 0 1.2em 0;">
+<div style="text-align: center; padding: 1.2em 0; margin: 0;">
   <span style="display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #ccc; margin: 0 5px;"></span>
   <span style="display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #ccc; margin: 0 5px;"></span>
   <span style="display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #ccc; margin: 0 5px;"></span>
 </div>
 
-<span style="color: #3f968a; font-weight: 900; font-size: 1.1em; text-transform: uppercase; letter-spacing: 0.07em; display: block; -webkit-text-stroke: 0.4px #3f968a;">The Applied Perception Lab</span>
+<span style="color: #3f968a; font-weight: 900; font-size: 1.15em; text-transform: uppercase; letter-spacing: 0.07em; display: block; -webkit-text-stroke: 0.7px #3f968a;">The Applied Perception Lab</span>
 
 [Dr. Kersten-Oertel](https://ap-lab.ca/) recognized potential in me before I had the language to name it myself, nurturing a curiosity and creativity that have defined my approach to research ever since. She is also the reason I became an interdisciplinary researcher. She never tried to fit me into a mould, giving me the room to explore while never being far, always there to guide, to push further, and to extend the kind of trust that carries you through the hard stretches. She also sees her students as humans before she sees them as researchers, and that changes everything about how you grow. I am currently a Research Assistant at the [Applied Perception Lab](https://ap-lab.ca/), where my interests have expanded from HCI into responsible AI, governance, and ethics. I study moral tensions and ethical archetypes in human decision-making, and questions that lie at the centre of human and machine cognition, examining where and why language models depart from human reasoning.
 <div class="research-section-tags">
@@ -314,13 +314,13 @@ I am currently a Research Assistant at the [Centre of Excellence for Youth Menta
   <span class="tag-aplab">LLM Behaviour</span>
 </div>
 
-<div style="text-align: center; margin: 0 0 1.2em 0;">
+<div style="text-align: center; padding: 1.2em 0; margin: 0;">
   <span style="display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #ccc; margin: 0 5px;"></span>
   <span style="display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #ccc; margin: 0 5px;"></span>
   <span style="display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #ccc; margin: 0 5px;"></span>
 </div>
 
-<span style="color: #63287d; font-weight: 900; font-size: 1.1em; text-transform: uppercase; letter-spacing: 0.07em; display: block; -webkit-text-stroke: 0.4px #63287d;">Mila</span>
+<span style="color: #63287d; font-weight: 900; font-size: 1.15em; text-transform: uppercase; letter-spacing: 0.07em; display: block; -webkit-text-stroke: 0.7px #63287d;">Mila</span>
 
 I am currently a collaborating researcher and Master's student at [Mila](https://mila.quebec/en), Quebec's AI Institute, working in the Conversational AI Lab under the supervision of [Dr. Mirco Ravanelli](https://sites.google.com/site/mircoravanelli/students). I joined the lab as an intern in fall 2024, before beginning my Master's. Beyond settling on a thesis project, I spent that time building a custom Parkinson's speech dataset from the ground up, including the scripts and metadata to construct and reproduce it from scratch, and reaching out to research groups and clinical consortia across the world to bring in data that is as clinically and demographically diverse as possible. Working alongside clinicians through this process shifted something in how I think. They bring questions that no model can answer on its own, grounding the work in real use, real constraints, and real people, and that is what has brought fairness and explainability to the centre of my thesis. This field runs on collaboration, and I have come to believe that deeply. It takes a village to advance science at this scale, and I got a first glimpse of what that looks like through Dr. Ravanelli and the community he built around [SpeechBrain](https://speechbrain.github.io/). I have also served as a Teaching Assistant for Concordia's Machine Learning course (COMP 432), something that reflects a belief I have long carried and that Dr. Ravanelli embodies in how he leads his lab. You only truly know a subject when you can explain it to someone else. Supporting students in building intuition for core ML concepts and giving them honest, constructive feedback has been as much a part of my own learning as theirs.
 
