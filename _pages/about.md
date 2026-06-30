@@ -281,7 +281,7 @@ My academic journey began with a Bachelor of Engineering in Software Engineering
 
 My interests have grown well beyond that. I have never been able to look at a technical problem without also seeing its social and ethical dimensions. Technology is not a neutral artifact, and once you understand that, the questions follow naturally. Why does this fail for certain populations? What moral values are embedded in the systems we are building? Who gets to define what responsible deployment actually looks like? That curiosity is what keeps pulling me across so many different disciplines. The work I care about most lives at the intersection of all of them.
 
-<span style="color: #102e70; font-weight: 900; font-size: 1.15em; text-transform: uppercase; letter-spacing: 0.07em; display: block; margin-top: 0; margin-bottom: 0.8em; -webkit-text-stroke: 0.7px #102e70;">The Douglas Research Centre, Centre of Excellence for Youth Mental Health</span>
+<span style="color: #102e70; font-weight: 900; font-size: 1.15em; text-transform: uppercase; letter-spacing: 0.07em; display: block; margin-top: 0; margin-bottom: 0.8em; -webkit-text-stroke: 0.7px #102e70;">The Douglas Research Centre</span>
 
 I am currently a Research Assistant at the [Douglas Research Centre](https://douglas.research.mcgill.ca/), Canada's second largest mental health research centre with over 400 scientific publications per year, under the supervision of [Dr. Alban Voppel](https://scholar.google.nl/citations?user=eb-aB2kAAAAJ&hl=en), Assistant Professor in AI and Psychiatry at McGill University, and [Dr. Lena Palaniyappan](https://scholar.google.com/citations?user=rDdsjwwAAAAJ&hl=en), Inaugural Director of the Centre of Excellence in Youth Mental Health and Monique H. Bourgeois Chair in Neurodevelopmental Disorders. My work focuses on powering the Voici Speech Bank by engineering and maintaining pipelines to clean, align, and structure longitudinal clinical speech and transcript data across diverse multisite studies, and maintaining data collection workflows using REDCap. I also run rigorous statistical analyses to detect anomalies and patterns across patient cohorts and controls. This infrastructure supports research into speech and language biomarkers of psychosis and relapse risk, enabling multimodal analyses that bring together acoustic, lexical, and discourse features to study the relationships between speech, symptoms, and cognitive state, accounting for demographic and clinical confounds, part of which feeds into work currently under review on ASR performance in psychiatric speech.
 
@@ -325,40 +325,47 @@ As my work in ethics, governance, and responsible AI has grown, so has my curios
 <div style="margin-top: 20px;"></div>
 
 <table border="1">
-  <tr style="background-color: #f2f2f2;">
-    <th>Award</th>
-    <th>Issuer</th>
-    <th>Date</th>
+  <tr style="background-color: #000; color: #fff;">
+    <th style="color: #fff;">Award</th>
+    <th style="color: #fff;">Issuer</th>
+    <th style="color: #fff;">Date</th>
+    <th style="color: #fff;"></th>
   </tr>
   <tr>
-    <td><a href="https://www.concordia.ca/gradstudies/funding/in-program/donor-awards.html">Power Corporation Of Canada Graduate Fellowship Graduate Award</a></td>
+    <td>Power Corporation Of Canada Graduate Fellowship Graduate Award</td>
     <td>Concordia University</td>
     <td>Jun 2026</td>
+    <td><a href="https://www.concordia.ca/gradstudies/funding/in-program/donor-awards.html" target="_blank" style="display:inline-block;background:#000;color:#fff !important;font-weight:700;font-size:0.8em;padding:5px 14px;border-radius:20px;text-decoration:none !important;">View</a></td>
   </tr>
   <tr>
-    <td><a href="https://www.fondationarbour.com/en/">Arbour Foundation Master's Scholarship</a></td>
+    <td>Arbour Foundation Master's Scholarship</td>
     <td>Fondation Arbour</td>
     <td>Sep 2025</td>
+    <td><a href="https://www.fondationarbour.com/en/" target="_blank" style="display:inline-block;background:#000;color:#fff !important;font-weight:700;font-size:0.8em;padding:5px 14px;border-radius:20px;text-decoration:none !important;">View</a></td>
   </tr>
   <tr>
-    <td><a href="https://www.concordia.ca/gradstudies/funding/external/special-entrance.html">Concordia University Special Entrance Award</a></td>
+    <td>Concordia University Special Entrance Award</td>
     <td>Concordia University</td>
     <td>Oct 2024</td>
+    <td><a href="https://www.concordia.ca/gradstudies/funding/external/special-entrance.html" target="_blank" style="display:inline-block;background:#000;color:#fff !important;font-weight:700;font-size:0.8em;padding:5px 14px;border-radius:20px;text-decoration:none !important;">View</a></td>
   </tr>
   <tr>
-    <td><a href="https://nserc-crsng.canada.ca/en/funding-opportunity/canada-graduate-research-scholarship-masters-program">NSERC Canada Graduate Scholarship – Master's (CGS-M)</a></td>
+    <td>NSERC Canada Graduate Scholarship – Master's (CGS-M)</td>
     <td>Natural Sciences and Engineering Research Council of Canada</td>
     <td>Apr 2024</td>
+    <td><a href="https://nserc-crsng.canada.ca/en/funding-opportunity/canada-graduate-research-scholarship-masters-program" target="_blank" style="display:inline-block;background:#000;color:#fff !important;font-weight:700;font-size:0.8em;padding:5px 14px;border-radius:20px;text-decoration:none !important;">View</a></td>
   </tr>
   <tr>
-    <td><a href="https://www.quebec.ca/education/etudier-quebec/aide-financiere-etudiants-internationaux/bourses-excellence-gouvernement-quebec">Bourse d'Excellence en Génie</a></td>
+    <td>Bourse d'Excellence en Génie</td>
     <td>Quebec Ministry of Education</td>
     <td>Jun 2022</td>
+    <td><a href="https://www.quebec.ca/education/etudier-quebec/aide-financiere-etudiants-internationaux/bourses-excellence-gouvernement-quebec" target="_blank" style="display:inline-block;background:#000;color:#fff !important;font-weight:700;font-size:0.8em;padding:5px 14px;border-radius:20px;text-decoration:none !important;">View</a></td>
   </tr>
   <tr>
-    <td><a href="https://nserc-crsng.canada.ca/en/funding-opportunity/undergraduate-student-research-awards">NSERC Undergraduate Student Research Award (USRA)</a></td>
+    <td>NSERC Undergraduate Student Research Award (USRA)</td>
     <td>Natural Sciences and Engineering Research Council of Canada</td>
     <td>May 2022</td>
+    <td><a href="https://nserc-crsng.canada.ca/en/funding-opportunity/undergraduate-student-research-awards" target="_blank" style="display:inline-block;background:#000;color:#fff !important;font-weight:700;font-size:0.8em;padding:5px 14px;border-radius:20px;text-decoration:none !important;">View</a></td>
   </tr>
 </table>
 
@@ -367,60 +374,71 @@ As my work in ethics, governance, and responsible AI has grown, so has my curios
 <div style="margin-top: 20px;"></div>
 
 <table border="1">
-  <tr style="background-color: #f2f2f2;">
-    <th>Role</th>
-    <th>Affiliation</th>
-    <th>Dates of Service</th>
+  <tr style="background-color: #000; color: #fff;">
+    <th style="color: #fff;">Role</th>
+    <th style="color: #fff;">Affiliation</th>
+    <th style="color: #fff;">Dates of Service</th>
+    <th style="color: #fff;"></th>
   </tr>
   <tr>
-    <td><a href="https://www.arabsinneuro.org/about/">Member</a></td>
-    <td>Arabs in Neuroscience (AiN)</td>
-    <td>Apr 2026 – Present</td>
+    <td><strong>Member</strong></td>
+    <td><strong>Arabs in Neuroscience (AiN)</strong></td>
+    <td><strong>Apr 2026 – Present</strong></td>
+    <td><a href="https://www.arabsinneuro.org/about/" target="_blank" style="display:inline-block;background:#000;color:#fff !important;font-weight:700;font-size:0.8em;padding:5px 14px;border-radius:20px;text-decoration:none !important;">Link</a></td>
   </tr>
   <tr>
-    <td><a href="https://levantine-connect--thelevantines.replit.app/">Member</a></td>
-    <td>The Levantines</td>
-    <td>Feb 2026 – Present</td>
+    <td><strong>Member</strong></td>
+    <td><strong>The Levantines</strong></td>
+    <td><strong>Feb 2026 – Present</strong></td>
+    <td><a href="https://levantine-connect--thelevantines.replit.app/" target="_blank" style="display:inline-block;background:#000;color:#fff !important;font-weight:700;font-size:0.8em;padding:5px 14px;border-radius:20px;text-decoration:none !important;">Link</a></td>
   </tr>
   <tr>
-    <td><a href="https://www.concordia.ca/about/administration-governance/board-senate/senate/membership.html">Member</a></td>
-    <td>Association Étudiante de Mila (AÉM), Mila - Quebec AI Institute</td>
-    <td>Oct 2025 – Present</td>
+    <td><strong>Member</strong></td>
+    <td><strong>Association Étudiante de Mila (AÉM), Mila - Quebec AI Institute</strong></td>
+    <td><strong>Oct 2025 – Present</strong></td>
+    <td><a href="https://www.concordia.ca/about/administration-governance/board-senate/senate/membership.html" target="_blank" style="display:inline-block;background:#000;color:#fff !important;font-weight:700;font-size:0.8em;padding:5px 14px;border-radius:20px;text-decoration:none !important;">Link</a></td>
   </tr>
   <tr>
-    <td><a href="https://www.concordia.ca/about/administration-governance/board-senate/senate/membership.html">Subcommittee Member</a></td>
-    <td>Standing Committee on Research, Graduate Students' Association (GSA), Concordia University</td>
-    <td>Sep 2025 – Present</td>
+    <td><strong>Subcommittee Member</strong></td>
+    <td><strong>Standing Committee on Research, Graduate Students' Association (GSA), Concordia University</strong></td>
+    <td><strong>Sep 2025 – Present</strong></td>
+    <td><a href="https://www.concordia.ca/about/administration-governance/board-senate/senate/membership.html" target="_blank" style="display:inline-block;background:#000;color:#fff !important;font-weight:700;font-size:0.8em;padding:5px 14px;border-radius:20px;text-decoration:none !important;">Link</a></td>
   </tr>
   <tr>
-    <td><a href="https://www.fondationarbour.com/en/">Member</a></td>
-    <td>Arbour Foundation Scholars</td>
-    <td>Sep 2025 – Present</td>
+    <td><strong>Member</strong></td>
+    <td><strong>Arbour Foundation Scholars</strong></td>
+    <td><strong>Sep 2025 – Present</strong></td>
+    <td><a href="https://www.fondationarbour.com/en/" target="_blank" style="display:inline-block;background:#000;color:#fff !important;font-weight:700;font-size:0.8em;padding:5px 14px;border-radius:20px;text-decoration:none !important;">Link</a></td>
   </tr>
   <tr>
-    <td><a href="https://www.goldenkey.org/">Member</a></td>
-    <td>Golden Key International Honour Society</td>
-    <td>Sep 2025 – Present</td>
+    <td><strong>Member</strong></td>
+    <td><strong>Golden Key International Honour Society</strong></td>
+    <td><strong>Sep 2025 – Present</strong></td>
+    <td><a href="https://www.goldenkey.org/" target="_blank" style="display:inline-block;background:#000;color:#fff !important;font-weight:700;font-size:0.8em;padding:5px 14px;border-radius:20px;text-decoration:none !important;">Link</a></td>
   </tr>
   <tr>
-    <td><a href="https://brainhackmtl.github.io/winter2026/">Organizer</a></td>
-    <td>Brainhack MTL, Concordia University x McGill University</td>
-    <td>July 2025 – Present</td>
+    <td><strong>Organizer</strong></td>
+    <td><strong>Brainhack MTL, Concordia University x McGill University</strong></td>
+    <td><strong>July 2025 – Present</strong></td>
+    <td><a href="https://brainhackmtl.github.io/winter2026/" target="_blank" style="display:inline-block;background:#000;color:#fff !important;font-weight:700;font-size:0.8em;padding:5px 14px;border-radius:20px;text-decoration:none !important;">Link</a></td>
   </tr>
   <tr>
-    <td><a href="https://www.concordia.ca/offices/ccsl.html">Subcommittee Member</a></td>
+    <td>Subcommittee Member</td>
     <td>Concordia Council on Student Life (CCSL), Graduate Students' Association (GSA), Concordia University</td>
     <td>January 2025 – April 2025</td>
+    <td><a href="https://www.concordia.ca/offices/ccsl.html" target="_blank" style="display:inline-block;background:#000;color:#fff !important;font-weight:700;font-size:0.8em;padding:5px 14px;border-radius:20px;text-decoration:none !important;">Link</a></td>
   </tr>
   <tr>
-    <td><a href="https://www.concordia.ca/research/applied-ai-institute/initiatives/geminai.html">Mentee</a></td>
+    <td>Mentee</td>
     <td>GEMinAI Program, Concordia University's Applied AI Institute</td>
     <td>October 2024 – May 2025</td>
+    <td><a href="https://www.concordia.ca/research/applied-ai-institute/initiatives/geminai.html" target="_blank" style="display:inline-block;background:#000;color:#fff !important;font-weight:700;font-size:0.8em;padding:5px 14px;border-radius:20px;text-decoration:none !important;">Link</a></td>
   </tr>
   <tr>
-    <td><a href="https://api.unibuddy.co/og/concordia-university-postgraduate/buddies/students/66df5f6635b519411372b26b?buddyPosition=share">Ambassador</a></td>
+    <td>Ambassador</td>
     <td>School of Graduate Studies, Concordia University</td>
     <td>September 2024 – May 2026</td>
+    <td><a href="https://api.unibuddy.co/og/concordia-university-postgraduate/buddies/students/66df5f6635b519411372b26b?buddyPosition=share" target="_blank" style="display:inline-block;background:#000;color:#fff !important;font-weight:700;font-size:0.8em;padding:5px 14px;border-radius:20px;text-decoration:none !important;">Link</a></td>
   </tr>
 </table>
 
