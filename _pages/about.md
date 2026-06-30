@@ -23,11 +23,9 @@ redirect_from:
 </div>
 
 <style>
-
   .page__content {
     color: #000;
   }
-
   .photo-frame {
     position: relative;
     display: inline-block;
@@ -38,14 +36,12 @@ redirect_from:
     overflow: visible;
     background: #fff;
   }
-
   .photo-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
   }
-
   .tape {
     position: absolute;
     z-index: 2;
@@ -59,7 +55,6 @@ redirect_from:
     top: 0;
     transform: translate(-50%, -58%);
   }
-
   .page__content h2 {
     color: #000000 !important;
     margin-top: 2em;
@@ -69,11 +64,9 @@ redirect_from:
     font-weight: 800;
     letter-spacing: 0.2px;
   }
-
   .page__content h2:first-of-type {
     margin-top: 2em;
   }
-
   .page__content h3 {
     display: block;
     font-size: 1.05em;
@@ -83,7 +76,6 @@ redirect_from:
     color: #000000;
     letter-spacing: 0.03em;
   }
-
   .page__content h3.badge-heading {
     display: inline-block;
     padding: 0.28em 0.65em;
@@ -93,39 +85,32 @@ redirect_from:
     border: 1.5px solid #ffffff;
     transition: color 0.2s ease;
   }
-
   .page__content h3.badge-heading:hover {
     color: #ffffc5;
     cursor: pointer;
   }
-
   .page__content ul {
     margin-top: 0.6em;
     margin-bottom: 1.2em;
   }
-
   .page__content ul li {
     margin-bottom: 0.55em;
   }
-
   .page__content table {
     width: 100%;
     border-collapse: collapse;
     font-size: 0.95em;
   }
-
   .page__content th,
   .page__content td {
     padding: 10px 12px;
     border: 1px solid #e6e6e6 !important;
     vertical-align: top;
   }
-
   .page__content th {
     background: #f2f2f2;
     font-weight: 700;
   }
-
   .affiliation-tag {
     font-size: 0.8em;
     color: white;
@@ -137,68 +122,51 @@ redirect_from:
     transition: transform 0.2s ease, background 0.2s ease;
     white-space: nowrap;
   }
-
   .affiliation-tag:hover {
     transform: scale(1.08);
     cursor: pointer;
     font-weight: bold;
     text-decoration: underline;
   }
-
   .concordia { background: #922338; }
   .crblm { background: #244883; }
   .convai { background: #328de7; }
   .mila { background: #63287d; }
   .aplab { background: #3f968a; }
   .drc { background: #102e70; }
-
   .affiliation-marquee {
     overflow-x: auto;
     overflow-y: hidden;
     width: 100%;
     padding: 1em 0 0.5em 0;
     scrollbar-width: none;
+  }
+  .affiliation-marquee::-webkit-scrollbar { height: 0; }
+  .affiliation-marquee.scrollbar-visible {
+    scrollbar-width: thin;
     scrollbar-color: #000 #e0e0e0;
   }
-
-  .affiliation-marquee::-webkit-scrollbar {
+  .affiliation-marquee.scrollbar-visible::-webkit-scrollbar {
     height: 4px;
   }
-
-  .affiliation-marquee::-webkit-scrollbar-track {
-    background: transparent;
-    border-radius: 2px;
-  }
-
-  .affiliation-marquee::-webkit-scrollbar-thumb {
-    background: transparent;
-    border-radius: 2px;
-  }
-
-  .affiliation-marquee:hover {
-    scrollbar-width: thin;
-  }
-
-  .affiliation-marquee:hover::-webkit-scrollbar-track {
+  .affiliation-marquee.scrollbar-visible::-webkit-scrollbar-track {
     background: #e0e0e0;
+    border-radius: 2px;
   }
-
-  .affiliation-marquee:hover::-webkit-scrollbar-thumb {
+  .affiliation-marquee.scrollbar-visible::-webkit-scrollbar-thumb {
     background: #000;
+    border-radius: 2px;
   }
-
   .affiliation-track {
     display: inline-flex;
     gap: 12px;
     width: max-content;
     padding: 0 1em 0.6em 1em;
   }
-
   .page__content p {
     line-height: 1.65;
     margin-bottom: 0.8em;
   }
-
   .research-tag {
     background: #2D5016;
     color: white;
@@ -210,24 +178,17 @@ redirect_from:
     transition: transform 0.2s ease, background 0.2s ease;
     cursor: default;
   }
-
   .research-tag:hover {
     transform: translateY(-3px) scale(1.05);
     background: #3a6b1e;
   }
-
   .research-section-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
     margin: 0.8em 0 2em 0;
   }
-
-  .douglas-content a { color: #102e70 !important; }
-  .aplab-content a { color: #3f968a !important; }
-  .mila-content a { color: #63287d !important; }
-  .mila-content a[href*="drive.google.com"] { color: #328de7 !important; }
-
+  .page__content a { color: #328de7; }
   .tag-douglas {
     background: #102e70;
     color: white;
@@ -237,7 +198,6 @@ redirect_from:
     font-weight: 800;
     display: inline-block;
   }
-
   .tag-aplab {
     background: #3f968a;
     color: white;
@@ -247,7 +207,6 @@ redirect_from:
     font-weight: 800;
     display: inline-block;
   }
-
   .tag-mila {
     background: #63287d;
     color: white;
@@ -257,7 +216,28 @@ redirect_from:
     font-weight: 800;
     display: inline-block;
   }
-
+  .table-btn {
+    display: inline-block;
+    background: #000;
+    color: #fff !important;
+    font-weight: 700;
+    font-size: 0.8em;
+    padding: 5px 14px;
+    border-radius: 20px;
+    text-decoration: none !important;
+    transition: background 0.18s ease, transform 0.18s ease;
+  }
+  .table-btn:hover {
+    background: #333;
+    transform: scale(1.06);
+    color: #fff !important;
+    text-decoration: none !important;
+  }
+  .page__content table th {
+    background: #000 !important;
+    color: #fff !important;
+    font-weight: 800 !important;
+  }
 </style>
 
 ## Research Topics
@@ -284,31 +264,35 @@ redirect_from:
   var el = document.getElementById('aff-marquee');
   var speed = 0.6;
   var paused = false;
-  var resumeTimeout;
-
-  function pause() {
-    paused = true;
-    clearTimeout(resumeTimeout);
-    resumeTimeout = setTimeout(function() { paused = false; }, 2000);
-  }
-
   function autoScroll() {
     if (!paused) {
       el.scrollLeft += speed;
-      if (el.scrollLeft >= el.scrollWidth - el.clientWidth) {
-        el.scrollLeft = 0;
-      }
+      if (el.scrollLeft >= el.scrollWidth - el.clientWidth) { el.scrollLeft = 0; }
     }
     requestAnimationFrame(autoScroll);
   }
-
-  el.addEventListener('mouseenter', function() { paused = true; clearTimeout(resumeTimeout); });
-  el.addEventListener('mouseleave', function() { paused = false; });
-  el.addEventListener('mousedown', pause);
-  el.addEventListener('touchstart', pause, { passive: true });
-  el.addEventListener('touchend', pause);
-
+  el.addEventListener('mouseenter', function() { paused = true; el.classList.add('scrollbar-visible'); });
+  el.addEventListener('mouseleave', function() { paused = false; el.classList.remove('scrollbar-visible'); });
+  el.addEventListener('mousedown', function() { paused = true; });
+  el.addEventListener('mouseup', function() { paused = false; });
+  el.addEventListener('touchstart', function() { paused = true; el.classList.add('scrollbar-visible'); }, { passive: true });
+  el.addEventListener('touchend', function() { paused = false; el.classList.remove('scrollbar-visible'); });
   requestAnimationFrame(autoScroll);
+  var sectionColors = [{ hex: '102e70', color: '#102e70' }, { hex: '3f968a', color: '#3f968a' }, { hex: '63287d', color: '#63287d', driveOverride: '#328de7' }];
+  document.querySelectorAll('.page__content span').forEach(function(span) {
+    var style = span.getAttribute('style') || '';
+    sectionColors.forEach(function(def) {
+      if (style.indexOf(def.hex) !== -1) {
+        var parent = span.parentElement;
+        var next = parent ? parent.nextElementSibling : null;
+        if (next && next.tagName === 'P') {
+          next.querySelectorAll('a').forEach(function(a) {
+            if (def.driveOverride && a.href.indexOf('drive.google.com') !== -1) { a.style.color = def.driveOverride; } else { a.style.color = def.color; }
+          });
+        }
+      }
+    });
+  });
 })();
 </script>
 
@@ -321,11 +305,7 @@ My interests have grown well beyond that. I have never been able to look at a te
 
 <span style="color: #102e70; font-weight: 900; font-size: 1.15em; text-transform: uppercase; letter-spacing: 0.07em; display: block; margin-top: 0; margin-bottom: 0.8em; -webkit-text-stroke: 0.7px #102e70;">The Douglas Research Centre</span>
 
-<div class="douglas-content">
-
 I am currently a Research Assistant at the [Douglas Research Centre](https://douglas.research.mcgill.ca/), Canada's second largest mental health research centre with over 400 scientific publications per year, under the supervision of [Dr. Alban Voppel](https://scholar.google.nl/citations?user=eb-aB2kAAAAJ&hl=en), Assistant Professor in AI and Psychiatry at McGill University, and [Dr. Lena Palaniyappan](https://scholar.google.com/citations?user=rDdsjwwAAAAJ&hl=en), Inaugural Director of the Centre of Excellence in Youth Mental Health and Monique H. Bourgeois Chair in Neurodevelopmental Disorders. My work focuses on powering the Voici Speech Bank by engineering and maintaining pipelines to clean, align, and structure longitudinal clinical speech and transcript data across diverse multisite studies, and maintaining data collection workflows using REDCap. I also run rigorous statistical analyses to detect anomalies and patterns across patient cohorts and controls. This infrastructure supports research into speech and language biomarkers of psychosis and relapse risk, enabling multimodal analyses that bring together acoustic, lexical, and discourse features to study the relationships between speech, symptoms, and cognitive state, accounting for demographic and clinical confounds, part of which feeds into work currently under review on ASR performance in psychiatric speech.
-
-</div>
 
 <div class="research-section-tags">
   <span class="tag-douglas">AI for Psychiatry</span>
@@ -337,11 +317,7 @@ I am currently a Research Assistant at the [Douglas Research Centre](https://dou
 
 <span style="color: #3f968a; font-weight: 900; font-size: 1.15em; text-transform: uppercase; letter-spacing: 0.07em; display: block; margin-top: 0; margin-bottom: 0.8em; -webkit-text-stroke: 0.7px #3f968a;">The Applied Perception Lab</span>
 
-<div class="aplab-content">
-
 [Dr. Kersten-Oertel](https://ap-lab.ca/) recognized potential in me before I had the language to name it myself, nurturing a curiosity and creativity that have defined my approach to research ever since. She is also the reason I became an interdisciplinary researcher. She never tried to fit me into a mould, giving me the room to explore while never being far, always there to guide, to push further, and to extend the kind of trust that carries you through the hard stretches. She also sees her students as humans before she sees them as researchers, and that changes everything about how you grow. I am currently a Research Assistant at the [Applied Perception Lab](https://ap-lab.ca/), where my interests have expanded from HCI into responsible AI, governance, and ethics. I study moral tensions and ethical archetypes in human decision-making, and questions that lie at the centre of human and machine cognition, examining where and why language models depart from human reasoning.
-
-</div>
 
 <div class="research-section-tags">
   <span class="tag-aplab">HCI</span>
@@ -353,11 +329,7 @@ I am currently a Research Assistant at the [Douglas Research Centre](https://dou
 
 <span style="color: #63287d; font-weight: 900; font-size: 1.15em; text-transform: uppercase; letter-spacing: 0.07em; display: block; margin-top: 0; margin-bottom: 0.8em; -webkit-text-stroke: 0.7px #63287d;">Mila</span>
 
-<div class="mila-content">
-
 I am currently a collaborating researcher and Master's student at [Mila](https://mila.quebec/en), Quebec's AI Institute, working in the Conversational AI Lab under the supervision of [Dr. Mirco Ravanelli](https://sites.google.com/site/mircoravanelli/students). I joined the lab as an intern in fall 2024, before beginning my Master's. Beyond settling on a thesis project, I spent that time building a custom Parkinson's speech dataset from the ground up, including the scripts and metadata to construct and reproduce it from scratch, and reaching out to research groups and clinical consortia across the world to bring in data that is as clinically and demographically diverse as possible. Working alongside clinicians through this process shifted something in how I think. They bring questions that no model can answer on its own, grounding the work in real use, real constraints, and real people, and that is what has brought fairness and explainability to the centre of my thesis. This field runs on collaboration, and I have come to believe that deeply. It takes a village to advance science at this scale, and I got a first glimpse of what that looks like through Dr. Ravanelli and the community he built around [SpeechBrain](https://speechbrain.github.io/). I have also served as a Teaching Assistant for Concordia's Machine Learning course (COMP 432), something that reflects a belief I have long carried and that Dr. Ravanelli embodies in how he leads his lab. You only truly know a subject when you can explain it to someone else. Supporting students in building intuition for core ML concepts and giving them honest, constructive feedback has been as much a part of my own learning as theirs.
-
-</div>
 
 <div class="research-section-tags">
   <span class="tag-mila">AI and Healthcare</span>
@@ -384,37 +356,37 @@ As my work in ethics, governance, and responsible AI has grown, so has my curios
     <td>Power Corporation Of Canada Graduate Fellowship Graduate Award</td>
     <td>Concordia University</td>
     <td>Jun 2026</td>
-    <td><a href="https://www.concordia.ca/gradstudies/funding/in-program/donor-awards.html" target="_blank" style="display:inline-block;background:#000;color:#fff !important;font-weight:700;font-size:0.8em;padding:5px 14px;border-radius:20px;text-decoration:none !important;">View</a></td>
+    <td><a href="https://www.concordia.ca/gradstudies/funding/in-program/donor-awards.html" target="_blank" class="table-btn">View</a></td>
   </tr>
   <tr>
     <td>Arbour Foundation Master's Scholarship</td>
     <td>Fondation Arbour</td>
     <td>Sep 2025</td>
-    <td><a href="https://www.fondationarbour.com/en/" target="_blank" style="display:inline-block;background:#000;color:#fff !important;font-weight:700;font-size:0.8em;padding:5px 14px;border-radius:20px;text-decoration:none !important;">View</a></td>
+    <td><a href="https://www.fondationarbour.com/en/" target="_blank" class="table-btn">View</a></td>
   </tr>
   <tr>
     <td>Concordia University Special Entrance Award</td>
     <td>Concordia University</td>
     <td>Oct 2024</td>
-    <td><a href="https://www.concordia.ca/gradstudies/funding/external/special-entrance.html" target="_blank" style="display:inline-block;background:#000;color:#fff !important;font-weight:700;font-size:0.8em;padding:5px 14px;border-radius:20px;text-decoration:none !important;">View</a></td>
+    <td><a href="https://www.concordia.ca/gradstudies/funding/external/special-entrance.html" target="_blank" class="table-btn">View</a></td>
   </tr>
   <tr>
     <td>NSERC Canada Graduate Scholarship – Master's (CGS-M)</td>
     <td>Natural Sciences and Engineering Research Council of Canada</td>
     <td>Apr 2024</td>
-    <td><a href="https://nserc-crsng.canada.ca/en/funding-opportunity/canada-graduate-research-scholarship-masters-program" target="_blank" style="display:inline-block;background:#000;color:#fff !important;font-weight:700;font-size:0.8em;padding:5px 14px;border-radius:20px;text-decoration:none !important;">View</a></td>
+    <td><a href="https://nserc-crsng.canada.ca/en/funding-opportunity/canada-graduate-research-scholarship-masters-program" target="_blank" class="table-btn">View</a></td>
   </tr>
   <tr>
     <td>Bourse d'Excellence en Génie</td>
     <td>Quebec Ministry of Education</td>
     <td>Jun 2022</td>
-    <td><a href="https://www.quebec.ca/education/etudier-quebec/aide-financiere-etudiants-internationaux/bourses-excellence-gouvernement-quebec" target="_blank" style="display:inline-block;background:#000;color:#fff !important;font-weight:700;font-size:0.8em;padding:5px 14px;border-radius:20px;text-decoration:none !important;">View</a></td>
+    <td><a href="https://www.quebec.ca/education/etudier-quebec/aide-financiere-etudiants-internationaux/bourses-excellence-gouvernement-quebec" target="_blank" class="table-btn">View</a></td>
   </tr>
   <tr>
     <td>NSERC Undergraduate Student Research Award (USRA)</td>
     <td>Natural Sciences and Engineering Research Council of Canada</td>
     <td>May 2022</td>
-    <td><a href="https://nserc-crsng.canada.ca/en/funding-opportunity/undergraduate-student-research-awards" target="_blank" style="display:inline-block;background:#000;color:#fff !important;font-weight:700;font-size:0.8em;padding:5px 14px;border-radius:20px;text-decoration:none !important;">View</a></td>
+    <td><a href="https://nserc-crsng.canada.ca/en/funding-opportunity/undergraduate-student-research-awards" target="_blank" class="table-btn">View</a></td>
   </tr>
 </table>
 
@@ -433,61 +405,61 @@ As my work in ethics, governance, and responsible AI has grown, so has my curios
     <td><strong>Member</strong></td>
     <td><strong>Arabs in Neuroscience (AiN)</strong></td>
     <td><strong>Apr 2026 – Present</strong></td>
-    <td><a href="https://www.arabsinneuro.org/about/" target="_blank" style="display:inline-block;background:#000;color:#fff !important;font-weight:700;font-size:0.8em;padding:5px 14px;border-radius:20px;text-decoration:none !important;">Link</a></td>
+    <td><a href="https://www.arabsinneuro.org/about/" target="_blank" class="table-btn">Link</a></td>
   </tr>
   <tr>
     <td><strong>Member</strong></td>
     <td><strong>The Levantines</strong></td>
     <td><strong>Feb 2026 – Present</strong></td>
-    <td><a href="https://levantine-connect--thelevantines.replit.app/" target="_blank" style="display:inline-block;background:#000;color:#fff !important;font-weight:700;font-size:0.8em;padding:5px 14px;border-radius:20px;text-decoration:none !important;">Link</a></td>
+    <td><a href="https://levantine-connect--thelevantines.replit.app/" target="_blank" class="table-btn">Link</a></td>
   </tr>
   <tr>
     <td><strong>Member</strong></td>
     <td><strong>Association Étudiante de Mila (AÉM), Mila - Quebec AI Institute</strong></td>
     <td><strong>Oct 2025 – Present</strong></td>
-    <td><a href="https://www.concordia.ca/about/administration-governance/board-senate/senate/membership.html" target="_blank" style="display:inline-block;background:#000;color:#fff !important;font-weight:700;font-size:0.8em;padding:5px 14px;border-radius:20px;text-decoration:none !important;">Link</a></td>
+    <td><a href="https://www.concordia.ca/about/administration-governance/board-senate/senate/membership.html" target="_blank" class="table-btn">Link</a></td>
   </tr>
   <tr>
     <td><strong>Subcommittee Member</strong></td>
     <td><strong>Standing Committee on Research, Graduate Students' Association (GSA), Concordia University</strong></td>
     <td><strong>Sep 2025 – Present</strong></td>
-    <td><a href="https://www.concordia.ca/about/administration-governance/board-senate/senate/membership.html" target="_blank" style="display:inline-block;background:#000;color:#fff !important;font-weight:700;font-size:0.8em;padding:5px 14px;border-radius:20px;text-decoration:none !important;">Link</a></td>
+    <td><a href="https://www.concordia.ca/about/administration-governance/board-senate/senate/membership.html" target="_blank" class="table-btn">Link</a></td>
   </tr>
   <tr>
     <td><strong>Member</strong></td>
     <td><strong>Arbour Foundation Scholars</strong></td>
     <td><strong>Sep 2025 – Present</strong></td>
-    <td><a href="https://www.fondationarbour.com/en/" target="_blank" style="display:inline-block;background:#000;color:#fff !important;font-weight:700;font-size:0.8em;padding:5px 14px;border-radius:20px;text-decoration:none !important;">Link</a></td>
+    <td><a href="https://www.fondationarbour.com/en/" target="_blank" class="table-btn">Link</a></td>
   </tr>
   <tr>
     <td><strong>Member</strong></td>
     <td><strong>Golden Key International Honour Society</strong></td>
     <td><strong>Sep 2025 – Present</strong></td>
-    <td><a href="https://www.goldenkey.org/" target="_blank" style="display:inline-block;background:#000;color:#fff !important;font-weight:700;font-size:0.8em;padding:5px 14px;border-radius:20px;text-decoration:none !important;">Link</a></td>
+    <td><a href="https://www.goldenkey.org/" target="_blank" class="table-btn">Link</a></td>
   </tr>
   <tr>
     <td><strong>Organizer</strong></td>
     <td><strong>Brainhack MTL, Concordia University x McGill University</strong></td>
-    <td><strong>July 2025 – Present</strong></td>
-    <td><a href="https://brainhackmtl.github.io/winter2026/" target="_blank" style="display:inline-block;background:#000;color:#fff !important;font-weight:700;font-size:0.8em;padding:5px 14px;border-radius:20px;text-decoration:none !important;">Link</a></td>
+    <td><strong>Jul 2025 – Present</strong></td>
+    <td><a href="https://brainhackmtl.github.io/winter2026/" target="_blank" class="table-btn">Link</a></td>
   </tr>
   <tr>
     <td>Subcommittee Member</td>
     <td>Concordia Council on Student Life (CCSL), Graduate Students' Association (GSA), Concordia University</td>
-    <td>January 2025 – April 2025</td>
-    <td><a href="https://www.concordia.ca/offices/ccsl.html" target="_blank" style="display:inline-block;background:#000;color:#fff !important;font-weight:700;font-size:0.8em;padding:5px 14px;border-radius:20px;text-decoration:none !important;">Link</a></td>
+    <td>Jan 2025 – Apr 2025</td>
+    <td><a href="https://www.concordia.ca/offices/ccsl.html" target="_blank" class="table-btn">Link</a></td>
   </tr>
   <tr>
     <td>Mentee</td>
     <td>GEMinAI Program, Concordia University's Applied AI Institute</td>
-    <td>October 2024 – May 2025</td>
-    <td><a href="https://www.concordia.ca/research/applied-ai-institute/initiatives/geminai.html" target="_blank" style="display:inline-block;background:#000;color:#fff !important;font-weight:700;font-size:0.8em;padding:5px 14px;border-radius:20px;text-decoration:none !important;">Link</a></td>
+    <td>Oct 2024 – May 2025</td>
+    <td><a href="https://www.concordia.ca/research/applied-ai-institute/initiatives/geminai.html" target="_blank" class="table-btn">Link</a></td>
   </tr>
   <tr>
     <td>Ambassador</td>
     <td>School of Graduate Studies, Concordia University</td>
-    <td>September 2024 – May 2026</td>
-    <td><a href="https://api.unibuddy.co/og/concordia-university-postgraduate/buddies/students/66df5f6635b519411372b26b?buddyPosition=share" target="_blank" style="display:inline-block;background:#000;color:#fff !important;font-weight:700;font-size:0.8em;padding:5px 14px;border-radius:20px;text-decoration:none !important;">Link</a></td>
+    <td>Sep 2024 – May 2026</td>
+    <td><a href="https://api.unibuddy.co/og/concordia-university-postgraduate/buddies/students/66df5f6635b519411372b26b?buddyPosition=share" target="_blank" class="table-btn">Link</a></td>
   </tr>
 </table>
 
