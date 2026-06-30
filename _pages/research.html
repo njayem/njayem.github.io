@@ -128,6 +128,22 @@ author_profile: true
     text-decoration: underline;
   }
 
+  /* Status-tinted labels only */
+  .status-review .pub-meta strong,
+  .status-review .pub-abstract-label {
+    color: #c17900 !important;
+  }
+
+  .status-prep .pub-meta strong,
+  .status-prep .pub-abstract-label {
+    color: #1a56c4 !important;
+  }
+
+  .status-peer .pub-meta strong,
+  .status-peer .pub-abstract-label {
+    color: #2a7d30 !important;
+  }
+
   .section-heading {
     font-size: 0.72em;
     font-weight: 700;
@@ -151,7 +167,7 @@ author_profile: true
 {% if review.size > 0 %}
 <p class="section-heading">Under Review</p>
 {% for pub in review %}
-<div class="pub-card">
+<div class="pub-card status-review">
   <span class="pub-status-label label-under-review">Under Review</span>
   <p class="pub-title">{{ pub.title }}</p>
   <p class="pub-meta"><strong style="color:#aaa; font-weight:600;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip }}</span></p>
@@ -171,7 +187,7 @@ author_profile: true
 {% if prep.size > 0 %}
 <p class="section-heading">In Preparation</p>
 {% for pub in prep %}
-<div class="pub-card">
+<div class="pub-card status-prep">
   <span class="pub-status-label label-in-preparation">In Preparation</span>
   <p class="pub-title">{{ pub.title }}</p>
   <p class="pub-meta"><strong style="color:#aaa; font-weight:600;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip }}</span></p>
@@ -190,7 +206,7 @@ author_profile: true
 {% if peer.size > 0 %}
 <p class="section-heading">Peer-Reviewed</p>
 {% for pub in peer %}
-<div class="pub-card">
+<div class="pub-card status-peer">
   <span class="pub-status-label label-peer-reviewed">Peer-Reviewed</span>
   <p class="pub-title">{{ pub.title }}</p>
   <p class="pub-meta"><strong style="color:#aaa; font-weight:600;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip }}</span></p>
