@@ -153,35 +153,33 @@ redirect_from:
   .drc { background: #102e70; }
 
   .affiliation-marquee {
-    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
     width: 100%;
-    padding: 1em 0;
+    padding: 1em 0 0.5em 0;
+    scrollbar-width: thin;
+    scrollbar-color: #000 #e0e0e0;
+  }
+
+  .affiliation-marquee::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .affiliation-marquee::-webkit-scrollbar-track {
+    background: #e0e0e0;
+    border-radius: 2px;
+  }
+
+  .affiliation-marquee::-webkit-scrollbar-thumb {
+    background: #000;
+    border-radius: 2px;
   }
 
   .affiliation-track {
     display: inline-flex;
     gap: 12px;
     width: max-content;
-    padding: 0 1em;
-    will-change: transform;
-    animation: marquee-ltr 28s linear infinite;
-  }
-
-  @keyframes marquee-ltr {
-    0% { transform: translateX(-50%); }
-    100% { transform: translateX(0%); }
-  }
-
-  .affiliation-marquee:hover .affiliation-track,
-  .affiliation-marquee:focus-within .affiliation-track {
-    animation-play-state: paused;
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .affiliation-track {
-      animation: none;
-      transform: none;
-    }
+    padding: 0 1em 0.6em 1em;
   }
 
   .page__content p {
@@ -210,7 +208,7 @@ redirect_from:
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    margin: 0 0 0.8em 0;
+    margin: 0 0 2em 0;
   }
 
   .tag-douglas {
@@ -253,26 +251,45 @@ redirect_from:
 
 ## Affiliation
 
-<!-- Affiliation marquee: smooth left-to-right loop -->
-<div class="affiliation-marquee" aria-label="Affiliations">
+<div class="affiliation-marquee" id="aff-marquee" aria-label="Affiliations">
   <div class="affiliation-track">
-    <!-- 1st copy -->
     <a href="https://www.concordia.ca/" class="affiliation-tag concordia" target="_blank">Concordia University</a>
     <a href="https://crblm.ca/" class="affiliation-tag crblm" target="_blank">CRBLM</a>
     <a href="https://mila.quebec/en" class="affiliation-tag mila" target="_blank">Mila</a>
     <a href="https://sites.google.com/site/mircoravanelli/students" class="affiliation-tag convai" target="_blank">Conversational AI Lab</a>
     <a href="https://ap-lab.ca/" class="affiliation-tag aplab" target="_blank">Applied Perception Lab</a>
     <a href="https://douglas.research.mcgill.ca/" class="affiliation-tag drc" target="_blank">The Douglas Research Centre</a>
-
-    <!-- 2nd copy (duplicate for seamless loop) -->
-    <a href="https://www.concordia.ca/" class="affiliation-tag concordia" target="_blank" aria-hidden="true">Concordia University</a>
-    <a href="https://crblm.ca/" class="affiliation-tag crblm" target="_blank" aria-hidden="true">CRBLM</a>
-    <a href="https://mila.quebec/en" class="affiliation-tag mila" target="_blank" aria-hidden="true">Mila</a>
-    <a href="https://sites.google.com/site/mircoravanelli/students" class="affiliation-tag convai" target="_blank" aria-hidden="true">Conversational AI Lab</a>
-    <a href="https://ap-lab.ca/" class="affiliation-tag aplab" target="_blank" aria-hidden="true">Applied Perception Lab</a>
-    <a href="https://douglas.research.mcgill.ca/" class="affiliation-tag drc" target="_blank" aria-hidden="true">The Douglas Research Centre</a>
   </div>
 </div>
+
+<script>
+(function() {
+  var el = document.getElementById('aff-marquee');
+  var speed = 0.6;
+  var userScrolling = false;
+  var timeout;
+
+  function autoScroll() {
+    if (!userScrolling) {
+      el.scrollLeft += speed;
+      if (el.scrollLeft >= el.scrollWidth - el.clientWidth) {
+        el.scrollLeft = 0;
+      }
+    }
+    requestAnimationFrame(autoScroll);
+  }
+
+  el.addEventListener('mouseenter', function() { userScrolling = true; });
+  el.addEventListener('mouseleave', function() { userScrolling = false; });
+  el.addEventListener('scroll', function() {
+    userScrolling = true;
+    clearTimeout(timeout);
+    timeout = setTimeout(function() { userScrolling = false; }, 2000);
+  });
+
+  requestAnimationFrame(autoScroll);
+})();
+</script>
 
 
 ## About Me
@@ -293,10 +310,10 @@ I am currently a Research Assistant at the [Douglas Research Centre](https://dou
   <span class="tag-douglas">Data Science</span>
 </div>
 
-
 <span style="color: #3f968a; font-weight: 900; font-size: 1.15em; text-transform: uppercase; letter-spacing: 0.07em; display: block; margin-top: 0; margin-bottom: 0.8em; -webkit-text-stroke: 0.7px #3f968a;">The Applied Perception Lab</span>
 
 [Dr. Kersten-Oertel](https://ap-lab.ca/) recognized potential in me before I had the language to name it myself, nurturing a curiosity and creativity that have defined my approach to research ever since. She is also the reason I became an interdisciplinary researcher. She never tried to fit me into a mould, giving me the room to explore while never being far, always there to guide, to push further, and to extend the kind of trust that carries you through the hard stretches. She also sees her students as humans before she sees them as researchers, and that changes everything about how you grow. I am currently a Research Assistant at the [Applied Perception Lab](https://ap-lab.ca/), where my interests have expanded from HCI into responsible AI, governance, and ethics. I study moral tensions and ethical archetypes in human decision-making, and questions that lie at the centre of human and machine cognition, examining where and why language models depart from human reasoning.
+
 <div class="research-section-tags">
   <span class="tag-aplab">HCI</span>
   <span class="tag-aplab">Responsible AI</span>
@@ -304,7 +321,6 @@ I am currently a Research Assistant at the [Douglas Research Centre](https://dou
   <span class="tag-aplab">AI Governance</span>
   <span class="tag-aplab">LLM Behaviour</span>
 </div>
-
 
 <span style="color: #63287d; font-weight: 900; font-size: 1.15em; text-transform: uppercase; letter-spacing: 0.07em; display: block; margin-top: 0; margin-bottom: 0.8em; -webkit-text-stroke: 0.7px #63287d;">Mila</span>
 
