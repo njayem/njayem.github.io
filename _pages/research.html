@@ -146,14 +146,42 @@ author_profile: true
 
   .section-heading {
     font-size: 0.72em;
-    font-weight: 700;
+    font-weight: 900;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: #bbb;
+    color: #999;
     margin: 2.5em 0 1.2em 0;
     padding-bottom: 0.5em;
     border-bottom: 1px solid #eee;
     width: 82%;
+  }
+
+  .pub-abstract-label {
+    font-size: 0.78em;
+    font-weight: 900;
+    color: #bbb;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin: 0 0 0.4em 0;
+  }
+
+  .pub-access-btn {
+    display: inline-block;
+    background: #3B9AFF;
+    color: white !important;
+    font-weight: 700;
+    font-size: 0.8em;
+    padding: 6px 16px;
+    border-radius: 20px;
+    text-decoration: none !important;
+    transition: transform 0.2s ease, background 0.2s ease;
+    white-space: nowrap;
+    margin-top: 0.8em;
+  }
+
+  .pub-access-btn:hover {
+    transform: scale(1.08);
+    background: #1a7de8;
   }
 </style>
 
@@ -170,8 +198,8 @@ author_profile: true
 <div class="pub-card status-review">
   <span class="pub-status-label label-under-review">Under Review</span>
   <p class="pub-title">{{ pub.title }}</p>
-  <p class="pub-meta"><strong style="color:#aaa; font-weight:600;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip }}</span></p>
-  <p class="pub-meta"><strong style="color:#aaa; font-weight:600;">Venue:</strong> <span>{{ pub.venue }}</span></p>
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip }}</span></p>
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Venue:</strong> <span>{{ pub.venue }}</span></p>
   <hr class="pub-divider">
   <p class="pub-abstract-label">Abstract</p>
   {% assign raw = pub.content | strip_html | strip %}
@@ -190,7 +218,7 @@ author_profile: true
 <div class="pub-card status-prep">
   <span class="pub-status-label label-in-preparation">In Preparation</span>
   <p class="pub-title">{{ pub.title }}</p>
-  <p class="pub-meta"><strong style="color:#aaa; font-weight:600;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip }}</span></p>
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip }}</span></p>
   <hr class="pub-divider">
   <p class="pub-abstract-label">Abstract</p>
   {% assign raw = pub.content | strip_html | strip %}
@@ -209,8 +237,8 @@ author_profile: true
 <div class="pub-card status-peer">
   <span class="pub-status-label label-peer-reviewed">Peer-Reviewed</span>
   <p class="pub-title">{{ pub.title }}</p>
-  <p class="pub-meta"><strong style="color:#aaa; font-weight:600;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip }}</span></p>
-  <p class="pub-meta"><strong style="color:#aaa; font-weight:600;">Venue:</strong> <span>{{ pub.venue }}</span></p>
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip }}</span></p>
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Venue:</strong> <span>{{ pub.venue }}</span></p>
   <hr class="pub-divider">
   <p class="pub-abstract-label">Abstract</p>
   {% assign raw = pub.content | strip_html | strip %}
@@ -221,7 +249,7 @@ author_profile: true
   {% endif %}
   {% if pub.paperurl %}
   <div class="pub-footer">
-    <a class="pub-access" href="{{ pub.paperurl }}" target="_blank">Access Here</a>
+    <a class="pub-access-btn" href="{{ pub.paperurl }}" target="_blank">Access Here</a>
   </div>
   {% endif %}
 </div>
