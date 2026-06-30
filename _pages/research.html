@@ -198,7 +198,7 @@ author_profile: true
 <div class="pub-card status-review">
   <span class="pub-status-label label-under-review">Under Review</span>
   <p class="pub-title">{{ pub.title }}</p>
-  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip }}</span></p>
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip | replace: "El-Mufti, N.", "<strong>El-Mufti, N.</strong>" | replace: "*", "<strong>*</strong>" }}</span></p>
   <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Venue:</strong> <span>{{ pub.venue }}</span></p>
   <hr class="pub-divider">
   <p class="pub-abstract-label">Abstract</p>
@@ -218,7 +218,7 @@ author_profile: true
 <div class="pub-card status-prep">
   <span class="pub-status-label label-in-preparation">In Preparation</span>
   <p class="pub-title">{{ pub.title }}</p>
-  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip }}</span></p>
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip | replace: "El-Mufti, N.", "<strong>El-Mufti, N.</strong>" | replace: "*", "<strong>*</strong>" }}</span></p>
   <hr class="pub-divider">
   <p class="pub-abstract-label">Abstract</p>
   {% assign raw = pub.content | strip_html | strip %}
@@ -237,7 +237,7 @@ author_profile: true
 <div class="pub-card status-peer">
   <span class="pub-status-label label-peer-reviewed">Peer-Reviewed</span>
   <p class="pub-title">{{ pub.title }}</p>
-  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip }}</span></p>
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip | replace: "El-Mufti, N.", "<strong>El-Mufti, N.</strong>" | replace: "*", "<strong>*</strong>" }}</span></p>
   <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Venue:</strong> <span>{{ pub.venue }}</span></p>
   <hr class="pub-divider">
   <p class="pub-abstract-label">Abstract</p>
