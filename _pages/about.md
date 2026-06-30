@@ -297,7 +297,11 @@ I am currently a Research Assistant at the [Centre of Excellence for Youth Menta
   <span class="tag-douglas">Data Science</span>
 </div>
 
-<hr style="border: none; border-top: 1px solid #e0e0e0; margin: 1.8em auto; width: 50%;">
+<div style="text-align: center; margin: 1.8em 0;">
+  <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #6287AF; margin: 0 5px;"></span>
+  <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #81cdc6; margin: 0 5px;"></span>
+  <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #cdc6ff; margin: 0 5px;"></span>
+</div>
 
 <span style="color: #3f968a; font-weight: 900; font-size: 1.05em; text-transform: uppercase; letter-spacing: 0.07em; display: block;">The Applied Perception Lab</span>
 
@@ -310,7 +314,11 @@ I am currently a Research Assistant at the [Centre of Excellence for Youth Menta
   <span class="tag-aplab">LLM Behaviour</span>
 </div>
 
-<hr style="border: none; border-top: 1px solid #e0e0e0; margin: 1.8em auto; width: 50%;">
+<div style="text-align: center; margin: 1.8em 0;">
+  <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #6287AF; margin: 0 5px;"></span>
+  <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #81cdc6; margin: 0 5px;"></span>
+  <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #cdc6ff; margin: 0 5px;"></span>
+</div>
 
 <span style="color: #63287d; font-weight: 900; font-size: 1.05em; text-transform: uppercase; letter-spacing: 0.07em; display: block;">Mila</span>
 
