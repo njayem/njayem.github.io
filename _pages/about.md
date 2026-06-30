@@ -211,36 +211,38 @@ redirect_from:
     margin: 0.8em 0 2em 0;
   }
 
+  .douglas-content a { color: #102e70 !important; }
+  .aplab-content a { color: #3f968a !important; }
   .mila-content a { color: #63287d !important; }
-  .mila-content a[href*="drive.google.com"] { color: #3B9AFF !important; }
+  .mila-content a[href*="drive.google.com"] { color: #328de7 !important; }
 
   .tag-douglas {
-    background: #6287AF;
+    background: #102e70;
     color: white;
     padding: 5px 14px;
     border-radius: 20px;
     font-size: 0.8em;
-    font-weight: 600;
+    font-weight: 800;
     display: inline-block;
   }
 
   .tag-aplab {
-    background: #81cdc6;
-    color: #1a3a38;
+    background: #3f968a;
+    color: white;
     padding: 5px 14px;
     border-radius: 20px;
     font-size: 0.8em;
-    font-weight: 600;
+    font-weight: 800;
     display: inline-block;
   }
 
   .tag-mila {
-    background: #cdc6ff;
-    color: #2d2566;
+    background: #63287d;
+    color: white;
     padding: 5px 14px;
     border-radius: 20px;
     font-size: 0.8em;
-    font-weight: 600;
+    font-weight: 800;
     display: inline-block;
   }
 
@@ -307,7 +309,11 @@ My interests have grown well beyond that. I have never been able to look at a te
 
 <span style="color: #102e70; font-weight: 900; font-size: 1.15em; text-transform: uppercase; letter-spacing: 0.07em; display: block; margin-top: 0; margin-bottom: 0.8em; -webkit-text-stroke: 0.7px #102e70;">The Douglas Research Centre</span>
 
+<div class="douglas-content">
+
 I am currently a Research Assistant at the [Douglas Research Centre](https://douglas.research.mcgill.ca/), Canada's second largest mental health research centre with over 400 scientific publications per year, under the supervision of [Dr. Alban Voppel](https://scholar.google.nl/citations?user=eb-aB2kAAAAJ&hl=en), Assistant Professor in AI and Psychiatry at McGill University, and [Dr. Lena Palaniyappan](https://scholar.google.com/citations?user=rDdsjwwAAAAJ&hl=en), Inaugural Director of the Centre of Excellence in Youth Mental Health and Monique H. Bourgeois Chair in Neurodevelopmental Disorders. My work focuses on powering the Voici Speech Bank by engineering and maintaining pipelines to clean, align, and structure longitudinal clinical speech and transcript data across diverse multisite studies, and maintaining data collection workflows using REDCap. I also run rigorous statistical analyses to detect anomalies and patterns across patient cohorts and controls. This infrastructure supports research into speech and language biomarkers of psychosis and relapse risk, enabling multimodal analyses that bring together acoustic, lexical, and discourse features to study the relationships between speech, symptoms, and cognitive state, accounting for demographic and clinical confounds, part of which feeds into work currently under review on ASR performance in psychiatric speech.
+
+</div>
 
 <div class="research-section-tags">
   <span class="tag-douglas">AI for Psychiatry</span>
@@ -319,7 +325,11 @@ I am currently a Research Assistant at the [Douglas Research Centre](https://dou
 
 <span style="color: #3f968a; font-weight: 900; font-size: 1.15em; text-transform: uppercase; letter-spacing: 0.07em; display: block; margin-top: 0; margin-bottom: 0.8em; -webkit-text-stroke: 0.7px #3f968a;">The Applied Perception Lab</span>
 
+<div class="aplab-content">
+
 [Dr. Kersten-Oertel](https://ap-lab.ca/) recognized potential in me before I had the language to name it myself, nurturing a curiosity and creativity that have defined my approach to research ever since. She is also the reason I became an interdisciplinary researcher. She never tried to fit me into a mould, giving me the room to explore while never being far, always there to guide, to push further, and to extend the kind of trust that carries you through the hard stretches. She also sees her students as humans before she sees them as researchers, and that changes everything about how you grow. I am currently a Research Assistant at the [Applied Perception Lab](https://ap-lab.ca/), where my interests have expanded from HCI into responsible AI, governance, and ethics. I study moral tensions and ethical archetypes in human decision-making, and questions that lie at the centre of human and machine cognition, examining where and why language models depart from human reasoning.
+
+</div>
 
 <div class="research-section-tags">
   <span class="tag-aplab">HCI</span>
