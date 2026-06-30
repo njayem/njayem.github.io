@@ -210,7 +210,7 @@ redirect_from:
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    margin: 0.8em 0 0 0;
+    margin: 0.8em 0 0.6em 0;
   }
 
   .tag-douglas {
@@ -297,11 +297,6 @@ I am currently a Research Assistant at the [Centre of Excellence for Youth Menta
   <span class="tag-douglas">Data Science</span>
 </div>
 
-<div style="text-align: center; padding: 1.2em 0; margin: 0;">
-  <span style="display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #ccc; margin: 0 5px;"></span>
-  <span style="display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #ccc; margin: 0 5px;"></span>
-  <span style="display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #ccc; margin: 0 5px;"></span>
-</div>
 
 <span style="color: #3f968a; font-weight: 900; font-size: 1.15em; text-transform: uppercase; letter-spacing: 0.07em; display: block; -webkit-text-stroke: 0.7px #3f968a;">The Applied Perception Lab</span>
 
@@ -314,11 +309,6 @@ I am currently a Research Assistant at the [Centre of Excellence for Youth Menta
   <span class="tag-aplab">LLM Behaviour</span>
 </div>
 
-<div style="text-align: center; padding: 1.2em 0; margin: 0;">
-  <span style="display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #ccc; margin: 0 5px;"></span>
-  <span style="display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #ccc; margin: 0 5px;"></span>
-  <span style="display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #ccc; margin: 0 5px;"></span>
-</div>
 
 <span style="color: #63287d; font-weight: 900; font-size: 1.15em; text-transform: uppercase; letter-spacing: 0.07em; display: block; -webkit-text-stroke: 0.7px #63287d;">Mila</span>
 
