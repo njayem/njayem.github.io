@@ -141,18 +141,18 @@ redirect_from:
   .aplab { background: #3f968a; }
   .drc { background: #102e70; }
   .affiliation-marquee {
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow: hidden;
     width: 100%;
     padding: 1em 0 0.5em 0;
-    scrollbar-width: none;
   }
-  .affiliation-marquee::-webkit-scrollbar { display: none; }
+  .affiliation-marquee:hover .affiliation-track { animation-play-state: paused; }
+  @keyframes affScroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
   .affiliation-track {
     display: inline-flex;
     gap: 12px;
     width: max-content;
     padding: 0 1em 0.6em 1em;
+    animation: affScroll 35s linear infinite;
   }
   .page__content p {
     line-height: 1.65;
@@ -239,7 +239,7 @@ redirect_from:
 
 ## Affiliation
 
-<div class="affiliation-marquee" id="aff-marquee" aria-label="Affiliations">
+<div class="affiliation-marquee" aria-label="Affiliations">
   <div class="affiliation-track">
     <a href="https://www.concordia.ca/" class="affiliation-tag concordia" target="_blank">Concordia University</a>
     <a href="https://crblm.ca/" class="affiliation-tag crblm" target="_blank">CRBLM</a>
@@ -247,28 +247,17 @@ redirect_from:
     <a href="https://sites.google.com/site/mircoravanelli/students" class="affiliation-tag convai" target="_blank">Conversational AI Lab</a>
     <a href="https://ap-lab.ca/" class="affiliation-tag aplab" target="_blank">Applied Perception Lab</a>
     <a href="https://douglas.research.mcgill.ca/" class="affiliation-tag drc" target="_blank">The Douglas Research Centre</a>
+    <a href="https://www.concordia.ca/" class="affiliation-tag concordia" target="_blank" aria-hidden="true">Concordia University</a>
+    <a href="https://crblm.ca/" class="affiliation-tag crblm" target="_blank" aria-hidden="true">CRBLM</a>
+    <a href="https://mila.quebec/en" class="affiliation-tag mila" target="_blank" aria-hidden="true">Mila</a>
+    <a href="https://sites.google.com/site/mircoravanelli/students" class="affiliation-tag convai" target="_blank" aria-hidden="true">Conversational AI Lab</a>
+    <a href="https://ap-lab.ca/" class="affiliation-tag aplab" target="_blank" aria-hidden="true">Applied Perception Lab</a>
+    <a href="https://douglas.research.mcgill.ca/" class="affiliation-tag drc" target="_blank" aria-hidden="true">The Douglas Research Centre</a>
   </div>
 </div>
 
 <script>
 (function() {
-  var el = document.getElementById('aff-marquee');
-  var speed = 1.0;
-  var paused = false;
-  function autoScroll() {
-    if (!paused) {
-      el.scrollLeft += speed;
-      if (el.scrollLeft >= el.scrollWidth - el.clientWidth) { el.scrollLeft = 0; }
-    }
-    requestAnimationFrame(autoScroll);
-  }
-  el.addEventListener('mouseenter', function() { paused = true; });
-  el.addEventListener('mouseleave', function() { paused = false; });
-  el.addEventListener('mousedown', function() { paused = true; });
-  el.addEventListener('mouseup', function() { paused = false; });
-  el.addEventListener('touchstart', function() { paused = true; }, { passive: true });
-  el.addEventListener('touchend', function() { paused = false; });
-  requestAnimationFrame(autoScroll);
   document.addEventListener('DOMContentLoaded', function() {
     var sectionColors = [{ hex: '102e70', color: '#102e70' }, { hex: '3f968a', color: '#3f968a' }, { hex: '63287d', color: '#63287d', driveOverride: '#328de7' }];
     document.querySelectorAll('.page__content span').forEach(function(span) {
