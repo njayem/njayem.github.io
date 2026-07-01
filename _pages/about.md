@@ -114,6 +114,10 @@ redirect_from:
   .affiliation-logo-link {
     display: inline-flex;
     align-items: center;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    line-height: 0;
     text-decoration: none !important;
     transition: transform 0.2s ease, opacity 0.2s ease;
     flex-shrink: 0;
@@ -124,9 +128,11 @@ redirect_from:
     cursor: pointer;
   }
   .affiliation-logo-link img {
+    display: block;
     width: auto;
     max-width: 400px;
-    display: block;
+    padding: 0 !important;
+    margin: 0 !important;
     object-fit: contain;
   }
   .affiliation-marquee {
