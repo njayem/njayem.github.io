@@ -111,39 +111,34 @@ redirect_from:
     background: #f2f2f2;
     font-weight: 700;
   }
-  .affiliation-tag,
-  .page__content a.affiliation-tag,
-  .page__content .affiliation-tag:visited,
-  .page__content .affiliation-tag:hover {
-    color: white !important;
-  }
-  .affiliation-tag {
-    font-size: 0.8em;
-    color: white !important;
-    padding: 6px 14px;
-    border-radius: 20px;
-    display: inline-block;
-    margin: 0px 7px;
+  .affiliation-logo-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 18px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.10);
     text-decoration: none !important;
-    transition: transform 0.2s ease, background 0.2s ease;
-    white-space: nowrap;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    flex-shrink: 0;
   }
-  .affiliation-tag:hover {
-    transform: scale(1.08);
+  .affiliation-logo-link:hover {
+    transform: scale(1.12);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
     cursor: pointer;
-    font-weight: bold;
-    text-decoration: underline;
   }
-  .concordia { background: #922338; }
-  .crblm { background: #244883; }
-  .convai { background: #328de7; }
-  .mila { background: #63287d; }
-  .aplab { background: #3f968a; }
-  .drc { background: #102e70; }
+  .affiliation-logo-link img {
+    height: 40px;
+    width: auto;
+    max-width: 160px;
+    display: block;
+    object-fit: contain;
+  }
   .affiliation-marquee {
     overflow: hidden;
     width: 100%;
-    padding: 1em 0 0.5em 0;
+    padding: 1.4em 0 1.2em 0;
   }
   .affiliation-marquee:hover .affiliation-track { animation-play-state: paused; }
   @keyframes affScroll { 0% { transform: translateX(-50%); } 100% { transform: translateX(0); } }
@@ -241,18 +236,18 @@ redirect_from:
 
 <div class="affiliation-marquee" aria-label="Affiliations">
   <div class="affiliation-track">
-    <a href="https://www.concordia.ca/" class="affiliation-tag concordia" target="_blank">Concordia University</a>
-    <a href="https://crblm.ca/" class="affiliation-tag crblm" target="_blank">CRBLM</a>
-    <a href="https://mila.quebec/en" class="affiliation-tag mila" target="_blank">Mila</a>
-    <a href="https://sites.google.com/site/mircoravanelli/students" class="affiliation-tag convai" target="_blank">Conversational AI Lab</a>
-    <a href="https://ap-lab.ca/" class="affiliation-tag aplab" target="_blank">Applied Perception Lab</a>
-    <a href="https://douglas.research.mcgill.ca/" class="affiliation-tag drc" target="_blank">The Douglas Research Centre</a>
-    <a href="https://www.concordia.ca/" class="affiliation-tag concordia" target="_blank" aria-hidden="true">Concordia University</a>
-    <a href="https://crblm.ca/" class="affiliation-tag crblm" target="_blank" aria-hidden="true">CRBLM</a>
-    <a href="https://mila.quebec/en" class="affiliation-tag mila" target="_blank" aria-hidden="true">Mila</a>
-    <a href="https://sites.google.com/site/mircoravanelli/students" class="affiliation-tag convai" target="_blank" aria-hidden="true">Conversational AI Lab</a>
-    <a href="https://ap-lab.ca/" class="affiliation-tag aplab" target="_blank" aria-hidden="true">Applied Perception Lab</a>
-    <a href="https://douglas.research.mcgill.ca/" class="affiliation-tag drc" target="_blank" aria-hidden="true">The Douglas Research Centre</a>
+    <a href="https://www.concordia.ca/" class="affiliation-logo-link" target="_blank"><img src="/images/concordia-logo.png" alt="Concordia University"></a>
+    <a href="https://crblm.ca/" class="affiliation-logo-link" target="_blank"><img src="/images/crblm-logo.png" alt="CRBLM"></a>
+    <a href="https://mila.quebec/en" class="affiliation-logo-link" target="_blank"><img src="/images/mila-logo.png" alt="Mila"></a>
+    <a href="https://sites.google.com/site/mircoravanelli/students" class="affiliation-logo-link" target="_blank"><img src="/images/conversational-ai-lab-logo.png" alt="Conversational AI Lab"></a>
+    <a href="https://ap-lab.ca/" class="affiliation-logo-link" target="_blank"><img src="/images/ap-lab-logo.png" alt="Applied Perception Lab"></a>
+    <a href="https://douglas.research.mcgill.ca/" class="affiliation-logo-link" target="_blank"><img src="/images/drc-logo.png" alt="The Douglas Research Centre"></a>
+    <a href="https://www.concordia.ca/" class="affiliation-logo-link" target="_blank" aria-hidden="true"><img src="/images/concordia-logo.png" alt=""></a>
+    <a href="https://crblm.ca/" class="affiliation-logo-link" target="_blank" aria-hidden="true"><img src="/images/crblm-logo.png" alt=""></a>
+    <a href="https://mila.quebec/en" class="affiliation-logo-link" target="_blank" aria-hidden="true"><img src="/images/mila-logo.png" alt=""></a>
+    <a href="https://sites.google.com/site/mircoravanelli/students" class="affiliation-logo-link" target="_blank" aria-hidden="true"><img src="/images/conversational-ai-lab-logo.png" alt=""></a>
+    <a href="https://ap-lab.ca/" class="affiliation-logo-link" target="_blank" aria-hidden="true"><img src="/images/ap-lab-logo.png" alt=""></a>
+    <a href="https://douglas.research.mcgill.ca/" class="affiliation-logo-link" target="_blank" aria-hidden="true"><img src="/images/drc-logo.png" alt=""></a>
   </div>
 </div>
 
@@ -299,7 +294,7 @@ I am currently a Research Assistant at the [Douglas Research Centre](https://dou
 
 <span style="color: #3f968a; font-weight: 900; font-size: 1.15em; text-transform: uppercase; letter-spacing: 0.07em; display: block; margin-top: 0; margin-bottom: 0.8em; -webkit-text-stroke: 0.7px #3f968a;">The Applied Perception Lab</span>
 
-Dr. Kersten-Oertel recognized potential in me before I had the language to name it myself. In 2022, she invited me to pursue my first research project through an [NSERC USRA](https://www.nserc-crsng.canada.ca/Students-Etudiants/UG-PC/USRA-BRPC_eng.asp), a federal undergraduate research award, exploring surgeons' workflow challenges in ventriculostomy, one of neurosurgery's most error-prone procedures, and developing prototypes to reduce misplacement and improve surgical precision. That work culminated in a [publication](https://link.springer.com/chapter/10.1007/978-3-031-23223-7_5) at [MICCAI 2022](https://conferences.miccai.org/2022/en/MICCAI2022-WORKSHOPS.html)'s [EPIMI](https://sites.google.com/view/epimi) workshop. It was where I discovered, for the first time, that I loved research. What began as a single project eventually grew into a mentorship I never outgrew. I am now a Research Assistant and Master's student at the [Applied Perception Lab](https://ap-lab.ca/). Dr. Kersten-Oertel's mentorship has played a defining role in the kind of interdisciplinary researcher I am today. She never tried to put me in one box. Instead, she nurtured that curiosity by giving me room to explore while remaining close enough to guide me, challenge me, and extend the kind of trust that carries you through the hard stretches. There, my interests have expanded from HCI into responsible AI, governance, and ethics. I study moral tensions and ethical archetypes in human decision-making, and questions that lie at the centre of human and machine cognition, examining where and why language models depart from human reasoning.
+Dr. Kersten-Oertel recognized potential in me before I had the language to name it myself. In 2022, she invited me to pursue my first research project through an [NSERC USRA](https://www.nserc-crsng.canada.ca/Students-Etudiants/UG-PC/USRA-BRPC_eng.asp), a federal undergraduate research award, exploring surgeons' workflow challenges in ventriculostomy, one of neurosurgery's most error-prone procedures, and developing prototypes to reduce misplacement and improve surgical precision. That work culminated in a [publication](https://link.springer.com/chapter/10.1007/978-3-031-23223-7_5) at [MICCAI 2022](https://conferences.miccai.org/2022/en/MICCAI2022-WORKSHOPS.html)'s [EPIMI](https://sites.google.com/view/epimi) workshop. It was where I found out, for the first time, that I loved research. What began as a single project eventually materialized into a mentorship I never outgrew. I am currently a Research Assistant and Master's student at the [Applied Perception Lab](https://ap-lab.ca/). She is the reason I became an interdisciplinary researcher. She never tried to fit me into a mould, giving me the room to explore while never being far, always there to guide, to push further, and to extend the kind of trust that carries you through the hard stretches. There, my interests have expanded from HCI into responsible AI, governance, and ethics. I study moral tensions and ethical archetypes in human decision-making, and questions that lie at the centre of human and machine cognition, examining where and why language models depart from human reasoning.
 
 <div class="research-section-tags">
   <span class="tag-aplab">HCI</span>
@@ -311,7 +306,7 @@ Dr. Kersten-Oertel recognized potential in me before I had the language to name 
 
 <span style="color: #63287d; font-weight: 900; font-size: 1.15em; text-transform: uppercase; letter-spacing: 0.07em; display: block; margin-top: 0; margin-bottom: 0.8em; -webkit-text-stroke: 0.7px #63287d;">Mila</span>
 
-Dr. Ravanelli recognized my curiosity, ambition, and the work I put into his Machine Learning course, and invited me to join his lab as an intern in fall 2024. I spent that time building a custom Parkinson's speech dataset from the ground up, including the scripts and metadata to construct and reproduce it from scratch, and reaching out to research groups and clinical consortia across the world to bring in data that is as clinically and demographically diverse as possible. Working alongside clinicians through this process shifted something in how I think. They bring questions that no model can answer on its own, grounding the work in real use, real constraints, and real people. That clinical grounding is what brought fairness and explainability to the centre of my thesis. That internship eventually grew into a longer-term mentorship and collaboration. I am now a collaborating researcher and Master's student at [Mila](https://mila.quebec/en), Quebec's AI Institute, working in the Conversational AI Lab. This field runs on collaboration, and I have come to believe that deeply. It takes a village to advance science at this scale, and I got a first glimpse of what that looks like through Dr. Ravanelli and the community he built around [SpeechBrain](https://speechbrain.github.io/). I have also served as a Teaching Assistant for Concordia's Machine Learning course (COMP 432), something that reflects a belief I have long carried and that Dr. Ravanelli embodies in how he leads his lab. You only truly know a subject when you can explain it to someone else. Supporting students in building intuition for core ML concepts and giving them honest, constructive feedback has been as much a part of my own learning as theirs.
+Dr. Ravanelli recognized my curiosity, ambition, and the work I put into his Machine Learning course, and invited me to join his lab as an intern in fall 2024. I spent that time building a custom Parkinson's speech dataset from the ground up, including the scripts and metadata to construct and reproduce it from scratch, and reaching out to research groups and clinical consortia across the world to bring in data that is as clinically and demographically diverse as possible. Working alongside clinicians through this process shifted something in how I think. They bring questions that no model can answer on its own, grounding the work in real use, real constraints, and real people, and that is what has brought fairness and explainability to the centre of my thesis. That internship eventually materialized into a longer-term mentorship and collaboration. I am now a collaborating researcher and Master's student at [Mila](https://mila.quebec/en), Quebec's AI Institute, working in the Conversational AI Lab. This field runs on collaboration, and I have come to believe that deeply. It takes a village to advance science at this scale, and I got a first glimpse of what that looks like through Dr. Ravanelli and the community he built around [SpeechBrain](https://speechbrain.github.io/). I have also served as a Teaching Assistant for Concordia's Machine Learning course (COMP 432), something that reflects a belief I have long carried and that Dr. Ravanelli embodies in how he leads his lab. You only truly know a subject when you can explain it to someone else. Supporting students in building intuition for core ML concepts and giving them honest, constructive feedback has been as much a part of my own learning as theirs.
 
 <div class="research-section-tags">
   <span class="tag-mila">AI and Healthcare</span>
