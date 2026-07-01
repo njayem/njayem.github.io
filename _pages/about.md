@@ -111,43 +111,47 @@ redirect_from:
     background: #f2f2f2;
     font-weight: 700;
   }
-  .affiliation-logo-link {
-    display: inline-flex;
-    align-items: center;
-    padding: 0 !important;
-    margin: 0 !important;
-    border: none !important;
-    line-height: 0;
+  .affiliation-tag,
+  .page__content a.affiliation-tag,
+  .page__content .affiliation-tag:visited,
+  .page__content .affiliation-tag:hover {
+    color: white !important;
+  }
+  .affiliation-tag {
+    font-size: 0.8em;
+    color: white !important;
+    padding: 6px 14px;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 0px 7px;
     text-decoration: none !important;
-    transition: transform 0.2s ease, opacity 0.2s ease;
-    flex-shrink: 0;
+    transition: transform 0.2s ease, background 0.2s ease;
+    white-space: nowrap;
   }
-  .affiliation-logo-link:hover {
-    transform: scale(1.12);
-    opacity: 0.85;
+  .affiliation-tag:hover {
+    transform: scale(1.08);
     cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
   }
-  .affiliation-logo-link img {
-    display: block;
-    width: auto;
-    max-width: 400px;
-    padding: 0 !important;
-    margin: 0 !important;
-    object-fit: contain;
-  }
+  .concordia { background: #922338; }
+  .crblm { background: #244883; }
+  .convai { background: #328de7; }
+  .mila { background: #63287d; }
+  .aplab { background: #3f968a; }
+  .drc { background: #102e70; }
   .affiliation-marquee {
     overflow: hidden;
     width: 100%;
-    padding: 0.4em 0;
+    padding: 1em 0 0.5em 0;
   }
   .affiliation-marquee:hover .affiliation-track { animation-play-state: paused; }
   @keyframes affScroll { 0% { transform: translateX(-50%); } 100% { transform: translateX(0); } }
   .affiliation-track {
     display: inline-flex;
-    gap: 40px;
-    align-items: center;
+    gap: 12px;
     width: max-content;
-    padding: 0 1em;
+    padding: 0 1em 0.6em 1em;
     animation: affScroll 35s linear infinite;
   }
   .page__content p {
@@ -237,18 +241,18 @@ redirect_from:
 
 <div class="affiliation-marquee" aria-label="Affiliations">
   <div class="affiliation-track">
-    <a href="https://www.concordia.ca/" class="affiliation-logo-link" target="_blank"><img src="/images/concordia-logo.png" alt="Concordia University" style="height:50px"></a>
-    <a href="https://crblm.ca/" class="affiliation-logo-link" target="_blank"><img src="/images/crblm-logo.png" alt="CRBLM" style="height:40px"></a>
-    <a href="https://mila.quebec/en" class="affiliation-logo-link" target="_blank"><img src="/images/mila-logo.png" alt="Mila" style="height:40px"></a>
-    <a href="https://sites.google.com/site/mircoravanelli/students" class="affiliation-logo-link" target="_blank"><img src="/images/conversational-ai-lab-logo.png" alt="Conversational AI Lab" style="height:30px"></a>
-    <a href="https://ap-lab.ca/" class="affiliation-logo-link" target="_blank"><img src="/images/ap-lab-logo.png" alt="Applied Perception Lab" style="height:40px"></a>
-    <a href="https://douglas.research.mcgill.ca/" class="affiliation-logo-link" target="_blank"><img src="/images/drc-logo.png" alt="The Douglas Research Centre" style="height:40px"></a>
-    <a href="https://www.concordia.ca/" class="affiliation-logo-link" target="_blank" aria-hidden="true"><img src="/images/concordia-logo.png" alt="" style="height:50px"></a>
-    <a href="https://crblm.ca/" class="affiliation-logo-link" target="_blank" aria-hidden="true"><img src="/images/crblm-logo.png" alt="" style="height:40px"></a>
-    <a href="https://mila.quebec/en" class="affiliation-logo-link" target="_blank" aria-hidden="true"><img src="/images/mila-logo.png" alt="" style="height:40px"></a>
-    <a href="https://sites.google.com/site/mircoravanelli/students" class="affiliation-logo-link" target="_blank" aria-hidden="true"><img src="/images/conversational-ai-lab-logo.png" alt="" style="height:30px"></a>
-    <a href="https://ap-lab.ca/" class="affiliation-logo-link" target="_blank" aria-hidden="true"><img src="/images/ap-lab-logo.png" alt="" style="height:40px"></a>
-    <a href="https://douglas.research.mcgill.ca/" class="affiliation-logo-link" target="_blank" aria-hidden="true"><img src="/images/drc-logo.png" alt="" style="height:40px"></a>
+    <a href="https://www.concordia.ca/" class="affiliation-tag concordia" target="_blank">Concordia University</a>
+    <a href="https://crblm.ca/" class="affiliation-tag crblm" target="_blank">CRBLM</a>
+    <a href="https://mila.quebec/en" class="affiliation-tag mila" target="_blank">Mila</a>
+    <a href="https://sites.google.com/site/mircoravanelli/students" class="affiliation-tag convai" target="_blank">Conversational AI Lab</a>
+    <a href="https://ap-lab.ca/" class="affiliation-tag aplab" target="_blank">Applied Perception Lab</a>
+    <a href="https://douglas.research.mcgill.ca/" class="affiliation-tag drc" target="_blank">The Douglas Research Centre</a>
+    <a href="https://www.concordia.ca/" class="affiliation-tag concordia" target="_blank" aria-hidden="true">Concordia University</a>
+    <a href="https://crblm.ca/" class="affiliation-tag crblm" target="_blank" aria-hidden="true">CRBLM</a>
+    <a href="https://mila.quebec/en" class="affiliation-tag mila" target="_blank" aria-hidden="true">Mila</a>
+    <a href="https://sites.google.com/site/mircoravanelli/students" class="affiliation-tag convai" target="_blank" aria-hidden="true">Conversational AI Lab</a>
+    <a href="https://ap-lab.ca/" class="affiliation-tag aplab" target="_blank" aria-hidden="true">Applied Perception Lab</a>
+    <a href="https://douglas.research.mcgill.ca/" class="affiliation-tag drc" target="_blank" aria-hidden="true">The Douglas Research Centre</a>
   </div>
 </div>
 
