@@ -114,24 +114,19 @@ redirect_from:
   .affiliation-logo-link {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    padding: 10px 18px;
-    border-radius: 12px;
-    background: #fff;
-    box-shadow: 0 1px 5px rgba(0,0,0,0.10);
     text-decoration: none !important;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, opacity 0.2s ease;
     flex-shrink: 0;
   }
   .affiliation-logo-link:hover {
     transform: scale(1.12);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+    opacity: 0.85;
     cursor: pointer;
   }
   .affiliation-logo-link img {
-    height: 40px;
+    height: 60px;
     width: auto;
-    max-width: 160px;
+    max-width: 200px;
     display: block;
     object-fit: contain;
   }
@@ -144,9 +139,10 @@ redirect_from:
   @keyframes affScroll { 0% { transform: translateX(-50%); } 100% { transform: translateX(0); } }
   .affiliation-track {
     display: inline-flex;
-    gap: 12px;
+    gap: 40px;
+    align-items: center;
     width: max-content;
-    padding: 0 1em 0.6em 1em;
+    padding: 0 2em 0.6em 2em;
     animation: affScroll 35s linear infinite;
   }
   .page__content p {
