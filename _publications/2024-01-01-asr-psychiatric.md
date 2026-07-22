@@ -4,7 +4,7 @@ collection: publications
 status: "under-review"
 peer_reviewed: true
 permalink: /publication/2024-asr-psychiatric
-excerpt: 'Under Review · NPP—Digital Psychiatry and Neuroscience (DPN), Nature Portfolio'
+excerpt: 'Submitted · NPP—Digital Psychiatry and Neuroscience (DPN), Nature Portfolio'
 date: 2024-01-01
 journal: 'NPP—Digital Psychiatry and Neuroscience (DPN), Nature Portfolio'
 paperurl: 'https://openreview.net/profile?id=~Nadine_El-Mufti1'

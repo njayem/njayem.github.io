@@ -204,10 +204,10 @@ author_profile: true
 <div class="research-cards-wrapper">
 
 {% if review.size > 0 %}
-<p class="section-heading">Under Review</p>
+<p class="section-heading">Submitted</p>
 {% for pub in review %}
 <div class="pub-card status-review">
-  <span class="pub-status-label label-under-review">Under Review</span>
+  <span class="pub-status-label label-under-review">Submitted</span>
   <p class="pub-title">{{ pub.title }}</p>
   <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip | replace: "El-Mufti, N.", "<span style='font-weight:900;font-size:1.08em;color:#000;-webkit-text-stroke:0.6px #000;'>El-Mufti, N.</span>" | replace: "*", "<sup style='font-weight:900;font-size:0.9em;color:#000;'>*</sup>" }}</span></p>
   {% if pub.venue %}
