@@ -211,6 +211,7 @@ author_profile: true
   <p class="pub-title">{{ pub.title }}</p>
   <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip | replace: "El-Mufti, N.", "<span style='font-weight:900;font-size:1.08em;color:#000;-webkit-text-stroke:0.6px #000;'>El-Mufti, N.</span>" | replace: "*", "<sup style='font-weight:900;font-size:0.9em;color:#000;'>*</sup>" }}</span></p>
   <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Venue:</strong> <span style="font-weight:900; color:#000;">{{ pub.venue }}</span></p>
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Peer-Reviewed:</strong> <span style="font-weight:900; color:#000;">{% if pub.peer_reviewed %}Yes{% else %}No{% endif %}</span></p>
   <hr class="pub-divider">
   <p class="pub-abstract-label">Abstract</p>
   {% assign raw = pub.content | strip_html | strip %}
@@ -231,6 +232,7 @@ author_profile: true
   <p class="pub-title">{{ pub.title }}</p>
   <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip | replace: "El-Mufti, N.", "<span style='font-weight:900;font-size:1.08em;color:#000;-webkit-text-stroke:0.6px #000;'>El-Mufti, N.</span>" | replace: "*", "<sup style='font-weight:900;font-size:0.9em;color:#000;'>*</sup>" }}</span></p>
   <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Venue:</strong> <span style="font-weight:900; color:#000;">{{ pub.venue }}</span></p>
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Peer-Reviewed:</strong> <span style="font-weight:900; color:#000;">{% if pub.peer_reviewed %}Yes{% else %}No{% endif %}</span></p>
   <hr class="pub-divider">
   <p class="pub-abstract-label">Abstract</p>
   {% assign raw = pub.content | strip_html | strip %}
@@ -251,7 +253,7 @@ author_profile: true
   <p class="pub-title">{{ pub.title }}</p>
   <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip | replace: "El-Mufti, N.", "<span style='font-weight:900;font-size:1.08em;color:#000;-webkit-text-stroke:0.6px #000;'>El-Mufti, N.</span>" | replace: "*", "<sup style='font-weight:900;font-size:0.9em;color:#000;'>*</sup>" }}</span></p>
   <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Venue:</strong> <span style="font-weight:900; color:#000;">{{ pub.venue }}</span></p>
-  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Peer-Reviewed:</strong> <span style="font-weight:900; color:#000;">Yes</span></p>
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Peer-Reviewed:</strong> <span style="font-weight:900; color:#000;">{% if pub.peer_reviewed %}Yes{% else %}No{% endif %}</span></p>
   <hr class="pub-divider">
   <p class="pub-abstract-label">Abstract</p>
   {% assign raw = pub.content | strip_html | strip %}
@@ -275,7 +277,10 @@ author_profile: true
 <div class="pub-card status-thesis">
   <span class="pub-status-label label-masters-thesis">Master's Thesis</span>
   <p class="pub-title">{{ pub.title }}</p>
+  {% unless pub.hide_authors %}
   <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip | replace: "El-Mufti, N.", "<span style='font-weight:900;font-size:1.08em;color:#000;-webkit-text-stroke:0.6px #000;'>El-Mufti, N.</span>" | replace: "*", "<sup style='font-weight:900;font-size:0.9em;color:#000;'>*</sup>" }}</span></p>
+  {% endunless %}
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Peer-Reviewed:</strong> <span style="font-weight:900; color:#000;">{% if pub.peer_reviewed %}Yes{% else %}No{% endif %}</span></p>
   <hr class="pub-divider">
   <p class="pub-abstract-label">Abstract</p>
   {% assign raw = pub.content | strip_html | strip %}

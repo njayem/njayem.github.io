@@ -2,6 +2,7 @@
 title: "Automatic Speech Recognition Performance in Psychiatric Speech: Linguistic, Clinical, and Architectural Factors"
 collection: publications
 status: "under-review"
+peer_reviewed: true
 permalink: /publication/2024-asr-psychiatric
 excerpt: 'Under Review · NPP—Digital Psychiatry and Neuroscience (DPN), Nature Portfolio'
 date: 2024-01-01

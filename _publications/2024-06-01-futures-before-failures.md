@@ -2,6 +2,7 @@
 title: "Futures Before Failures: Design Fictions for Anticipatory Fairness in Surgical AI"
 collection: publications
 status: "under-review"
+peer_reviewed: true
 permalink: /publication/2024-futures-before-failures
 excerpt: 'Under Review · MICCAI EPIMI 2026'
 date: 2024-06-01

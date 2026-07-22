@@ -2,6 +2,7 @@
 title: "User-Centered Design for Surgical Innovations: A Ventriculostomy Case Study"
 collection: publications
 status: "peer-reviewed"
+peer_reviewed: true
 permalink: /publication/2022-ventriculostomy
 excerpt: 'Peer-reviewed · EPIMI Workshop, MICCAI 2022'
 date: 2022-10-01
