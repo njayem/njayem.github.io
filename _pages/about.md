@@ -14,11 +14,10 @@ redirect_from:
 
 <br>
 
-<!-- Responsive Photo Frame with Tape -->
+<!-- Responsive Photo Frame -->
 <div class="animate__animated animate__swing" style="text-align: center;">
   <div class="photo-frame">
     <img src="/images/academic-headshot.png" alt="Visual of Parkinson's research pipeline from voice to machine learning model" class="photo-img">
-    <div class="tape"></div>
   </div>
 </div>
 
@@ -32,7 +31,8 @@ redirect_from:
     width: 90vw;
     max-width: 400px;
     aspect-ratio: 1 / 1;
-    border: 6.5px solid black;
+    border: 12px solid black;
+    box-sizing: content-box;
     overflow: visible;
     background: #fff;
   }
@@ -41,19 +41,6 @@ redirect_from:
     height: 100%;
     object-fit: cover;
     display: block;
-  }
-  .tape {
-    position: absolute;
-    z-index: 2;
-    pointer-events: none;
-    background: rgba(255, 255, 255, 0.85);
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
-    border-radius: 2px;
-    width: 26%;
-    height: 9%;
-    left: 50%;
-    top: 0;
-    transform: translate(-50%, -58%);
   }
   .page__content h2 {
     color: #000000 !important;
@@ -135,11 +122,12 @@ redirect_from:
     padding: 1em 1em 0.6em 1em;
   }
   .affiliation-marquee:hover .affiliation-track { animation-play-state: paused; }
-  @keyframes affScroll { 0% { transform: translateX(-50%); } 100% { transform: translateX(0); } }
+  @keyframes affScroll { 0% { transform: translateX(calc(-1 * var(--set-w, 50%))); } 100% { transform: translateX(0); } }
   .affiliation-track {
     display: inline-flex;
     width: max-content;
     animation: affScroll 24s linear infinite;
+    --set-w: 50%;
   }
   .affiliation-set {
     display: inline-flex;
@@ -201,7 +189,7 @@ redirect_from:
   }
   .table-btn {
     display: inline-block;
-    background: #328de7;
+    background: #8a8a8a;
     color: #fff !important;
     font-weight: 700;
     font-size: 0.8em;
@@ -211,7 +199,7 @@ redirect_from:
     transition: background 0.18s ease, transform 0.18s ease;
   }
   .table-btn:hover {
-    background: #1a7de8;
+    background: #707070;
     transform: scale(1.06);
     color: #fff !important;
     text-decoration: none !important;
@@ -232,8 +220,8 @@ redirect_from:
 ## Affiliation
 
 <div class="affiliation-marquee" aria-label="Affiliations">
-  <div class="affiliation-track">
-   <div class="affiliation-set">
+  <div class="affiliation-track" id="affiliation-track">
+   <div class="affiliation-set" id="affiliation-set-a">
     <a href="https://www.concordia.ca/" class="affiliation-tag" target="_blank"><img src="/images/concordia-logo.png" alt="Concordia University" class="affiliation-logo"></a>
     <a href="https://crblm.ca/" class="affiliation-tag" target="_blank"><img src="/images/crblm-logo.png" alt="CRBLM" class="affiliation-logo"></a>
     <a href="https://mila.quebec/en" class="affiliation-tag" target="_blank"><img src="/images/mila-logo.png" alt="Mila" class="affiliation-logo"></a>
@@ -249,8 +237,41 @@ redirect_from:
     <a href="https://ap-lab.ca/" class="affiliation-tag" target="_blank" aria-hidden="true"><img src="/images/ap-lab-logo.png" alt="Applied Perception Lab" class="affiliation-logo"></a>
     <a href="https://douglas.research.mcgill.ca/" class="affiliation-tag" target="_blank" aria-hidden="true"><img src="/images/drc-logo.png" alt="The Douglas Research Centre" class="affiliation-logo"></a>
    </div>
+   <div class="affiliation-set" aria-hidden="true">
+    <a href="https://www.concordia.ca/" class="affiliation-tag" target="_blank" aria-hidden="true"><img src="/images/concordia-logo.png" alt="Concordia University" class="affiliation-logo"></a>
+    <a href="https://crblm.ca/" class="affiliation-tag" target="_blank" aria-hidden="true"><img src="/images/crblm-logo.png" alt="CRBLM" class="affiliation-logo"></a>
+    <a href="https://mila.quebec/en" class="affiliation-tag" target="_blank" aria-hidden="true"><img src="/images/mila-logo.png" alt="Mila" class="affiliation-logo"></a>
+    <a href="https://sites.google.com/site/mircoravanelli/students" class="affiliation-tag" target="_blank" aria-hidden="true"><img src="/images/conversational-ai-lab-logo.png" alt="Conversational AI Lab" class="affiliation-logo"></a>
+    <a href="https://ap-lab.ca/" class="affiliation-tag" target="_blank" aria-hidden="true"><img src="/images/ap-lab-logo.png" alt="Applied Perception Lab" class="affiliation-logo"></a>
+    <a href="https://douglas.research.mcgill.ca/" class="affiliation-tag" target="_blank" aria-hidden="true"><img src="/images/drc-logo.png" alt="The Douglas Research Centre" class="affiliation-logo"></a>
+   </div>
   </div>
 </div>
+
+<script>
+(function () {
+  var track = document.getElementById('affiliation-track');
+  var setA = document.getElementById('affiliation-set-a');
+  if (!track || !setA) return;
+  function updateSetWidth() {
+    var w = setA.getBoundingClientRect().width;
+    if (w > 0) {
+      track.style.setProperty('--set-w', w + 'px');
+    }
+  }
+  updateSetWidth();
+  window.addEventListener('load', updateSetWidth);
+  var imgs = setA.querySelectorAll('img');
+  imgs.forEach(function (img) {
+    if (!img.complete) img.addEventListener('load', updateSetWidth);
+  });
+  if (window.ResizeObserver) {
+    new ResizeObserver(updateSetWidth).observe(setA);
+  } else {
+    window.addEventListener('resize', updateSetWidth);
+  }
+})();
+</script>
 
 <script>
 (function() {
