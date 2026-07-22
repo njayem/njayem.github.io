@@ -132,7 +132,7 @@ redirect_from:
   .affiliation-marquee {
     overflow: hidden;
     width: 100%;
-    padding: 1em 0 0.5em 0;
+    padding: 1em 1em 0.6em 1em;
   }
   .affiliation-marquee:hover .affiliation-track { animation-play-state: paused; }
   @keyframes affScroll { 0% { transform: translateX(-50%); } 100% { transform: translateX(0); } }
@@ -140,8 +140,7 @@ redirect_from:
     display: inline-flex;
     gap: 24px;
     width: max-content;
-    padding: 0 1em 0.6em 1em;
-    animation: affScroll 17s linear infinite;
+    animation: affScroll 24s linear infinite;
   }
   .page__content p {
     line-height: 1.65;
