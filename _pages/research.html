@@ -210,7 +210,18 @@ author_profile: true
   <span class="pub-status-label label-under-review">Under Review</span>
   <p class="pub-title">{{ pub.title }}</p>
   <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip | replace: "El-Mufti, N.", "<span style='font-weight:900;font-size:1.08em;color:#000;-webkit-text-stroke:0.6px #000;'>El-Mufti, N.</span>" | replace: "*", "<sup style='font-weight:900;font-size:0.9em;color:#000;'>*</sup>" }}</span></p>
+  {% if pub.venue %}
   <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Venue:</strong> <span style="font-weight:900; color:#000;">{{ pub.venue }}</span></p>
+  {% endif %}
+  {% if pub.journal %}
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Journal:</strong> <span style="font-weight:900; color:#000;">{{ pub.journal }}</span></p>
+  {% endif %}
+  {% if pub.proceedings %}
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Proceedings:</strong> <span style="font-weight:900; color:#000;">{{ pub.proceedings }}</span></p>
+  {% endif %}
+  {% if pub.preprint %}
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Preprint:</strong> <span style="font-weight:900; color:#000;">{{ pub.preprint }}</span></p>
+  {% endif %}
   <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Peer-Reviewed:</strong> <span style="font-weight:900; color:#000;">{% if pub.peer_reviewed %}Yes{% else %}No{% endif %}</span></p>
   <hr class="pub-divider">
   <p class="pub-abstract-label">Abstract</p>
@@ -231,7 +242,18 @@ author_profile: true
   <span class="pub-status-label label-in-preparation">In Preparation</span>
   <p class="pub-title">{{ pub.title }}</p>
   <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip | replace: "El-Mufti, N.", "<span style='font-weight:900;font-size:1.08em;color:#000;-webkit-text-stroke:0.6px #000;'>El-Mufti, N.</span>" | replace: "*", "<sup style='font-weight:900;font-size:0.9em;color:#000;'>*</sup>" }}</span></p>
+  {% if pub.venue %}
   <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Venue:</strong> <span style="font-weight:900; color:#000;">{{ pub.venue }}</span></p>
+  {% endif %}
+  {% if pub.journal %}
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Journal:</strong> <span style="font-weight:900; color:#000;">{{ pub.journal }}</span></p>
+  {% endif %}
+  {% if pub.proceedings %}
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Proceedings:</strong> <span style="font-weight:900; color:#000;">{{ pub.proceedings }}</span></p>
+  {% endif %}
+  {% if pub.preprint %}
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Preprint:</strong> <span style="font-weight:900; color:#000;">{{ pub.preprint }}</span></p>
+  {% endif %}
   <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Peer-Reviewed:</strong> <span style="font-weight:900; color:#000;">{% if pub.peer_reviewed %}Yes{% else %}No{% endif %}</span></p>
   <hr class="pub-divider">
   <p class="pub-abstract-label">Abstract</p>
@@ -252,7 +274,18 @@ author_profile: true
   <span class="pub-status-label label-peer-reviewed">Published</span>
   <p class="pub-title">{{ pub.title }}</p>
   <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip | replace: "El-Mufti, N.", "<span style='font-weight:900;font-size:1.08em;color:#000;-webkit-text-stroke:0.6px #000;'>El-Mufti, N.</span>" | replace: "*", "<sup style='font-weight:900;font-size:0.9em;color:#000;'>*</sup>" }}</span></p>
+  {% if pub.venue %}
   <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Venue:</strong> <span style="font-weight:900; color:#000;">{{ pub.venue }}</span></p>
+  {% endif %}
+  {% if pub.journal %}
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Journal:</strong> <span style="font-weight:900; color:#000;">{{ pub.journal }}</span></p>
+  {% endif %}
+  {% if pub.proceedings %}
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Proceedings:</strong> <span style="font-weight:900; color:#000;">{{ pub.proceedings }}</span></p>
+  {% endif %}
+  {% if pub.preprint %}
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Preprint:</strong> <span style="font-weight:900; color:#000;">{{ pub.preprint }}</span></p>
+  {% endif %}
   <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Peer-Reviewed:</strong> <span style="font-weight:900; color:#000;">{% if pub.peer_reviewed %}Yes{% else %}No{% endif %}</span></p>
   <hr class="pub-divider">
   <p class="pub-abstract-label">Abstract</p>
@@ -280,6 +313,18 @@ author_profile: true
   {% unless pub.hide_authors %}
   <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip | replace: "El-Mufti, N.", "<span style='font-weight:900;font-size:1.08em;color:#000;-webkit-text-stroke:0.6px #000;'>El-Mufti, N.</span>" | replace: "*", "<sup style='font-weight:900;font-size:0.9em;color:#000;'>*</sup>" }}</span></p>
   {% endunless %}
+  {% if pub.venue %}
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Venue:</strong> <span style="font-weight:900; color:#000;">{{ pub.venue }}</span></p>
+  {% endif %}
+  {% if pub.journal %}
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Journal:</strong> <span style="font-weight:900; color:#000;">{{ pub.journal }}</span></p>
+  {% endif %}
+  {% if pub.proceedings %}
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Proceedings:</strong> <span style="font-weight:900; color:#000;">{{ pub.proceedings }}</span></p>
+  {% endif %}
+  {% if pub.preprint %}
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Preprint:</strong> <span style="font-weight:900; color:#000;">{{ pub.preprint }}</span></p>
+  {% endif %}
   <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Peer-Reviewed:</strong> <span style="font-weight:900; color:#000;">{% if pub.peer_reviewed %}Yes{% else %}No{% endif %}</span></p>
   <hr class="pub-divider">
   <p class="pub-abstract-label">Abstract</p>

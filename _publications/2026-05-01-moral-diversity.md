@@ -7,7 +7,7 @@ permalink: /publication/2026-moral-diversity
 excerpt: 'In Preparation'
 date: 2026-05-01
 show_date: false
-venue: 'Scientific Reports, Nature Portfolio'
+journal: 'Scientific Reports, Nature Portfolio'
 paperurl: ''
 citation: "El-Mufti, N., Salim, M., Tajmel, T., & Kersten-Oertel, M. (in preparation). Moral Diversity in Healthcare AI Governance: A Person-Centered Analysis of Value Trade-Offs. Scientific Reports, Nature Portfolio."
 ---
