@@ -6,7 +6,7 @@ tag: "Sci Rep"
 peer_reviewed: true
 permalink: /publication/2026-moral-diversity
 excerpt: 'In Preparation'
-date: 2026-05-01
+date: 2024-12-01
 show_date: false
 journal: 'Scientific Reports, Nature Portfolio'
 paperurl: ''
