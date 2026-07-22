@@ -8,7 +8,7 @@ permalink: /publication/2024-asr-psychiatric
 excerpt: 'Submitted · NPP—Digital Psychiatry and Neuroscience (DPN), Nature Portfolio'
 date: 2024-01-01
 journal: 'NPP—Digital Psychiatry and Neuroscience (DPN), Nature Portfolio'
-paperurl: 'https://openreview.net/profile?id=~Nadine_El-Mufti1'
+paperurl: ''
 citation: 'El-Mufti, N., Mackinley, M., Dzialoszynski, P., Palaniyappan, L., & Voppel, A. (under review). Automatic Speech Recognition Performance in Psychiatric Speech: Linguistic, Clinical, and Architectural Factors.'
 ---
 
