@@ -111,35 +111,24 @@ redirect_from:
     background: #f2f2f2;
     font-weight: 700;
   }
-  .affiliation-tag,
-  .page__content a.affiliation-tag,
-  .page__content .affiliation-tag:visited,
-  .page__content .affiliation-tag:hover {
-    color: white !important;
-  }
   .affiliation-tag {
-    font-size: 0.8em;
-    color: white !important;
-    padding: 6px 14px;
-    border-radius: 20px;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     margin: 0px 7px;
     text-decoration: none !important;
-    transition: transform 0.2s ease, background 0.2s ease;
-    white-space: nowrap;
+    transition: transform 0.2s ease;
   }
   .affiliation-tag:hover {
     transform: scale(1.08);
     cursor: pointer;
-    font-weight: bold;
-    text-decoration: underline;
   }
-  .concordia { background: #922338; }
-  .crblm { background: #244883; }
-  .convai { background: #328de7; }
-  .mila { background: #63287d; }
-  .aplab { background: #3f968a; }
-  .drc { background: #102e70; }
+  .affiliation-logo {
+    height: 48px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+  }
   .affiliation-marquee {
     overflow: hidden;
     width: 100%;
@@ -241,18 +230,18 @@ redirect_from:
 
 <div class="affiliation-marquee" aria-label="Affiliations">
   <div class="affiliation-track">
-    <a href="https://www.concordia.ca/" class="affiliation-tag concordia" target="_blank">Concordia University</a>
-    <a href="https://crblm.ca/" class="affiliation-tag crblm" target="_blank">CRBLM</a>
-    <a href="https://mila.quebec/en" class="affiliation-tag mila" target="_blank">Mila</a>
-    <a href="https://sites.google.com/site/mircoravanelli/students" class="affiliation-tag convai" target="_blank">Conversational AI Lab</a>
-    <a href="https://ap-lab.ca/" class="affiliation-tag aplab" target="_blank">Applied Perception Lab</a>
-    <a href="https://douglas.research.mcgill.ca/" class="affiliation-tag drc" target="_blank">The Douglas Research Centre</a>
-    <a href="https://www.concordia.ca/" class="affiliation-tag concordia" target="_blank" aria-hidden="true">Concordia University</a>
-    <a href="https://crblm.ca/" class="affiliation-tag crblm" target="_blank" aria-hidden="true">CRBLM</a>
-    <a href="https://mila.quebec/en" class="affiliation-tag mila" target="_blank" aria-hidden="true">Mila</a>
-    <a href="https://sites.google.com/site/mircoravanelli/students" class="affiliation-tag convai" target="_blank" aria-hidden="true">Conversational AI Lab</a>
-    <a href="https://ap-lab.ca/" class="affiliation-tag aplab" target="_blank" aria-hidden="true">Applied Perception Lab</a>
-    <a href="https://douglas.research.mcgill.ca/" class="affiliation-tag drc" target="_blank" aria-hidden="true">The Douglas Research Centre</a>
+    <a href="https://www.concordia.ca/" class="affiliation-tag" target="_blank"><img src="/images/concordia-logo.png" alt="Concordia University" class="affiliation-logo"></a>
+    <a href="https://crblm.ca/" class="affiliation-tag" target="_blank"><img src="/images/crblm-logo.png" alt="CRBLM" class="affiliation-logo"></a>
+    <a href="https://mila.quebec/en" class="affiliation-tag" target="_blank"><img src="/images/mila-logo.png" alt="Mila" class="affiliation-logo"></a>
+    <a href="https://sites.google.com/site/mircoravanelli/students" class="affiliation-tag" target="_blank"><img src="/images/conversational-ai-lab-logo.png" alt="Conversational AI Lab" class="affiliation-logo"></a>
+    <a href="https://ap-lab.ca/" class="affiliation-tag" target="_blank"><img src="/images/ap-lab-logo.png" alt="Applied Perception Lab" class="affiliation-logo"></a>
+    <a href="https://douglas.research.mcgill.ca/" class="affiliation-tag" target="_blank"><img src="/images/drc-logo.png" alt="The Douglas Research Centre" class="affiliation-logo"></a>
+    <a href="https://www.concordia.ca/" class="affiliation-tag" target="_blank" aria-hidden="true"><img src="/images/concordia-logo.png" alt="Concordia University" class="affiliation-logo"></a>
+    <a href="https://crblm.ca/" class="affiliation-tag" target="_blank" aria-hidden="true"><img src="/images/crblm-logo.png" alt="CRBLM" class="affiliation-logo"></a>
+    <a href="https://mila.quebec/en" class="affiliation-tag" target="_blank" aria-hidden="true"><img src="/images/mila-logo.png" alt="Mila" class="affiliation-logo"></a>
+    <a href="https://sites.google.com/site/mircoravanelli/students" class="affiliation-tag" target="_blank" aria-hidden="true"><img src="/images/conversational-ai-lab-logo.png" alt="Conversational AI Lab" class="affiliation-logo"></a>
+    <a href="https://ap-lab.ca/" class="affiliation-tag" target="_blank" aria-hidden="true"><img src="/images/ap-lab-logo.png" alt="Applied Perception Lab" class="affiliation-logo"></a>
+    <a href="https://douglas.research.mcgill.ca/" class="affiliation-tag" target="_blank" aria-hidden="true"><img src="/images/drc-logo.png" alt="The Douglas Research Centre" class="affiliation-logo"></a>
   </div>
 </div>
 
@@ -299,14 +288,14 @@ I am currently a Research Assistant at the [Douglas Research Centre](https://dou
 
 <span style="color: #3f968a; font-weight: 900; font-size: 1.15em; text-transform: uppercase; letter-spacing: 0.07em; display: block; margin-top: 0; margin-bottom: 0.8em; -webkit-text-stroke: 0.7px #3f968a;">The Applied Perception Lab</span>
 
-Dr. Kersten-Oertel recognized potential in me before I had the language to name it myself. In 2022, she invited me to pursue my first research project through an [NSERC USRA](https://www.nserc-crsng.canada.ca/Students-Etudiants/UG-PC/USRA-BRPC_eng.asp), a federal undergraduate research award, exploring surgeons' workflow challenges in ventriculostomy, one of neurosurgery's most error-prone procedures, and developing prototypes to reduce misplacement and improve surgical precision. That work culminated in a [publication](https://link.springer.com/chapter/10.1007/978-3-031-23223-7_5) at [MICCAI 2022](https://conferences.miccai.org/2022/en/MICCAI2022-WORKSHOPS.html)'s [EPIMI](https://sites.google.com/view/epimi) workshop. It was where I discovered, for the first time, that I loved research. What began as a single project eventually grew into a mentorship I never outgrew. I am currently a Research Assistant and Master's student at the [Applied Perception Lab](https://ap-lab.ca/). Dr. Kersten-Oertel’s mentorship has played a defining role in the kind of interdisciplinary researcher I am today. She never tried to put me in one box. Instead, she nurtured that curiosity by giving me room to explore while remaining close enough to guide me, challenge me, and extend the kind of trust that carries you through the hard stretches. There, my interests have expanded from HCI into responsible AI, governance, and ethics. I study moral tensions and ethical archetypes in human decision-making, and questions that lie at the centre of human and machine cognition, examining where and why language models depart from human reasoning.
+Dr. Kersten-Oertel recognized potential in me before I had the language to name it myself. In 2022, she invited me to pursue my first research project through an [NSERC USRA](https://www.nserc-crsng.canada.ca/Students-Etudiants/UG-PC/USRA-BRPC_eng.asp), a federal undergraduate research award, exploring surgeons' workflow challenges in ventriculostomy, one of neurosurgery's most error-prone procedures, and developing prototypes to reduce misplacement and improve surgical precision. That work culminated in a [publication](https://link.springer.com/chapter/10.1007/978-3-031-23223-7_5) at [MICCAI 2022](https://conferences.miccai.org/2022/en/MICCAI2022-WORKSHOPS.html)'s [EPIMI](https://sites.google.com/view/epimi) workshop. It was where I discovered, for the first time, that I loved research. What began as a single project eventually grew into a mentorship I never outgrew. I am currently a Research Assistant and Master's student at the [Applied Perception Lab](https://ap-lab.ca/). Dr. Kersten-Oertel’s mentorship has played a defining role in the kind of interdisciplinary researcher I am today. She never tried to put me in one box. Instead, she nurtured that curiosity by giving me room to explore while remaining close enough to guide me, challenge me, and extend the kind of trust that carries you through the hard stretches. There, my interests have expanded from HCI into responsible AI, governance, and ethics. My research treats clinical AI as a site of value choices, not just technical performance: I study how the values embedded in these systems are chosen, by whom, and with what consequences, combining stakeholder deliberation, value-sensitive design, and empirical methods to make those choices visible before deployment.
 
 <div class="research-section-tags">
   <span class="tag-aplab">HCI</span>
   <span class="tag-aplab">Responsible AI</span>
   <span class="tag-aplab">Human Values</span>
   <span class="tag-aplab">AI Governance</span>
-  <span class="tag-aplab">LLM Behaviour</span>
+  <span class="tag-aplab">Value-Sensitive Design</span>
 </div>
 
 <span style="color: #63287d; font-weight: 900; font-size: 1.15em; text-transform: uppercase; letter-spacing: 0.07em; display: block; margin-top: 0; margin-bottom: 0.8em; -webkit-text-stroke: 0.7px #63287d;">Mila</span>
@@ -384,45 +373,45 @@ As my work in ethics, governance, and responsible AI has grown, so has my curios
     <th style="color: #fff;"></th>
   </tr>
   <tr>
-    <td><strong>Member</strong></td>
-    <td><strong>Arabs in Neuroscience (AiN)</strong></td>
-    <td><strong>Apr 2026 – Present</strong></td>
+    <td>Member</td>
+    <td>Arabs in Neuroscience (AiN)</td>
+    <td>Apr 2026 – Present</td>
     <td><a href="https://www.arabsinneuro.org/about/" target="_blank" class="table-btn">Link</a></td>
   </tr>
   <tr>
-    <td><strong>Member</strong></td>
-    <td><strong>The Levantines</strong></td>
-    <td><strong>Feb 2026 – Present</strong></td>
+    <td>Member</td>
+    <td>The Levantines</td>
+    <td>Feb 2026 – Present</td>
     <td><a href="https://levantine-connect--thelevantines.replit.app/" target="_blank" class="table-btn">Link</a></td>
   </tr>
   <tr>
-    <td><strong>Member</strong></td>
-    <td><strong>Association Étudiante de Mila (AÉM), Mila - Quebec AI Institute</strong></td>
-    <td><strong>Oct 2025 – Present</strong></td>
+    <td>Member</td>
+    <td>Association Étudiante de Mila (AÉM), Mila - Quebec AI Institute</td>
+    <td>Oct 2025 – Present</td>
     <td><a href="https://www.concordia.ca/about/administration-governance/board-senate/senate/membership.html" target="_blank" class="table-btn">Link</a></td>
   </tr>
   <tr>
-    <td><strong>Subcommittee Member</strong></td>
-    <td><strong>Standing Committee on Research, Graduate Students' Association (GSA), Concordia University</strong></td>
-    <td><strong>Sep 2025 – Present</strong></td>
+    <td>Subcommittee Member</td>
+    <td>Standing Committee on Research, Graduate Students' Association (GSA), Concordia University</td>
+    <td>Sep 2025 – Present</td>
     <td><a href="https://www.concordia.ca/about/administration-governance/board-senate/senate/membership.html" target="_blank" class="table-btn">Link</a></td>
   </tr>
   <tr>
-    <td><strong>Member</strong></td>
-    <td><strong>Arbour Foundation Scholars</strong></td>
-    <td><strong>Sep 2025 – Present</strong></td>
+    <td>Member</td>
+    <td>Arbour Foundation Scholars</td>
+    <td>Sep 2025 – Present</td>
     <td><a href="https://www.fondationarbour.com/en/" target="_blank" class="table-btn">Link</a></td>
   </tr>
   <tr>
-    <td><strong>Member</strong></td>
-    <td><strong>Golden Key International Honour Society</strong></td>
-    <td><strong>Sep 2025 – Present</strong></td>
+    <td>Member</td>
+    <td>Golden Key International Honour Society</td>
+    <td>Sep 2025 – Present</td>
     <td><a href="https://www.goldenkey.org/" target="_blank" class="table-btn">Link</a></td>
   </tr>
   <tr>
-    <td><strong>Organizer</strong></td>
-    <td><strong>Brainhack MTL, Concordia University x McGill University</strong></td>
-    <td><strong>Jul 2025 – Present</strong></td>
+    <td>Organizer</td>
+    <td>Brainhack MTL, Concordia University x McGill University</td>
+    <td>Jul 2025 – Present</td>
     <td><a href="https://brainhackmtl.github.io/winter2026/" target="_blank" class="table-btn">Link</a></td>
   </tr>
   <tr>
