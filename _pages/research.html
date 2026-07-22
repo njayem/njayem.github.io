@@ -222,7 +222,9 @@ author_profile: true
   {% if pub.preprint %}
   <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Preprint:</strong> <span style="font-weight:900; color:#000;">{{ pub.preprint }}</span></p>
   {% endif %}
+  {% unless pub.hide_peer_reviewed %}
   <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Peer-Reviewed:</strong> <span style="font-weight:900; color:#000;">{% if pub.peer_reviewed %}Yes{% else %}No{% endif %}</span></p>
+  {% endunless %}
   <hr class="pub-divider">
   <p class="pub-abstract-label">Abstract</p>
   {% assign raw = pub.content | strip_html | strip %}
@@ -254,7 +256,45 @@ author_profile: true
   {% if pub.preprint %}
   <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Preprint:</strong> <span style="font-weight:900; color:#000;">{{ pub.preprint }}</span></p>
   {% endif %}
+  {% unless pub.hide_peer_reviewed %}
   <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Peer-Reviewed:</strong> <span style="font-weight:900; color:#000;">{% if pub.peer_reviewed %}Yes{% else %}No{% endif %}</span></p>
+  {% endunless %}
+  <hr class="pub-divider">
+  <p class="pub-abstract-label">Abstract</p>
+  {% assign raw = pub.content | strip_html | strip %}
+  {% if raw == "Paste abstract here." or raw == "" %}
+    <p class="pub-abstract-empty">Coming soon.</p>
+  {% else %}
+    <p class="pub-abstract-text">{{ raw }}</p>
+  {% endif %}
+</div>
+{% endfor %}
+{% endif %}
+
+{% if thesis.size > 0 %}
+<p class="section-heading">Master's Thesis</p>
+{% for pub in thesis %}
+<div class="pub-card status-thesis">
+  <span class="pub-status-label label-masters-thesis">Master's Thesis</span>
+  <p class="pub-title">{{ pub.title }}</p>
+  {% unless pub.hide_authors %}
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip | replace: "El-Mufti, N.", "<span style='font-weight:900;font-size:1.08em;color:#000;-webkit-text-stroke:0.6px #000;'>El-Mufti, N.</span>" | replace: "*", "<sup style='font-weight:900;font-size:0.9em;color:#000;'>*</sup>" }}</span></p>
+  {% endunless %}
+  {% if pub.venue %}
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Venue:</strong> <span style="font-weight:900; color:#000;">{{ pub.venue }}</span></p>
+  {% endif %}
+  {% if pub.journal %}
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Journal:</strong> <span style="font-weight:900; color:#000;">{{ pub.journal }}</span></p>
+  {% endif %}
+  {% if pub.proceedings %}
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Proceedings:</strong> <span style="font-weight:900; color:#000;">{{ pub.proceedings }}</span></p>
+  {% endif %}
+  {% if pub.preprint %}
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Preprint:</strong> <span style="font-weight:900; color:#000;">{{ pub.preprint }}</span></p>
+  {% endif %}
+  {% unless pub.hide_peer_reviewed %}
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Peer-Reviewed:</strong> <span style="font-weight:900; color:#000;">{% if pub.peer_reviewed %}Yes{% else %}No{% endif %}</span></p>
+  {% endunless %}
   <hr class="pub-divider">
   <p class="pub-abstract-label">Abstract</p>
   {% assign raw = pub.content | strip_html | strip %}
@@ -286,7 +326,9 @@ author_profile: true
   {% if pub.preprint %}
   <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Preprint:</strong> <span style="font-weight:900; color:#000;">{{ pub.preprint }}</span></p>
   {% endif %}
+  {% unless pub.hide_peer_reviewed %}
   <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Peer-Reviewed:</strong> <span style="font-weight:900; color:#000;">{% if pub.peer_reviewed %}Yes{% else %}No{% endif %}</span></p>
+  {% endunless %}
   <hr class="pub-divider">
   <p class="pub-abstract-label">Abstract</p>
   {% assign raw = pub.content | strip_html | strip %}
@@ -299,40 +341,6 @@ author_profile: true
   <div class="pub-footer">
     <a class="pub-access-btn" href="{{ pub.paperurl }}" target="_blank">Access Here</a>
   </div>
-  {% endif %}
-</div>
-{% endfor %}
-{% endif %}
-
-{% if thesis.size > 0 %}
-<p class="section-heading">Master's Thesis</p>
-{% for pub in thesis %}
-<div class="pub-card status-thesis">
-  <span class="pub-status-label label-masters-thesis">Master's Thesis</span>
-  <p class="pub-title">{{ pub.title }}</p>
-  {% unless pub.hide_authors %}
-  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip | replace: "El-Mufti, N.", "<span style='font-weight:900;font-size:1.08em;color:#000;-webkit-text-stroke:0.6px #000;'>El-Mufti, N.</span>" | replace: "*", "<sup style='font-weight:900;font-size:0.9em;color:#000;'>*</sup>" }}</span></p>
-  {% endunless %}
-  {% if pub.venue %}
-  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Venue:</strong> <span style="font-weight:900; color:#000;">{{ pub.venue }}</span></p>
-  {% endif %}
-  {% if pub.journal %}
-  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Journal:</strong> <span style="font-weight:900; color:#000;">{{ pub.journal }}</span></p>
-  {% endif %}
-  {% if pub.proceedings %}
-  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Proceedings:</strong> <span style="font-weight:900; color:#000;">{{ pub.proceedings }}</span></p>
-  {% endif %}
-  {% if pub.preprint %}
-  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Preprint:</strong> <span style="font-weight:900; color:#000;">{{ pub.preprint }}</span></p>
-  {% endif %}
-  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Peer-Reviewed:</strong> <span style="font-weight:900; color:#000;">{% if pub.peer_reviewed %}Yes{% else %}No{% endif %}</span></p>
-  <hr class="pub-divider">
-  <p class="pub-abstract-label">Abstract</p>
-  {% assign raw = pub.content | strip_html | strip %}
-  {% if raw == "Paste abstract here." or raw == "" %}
-    <p class="pub-abstract-empty">Coming soon.</p>
-  {% else %}
-    <p class="pub-abstract-text">{{ raw }}</p>
   {% endif %}
 </div>
 {% endfor %}

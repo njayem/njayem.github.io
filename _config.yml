@@ -8,10 +8,10 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Nadine's Professional Website"
+title                    : "Nadine's Personal Website"
 title_separator          : "-"
 name                     : &name "Nadine El-Mufti"
-description              : &description "Nadine El-Mufti's Professional Profile"
+description              : &description "Nadine El-Mufti's Personal Profile"
 url                      : https://njayem.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "njayem/njayem.github.io"
