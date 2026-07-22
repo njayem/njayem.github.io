@@ -8,10 +8,10 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Nadine's Personal Website"
+title                    : "Nadine's Professional Website"
 title_separator          : "-"
 name                     : &name "Nadine El-Mufti"
-description              : &description "Nadine El-Mufti's Personal Profile"
+description              : &description "Nadine El-Mufti's Professional Profile"
 url                      : https://njayem.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "njayem/njayem.github.io"
@@ -26,7 +26,7 @@ author:
   pronouns         : "(she/her)"  
   bio              : "Applied Clinical AI | Speech as a Biomarker | Mila × Concordia | NSERC & Arbour Foundation Scholar"
   location         : "Montreal, QC"
-  employer         : "The Douglas Research Centre, McGill University"
+  employer         : "The Douglas Research Centre, McGill"
   uri              : # URL
   email            : "nadine.el.mufti@gmail.com" 
 
