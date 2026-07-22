@@ -2,6 +2,7 @@
 title: "Futures Before Failures: Design Fictions for Anticipatory Fairness in Surgical AI"
 collection: publications
 status: "under-review"
+tag: "LNCS"
 peer_reviewed: true
 permalink: /publication/2024-futures-before-failures
 excerpt: 'Submitted · 4th EPIMI Workshop, MICCAI 2026'

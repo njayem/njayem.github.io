@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Research"
+title: "Ongoing and Published"
 permalink: /research/
 author_profile: true
 ---
@@ -61,6 +61,29 @@ author_profile: true
   }
 
   .label-masters-thesis {
+    background: #922338;
+    color: white;
+  }
+
+  .label-accepted {
+    background: #63287d;
+    color: white;
+  }
+
+  .pub-outlet-tag {
+    display: inline-block;
+    background: #eee;
+    color: #555;
+    font-size: 0.7em;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: 10px;
+    margin: 0.4em 0 0.6em 0;
+  }
+
+  .pub-outlet-tag-thesis {
     background: #922338;
     color: white;
   }
@@ -154,6 +177,11 @@ author_profile: true
     color: #922338 !important;
   }
 
+  .status-accepted .pub-meta strong,
+  .status-accepted .pub-abstract-label {
+    color: #63287d !important;
+  }
+
   .section-heading {
     font-size: 0.72em;
     font-weight: 900;
@@ -196,10 +224,10 @@ author_profile: true
 </style>
 
 {% assign sorted_pubs = site.publications | sort: 'date' %}
-{% assign review = sorted_pubs | where: "status", "under-review" | where_exp: "item", "item.hidden != true" %}
-{% assign thesis = sorted_pubs | where: "status", "masters-thesis" | where_exp: "item", "item.hidden != true" %}
-{% assign prep   = sorted_pubs | where: "status", "in-preparation" | where_exp: "item", "item.hidden != true" %}
-{% assign peer   = sorted_pubs | where: "status", "peer-reviewed" | where_exp: "item", "item.hidden != true" %}
+{% assign review   = sorted_pubs | where: "status", "under-review" | where_exp: "item", "item.hidden != true" %}
+{% assign prep      = sorted_pubs | where: "status", "in-preparation" | where_exp: "item", "item.hidden != true" %}
+{% assign accepted  = sorted_pubs | where: "status", "accepted" | where_exp: "item", "item.hidden != true" %}
+{% assign peer      = sorted_pubs | where: "status", "peer-reviewed" | where_exp: "item", "item.hidden != true" %}
 
 <div class="research-cards-wrapper">
 
@@ -209,74 +237,9 @@ author_profile: true
 <div class="pub-card status-review">
   <span class="pub-status-label label-under-review">Submitted</span>
   <p class="pub-title">{{ pub.title }}</p>
-  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip | replace: "El-Mufti, N.", "<span style='font-weight:900;font-size:1.08em;color:#000;-webkit-text-stroke:0.6px #000;'>El-Mufti, N.</span>" | replace: "*", "<sup style='font-weight:900;font-size:0.9em;color:#000;'>*</sup>" }}</span></p>
-  {% if pub.venue %}
-  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Venue:</strong> <span style="font-weight:900; color:#000;">{{ pub.venue }}</span></p>
+  {% if pub.tag %}
+  <span class="pub-outlet-tag{% if pub.tag == "Master's Thesis" %} pub-outlet-tag-thesis{% endif %}">{{ pub.tag }}</span>
   {% endif %}
-  {% if pub.journal %}
-  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Journal:</strong> <span style="font-weight:900; color:#000;">{{ pub.journal }}</span></p>
-  {% endif %}
-  {% if pub.proceedings %}
-  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Proceedings:</strong> <span style="font-weight:900; color:#000;">{{ pub.proceedings }}</span></p>
-  {% endif %}
-  {% if pub.preprint %}
-  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Preprint:</strong> <span style="font-weight:900; color:#000;">{{ pub.preprint }}</span></p>
-  {% endif %}
-  {% unless pub.hide_peer_reviewed %}
-  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Peer-Reviewed:</strong> <span style="font-weight:900; color:#000;">{% if pub.peer_reviewed %}Yes{% else %}No{% endif %}</span></p>
-  {% endunless %}
-  <hr class="pub-divider">
-  <p class="pub-abstract-label">Abstract</p>
-  {% assign raw = pub.content | strip_html | strip %}
-  {% if raw == "Paste abstract here." or raw == "" %}
-    <p class="pub-abstract-empty">Coming soon.</p>
-  {% else %}
-    <p class="pub-abstract-text">{{ raw }}</p>
-  {% endif %}
-</div>
-{% endfor %}
-{% endif %}
-
-{% if prep.size > 0 %}
-<p class="section-heading">In Preparation</p>
-{% for pub in prep %}
-<div class="pub-card status-prep">
-  <span class="pub-status-label label-in-preparation">In Preparation</span>
-  <p class="pub-title">{{ pub.title }}</p>
-  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip | replace: "El-Mufti, N.", "<span style='font-weight:900;font-size:1.08em;color:#000;-webkit-text-stroke:0.6px #000;'>El-Mufti, N.</span>" | replace: "*", "<sup style='font-weight:900;font-size:0.9em;color:#000;'>*</sup>" }}</span></p>
-  {% if pub.venue %}
-  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Venue:</strong> <span style="font-weight:900; color:#000;">{{ pub.venue }}</span></p>
-  {% endif %}
-  {% if pub.journal %}
-  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Journal:</strong> <span style="font-weight:900; color:#000;">{{ pub.journal }}</span></p>
-  {% endif %}
-  {% if pub.proceedings %}
-  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Proceedings:</strong> <span style="font-weight:900; color:#000;">{{ pub.proceedings }}</span></p>
-  {% endif %}
-  {% if pub.preprint %}
-  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Preprint:</strong> <span style="font-weight:900; color:#000;">{{ pub.preprint }}</span></p>
-  {% endif %}
-  {% unless pub.hide_peer_reviewed %}
-  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Peer-Reviewed:</strong> <span style="font-weight:900; color:#000;">{% if pub.peer_reviewed %}Yes{% else %}No{% endif %}</span></p>
-  {% endunless %}
-  <hr class="pub-divider">
-  <p class="pub-abstract-label">Abstract</p>
-  {% assign raw = pub.content | strip_html | strip %}
-  {% if raw == "Paste abstract here." or raw == "" %}
-    <p class="pub-abstract-empty">Coming soon.</p>
-  {% else %}
-    <p class="pub-abstract-text">{{ raw }}</p>
-  {% endif %}
-</div>
-{% endfor %}
-{% endif %}
-
-{% if thesis.size > 0 %}
-<p class="section-heading">Master's Thesis</p>
-{% for pub in thesis %}
-<div class="pub-card status-thesis">
-  <span class="pub-status-label label-masters-thesis">Master's Thesis</span>
-  <p class="pub-title">{{ pub.title }}</p>
   {% unless pub.hide_authors %}
   <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip | replace: "El-Mufti, N.", "<span style='font-weight:900;font-size:1.08em;color:#000;-webkit-text-stroke:0.6px #000;'>El-Mufti, N.</span>" | replace: "*", "<sup style='font-weight:900;font-size:0.9em;color:#000;'>*</sup>" }}</span></p>
   {% endunless %}
@@ -303,6 +266,99 @@ author_profile: true
   {% else %}
     <p class="pub-abstract-text">{{ raw }}</p>
   {% endif %}
+  {% if pub.paperurl %}
+  <div class="pub-footer">
+    <a class="pub-access-btn" href="{{ pub.paperurl }}" target="_blank">Access Here</a>
+  </div>
+  {% endif %}
+</div>
+{% endfor %}
+{% endif %}
+
+{% if prep.size > 0 %}
+<p class="section-heading">In Preparation</p>
+{% for pub in prep %}
+<div class="pub-card status-prep">
+  <span class="pub-status-label label-in-preparation">In Preparation</span>
+  <p class="pub-title">{{ pub.title }}</p>
+  {% if pub.tag %}
+  <span class="pub-outlet-tag{% if pub.tag == "Master's Thesis" %} pub-outlet-tag-thesis{% endif %}">{{ pub.tag }}</span>
+  {% endif %}
+  {% unless pub.hide_authors %}
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip | replace: "El-Mufti, N.", "<span style='font-weight:900;font-size:1.08em;color:#000;-webkit-text-stroke:0.6px #000;'>El-Mufti, N.</span>" | replace: "*", "<sup style='font-weight:900;font-size:0.9em;color:#000;'>*</sup>" }}</span></p>
+  {% endunless %}
+  {% if pub.venue %}
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Venue:</strong> <span style="font-weight:900; color:#000;">{{ pub.venue }}</span></p>
+  {% endif %}
+  {% if pub.journal %}
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Journal:</strong> <span style="font-weight:900; color:#000;">{{ pub.journal }}</span></p>
+  {% endif %}
+  {% if pub.proceedings %}
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Proceedings:</strong> <span style="font-weight:900; color:#000;">{{ pub.proceedings }}</span></p>
+  {% endif %}
+  {% if pub.preprint %}
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Preprint:</strong> <span style="font-weight:900; color:#000;">{{ pub.preprint }}</span></p>
+  {% endif %}
+  {% unless pub.hide_peer_reviewed %}
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Peer-Reviewed:</strong> <span style="font-weight:900; color:#000;">{% if pub.peer_reviewed %}Yes{% else %}No{% endif %}</span></p>
+  {% endunless %}
+  <hr class="pub-divider">
+  <p class="pub-abstract-label">Abstract</p>
+  {% assign raw = pub.content | strip_html | strip %}
+  {% if raw == "Paste abstract here." or raw == "" %}
+    <p class="pub-abstract-empty">Coming soon.</p>
+  {% else %}
+    <p class="pub-abstract-text">{{ raw }}</p>
+  {% endif %}
+  {% if pub.paperurl %}
+  <div class="pub-footer">
+    <a class="pub-access-btn" href="{{ pub.paperurl }}" target="_blank">Access Here</a>
+  </div>
+  {% endif %}
+</div>
+{% endfor %}
+{% endif %}
+
+{% if accepted.size > 0 %}
+<p class="section-heading">Accepted</p>
+{% for pub in accepted %}
+<div class="pub-card status-accepted">
+  <span class="pub-status-label label-accepted">Accepted</span>
+  <p class="pub-title">{{ pub.title }}</p>
+  {% if pub.tag %}
+  <span class="pub-outlet-tag{% if pub.tag == "Master's Thesis" %} pub-outlet-tag-thesis{% endif %}">{{ pub.tag }}</span>
+  {% endif %}
+  {% unless pub.hide_authors %}
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip | replace: "El-Mufti, N.", "<span style='font-weight:900;font-size:1.08em;color:#000;-webkit-text-stroke:0.6px #000;'>El-Mufti, N.</span>" | replace: "*", "<sup style='font-weight:900;font-size:0.9em;color:#000;'>*</sup>" }}</span></p>
+  {% endunless %}
+  {% if pub.venue %}
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Venue:</strong> <span style="font-weight:900; color:#000;">{{ pub.venue }}</span></p>
+  {% endif %}
+  {% if pub.journal %}
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Journal:</strong> <span style="font-weight:900; color:#000;">{{ pub.journal }}</span></p>
+  {% endif %}
+  {% if pub.proceedings %}
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Proceedings:</strong> <span style="font-weight:900; color:#000;">{{ pub.proceedings }}</span></p>
+  {% endif %}
+  {% if pub.preprint %}
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Preprint:</strong> <span style="font-weight:900; color:#000;">{{ pub.preprint }}</span></p>
+  {% endif %}
+  {% unless pub.hide_peer_reviewed %}
+  <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Peer-Reviewed:</strong> <span style="font-weight:900; color:#000;">{% if pub.peer_reviewed %}Yes{% else %}No{% endif %}</span></p>
+  {% endunless %}
+  <hr class="pub-divider">
+  <p class="pub-abstract-label">Abstract</p>
+  {% assign raw = pub.content | strip_html | strip %}
+  {% if raw == "Paste abstract here." or raw == "" %}
+    <p class="pub-abstract-empty">Coming soon.</p>
+  {% else %}
+    <p class="pub-abstract-text">{{ raw }}</p>
+  {% endif %}
+  {% if pub.paperurl %}
+  <div class="pub-footer">
+    <a class="pub-access-btn" href="{{ pub.paperurl }}" target="_blank">Access Here</a>
+  </div>
+  {% endif %}
 </div>
 {% endfor %}
 {% endif %}
@@ -313,7 +369,12 @@ author_profile: true
 <div class="pub-card status-peer">
   <span class="pub-status-label label-peer-reviewed">Published</span>
   <p class="pub-title">{{ pub.title }}</p>
+  {% if pub.tag %}
+  <span class="pub-outlet-tag{% if pub.tag == "Master's Thesis" %} pub-outlet-tag-thesis{% endif %}">{{ pub.tag }}</span>
+  {% endif %}
+  {% unless pub.hide_authors %}
   <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip | replace: "El-Mufti, N.", "<span style='font-weight:900;font-size:1.08em;color:#000;-webkit-text-stroke:0.6px #000;'>El-Mufti, N.</span>" | replace: "*", "<sup style='font-weight:900;font-size:0.9em;color:#000;'>*</sup>" }}</span></p>
+  {% endunless %}
   {% if pub.venue %}
   <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Venue:</strong> <span style="font-weight:900; color:#000;">{{ pub.venue }}</span></p>
   {% endif %}
