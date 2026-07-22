@@ -219,7 +219,7 @@ author_profile: true
   .pub-access-btn-peer:hover { background: #1f5f24; }
 </style>
 
-{% assign sorted_pubs = site.publications | sort: 'date' %}
+{% assign sorted_pubs = site.publications | sort: 'order' %}
 {% assign review   = sorted_pubs | where: "status", "under-review" | where_exp: "item", "item.hidden != true" %}
 {% assign prep      = sorted_pubs | where: "status", "in-preparation" | where_exp: "item", "item.hidden != true" %}
 {% assign accepted  = sorted_pubs | where: "status", "accepted" | where_exp: "item", "item.hidden != true" %}

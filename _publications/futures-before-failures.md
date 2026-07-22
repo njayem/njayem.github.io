@@ -6,7 +6,7 @@ tag: "LNCS"
 peer_reviewed: true
 permalink: /publication/2024-futures-before-failures
 excerpt: 'Submitted · 4th EPIMI Workshop, MICCAI 2026'
-date: 2024-06-01
+order: 2
 venue: '4th EPIMI Workshop, MICCAI 2026'
 proceedings: 'Lecture Notes in Computer Science, Springer'
 paperurl: ''

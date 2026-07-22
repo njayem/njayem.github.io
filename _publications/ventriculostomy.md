@@ -6,7 +6,7 @@ tag: "LNCS"
 peer_reviewed: true
 permalink: /publication/2022-ventriculostomy
 excerpt: 'Peer-reviewed · 1st EPIMI Workshop, MICCAI 2022'
-date: 2022-10-01
+order: 7
 venue: '1st EPIMI Workshop, MICCAI 2022'
 proceedings: 'Lecture Notes in Computer Science, vol. 13755, pp. 51–62, Springer, Cham'
 paperurl: 'https://doi.org/10.1007/978-3-031-23223-7_5'
