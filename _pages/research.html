@@ -203,6 +203,15 @@ author_profile: true
     transform: scale(1.08);
     background: #1f5f24;
   }
+
+  .pub-access-btn-review { background: #c17900; }
+  .pub-access-btn-review:hover { background: #a86400; }
+
+  .pub-access-btn-prep { background: #1a56c4; }
+  .pub-access-btn-prep:hover { background: #123f8f; }
+
+  .pub-access-btn-peer { background: #2a7d30; }
+  .pub-access-btn-peer:hover { background: #1f5f24; }
 </style>
 
 {% assign sorted_pubs = site.publications | sort: 'date' %}
@@ -247,7 +256,7 @@ author_profile: true
   {% endif %}
   {% if pub.paperurl %}
   <div class="pub-footer">
-    <a class="pub-access-btn" href="{{ pub.paperurl }}" target="_blank">Access Here</a>
+    <a class="pub-access-btn pub-access-btn-review" href="{{ pub.paperurl }}" target="_blank">Access Here</a>
   </div>
   {% endif %}
 </div>
@@ -288,7 +297,7 @@ author_profile: true
   {% endif %}
   {% if pub.paperurl %}
   <div class="pub-footer">
-    <a class="pub-access-btn" href="{{ pub.paperurl }}" target="_blank">Access Here</a>
+    <a class="pub-access-btn pub-access-btn-prep" href="{{ pub.paperurl }}" target="_blank">Access Here</a>
   </div>
   {% endif %}
 </div>
@@ -370,7 +379,7 @@ author_profile: true
   {% endif %}
   {% if pub.paperurl %}
   <div class="pub-footer">
-    <a class="pub-access-btn" href="{{ pub.paperurl }}" target="_blank">Access Here</a>
+    <a class="pub-access-btn pub-access-btn-peer" href="{{ pub.paperurl }}" target="_blank">Access Here</a>
   </div>
   {% endif %}
 </div>
