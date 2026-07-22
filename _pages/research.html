@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Ongoing and Published"
+title: "Ongoing & Published Research"
 permalink: /research/
 author_profile: true
 ---
@@ -67,24 +67,6 @@ author_profile: true
 
   .label-accepted {
     background: #63287d;
-    color: white;
-  }
-
-  .pub-outlet-tag {
-    display: inline-block;
-    background: #eee;
-    color: #555;
-    font-size: 0.7em;
-    font-weight: 800;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    padding: 3px 10px;
-    border-radius: 10px;
-    margin: 0.4em 0 0.6em 0;
-  }
-
-  .pub-outlet-tag-thesis {
-    background: #922338;
     color: white;
   }
 
@@ -235,11 +217,8 @@ author_profile: true
 <p class="section-heading">Submitted</p>
 {% for pub in review %}
 <div class="pub-card status-review">
-  <span class="pub-status-label label-under-review">Submitted</span>
+  <span class="pub-status-label label-under-review{% if pub.tag == "Master's Thesis" %} label-masters-thesis{% endif %}">{{ pub.tag | default: "Submitted" }}</span>
   <p class="pub-title">{{ pub.title }}</p>
-  {% if pub.tag %}
-  <span class="pub-outlet-tag{% if pub.tag == "Master's Thesis" %} pub-outlet-tag-thesis{% endif %}">{{ pub.tag }}</span>
-  {% endif %}
   {% unless pub.hide_authors %}
   <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip | replace: "El-Mufti, N.", "<span style='font-weight:900;font-size:1.08em;color:#000;-webkit-text-stroke:0.6px #000;'>El-Mufti, N.</span>" | replace: "*", "<sup style='font-weight:900;font-size:0.9em;color:#000;'>*</sup>" }}</span></p>
   {% endunless %}
@@ -279,11 +258,8 @@ author_profile: true
 <p class="section-heading">In Preparation</p>
 {% for pub in prep %}
 <div class="pub-card status-prep">
-  <span class="pub-status-label label-in-preparation">In Preparation</span>
+  <span class="pub-status-label label-in-preparation{% if pub.tag == "Master's Thesis" %} label-masters-thesis{% endif %}">{{ pub.tag | default: "In Preparation" }}</span>
   <p class="pub-title">{{ pub.title }}</p>
-  {% if pub.tag %}
-  <span class="pub-outlet-tag{% if pub.tag == "Master's Thesis" %} pub-outlet-tag-thesis{% endif %}">{{ pub.tag }}</span>
-  {% endif %}
   {% unless pub.hide_authors %}
   <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip | replace: "El-Mufti, N.", "<span style='font-weight:900;font-size:1.08em;color:#000;-webkit-text-stroke:0.6px #000;'>El-Mufti, N.</span>" | replace: "*", "<sup style='font-weight:900;font-size:0.9em;color:#000;'>*</sup>" }}</span></p>
   {% endunless %}
@@ -323,11 +299,8 @@ author_profile: true
 <p class="section-heading">Accepted</p>
 {% for pub in accepted %}
 <div class="pub-card status-accepted">
-  <span class="pub-status-label label-accepted">Accepted</span>
+  <span class="pub-status-label label-accepted{% if pub.tag == "Master's Thesis" %} label-masters-thesis{% endif %}">{{ pub.tag | default: "Accepted" }}</span>
   <p class="pub-title">{{ pub.title }}</p>
-  {% if pub.tag %}
-  <span class="pub-outlet-tag{% if pub.tag == "Master's Thesis" %} pub-outlet-tag-thesis{% endif %}">{{ pub.tag }}</span>
-  {% endif %}
   {% unless pub.hide_authors %}
   <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip | replace: "El-Mufti, N.", "<span style='font-weight:900;font-size:1.08em;color:#000;-webkit-text-stroke:0.6px #000;'>El-Mufti, N.</span>" | replace: "*", "<sup style='font-weight:900;font-size:0.9em;color:#000;'>*</sup>" }}</span></p>
   {% endunless %}
@@ -367,11 +340,8 @@ author_profile: true
 <p class="section-heading">Published</p>
 {% for pub in peer %}
 <div class="pub-card status-peer">
-  <span class="pub-status-label label-peer-reviewed">Published</span>
+  <span class="pub-status-label label-peer-reviewed{% if pub.tag == "Master's Thesis" %} label-masters-thesis{% endif %}">{{ pub.tag | default: "Published" }}</span>
   <p class="pub-title">{{ pub.title }}</p>
-  {% if pub.tag %}
-  <span class="pub-outlet-tag{% if pub.tag == "Master's Thesis" %} pub-outlet-tag-thesis{% endif %}">{{ pub.tag }}</span>
-  {% endif %}
   {% unless pub.hide_authors %}
   <p class="pub-meta"><strong style="color:#aaa; font-weight:900;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip | replace: "El-Mufti, N.", "<span style='font-weight:900;font-size:1.08em;color:#000;-webkit-text-stroke:0.6px #000;'>El-Mufti, N.</span>" | replace: "*", "<sup style='font-weight:900;font-size:0.9em;color:#000;'>*</sup>" }}</span></p>
   {% endunless %}
