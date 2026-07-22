@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Nadine's Personal Website"
+title                    : "Nadine's Professional Website"
 title_separator          : "-"
 name                     : &name "Nadine El-Mufti"
 description              : &description "Nadine El-Mufti's Personal Profile"

@@ -166,6 +166,9 @@ author_profile: true
   }
 
   .section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
     font-size: 0.72em;
     font-weight: 900;
     letter-spacing: 0.12em;
@@ -175,6 +178,13 @@ author_profile: true
     padding-bottom: 0.5em;
     border-bottom: 1px solid #eee;
     width: 82%;
+  }
+
+  .section-heading .count {
+    font-weight: 700;
+    letter-spacing: normal;
+    text-transform: none;
+    color: #bbb;
   }
 
   .pub-abstract-label {
@@ -218,7 +228,7 @@ author_profile: true
 <div class="research-cards-wrapper">
 
 {% if review.size > 0 %}
-<p class="section-heading">Submitted</p>
+<p class="section-heading"><span>Submitted</span><span class="count">{{ review.size }}</span></p>
 {% for pub in review %}
 <div class="pub-card status-review">
   <span class="pub-status-label label-under-review{% if pub.tag == "Master's Thesis" %} label-masters-thesis{% endif %}">{{ pub.tag | default: "Submitted" }}</span>
@@ -255,7 +265,7 @@ author_profile: true
 {% endif %}
 
 {% if prep.size > 0 %}
-<p class="section-heading">In Preparation</p>
+<p class="section-heading"><span>In Preparation</span><span class="count">{{ prep.size }}</span></p>
 {% for pub in prep %}
 <div class="pub-card status-prep">
   <span class="pub-status-label label-in-preparation{% if pub.tag == "Master's Thesis" %} label-masters-thesis{% endif %}">{{ pub.tag | default: "In Preparation" }}</span>
@@ -292,7 +302,7 @@ author_profile: true
 {% endif %}
 
 {% if accepted.size > 0 %}
-<p class="section-heading">Accepted</p>
+<p class="section-heading"><span>Accepted</span><span class="count">{{ accepted.size }}</span></p>
 {% for pub in accepted %}
 <div class="pub-card status-accepted">
   <span class="pub-status-label label-accepted{% if pub.tag == "Master's Thesis" %} label-masters-thesis{% endif %}">{{ pub.tag | default: "Accepted" }}</span>
@@ -329,7 +339,7 @@ author_profile: true
 {% endif %}
 
 {% if peer.size > 0 %}
-<p class="section-heading">Published</p>
+<p class="section-heading"><span>Published</span><span class="count">{{ peer.size }}</span></p>
 {% for pub in peer %}
 <div class="pub-card status-peer">
   <span class="pub-status-label label-peer-reviewed{% if pub.tag == "Master's Thesis" %} label-masters-thesis{% endif %}">{{ pub.tag | default: "Published" }}</span>
