@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Nadine's Professional Website"
+title                    : "Nadine El-Mufti"
 title_separator          : "-"
 name                     : &name "Nadine El-Mufti"
 description              : &description "Nadine El-Mufti's Personal Profile"
@@ -24,9 +24,9 @@ author:
   avatar           : "profile.png"
   name             : "Nadine El-Mufti"
   pronouns         : "(she/her)"  
-  bio              : "Applied Clinical AI | Speech as a Biomarker | Mila × Concordia | NSERC & Arbour Foundation Scholar"
+  bio              : "Applied Clinical AI | Speech as a Biomarker | AI for Social Good | Mila × Concordia | NSERC & Arbour Scholar"
   location         : "Montreal, QC"
-  employer         : "The Douglas Research Centre, McGill"
+  employer         : ""
   uri              : # URL
   email            : "nadine.el.mufti@gmail.com" 
 
