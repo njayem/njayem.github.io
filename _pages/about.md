@@ -214,7 +214,7 @@ redirect_from:
 ## Research Topics
 
 <div>
-  <span><a href="https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:ai_and_healthcare">AI and Healthcare</a> · <a href="https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:conversational_ai">Conversational AI</a> · <a href="https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:responsible_ai">Responsible AI</a> · <a href="https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:human_computer_interaction">Human-Computer Interaction</a></span>
+  <span>AI and Healthcare · Conversational AI · Responsible AI · Human-Computer Interaction</span>
 </div>
 
 ## Affiliation

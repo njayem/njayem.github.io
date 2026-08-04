@@ -3,7 +3,7 @@ title: "Confounding Factors in Speech Biomarkers of Parkinson's Disease"
 collection: publications
 status: "in-preparation"
 tag: "Master's Thesis"
-hide_authors: true
+hide_authors: false
 peer_reviewed: true
 permalink: /publication/2026-confounding-factors-pd
 excerpt: "In Preparation · npj Parkinson's Disease, Nature Portfolio"
