@@ -214,7 +214,7 @@ redirect_from:
 ## Research Topics
 
 <div>
-  <span>AI and Healthcare · Conversational AI · Responsible AI · AI for Social Good · Human-Computer Interaction · AI and Cybersecurity</span>
+  <span>AI and Healthcare · Conversational AI · AI for Social Good · Human-Computer Interaction · AI and Cybersecurity</span>
 </div>
 
 ## Affiliation
