@@ -223,26 +223,26 @@ redirect_from:
   <div class="affiliation-track" id="affiliation-track">
    <div class="affiliation-set" id="affiliation-set-a">
     <a href="https://www.concordia.ca/" class="affiliation-tag" target="_blank"><img src="/images/concordia-logo.png" alt="Concordia University" class="affiliation-logo"></a>
-    <a href="https://crblm.ca/" class="affiliation-tag" target="_blank"><img src="/images/crblm-logo.png" alt="CRBLM" class="affiliation-logo"></a>
+    <a href="https://ap-lab.ca/" class="affiliation-tag" target="_blank"><img src="/images/ap-lab-logo.png" alt="Applied Perception Lab" class="affiliation-logo"></a>
     <a href="https://mila.quebec/en" class="affiliation-tag" target="_blank"><img src="/images/mila-logo.png" alt="Mila" class="affiliation-logo"></a>
     <a href="https://sites.google.com/site/mircoravanelli/students" class="affiliation-tag" target="_blank"><img src="/images/conversational-ai-lab-logo.png" alt="Conversational AI Lab" class="affiliation-logo"></a>
-    <a href="https://ap-lab.ca/" class="affiliation-tag" target="_blank"><img src="/images/ap-lab-logo.png" alt="Applied Perception Lab" class="affiliation-logo"></a>
+    <a href="https://crblm.ca/" class="affiliation-tag" target="_blank"><img src="/images/crblm-logo.png" alt="CRBLM" class="affiliation-logo"></a>
     <!-- <a href="https://douglas.research.mcgill.ca/" class="affiliation-tag" target="_blank"><img src="/images/drc-logo.png" alt="The Douglas Research Centre" class="affiliation-logo"></a> -->
    </div>
    <div class="affiliation-set" aria-hidden="true">
     <a href="https://www.concordia.ca/" class="affiliation-tag" target="_blank" aria-hidden="true"><img src="/images/concordia-logo.png" alt="Concordia University" class="affiliation-logo"></a>
-    <a href="https://crblm.ca/" class="affiliation-tag" target="_blank" aria-hidden="true"><img src="/images/crblm-logo.png" alt="CRBLM" class="affiliation-logo"></a>
+    <a href="https://ap-lab.ca/" class="affiliation-tag" target="_blank" aria-hidden="true"><img src="/images/ap-lab-logo.png" alt="Applied Perception Lab" class="affiliation-logo"></a>
     <a href="https://mila.quebec/en" class="affiliation-tag" target="_blank" aria-hidden="true"><img src="/images/mila-logo.png" alt="Mila" class="affiliation-logo"></a>
     <a href="https://sites.google.com/site/mircoravanelli/students" class="affiliation-tag" target="_blank" aria-hidden="true"><img src="/images/conversational-ai-lab-logo.png" alt="Conversational AI Lab" class="affiliation-logo"></a>
-    <a href="https://ap-lab.ca/" class="affiliation-tag" target="_blank" aria-hidden="true"><img src="/images/ap-lab-logo.png" alt="Applied Perception Lab" class="affiliation-logo"></a>
+    <a href="https://crblm.ca/" class="affiliation-tag" target="_blank" aria-hidden="true"><img src="/images/crblm-logo.png" alt="CRBLM" class="affiliation-logo"></a>
     <!-- <a href="https://douglas.research.mcgill.ca/" class="affiliation-tag" target="_blank" aria-hidden="true"><img src="/images/drc-logo.png" alt="The Douglas Research Centre" class="affiliation-logo"></a> -->
    </div>
    <div class="affiliation-set" aria-hidden="true">
     <a href="https://www.concordia.ca/" class="affiliation-tag" target="_blank" aria-hidden="true"><img src="/images/concordia-logo.png" alt="Concordia University" class="affiliation-logo"></a>
-    <a href="https://crblm.ca/" class="affiliation-tag" target="_blank" aria-hidden="true"><img src="/images/crblm-logo.png" alt="CRBLM" class="affiliation-logo"></a>
+    <a href="https://ap-lab.ca/" class="affiliation-tag" target="_blank" aria-hidden="true"><img src="/images/ap-lab-logo.png" alt="Applied Perception Lab" class="affiliation-logo"></a>
     <a href="https://mila.quebec/en" class="affiliation-tag" target="_blank" aria-hidden="true"><img src="/images/mila-logo.png" alt="Mila" class="affiliation-logo"></a>
     <a href="https://sites.google.com/site/mircoravanelli/students" class="affiliation-tag" target="_blank" aria-hidden="true"><img src="/images/conversational-ai-lab-logo.png" alt="Conversational AI Lab" class="affiliation-logo"></a>
-    <a href="https://ap-lab.ca/" class="affiliation-tag" target="_blank" aria-hidden="true"><img src="/images/ap-lab-logo.png" alt="Applied Perception Lab" class="affiliation-logo"></a>
+    <a href="https://crblm.ca/" class="affiliation-tag" target="_blank" aria-hidden="true"><img src="/images/crblm-logo.png" alt="CRBLM" class="affiliation-logo"></a>
     <!-- <a href="https://douglas.research.mcgill.ca/" class="affiliation-tag" target="_blank" aria-hidden="true"><img src="/images/drc-logo.png" alt="The Douglas Research Centre" class="affiliation-logo"></a> -->
    </div>
   </div>
