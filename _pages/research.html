@@ -219,7 +219,7 @@ author_profile: true
   .pub-access-btn-peer:hover { background: #1f5f24; }
   .pub-preprint-btn {
     display: inline-block;
-    background: #555;
+    background: #63287d;
     color: white !important;
     font-weight: 700;
     font-size: 0.8em;
@@ -232,7 +232,7 @@ author_profile: true
   }
   .pub-preprint-btn:hover {
     transform: scale(1.08);
-    background: #333;
+    background: #4a1a5e;
   }
   .pub-footer {
     display: flex;
@@ -308,11 +308,6 @@ author_profile: true
   {% if pub.proceedings %}
   <p class="pub-meta"><strong style="color:#aaa;">Proceedings:</strong> <span style="font-weight:900; color:#000;">{{ pub.proceedings }}</span></p>
   {% endif %}
-  {% if pub.preprint %}
-  <div class="pub-footer">
-    <a class="pub-preprint-btn" href="{{ pub.preprint }}" target="_blank">Preprint</a>
-  </div>
-  {% endif %}
   {% unless pub.hide_peer_reviewed %}
   <p class="pub-meta"><strong style="color:#aaa;">Peer-Reviewed:</strong> <span style="font-weight:900; color:#000;">{% if pub.peer_reviewed %}Yes{% else %}No{% endif %}</span></p>
   {% endunless %}
@@ -323,6 +318,11 @@ author_profile: true
     <p class="pub-abstract-empty">Coming soon.</p>
   {% else %}
     <p class="pub-abstract-text">{{ raw }}</p>
+  {% endif %}
+  {% if pub.preprint %}
+  <div class="pub-footer">
+    <a class="pub-preprint-btn" href="{{ pub.preprint }}" target="_blank">Preprint</a>
+  </div>
   {% endif %}
 </div>
 <br>
