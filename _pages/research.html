@@ -358,10 +358,9 @@ author_profile: true
   {% else %}
     <p class="pub-abstract-text">{{ raw }}</p>
   {% endif %}
-  {% if pub.preprint or pub.paperurl %}
+  {% if pub.paperurl %}
   <div class="pub-footer">
-    {% if pub.preprint %}<a class="pub-preprint-btn" href="{{ pub.preprint }}" target="_blank">Preprint</a>{% endif %}
-    {% if pub.paperurl %}<a class="pub-access-btn pub-access-btn-peer" href="{{ pub.paperurl }}" target="_blank">Read Paper</a>{% endif %}
+    <a class="pub-access-btn pub-access-btn-peer" href="{{ pub.paperurl }}" target="_blank">Read Paper</a>
   </div>
   {% endif %}
 </div>
@@ -397,11 +396,6 @@ author_profile: true
     <p class="pub-abstract-empty">Coming soon.</p>
   {% else %}
     <p class="pub-abstract-text">{{ raw }}</p>
-  {% endif %}
-  {% if pub.preprint %}
-  <div class="pub-footer">
-    <a class="pub-preprint-btn" href="{{ pub.preprint }}" target="_blank">Preprint</a>
-  </div>
   {% endif %}
 </div>
 <br>
