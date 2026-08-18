@@ -217,6 +217,30 @@ author_profile: true
 
   .pub-access-btn-peer { background: #2a7d30; }
   .pub-access-btn-peer:hover { background: #1f5f24; }
+  .pub-preprint-btn {
+    display: inline-block;
+    background: #555;
+    color: white !important;
+    font-weight: 700;
+    font-size: 0.8em;
+    padding: 6px 16px;
+    border-radius: 20px;
+    text-decoration: none !important;
+    transition: transform 0.2s ease, background 0.2s ease;
+    white-space: nowrap;
+    margin-top: 0.8em;
+  }
+  .pub-preprint-btn:hover {
+    transform: scale(1.08);
+    background: #333;
+  }
+  .pub-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 0.8em;
+  }
+  .pub-footer a { margin-top: 0 !important; }
 </style>
 
 {% assign sorted_pubs = site.publications | sort: 'order' %}
@@ -246,7 +270,9 @@ author_profile: true
   <p class="pub-meta"><strong style="color:#aaa;">Proceedings:</strong> <span style="font-weight:900; color:#000;">{{ pub.proceedings }}</span></p>
   {% endif %}
   {% if pub.preprint %}
-  <p class="pub-meta"><strong style="color:#aaa;">Preprint:</strong> <span style="font-weight:900; color:#000;">{{ pub.preprint }}</span></p>
+  <div class="pub-footer">
+    <a class="pub-preprint-btn" href="{{ pub.preprint }}" target="_blank">Preprint</a>
+  </div>
   {% endif %}
   {% unless pub.hide_peer_reviewed %}
   <p class="pub-meta"><strong style="color:#aaa;">Peer-Reviewed:</strong> <span style="font-weight:900; color:#000;">{% if pub.peer_reviewed %}Yes{% else %}No{% endif %}</span></p>
@@ -283,7 +309,9 @@ author_profile: true
   <p class="pub-meta"><strong style="color:#aaa;">Proceedings:</strong> <span style="font-weight:900; color:#000;">{{ pub.proceedings }}</span></p>
   {% endif %}
   {% if pub.preprint %}
-  <p class="pub-meta"><strong style="color:#aaa;">Preprint:</strong> <span style="font-weight:900; color:#000;">{{ pub.preprint }}</span></p>
+  <div class="pub-footer">
+    <a class="pub-preprint-btn" href="{{ pub.preprint }}" target="_blank">Preprint</a>
+  </div>
   {% endif %}
   {% unless pub.hide_peer_reviewed %}
   <p class="pub-meta"><strong style="color:#aaa;">Peer-Reviewed:</strong> <span style="font-weight:900; color:#000;">{% if pub.peer_reviewed %}Yes{% else %}No{% endif %}</span></p>
@@ -319,9 +347,6 @@ author_profile: true
   {% if pub.proceedings %}
   <p class="pub-meta"><strong style="color:#aaa;">Proceedings:</strong> <span style="font-weight:900; color:#000;">{{ pub.proceedings }}</span></p>
   {% endif %}
-  {% if pub.preprint %}
-  <p class="pub-meta"><strong style="color:#aaa;">Preprint:</strong> <span style="font-weight:900; color:#000;">{{ pub.preprint }}</span></p>
-  {% endif %}
   {% unless pub.hide_peer_reviewed %}
   <p class="pub-meta"><strong style="color:#aaa;">Peer-Reviewed:</strong> <span style="font-weight:900; color:#000;">{% if pub.peer_reviewed %}Yes{% else %}No{% endif %}</span></p>
   {% endunless %}
@@ -333,9 +358,10 @@ author_profile: true
   {% else %}
     <p class="pub-abstract-text">{{ raw }}</p>
   {% endif %}
-  {% if pub.paperurl %}
+  {% if pub.preprint or pub.paperurl %}
   <div class="pub-footer">
-    <a class="pub-access-btn pub-access-btn-peer" href="{{ pub.paperurl }}" target="_blank">Access Here</a>
+    {% if pub.preprint %}<a class="pub-preprint-btn" href="{{ pub.preprint }}" target="_blank">Preprint</a>{% endif %}
+    {% if pub.paperurl %}<a class="pub-access-btn pub-access-btn-peer" href="{{ pub.paperurl }}" target="_blank">Read Paper</a>{% endif %}
   </div>
   {% endif %}
 </div>
@@ -362,7 +388,9 @@ author_profile: true
   <p class="pub-meta"><strong style="color:#aaa;">Proceedings:</strong> <span style="font-weight:900; color:#000;">{{ pub.proceedings }}</span></p>
   {% endif %}
   {% if pub.preprint %}
-  <p class="pub-meta"><strong style="color:#aaa;">Preprint:</strong> <span style="font-weight:900; color:#000;">{{ pub.preprint }}</span></p>
+  <div class="pub-footer">
+    <a class="pub-preprint-btn" href="{{ pub.preprint }}" target="_blank">Preprint</a>
+  </div>
   {% endif %}
   {% unless pub.hide_peer_reviewed %}
   <p class="pub-meta"><strong style="color:#aaa;">Peer-Reviewed:</strong> <span style="font-weight:900; color:#000;">{% if pub.peer_reviewed %}Yes{% else %}No{% endif %}</span></p>
