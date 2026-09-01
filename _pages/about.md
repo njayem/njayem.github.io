@@ -352,7 +352,7 @@ As my work in ethics, governance, and responsible AI has grown, so has my curios
     <th style="color: #fff;"></th>
   </tr>
   <tr>
-    <td>Power Corporation Of Canada Graduate Fellowship Graduate Award</td>
+    <td>Power Corporation Of Canada Graduate Fellowship</td>
     <td>Concordia University</td>
     <td>Jun 2026</td>
     <td><a href="https://www.concordia.ca/gradstudies/funding/in-program/donor-awards.html" target="_blank" class="table-btn">View</a></td>
