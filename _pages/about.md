@@ -439,7 +439,7 @@ As my work in ethics, governance, and responsible AI has grown, so has my curios
   <tr>
     <td>Organizer</td>
     <td>Brainhack MTL, Concordia University x McGill University</td>
-    <td>Jul 2025 – Present</td>
+    <td>Jul 2025 – Jul 2026</td>
     <td><a href="https://brainhackmtl.github.io/winter2026/" target="_blank" class="table-btn">Link</a></td>
   </tr>
   <tr>
