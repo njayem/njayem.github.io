@@ -10,7 +10,7 @@ excerpt: 'In Preparation'
 order: 4
 journal: 'Scientific Reports, Nature Portfolio'
 paperurl: ''
-citation: "El-Mufti, N., Salim, M., Tajmel, T., & Kersten-Oertel, M. (in preparation). Moral Diversity in Healthcare AI Governance: A Person-Centered Analysis of Value Trade-Offs. Scientific Reports, Nature Portfolio."
+citation: "El-Mufti, N., Salim, M., Tajmel, T., & Kersten-Oertel, M.* (in preparation). Moral Diversity in Healthcare AI Governance: A Person-Centered Analysis of Value Trade-Offs. Scientific Reports, Nature Portfolio."
 ---
 
 Paste abstract here.
