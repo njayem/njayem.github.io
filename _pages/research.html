@@ -263,13 +263,20 @@ author_profile: true
     margin-bottom: 0.8em;
   }
   .pub-card-preview {
+    height: 300px;
+    width: auto;
+    max-width: 100%;
+    display: block;
+    border-radius: 8px;
+  }
+  .pub-card-preview-fixed {
     flex: 1;
     width: 100%;
+    height: auto;
+    max-width: none;
     aspect-ratio: 3.1 / 1;
     object-fit: cover;
     object-position: center;
-    display: block;
-    border-radius: 8px;
   }
   .pub-footer {
     display: flex;
@@ -297,7 +304,7 @@ author_profile: true
   <div class="pub-card-preview-wrap">
     <div class="pub-card-preview-images">
       {% for img in pub.preview_images %}
-      <img class="pub-card-preview" src="{{ img }}" alt="{{ pub.title }} preview">
+      <img class="pub-card-preview{% if pub.preview_style %} pub-card-preview-{{ pub.preview_style }}{% endif %}" src="{{ img }}" alt="{{ pub.title }} preview">
       {% endfor %}
     </div>
   </div>
@@ -346,7 +353,7 @@ author_profile: true
   <div class="pub-card-preview-wrap">
     <div class="pub-card-preview-images">
       {% for img in pub.preview_images %}
-      <img class="pub-card-preview" src="{{ img }}" alt="{{ pub.title }} preview">
+      <img class="pub-card-preview{% if pub.preview_style %} pub-card-preview-{{ pub.preview_style }}{% endif %}" src="{{ img }}" alt="{{ pub.title }} preview">
       {% endfor %}
     </div>
   </div>
@@ -395,7 +402,7 @@ author_profile: true
   <div class="pub-card-preview-wrap">
     <div class="pub-card-preview-images">
       {% for img in pub.preview_images %}
-      <img class="pub-card-preview" src="{{ img }}" alt="{{ pub.title }} preview">
+      <img class="pub-card-preview{% if pub.preview_style %} pub-card-preview-{{ pub.preview_style }}{% endif %}" src="{{ img }}" alt="{{ pub.title }} preview">
       {% endfor %}
     </div>
   </div>
@@ -444,7 +451,7 @@ author_profile: true
   <div class="pub-card-preview-wrap">
     <div class="pub-card-preview-images">
       {% for img in pub.preview_images %}
-      <img class="pub-card-preview" src="{{ img }}" alt="{{ pub.title }} preview">
+      <img class="pub-card-preview{% if pub.preview_style %} pub-card-preview-{{ pub.preview_style }}{% endif %}" src="{{ img }}" alt="{{ pub.title }} preview">
       {% endfor %}
     </div>
   </div>
