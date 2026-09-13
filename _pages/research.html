@@ -237,8 +237,8 @@ author_profile: true
   }
   .pub-dashboard-btn {
     display: inline-block;
-    background: #bcac9f;
-    color: #33291f !important;
+    background: #d6d6d6;
+    color: #000 !important;
     font-weight: 700;
     font-size: 0.8em;
     padding: 6px 16px;
@@ -249,13 +249,17 @@ author_profile: true
   }
   .pub-dashboard-btn:hover {
     transform: scale(1.08);
-    background: #a3907f;
+    background: #c2c2c2;
   }
   .pub-card-preview-wrap {
     background: #fff;
     margin: -2em -2.2em 1.2em -2.2em;
     padding: 1.4em 2.2em 1.4em 2.2em;
     border-radius: 12px 12px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
   }
   .pub-card-preview-images {
     display: flex;
@@ -268,7 +272,6 @@ author_profile: true
     width: auto;
     max-width: 100%;
     display: block;
-    border-radius: 8px;
   }
   .pub-footer {
     display: flex;
@@ -294,11 +297,17 @@ author_profile: true
 <div class="pub-card status-review">
   {% if pub.preview_images %}
   <div class="pub-card-preview-wrap">
+    {% if pub.preview_style == "simple" %}
+    {% for img in pub.preview_images %}
+    <img class="pub-card-preview" src="{{ img }}" alt="{{ pub.title }} preview">
+    {% endfor %}
+    {% else %}
     <div class="pub-card-preview-images">
       {% for img in pub.preview_images %}
       <img class="pub-card-preview" src="{{ img }}" alt="{{ pub.title }} preview">
       {% endfor %}
     </div>
+    {% endif %}
   </div>
   {% endif %}
   <span class="pub-status-label label-under-review{% if pub.tag == "Master's Thesis" %} label-masters-thesis{% endif %}">{{ pub.tag | default: "Submitted" }}</span>
@@ -343,11 +352,17 @@ author_profile: true
 <div class="pub-card status-accepted">
   {% if pub.preview_images %}
   <div class="pub-card-preview-wrap">
+    {% if pub.preview_style == "simple" %}
+    {% for img in pub.preview_images %}
+    <img class="pub-card-preview" src="{{ img }}" alt="{{ pub.title }} preview">
+    {% endfor %}
+    {% else %}
     <div class="pub-card-preview-images">
       {% for img in pub.preview_images %}
       <img class="pub-card-preview" src="{{ img }}" alt="{{ pub.title }} preview">
       {% endfor %}
     </div>
+    {% endif %}
   </div>
   {% endif %}
   <span class="pub-status-label label-accepted{% if pub.tag == "Master's Thesis" %} label-masters-thesis{% endif %}">{{ pub.tag | default: "Accepted" }}</span>
@@ -392,11 +407,17 @@ author_profile: true
 <div class="pub-card status-peer">
   {% if pub.preview_images %}
   <div class="pub-card-preview-wrap">
+    {% if pub.preview_style == "simple" %}
+    {% for img in pub.preview_images %}
+    <img class="pub-card-preview" src="{{ img }}" alt="{{ pub.title }} preview">
+    {% endfor %}
+    {% else %}
     <div class="pub-card-preview-images">
       {% for img in pub.preview_images %}
       <img class="pub-card-preview" src="{{ img }}" alt="{{ pub.title }} preview">
       {% endfor %}
     </div>
+    {% endif %}
   </div>
   {% endif %}
   <span class="pub-status-label label-peer-reviewed{% if pub.tag == "Master's Thesis" %} label-masters-thesis{% endif %}">{{ pub.tag | default: "Published" }}</span>
@@ -441,11 +462,17 @@ author_profile: true
 <div class="pub-card status-prep">
   {% if pub.preview_images %}
   <div class="pub-card-preview-wrap">
+    {% if pub.preview_style == "simple" %}
+    {% for img in pub.preview_images %}
+    <img class="pub-card-preview" src="{{ img }}" alt="{{ pub.title }} preview">
+    {% endfor %}
+    {% else %}
     <div class="pub-card-preview-images">
       {% for img in pub.preview_images %}
       <img class="pub-card-preview" src="{{ img }}" alt="{{ pub.title }} preview">
       {% endfor %}
     </div>
+    {% endif %}
   </div>
   {% endif %}
   <span class="pub-status-label label-in-preparation{% if pub.tag == "Master's Thesis" %} label-masters-thesis{% endif %}">{{ pub.tag | default: "In Preparation" }}</span>
