@@ -10,6 +10,7 @@ excerpt: "In Preparation · npj Parkinson's Disease, Nature Portfolio"
 order: 6
 journal: "npj Parkinson's Disease, Nature Portfolio"
 paperurl: ''
+preview_images: ["/images/parkinsons.jpg"]
 citation: "El-Mufti, N., Kersten-Oertel, M., Glatard, T., Klein, D., Ravanelli, M.* (in preparation). Confounding Factors in Speech Biomarkers of Parkinson's Disease."
 ---
 

@@ -9,7 +9,7 @@ permalink: /publication/2026-virtues
 excerpt: 'In Preparation · Preprint (arXiv)'
 order: 3
 preprint: 'arXiv (forthcoming)'
-preview_images: ["/images/virtues.png", "/images/virtues-un-sdgs.png"]
+preview_images: ["/images/virtues.png"]
 paperurl: ''
 citation: 'El-Mufti, N., Drouin, S., Jannin, P., & Kersten-Oertel, M. (in preparation). VIRTUES: A Design-Fiction Framework for Eliciting the Values of Sustainable, Responsible Surgical Innovation. arXiv preprint.'
 ---
