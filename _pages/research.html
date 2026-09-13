@@ -234,6 +234,30 @@ author_profile: true
     transform: scale(1.08);
     background: #4a1a5e;
   }
+  .pub-dashboard-btn {
+    display: inline-block;
+    background: #fff;
+    color: navy !important;
+    font-weight: 700;
+    font-size: 0.8em;
+    padding: 6px 16px;
+    border: 1.5px solid navy;
+    border-radius: 20px;
+    text-decoration: none !important;
+    transition: transform 0.2s ease, background 0.2s ease;
+    white-space: nowrap;
+    margin-top: 0.8em;
+  }
+  .pub-dashboard-btn:hover {
+    transform: scale(1.08);
+    background: #f2f2f2;
+  }
+  .pub-card-preview {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 1em;
+  }
   .pub-footer {
     display: flex;
     flex-wrap: wrap;
@@ -255,6 +279,7 @@ author_profile: true
 <p class="section-heading"><span>Submitted</span><span class="count">{{ review.size }}</span></p>
 {% for pub in review %}
 <div class="pub-card status-review">
+  {% if pub.preview_gif %}<img class="pub-card-preview" src="{{ pub.preview_gif }}" alt="{{ pub.title }} preview">{% endif %}
   <span class="pub-status-label label-under-review{% if pub.tag == "Master's Thesis" %} label-masters-thesis{% endif %}">{{ pub.tag | default: "Submitted" }}</span>
   <p class="pub-title">{{ pub.title }}</p>
   {% unless pub.hide_authors %}
@@ -280,6 +305,12 @@ author_profile: true
   {% else %}
     <p class="pub-abstract-text">{{ raw }}</p>
   {% endif %}
+  {% if pub.dashboard_url %}
+  <p class="pub-abstract-label" style="margin-top:1.1em;">Celebs4PD Dataset Dashboard</p>
+  <div class="pub-footer">
+    <a class="pub-dashboard-btn" href="{{ pub.dashboard_url }}" target="_blank">Access Dashboard</a>
+  </div>
+  {% endif %}
   {% if pub.preprint %}
   <div class="pub-footer">
     <a class="pub-preprint-btn" href="{{ pub.preprint }}" target="_blank">Preprint</a>
@@ -294,6 +325,7 @@ author_profile: true
 <p class="section-heading"><span>Accepted</span><span class="count">{{ accepted.size }}</span></p>
 {% for pub in accepted %}
 <div class="pub-card status-accepted">
+  {% if pub.preview_gif %}<img class="pub-card-preview" src="{{ pub.preview_gif }}" alt="{{ pub.title }} preview">{% endif %}
   <span class="pub-status-label label-accepted{% if pub.tag == "Master's Thesis" %} label-masters-thesis{% endif %}">{{ pub.tag | default: "Accepted" }}</span>
   <p class="pub-title">{{ pub.title }}</p>
   {% unless pub.hide_authors %}
@@ -319,6 +351,12 @@ author_profile: true
   {% else %}
     <p class="pub-abstract-text">{{ raw }}</p>
   {% endif %}
+  {% if pub.dashboard_url %}
+  <p class="pub-abstract-label" style="margin-top:1.1em;">Celebs4PD Dataset Dashboard</p>
+  <div class="pub-footer">
+    <a class="pub-dashboard-btn" href="{{ pub.dashboard_url }}" target="_blank">Access Dashboard</a>
+  </div>
+  {% endif %}
   {% if pub.preprint %}
   <div class="pub-footer">
     <a class="pub-preprint-btn" href="{{ pub.preprint }}" target="_blank">Preprint</a>
@@ -333,6 +371,7 @@ author_profile: true
 <p class="section-heading"><span>Published</span><span class="count">{{ peer.size }}</span></p>
 {% for pub in peer %}
 <div class="pub-card status-peer">
+  {% if pub.preview_gif %}<img class="pub-card-preview" src="{{ pub.preview_gif }}" alt="{{ pub.title }} preview">{% endif %}
   <span class="pub-status-label label-peer-reviewed{% if pub.tag == "Master's Thesis" %} label-masters-thesis{% endif %}">{{ pub.tag | default: "Published" }}</span>
   <p class="pub-title">{{ pub.title }}</p>
   {% unless pub.hide_authors %}
@@ -358,6 +397,12 @@ author_profile: true
   {% else %}
     <p class="pub-abstract-text">{{ raw }}</p>
   {% endif %}
+  {% if pub.dashboard_url %}
+  <p class="pub-abstract-label" style="margin-top:1.1em;">Celebs4PD Dataset Dashboard</p>
+  <div class="pub-footer">
+    <a class="pub-dashboard-btn" href="{{ pub.dashboard_url }}" target="_blank">Access Dashboard</a>
+  </div>
+  {% endif %}
   {% if pub.paperurl %}
   <div class="pub-footer">
     <a class="pub-access-btn pub-access-btn-peer" href="{{ pub.paperurl }}" target="_blank">Read Paper</a>
@@ -372,6 +417,7 @@ author_profile: true
 <p class="section-heading"><span>In Preparation</span><span class="count">{{ prep.size }}</span></p>
 {% for pub in prep %}
 <div class="pub-card status-prep">
+  {% if pub.preview_gif %}<img class="pub-card-preview" src="{{ pub.preview_gif }}" alt="{{ pub.title }} preview">{% endif %}
   <span class="pub-status-label label-in-preparation{% if pub.tag == "Master's Thesis" %} label-masters-thesis{% endif %}">{{ pub.tag | default: "In Preparation" }}</span>
   <p class="pub-title">{{ pub.title }}</p>
   {% unless pub.hide_authors %}
@@ -396,6 +442,12 @@ author_profile: true
     <p class="pub-abstract-empty">Coming soon.</p>
   {% else %}
     <p class="pub-abstract-text">{{ raw }}</p>
+  {% endif %}
+  {% if pub.dashboard_url %}
+  <p class="pub-abstract-label" style="margin-top:1.1em;">Celebs4PD Dataset Dashboard</p>
+  <div class="pub-footer">
+    <a class="pub-dashboard-btn" href="{{ pub.dashboard_url }}" target="_blank">Access Dashboard</a>
+  </div>
   {% endif %}
 </div>
 <br>
