@@ -263,25 +263,12 @@ author_profile: true
     align-items: center;
     gap: 10px;
   }
-  .pub-card-preview-images-fixed {
-    margin-bottom: 0.8em;
-  }
   .pub-card-preview {
     height: 260px;
-    width: 260px;
+    width: auto;
     max-width: 100%;
-    object-fit: contain;
     display: block;
     border-radius: 8px;
-  }
-  .pub-card-preview-fixed {
-    flex: 1;
-    width: 100%;
-    height: auto;
-    max-width: none;
-    aspect-ratio: 3.1 / 1;
-    object-fit: cover;
-    object-position: center;
   }
   .pub-footer {
     display: flex;
@@ -307,9 +294,9 @@ author_profile: true
 <div class="pub-card status-review">
   {% if pub.preview_images %}
   <div class="pub-card-preview-wrap">
-    <div class="pub-card-preview-images{% if pub.preview_style %} pub-card-preview-images-{{ pub.preview_style }}{% endif %}">
+    <div class="pub-card-preview-images">
       {% for img in pub.preview_images %}
-      <img class="pub-card-preview{% if pub.preview_style %} pub-card-preview-{{ pub.preview_style }}{% endif %}" src="{{ img }}" alt="{{ pub.title }} preview">
+      <img class="pub-card-preview" src="{{ img }}" alt="{{ pub.title }} preview">
       {% endfor %}
     </div>
   </div>
@@ -356,9 +343,9 @@ author_profile: true
 <div class="pub-card status-accepted">
   {% if pub.preview_images %}
   <div class="pub-card-preview-wrap">
-    <div class="pub-card-preview-images{% if pub.preview_style %} pub-card-preview-images-{{ pub.preview_style }}{% endif %}">
+    <div class="pub-card-preview-images">
       {% for img in pub.preview_images %}
-      <img class="pub-card-preview{% if pub.preview_style %} pub-card-preview-{{ pub.preview_style }}{% endif %}" src="{{ img }}" alt="{{ pub.title }} preview">
+      <img class="pub-card-preview" src="{{ img }}" alt="{{ pub.title }} preview">
       {% endfor %}
     </div>
   </div>
@@ -405,9 +392,9 @@ author_profile: true
 <div class="pub-card status-peer">
   {% if pub.preview_images %}
   <div class="pub-card-preview-wrap">
-    <div class="pub-card-preview-images{% if pub.preview_style %} pub-card-preview-images-{{ pub.preview_style }}{% endif %}">
+    <div class="pub-card-preview-images">
       {% for img in pub.preview_images %}
-      <img class="pub-card-preview{% if pub.preview_style %} pub-card-preview-{{ pub.preview_style }}{% endif %}" src="{{ img }}" alt="{{ pub.title }} preview">
+      <img class="pub-card-preview" src="{{ img }}" alt="{{ pub.title }} preview">
       {% endfor %}
     </div>
   </div>
@@ -454,9 +441,9 @@ author_profile: true
 <div class="pub-card status-prep">
   {% if pub.preview_images %}
   <div class="pub-card-preview-wrap">
-    <div class="pub-card-preview-images{% if pub.preview_style %} pub-card-preview-images-{{ pub.preview_style }}{% endif %}">
+    <div class="pub-card-preview-images">
       {% for img in pub.preview_images %}
-      <img class="pub-card-preview{% if pub.preview_style %} pub-card-preview-{{ pub.preview_style }}{% endif %}" src="{{ img }}" alt="{{ pub.title }} preview">
+      <img class="pub-card-preview" src="{{ img }}" alt="{{ pub.title }} preview">
       {% endfor %}
     </div>
   </div>
