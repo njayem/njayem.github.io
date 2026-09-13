@@ -251,6 +251,33 @@ author_profile: true
     transform: scale(1.08);
     background: #c2c2c2;
   }
+  .pub-dashboard-hero-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: fit-content;
+    margin: 0.9em auto 0 auto;
+    background: linear-gradient(135deg, #1a56c4, #63287d);
+    color: white !important;
+    font-weight: 700;
+    font-size: 0.85em;
+    letter-spacing: 0.02em;
+    padding: 10px 22px;
+    border-radius: 24px;
+    text-decoration: none !important;
+    box-shadow: 0 4px 14px rgba(26, 86, 196, 0.35);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .pub-dashboard-hero-btn:hover {
+    transform: scale(1.06);
+    box-shadow: 0 6px 20px rgba(99, 40, 125, 0.45);
+  }
+  .pub-dashboard-hero-btn svg {
+    width: 15px;
+    height: 15px;
+    flex: none;
+  }
   .pub-card-preview-wrap {
     background: #fff;
     margin: -2em -2.2em 1.2em -2.2em;
@@ -310,6 +337,12 @@ author_profile: true
     {% endif %}
   </div>
   {% endif %}
+  {% if pub.dashboard_url %}
+  <a class="pub-dashboard-hero-btn" href="{{ pub.dashboard_url }}" target="_blank">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-11"/></svg>
+    View Live Dashboard
+  </a>
+  {% endif %}
   <span class="pub-status-label label-under-review{% if pub.tag == "Master's Thesis" %} label-masters-thesis{% endif %}">{{ pub.tag | default: "Submitted" }}</span>
   <p class="pub-title">{{ pub.title }}</p>
   {% unless pub.hide_authors %}
@@ -364,6 +397,12 @@ author_profile: true
     </div>
     {% endif %}
   </div>
+  {% endif %}
+  {% if pub.dashboard_url %}
+  <a class="pub-dashboard-hero-btn" href="{{ pub.dashboard_url }}" target="_blank">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-11"/></svg>
+    View Live Dashboard
+  </a>
   {% endif %}
   <span class="pub-status-label label-accepted{% if pub.tag == "Master's Thesis" %} label-masters-thesis{% endif %}">{{ pub.tag | default: "Accepted" }}</span>
   <p class="pub-title">{{ pub.title }}</p>
@@ -420,6 +459,12 @@ author_profile: true
     {% endif %}
   </div>
   {% endif %}
+  {% if pub.dashboard_url %}
+  <a class="pub-dashboard-hero-btn" href="{{ pub.dashboard_url }}" target="_blank">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-11"/></svg>
+    View Live Dashboard
+  </a>
+  {% endif %}
   <span class="pub-status-label label-peer-reviewed{% if pub.tag == "Master's Thesis" %} label-masters-thesis{% endif %}">{{ pub.tag | default: "Published" }}</span>
   <p class="pub-title">{{ pub.title }}</p>
   {% unless pub.hide_authors %}
@@ -474,6 +519,12 @@ author_profile: true
     </div>
     {% endif %}
   </div>
+  {% endif %}
+  {% if pub.dashboard_url %}
+  <a class="pub-dashboard-hero-btn" href="{{ pub.dashboard_url }}" target="_blank">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-11"/></svg>
+    View Live Dashboard
+  </a>
   {% endif %}
   <span class="pub-status-label label-in-preparation{% if pub.tag == "Master's Thesis" %} label-masters-thesis{% endif %}">{{ pub.tag | default: "In Preparation" }}</span>
   <p class="pub-title">{{ pub.title }}</p>
