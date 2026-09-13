@@ -236,7 +236,7 @@ author_profile: true
   }
   .pub-dashboard-btn {
     display: inline-block;
-    background: #7a8288;
+    background: #000;
     color: white !important;
     font-weight: 700;
     font-size: 0.8em;
@@ -248,19 +248,27 @@ author_profile: true
   }
   .pub-dashboard-btn:hover {
     transform: scale(1.08);
-    background: #62686d;
+    background: #333;
   }
   .pub-card-preview-wrap {
     background: #fff;
     margin: -2em -2.2em 1.2em -2.2em;
-    padding: 1.4em 2.2em 1em 2.2em;
+    padding: 1.4em 2.2em 1.4em 2.2em;
     border-radius: 12px 12px 0 0;
   }
+  .pub-card-preview-images {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 0.8em;
+  }
   .pub-card-preview {
+    flex: 1;
     width: 100%;
+    height: 230px;
+    object-fit: contain;
+    background: #fff;
     display: block;
     border-radius: 8px;
-    margin-bottom: 0.8em;
   }
   .pub-card-preview-actions {
     text-align: center;
@@ -286,12 +294,16 @@ author_profile: true
 <p class="section-heading"><span>Submitted</span><span class="count">{{ review.size }}</span></p>
 {% for pub in review %}
 <div class="pub-card status-review">
-  {% if pub.preview_gif %}
+  {% if pub.preview_images %}
   <div class="pub-card-preview-wrap">
-    <img class="pub-card-preview" src="{{ pub.preview_gif }}" alt="{{ pub.title }} preview">
+    <div class="pub-card-preview-images">
+      {% for img in pub.preview_images %}
+      <img class="pub-card-preview" src="{{ img }}" alt="{{ pub.title }} preview">
+      {% endfor %}
+    </div>
     {% if pub.dashboard_url %}
     <div class="pub-card-preview-actions">
-      <a class="pub-dashboard-btn" href="{{ pub.dashboard_url }}" target="_blank">Access Dashboard</a>
+      <a class="pub-dashboard-btn" href="{{ pub.dashboard_url }}" target="_blank">View Dashboard</a>
     </div>
     {% endif %}
   </div>
@@ -335,12 +347,16 @@ author_profile: true
 <p class="section-heading"><span>Accepted</span><span class="count">{{ accepted.size }}</span></p>
 {% for pub in accepted %}
 <div class="pub-card status-accepted">
-  {% if pub.preview_gif %}
+  {% if pub.preview_images %}
   <div class="pub-card-preview-wrap">
-    <img class="pub-card-preview" src="{{ pub.preview_gif }}" alt="{{ pub.title }} preview">
+    <div class="pub-card-preview-images">
+      {% for img in pub.preview_images %}
+      <img class="pub-card-preview" src="{{ img }}" alt="{{ pub.title }} preview">
+      {% endfor %}
+    </div>
     {% if pub.dashboard_url %}
     <div class="pub-card-preview-actions">
-      <a class="pub-dashboard-btn" href="{{ pub.dashboard_url }}" target="_blank">Access Dashboard</a>
+      <a class="pub-dashboard-btn" href="{{ pub.dashboard_url }}" target="_blank">View Dashboard</a>
     </div>
     {% endif %}
   </div>
@@ -384,12 +400,16 @@ author_profile: true
 <p class="section-heading"><span>Published</span><span class="count">{{ peer.size }}</span></p>
 {% for pub in peer %}
 <div class="pub-card status-peer">
-  {% if pub.preview_gif %}
+  {% if pub.preview_images %}
   <div class="pub-card-preview-wrap">
-    <img class="pub-card-preview" src="{{ pub.preview_gif }}" alt="{{ pub.title }} preview">
+    <div class="pub-card-preview-images">
+      {% for img in pub.preview_images %}
+      <img class="pub-card-preview" src="{{ img }}" alt="{{ pub.title }} preview">
+      {% endfor %}
+    </div>
     {% if pub.dashboard_url %}
     <div class="pub-card-preview-actions">
-      <a class="pub-dashboard-btn" href="{{ pub.dashboard_url }}" target="_blank">Access Dashboard</a>
+      <a class="pub-dashboard-btn" href="{{ pub.dashboard_url }}" target="_blank">View Dashboard</a>
     </div>
     {% endif %}
   </div>
@@ -433,12 +453,16 @@ author_profile: true
 <p class="section-heading"><span>In Preparation</span><span class="count">{{ prep.size }}</span></p>
 {% for pub in prep %}
 <div class="pub-card status-prep">
-  {% if pub.preview_gif %}
+  {% if pub.preview_images %}
   <div class="pub-card-preview-wrap">
-    <img class="pub-card-preview" src="{{ pub.preview_gif }}" alt="{{ pub.title }} preview">
+    <div class="pub-card-preview-images">
+      {% for img in pub.preview_images %}
+      <img class="pub-card-preview" src="{{ img }}" alt="{{ pub.title }} preview">
+      {% endfor %}
+    </div>
     {% if pub.dashboard_url %}
     <div class="pub-card-preview-actions">
-      <a class="pub-dashboard-btn" href="{{ pub.dashboard_url }}" target="_blank">Access Dashboard</a>
+      <a class="pub-dashboard-btn" href="{{ pub.dashboard_url }}" target="_blank">View Dashboard</a>
     </div>
     {% endif %}
   </div>
