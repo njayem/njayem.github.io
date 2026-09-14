@@ -371,7 +371,7 @@ As my work in ethics, governance, and responsible AI has grown, so has my curios
     <td>FRQNT</td>
     <td>Apr 2025</td>
     <td>—</td>
-    <td><a href="https://frq.gouv.qc.ca/en/" target="_blank" class="table-btn">View</a></td>
+    <td><a href="https://frq.gouv.qc.ca/en/program/frqnt-2024-2025-masters-training-scholarships/" target="_blank" class="table-btn">View</a></td>
   </tr>
   <tr>
     <td>Concordia University Special Entrance Award</td>
@@ -392,7 +392,7 @@ As my work in ethics, governance, and responsible AI has grown, so has my curios
     <td>FRQNT</td>
     <td>Dec 2022</td>
     <td>CAD 1,500</td>
-    <td><a href="https://frq.gouv.qc.ca/en/" target="_blank" class="table-btn">View</a></td>
+    <td><a href="https://frq.gouv.qc.ca/en/program/supplements-of-the-nserc-undergraduate-student-research-awards-usra-bpca-2024-2025/" target="_blank" class="table-btn">View</a></td>
   </tr>
   <tr>
     <td>Bourses d'Excellence for Engineering Scholarship</td>
