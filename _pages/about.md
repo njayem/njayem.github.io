@@ -341,7 +341,7 @@ Dr. Ravanelli recognized my curiosity, ambition, and the work I put into his Mac
 
 As my work in ethics, governance, and responsible AI has grown, so has my curiosity about the intersection of AI and cybersecurity, particularly around agentic AI systems, resilient infrastructures, and cyber-physical systems. As AI becomes more autonomous and more deeply embedded in critical infrastructure, the questions of how these systems fail, how they are attacked, and how they are made robust feel both urgent and underexplored. This is an area I am actively learning in and hope to contribute to. Earlier interests, including participation in the [Climate Change AI Summer School](https://drive.google.com/file/d/13m7Vtn1vXnPvK0c-UG-B_teOFsR2jd6E/view?usp=sharing), shaped how I think about systems-level risk and the societal consequences of technological decisions, a thread that runs through everything I work on today.
 
-## Honors & Awards
+## Scholarships, Awards and Honors
 <div style="margin-top: 20px;"></div>
 
 <table border="1">
@@ -349,42 +349,63 @@ As my work in ethics, governance, and responsible AI has grown, so has my curios
     <th style="color: #fff;">Award</th>
     <th style="color: #fff;">Issuer</th>
     <th style="color: #fff;">Date</th>
+    <th style="color: #fff;">Value</th>
     <th style="color: #fff;"></th>
   </tr>
   <tr>
-    <td>Power Corporation Of Canada Graduate Fellowship</td>
+    <td>Power Corporation of Canada Graduate Fellowship</td>
     <td>Concordia University</td>
     <td>Jun 2026</td>
+    <td>CAD 5,000</td>
     <td><a href="https://www.concordia.ca/gradstudies/funding/in-program/donor-awards.html" target="_blank" class="table-btn">View</a></td>
   </tr>
   <tr>
     <td>Arbour Foundation Master's Scholarship</td>
     <td>Fondation Arbour</td>
     <td>Sep 2025</td>
+    <td>CAD 43,000</td>
     <td><a href="https://www.fondationarbour.com/en/" target="_blank" class="table-btn">View</a></td>
+  </tr>
+  <tr>
+    <td>FRQNT B1X Award Competition – 92/100, Ranked 9th (Funding Cutoff: 8)</td>
+    <td>FRQNT</td>
+    <td>Apr 2025</td>
+    <td>—</td>
+    <td><a href="https://frq.gouv.qc.ca/en/" target="_blank" class="table-btn">View</a></td>
   </tr>
   <tr>
     <td>Concordia University Special Entrance Award</td>
     <td>Concordia University</td>
-    <td>Oct 2024</td>
+    <td>Apr 2024</td>
+    <td>CAD 6,000</td>
     <td><a href="https://www.concordia.ca/gradstudies/funding/external/special-entrance.html" target="_blank" class="table-btn">View</a></td>
   </tr>
   <tr>
     <td>NSERC Canada Graduate Scholarship – Master's (CGS-M)</td>
     <td>Natural Sciences and Engineering Research Council of Canada</td>
     <td>Apr 2024</td>
+    <td>CAD 27,000</td>
     <td><a href="https://nserc-crsng.canada.ca/en/funding-opportunity/canada-graduate-research-scholarship-masters-program" target="_blank" class="table-btn">View</a></td>
   </tr>
   <tr>
-    <td>Bourse d'Excellence en Génie</td>
+    <td>Supplements of the NSERC Undergraduate Student Research Awards – USRA (BPCA)</td>
+    <td>FRQNT</td>
+    <td>Dec 2022</td>
+    <td>CAD 1,500</td>
+    <td><a href="https://frq.gouv.qc.ca/en/" target="_blank" class="table-btn">View</a></td>
+  </tr>
+  <tr>
+    <td>Bourses d'Excellence for Engineering Scholarship</td>
     <td>Quebec Ministry of Education</td>
     <td>Jun 2022</td>
+    <td>CAD 3,000</td>
     <td><a href="https://www.quebec.ca/education/etudier-quebec/aide-financiere-etudiants-internationaux/bourses-excellence-gouvernement-quebec" target="_blank" class="table-btn">View</a></td>
   </tr>
   <tr>
     <td>NSERC Undergraduate Student Research Award (USRA)</td>
     <td>Natural Sciences and Engineering Research Council of Canada</td>
     <td>May 2022</td>
+    <td>CAD 6,000</td>
     <td><a href="https://nserc-crsng.canada.ca/en/funding-opportunity/undergraduate-student-research-awards" target="_blank" class="table-btn">View</a></td>
   </tr>
 </table>
