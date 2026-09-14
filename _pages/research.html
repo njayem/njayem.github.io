@@ -235,36 +235,20 @@ author_profile: true
     transform: scale(1.08);
     background: #4a1a5e;
   }
-  .pub-dashboard-btn {
-    display: inline-block;
-    background: #d6d6d6;
-    color: #000 !important;
-    font-weight: 700;
-    font-size: 0.8em;
-    padding: 6px 16px;
-    border-radius: 20px;
-    text-decoration: none !important;
-    transition: transform 0.2s ease, background 0.2s ease;
-    white-space: nowrap;
-  }
-  .pub-dashboard-btn:hover {
-    transform: scale(1.08);
-    background: #c2c2c2;
-  }
   .pub-dashboard-hero-btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 12px;
     width: fit-content;
-    margin: 0.9em auto 0 auto;
+    margin: 0.9em auto 0.9em auto;
     background: linear-gradient(135deg, #1a56c4, #63287d);
     color: white !important;
     font-weight: 700;
-    font-size: 0.85em;
+    font-size: 1.28em;
     letter-spacing: 0.02em;
-    padding: 10px 22px;
-    border-radius: 24px;
+    padding: 15px 33px;
+    border-radius: 36px;
     text-decoration: none !important;
     box-shadow: 0 4px 14px rgba(26, 86, 196, 0.35);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -274,8 +258,8 @@ author_profile: true
     box-shadow: 0 6px 20px rgba(99, 40, 125, 0.45);
   }
   .pub-dashboard-hero-btn svg {
-    width: 15px;
-    height: 15px;
+    width: 22px;
+    height: 22px;
     flex: none;
   }
   .pub-card-preview-wrap {
@@ -340,7 +324,7 @@ author_profile: true
   {% if pub.dashboard_url %}
   <a class="pub-dashboard-hero-btn" href="{{ pub.dashboard_url }}" target="_blank">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-11"/></svg>
-    View Live Dashboard
+    View Dashboard
   </a>
   {% endif %}
   <span class="pub-status-label label-under-review{% if pub.tag == "Master's Thesis" %} label-masters-thesis{% endif %}">{{ pub.tag | default: "Submitted" }}</span>
@@ -368,10 +352,9 @@ author_profile: true
   {% else %}
     <p class="pub-abstract-text">{{ raw }}</p>
   {% endif %}
-  {% if pub.preprint or pub.dashboard_url %}
+  {% if pub.preprint %}
   <div class="pub-footer">
-    {% if pub.preprint %}<a class="pub-preprint-btn" href="{{ pub.preprint }}" target="_blank">Preprint</a>{% endif %}
-    {% if pub.dashboard_url %}<a class="pub-dashboard-btn" href="{{ pub.dashboard_url }}" target="_blank">View Dashboard</a>{% endif %}
+    <a class="pub-preprint-btn" href="{{ pub.preprint }}" target="_blank">Preprint</a>
   </div>
   {% endif %}
 </div>
@@ -401,7 +384,7 @@ author_profile: true
   {% if pub.dashboard_url %}
   <a class="pub-dashboard-hero-btn" href="{{ pub.dashboard_url }}" target="_blank">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-11"/></svg>
-    View Live Dashboard
+    View Dashboard
   </a>
   {% endif %}
   <span class="pub-status-label label-accepted{% if pub.tag == "Master's Thesis" %} label-masters-thesis{% endif %}">{{ pub.tag | default: "Accepted" }}</span>
@@ -429,10 +412,9 @@ author_profile: true
   {% else %}
     <p class="pub-abstract-text">{{ raw }}</p>
   {% endif %}
-  {% if pub.preprint or pub.dashboard_url %}
+  {% if pub.preprint %}
   <div class="pub-footer">
-    {% if pub.preprint %}<a class="pub-preprint-btn" href="{{ pub.preprint }}" target="_blank">Preprint</a>{% endif %}
-    {% if pub.dashboard_url %}<a class="pub-dashboard-btn" href="{{ pub.dashboard_url }}" target="_blank">View Dashboard</a>{% endif %}
+    <a class="pub-preprint-btn" href="{{ pub.preprint }}" target="_blank">Preprint</a>
   </div>
   {% endif %}
 </div>
@@ -462,7 +444,7 @@ author_profile: true
   {% if pub.dashboard_url %}
   <a class="pub-dashboard-hero-btn" href="{{ pub.dashboard_url }}" target="_blank">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-11"/></svg>
-    View Live Dashboard
+    View Dashboard
   </a>
   {% endif %}
   <span class="pub-status-label label-peer-reviewed{% if pub.tag == "Master's Thesis" %} label-masters-thesis{% endif %}">{{ pub.tag | default: "Published" }}</span>
@@ -490,10 +472,9 @@ author_profile: true
   {% else %}
     <p class="pub-abstract-text">{{ raw }}</p>
   {% endif %}
-  {% if pub.paperurl or pub.dashboard_url %}
+  {% if pub.paperurl %}
   <div class="pub-footer">
-    {% if pub.paperurl %}<a class="pub-access-btn pub-access-btn-peer" href="{{ pub.paperurl }}" target="_blank">Read Paper</a>{% endif %}
-    {% if pub.dashboard_url %}<a class="pub-dashboard-btn" href="{{ pub.dashboard_url }}" target="_blank">View Dashboard</a>{% endif %}
+    <a class="pub-access-btn pub-access-btn-peer" href="{{ pub.paperurl }}" target="_blank">Read Paper</a>
   </div>
   {% endif %}
 </div>
@@ -523,7 +504,7 @@ author_profile: true
   {% if pub.dashboard_url %}
   <a class="pub-dashboard-hero-btn" href="{{ pub.dashboard_url }}" target="_blank">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-11"/></svg>
-    View Live Dashboard
+    View Dashboard
   </a>
   {% endif %}
   <span class="pub-status-label label-in-preparation{% if pub.tag == "Master's Thesis" %} label-masters-thesis{% endif %}">{{ pub.tag | default: "In Preparation" }}</span>
@@ -550,11 +531,6 @@ author_profile: true
     <p class="pub-abstract-empty">Coming soon.</p>
   {% else %}
     <p class="pub-abstract-text">{{ raw }}</p>
-  {% endif %}
-  {% if pub.dashboard_url %}
-  <div class="pub-footer">
-    <a class="pub-dashboard-btn" href="{{ pub.dashboard_url }}" target="_blank">View Dashboard</a>
-  </div>
   {% endif %}
 </div>
 <br>
