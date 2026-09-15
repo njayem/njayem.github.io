@@ -363,7 +363,7 @@ As my work in ethics, governance, and responsible AI has grown, so has my curios
     <td>Arbour Foundation Master's Scholarship</td>
     <td>Fondation Arbour</td>
     <td>Sep 2025</td>
-    <td>CAD 43,000</td>
+    <td>CAD 20,000</td>
     <td><a href="https://www.fondationarbour.com/bourses/" target="_blank" class="table-btn">View</a></td>
   </tr>
   <tr>
