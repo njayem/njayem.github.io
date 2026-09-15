@@ -364,7 +364,7 @@ As my work in ethics, governance, and responsible AI has grown, so has my curios
     <td>Fondation Arbour</td>
     <td>Sep 2025</td>
     <td>CAD 43,000</td>
-    <td><a href="https://www.fondationarbour.com/en/" target="_blank" class="table-btn">View</a></td>
+    <td><a href="https://www.fondationarbour.com/bourses/" target="_blank" class="table-btn">View</a></td>
   </tr>
   <tr>
     <td>FRQNT B1X Award Competition – 92/100, Ranked 9th (Funding Cutoff: 8)</td>
@@ -385,7 +385,7 @@ As my work in ethics, governance, and responsible AI has grown, so has my curios
     <td>Natural Sciences and Engineering Research Council of Canada</td>
     <td>Apr 2024</td>
     <td>CAD 27,000</td>
-    <td><a href="https://nserc-crsng.canada.ca/en/funding-opportunity/canada-graduate-research-scholarship-masters-program" target="_blank" class="table-btn">View</a></td>
+    <td><a href="https://search.open.canada.ca/grants/record/nserc-crsng%2C110_2024_2025_Q4_137%2Ccurrent" target="_blank" class="table-btn">View</a></td>
   </tr>
   <tr>
     <td>Supplements of the NSERC Undergraduate Student Research Awards – USRA (BPCA)</td>
@@ -406,7 +406,7 @@ As my work in ethics, governance, and responsible AI has grown, so has my curios
     <td>Natural Sciences and Engineering Research Council of Canada</td>
     <td>May 2022</td>
     <td>CAD 6,000</td>
-    <td><a href="https://nserc-crsng.canada.ca/en/funding-opportunity/undergraduate-student-research-awards" target="_blank" class="table-btn">View</a></td>
+    <td><a href="https://search.open.canada.ca/grants/record/nserc-crsng%2C110_2022_2023_Q2_3419%2Ccurrent?amendments" target="_blank" class="table-btn">View</a></td>
   </tr>
 </table>
 
