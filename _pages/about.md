@@ -376,7 +376,7 @@ As my work in ethics, governance, and responsible AI has grown, so has my curios
   <tr>
     <td>Concordia University Special Entrance Award</td>
     <td>Concordia University</td>
-    <td>Apr 2024</td>
+    <td>Jan 2025</td>
     <td>CAD 6,000</td>
     <td><a href="https://www.concordia.ca/gradstudies/funding/external/special-entrance.html" target="_blank" class="table-btn">View</a></td>
   </tr>
