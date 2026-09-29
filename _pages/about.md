@@ -425,7 +425,7 @@ As my work in ethics, governance, and responsible AI has grown, so has my curios
     <td>Member</td>
     <td>The International Association for Safe & Ethical AI (IASEAI)</td>
     <td>Sep 2026 – Present</td>
-    <td><a href="https://www.iaseai.org/" target="_blank" class="table-btn">Link</a></td>
+    <td><a href="https://www.iaseai.org/about" target="_blank" class="table-btn">Link</a></td>
   </tr>
   <tr>
     <td>Member</td>
