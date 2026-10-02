@@ -11,7 +11,8 @@ venue: '1st EPIMI Workshop, MICCAI 2022'
 proceedings: 'Lecture Notes in Computer Science, vol. 13755, pp. 51–62, Springer, Cham'
 paperurl: 'https://doi.org/10.1007/978-3-031-23223-7_5'
 preview_images: ["/images/ucd-ventriculostomy.png"]
-preview_style: "simple"
+preview_style: "edge"
+preview_height: "410px"
 citation: 'Reyes, J., El-Mufti, N., Gorman, S., Xie, D., & Kersten-Oertel, M.* (2022). User-Centered Design for Surgical Innovations: A Ventriculostomy Case Study. EPIMI Workshop, MICCAI 2022.'
 ---
 
