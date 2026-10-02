@@ -439,7 +439,7 @@ author_profile: true
 {% for pub in peer %}
 <div class="pub-card status-peer">
   {% if pub.preview_images %}
-  <div class="pub-card-preview-wrap">
+  <div class="pub-card-preview-wrap{% if pub.preview_style == "edge" %} edge-to-edge{% endif %}">
     {% if pub.preview_style == "simple" %}
     {% for img in pub.preview_images %}
     <img class="pub-card-preview" src="{{ img }}" alt="{{ pub.title }} preview">
