@@ -387,7 +387,7 @@ author_profile: true
     {% else %}
     <div class="pub-card-preview-images">
       {% for img in pub.preview_images %}
-      <img class="pub-card-preview" src="{{ img }}" alt="{{ pub.title }} preview">
+      <img class="pub-card-preview" src="{{ img }}" alt="{{ pub.title }} preview"{% if pub.preview_height %} style="height: {{ pub.preview_height }}; max-height: none; object-fit: cover; object-position: center;"{% endif %}>
       {% endfor %}
     </div>
     {% endif %}
@@ -507,7 +507,7 @@ author_profile: true
     {% else %}
     <div class="pub-card-preview-images">
       {% for img in pub.preview_images %}
-      <img class="pub-card-preview" src="{{ img }}" alt="{{ pub.title }} preview">
+      <img class="pub-card-preview" src="{{ img }}" alt="{{ pub.title }} preview"{% if pub.preview_height %} style="height: {{ pub.preview_height }}; max-height: none; object-fit: cover; object-position: center;"{% endif %}>
       {% endfor %}
     </div>
     {% endif %}
