@@ -339,7 +339,6 @@ author_profile: true
     View Dashboard
   </a>
   {% endif %}
-  <span class="pub-status-label label-under-review{% if pub.tag == "Master's Thesis" %} label-masters-thesis{% endif %}">{{ pub.tag | default: "Submitted" }}</span>
   <p class="pub-title">{{ pub.title }}</p>
   {% unless pub.hide_authors %}
   <p class="pub-meta"><strong style="color:#aaa;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip | replace: "El-Mufti, N.", "<span style='font-weight:900;font-size:1.08em;color:#000;-webkit-text-stroke:0.6px #000;'>El-Mufti, N.</span>" | replace: "*", "<sup style='font-weight:900;font-size:0.9em;color:#000;'>*</sup>" }}</span></p>
@@ -399,7 +398,6 @@ author_profile: true
     View Dashboard
   </a>
   {% endif %}
-  <span class="pub-status-label label-accepted{% if pub.tag == "Master's Thesis" %} label-masters-thesis{% endif %}">{{ pub.tag | default: "Accepted" }}</span>
   <p class="pub-title">{{ pub.title }}</p>
   {% unless pub.hide_authors %}
   <p class="pub-meta"><strong style="color:#aaa;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip | replace: "El-Mufti, N.", "<span style='font-weight:900;font-size:1.08em;color:#000;-webkit-text-stroke:0.6px #000;'>El-Mufti, N.</span>" | replace: "*", "<sup style='font-weight:900;font-size:0.9em;color:#000;'>*</sup>" }}</span></p>
@@ -459,7 +457,6 @@ author_profile: true
     View Dashboard
   </a>
   {% endif %}
-  <span class="pub-status-label label-peer-reviewed{% if pub.tag == "Master's Thesis" %} label-masters-thesis{% endif %}">{{ pub.tag | default: "Published" }}</span>
   <p class="pub-title">{{ pub.title }}</p>
   {% unless pub.hide_authors %}
   <p class="pub-meta"><strong style="color:#aaa;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip | replace: "El-Mufti, N.", "<span style='font-weight:900;font-size:1.08em;color:#000;-webkit-text-stroke:0.6px #000;'>El-Mufti, N.</span>" | replace: "*", "<sup style='font-weight:900;font-size:0.9em;color:#000;'>*</sup>" }}</span></p>
@@ -519,7 +516,6 @@ author_profile: true
     View Dashboard
   </a>
   {% endif %}
-  <span class="pub-status-label label-in-preparation{% if pub.tag == "Master's Thesis" %} label-masters-thesis{% endif %}">{{ pub.tag | default: "In Preparation" }}</span>
   <p class="pub-title">{{ pub.title }}</p>
   {% unless pub.hide_authors %}
   <p class="pub-meta"><strong style="color:#aaa;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip | replace: "El-Mufti, N.", "<span style='font-weight:900;font-size:1.08em;color:#000;-webkit-text-stroke:0.6px #000;'>El-Mufti, N.</span>" | replace: "*", "<sup style='font-weight:900;font-size:0.9em;color:#000;'>*</sup>" }}</span></p>
