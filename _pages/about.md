@@ -187,6 +187,18 @@ redirect_from:
     font-weight: 800;
     display: inline-block;
   }
+  .tag-douglas,
+  .tag-aplab,
+  .tag-mila {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: default;
+  }
+  .tag-douglas:hover,
+  .tag-aplab:hover,
+  .tag-mila:hover {
+    transform: scale(1.12);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
   .table-btn {
     display: inline-block;
     background: #8a8a8a;
@@ -383,7 +395,7 @@ As my work in ethics, governance, and responsible AI has grown, so has my curios
   <tr>
     <td>NSERC Canada Graduate Scholarship – Master's (CGS-M)</td>
     <td>Natural Sciences and Engineering Research Council of Canada</td>
-    <td>Apr 2024</td>
+    <td>Jan 2025</td>
     <td>CAD 27,000</td>
     <td><a href="https://search.open.canada.ca/grants/record/nserc-crsng%2C110_2024_2025_Q4_137%2Ccurrent" target="_blank" class="table-btn">View</a></td>
   </tr>
