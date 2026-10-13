@@ -295,6 +295,13 @@ author_profile: true
     align-items: center;
     gap: 10px;
   }
+  .pub-card-video {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: #000;
+    border-radius: 12px 12px 0 0;
+  }
   .pub-card-preview {
     max-height: 260px;
     height: auto;
@@ -530,7 +537,13 @@ author_profile: true
 <p class="section-heading"><span>In Preparation</span><span class="count">{{ prep.size }}</span></p>
 {% for pub in prep %}
 <div class="pub-card status-prep">
-  {% if pub.preview_images %}
+  {% if pub.preview_video %}
+  <div class="pub-card-preview-wrap edge-to-edge">
+    <video class="pub-card-video" controls preload="metadata" playsinline poster="{{ pub.preview_poster }}">
+      <source src="{{ pub.preview_video }}" type="video/mp4">
+    </video>
+  </div>
+  {% elsif pub.preview_images %}
   <div class="pub-card-preview-wrap{% if pub.preview_style == "edge" %} edge-to-edge{% endif %}">
     {% if pub.preview_style == "simple" %}
     {% for img in pub.preview_images %}
