@@ -10,7 +10,6 @@ order: 1
 journal: 'NPP—Digital Psychiatry and Neuroscience (DPN), Nature Portfolio'
 preview_images: ["/images/asr.png"]
 preview_style: "edge"
-preview_height: "410px"
 paperurl: ''
 citation: 'El-Mufti, N., Mackinley, M., Dzialoszynski, P., Palaniyappan, L., & Voppel, A.* (under review). Automatic Speech Recognition Performance in Psychiatric Speech: Linguistic, Clinical, and Architectural Factors.'
 ---
