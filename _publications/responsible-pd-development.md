@@ -5,10 +5,10 @@ status: "in-preparation"
 tag: "Master's Thesis"
 hide_authors: false
 peer_reviewed: true
-permalink: /publication/2026-confounding-factors-pd
-excerpt: "In Preparation · npj Parkinson's Disease, Nature Portfolio"
+permalink: /publication/2026-responsible-pd-development
+excerpt: "In Preparation · npj Digital Medicine, Nature Portfolio"
 order: 6
-journal: "npj Parkinson's Disease, Nature Portfolio"
+journal: "npj Digital Medicine, Nature Portfolio"
 paperurl: ''
 preview_images: ["/images/parkinsons.jpg"]
 preview_style: "edge"
