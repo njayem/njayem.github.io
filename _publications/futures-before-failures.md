@@ -10,7 +10,7 @@ order: 2
 venue: 'Joint FAIMI-BRIDGE-EPIMI Workshop, MICCAI 2026'
 proceedings: 'Medical Image Computing and Computer Assisted Intervention – MICCAI 2026 Satellite Events, Lecture Notes in Computer Science, Springer Nature'
 paperurl: ''
-preprint: '/files/Futures_Before_Failures.pdf'
+preprint: 'https://papers.miccai.org/miccai-2026-sat/paper/FAIMI-BRIDGE-EPIMI_029.pdf'
 preview_images: ["/images/collage.png"]
 preview_style: "edge"
 citation: 'El-Mufti, N., Drouin, S., Jannin, P., & Kersten-Oertel, M.* (2026). Futures Before Failures: Design Fictions for Anticipatory Fairness in Surgical AI. Joint FAIMI-BRIDGE-EPIMI Workshop, MICCAI 2026.'
