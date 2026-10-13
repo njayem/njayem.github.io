@@ -1,5 +1,5 @@
 ---
-title: "Confounding Factors in Speech Biomarkers of Parkinson's Disease"
+title: "From Speech Biomarkers to Clinical Practice: Participatory Foresight for Responsible Clinical Deployment in Parkinson’s Disease"
 collection: publications
 status: "in-preparation"
 tag: "Master's Thesis"
@@ -13,7 +13,7 @@ paperurl: ''
 preview_images: ["/images/parkinsons.jpg"]
 preview_style: "edge"
 preview_height: "410px"
-citation: "El-Mufti, N., Kersten-Oertel, M., Glatard, T., Klein, D., Ravanelli, M.* (in preparation). Confounding Factors in Speech Biomarkers of Parkinson's Disease."
+citation: "El-Mufti, N., Kersten-Oertel, M.*, & Ravanelli, M. (in preparation). From Speech Biomarkers to Clinical Practice: Participatory Foresight for Responsible Clinical Deployment in Parkinson’s Disease."
 ---
 
 Paste abstract here.
