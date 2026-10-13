@@ -11,7 +11,7 @@ venue: 'NeurIPS 2027 Evaluations & Datasets Track'
 paperurl: ''
 citation: "El-Mufti, N., Kersten-Oertel, M., & Ravanelli, M.* (in preparation). Enhancing Speech-Based Parkinson's Detection with Celebs4PD."
 preview_images: ["/images/celebs4pd-dataset.gif"]
-dashboard_url: "https://njayem.github.io/celebs4pd/dashboard.html"
+dashboard_url: "/celebs4pd.html"
 ---
 
 Paste abstract here.
