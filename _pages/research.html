@@ -321,7 +321,8 @@ author_profile: true
   /* Uniform header height on every card (whole image shown, nothing cropped) */
   .pub-card .pub-card-preview-wrap {
     box-sizing: border-box;
-    height: 340px;
+    aspect-ratio: 16 / 9;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -364,7 +365,6 @@ author_profile: true
       padding: 1em 1.1em;
     }
     .pub-card-preview-wrap.edge-to-edge { padding: 0; }
-    .pub-card .pub-card-preview-wrap { height: 210px; }
   }
 </style>
 
