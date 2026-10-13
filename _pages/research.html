@@ -24,7 +24,8 @@ author_profile: true
     margin-bottom: 20px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    width: 82%;
+    width: 75%;
+    box-sizing: border-box;
     position: relative;
   }
 
@@ -178,7 +179,7 @@ author_profile: true
     margin: 2.5em 0 1.2em 0;
     padding-bottom: 0.5em;
     border-bottom: 1px solid #eee;
-    width: 82%;
+    width: 75%;
   }
 
   .section-heading .count {
@@ -275,6 +276,11 @@ author_profile: true
   .pub-card-preview-wrap.edge-to-edge {
     padding: 0;
     overflow: hidden;
+    display: block;
+  }
+  .pub-card-preview-wrap.edge-to-edge .pub-card-preview-images {
+    display: block;
+    width: 100%;
   }
   .pub-card-preview-wrap.edge-to-edge .pub-card-preview {
     width: 100%;
@@ -304,6 +310,35 @@ author_profile: true
     margin-top: 0.8em;
   }
   .pub-footer a { margin-top: 0 !important; }
+
+  /* Tablet / mobile: cards scale to the screen */
+  @media (max-width: 900px) {
+    .pub-card,
+    .section-heading { width: 92%; }
+  }
+  @media (max-width: 600px) {
+    .pub-card,
+    .section-heading { width: 100%; }
+    .pub-card {
+      padding: 1.2em 1.1em 1.1em 1.1em;
+      border-radius: 10px;
+    }
+    .pub-card-preview-wrap {
+      margin: -1.2em -1.1em 1em -1.1em;
+      padding: 1em 1.1em;
+    }
+    .pub-card-preview-wrap.edge-to-edge { padding: 0; }
+    .pub-card-preview {
+      height: auto !important;
+      max-height: 200px !important;
+      max-width: 100%;
+    }
+    .pub-card-preview-wrap.edge-to-edge .pub-card-preview {
+      width: 100%;
+      max-height: 200px !important;
+      object-fit: cover;
+    }
+  }
 </style>
 
 {% assign sorted_pubs = site.publications | sort: 'order' %}
