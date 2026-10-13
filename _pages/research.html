@@ -464,9 +464,10 @@ author_profile: true
   {% else %}
     <p class="pub-abstract-text">{{ raw }}</p>
   {% endif %}
-  {% if pub.preprint %}
+  {% if pub.preprint or pub.poster_url %}
   <div class="pub-footer">
-    <a class="pub-preprint-btn" href="{{ pub.preprint }}" target="_blank">Read Paper</a>
+    {% if pub.preprint %}<a class="pub-preprint-btn" href="{{ pub.preprint }}" target="_blank">Read Paper</a>{% endif %}
+    {% if pub.poster_url %}<a class="pub-preprint-btn" href="{{ pub.poster_url }}" target="_blank">Poster Highlights</a>{% endif %}
   </div>
   {% endif %}
 </div>
