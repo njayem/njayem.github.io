@@ -13,7 +13,7 @@ paperurl: ''
 preview_images: ["/images/parkinsons.jpg"]
 preview_style: "edge"
 preview_height: "410px"
-citation: "El-Mufti, N., Kersten-Oertel, M.*, & Ravanelli, M. (in preparation). From Speech Biomarkers to Clinical Practice: Participatory Foresight for Responsible Clinical Deployment in Parkinson’s Disease."
+citation: "El-Mufti, N., Kersten-Oertel, M., & Ravanelli, M.* (in preparation). From Speech Biomarkers to Clinical Practice: Participatory Foresight for Responsible Clinical Deployment in Parkinson’s Disease."
 ---
 
 Paste abstract here.
