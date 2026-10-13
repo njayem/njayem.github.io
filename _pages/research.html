@@ -342,6 +342,11 @@ author_profile: true
     max-height: none !important;
     object-fit: contain !important;
   }
+  .pub-card .pub-card-preview-wrap.logo-small .pub-card-preview {
+    width: auto !important;
+    height: 72% !important;
+    max-width: 72%;
+  }
   .pub-card .pub-card-preview-wrap .pub-card-video {
     width: 100%;
     height: 100%;
@@ -565,7 +570,7 @@ author_profile: true
     </video>
   </div>
   {% elsif pub.preview_images %}
-  <div class="pub-card-preview-wrap{% if pub.preview_style == "edge" %} edge-to-edge{% endif %}">
+  <div class="pub-card-preview-wrap{% if pub.preview_style == "edge" %} edge-to-edge{% endif %}{% if pub.preview_style == "logo" %} logo-small{% endif %}">
     {% if pub.preview_style == "simple" %}
     {% for img in pub.preview_images %}
     <img class="pub-card-preview" src="{{ img }}" alt="{{ pub.title }} preview">
