@@ -59,6 +59,24 @@
   .theme-toggle:hover { background: rgba(128,128,128,0.18); transform: translateY(-50%) scale(1.08); }
   .greedy-nav { padding-right: 56px; }
 
+  /* Global mobile safety net */
+  html, body { max-width: 100%; overflow-x: hidden; }
+  .page__content img, .page__content video, .page__content iframe, .page__content svg { max-width: 100%; height: auto; }
+  .page__content pre, .page__content code { overflow-x: auto; max-width: 100%; word-break: break-word; }
+  .page__content, .page__content p, .page__content li, .page__content h1, .page__content h2, .page__content h3 { overflow-wrap: anywhere; }
+  .page__content table { display: block; max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  @media (max-width: 600px) {
+    .page__content h1, .page__title { font-size: 1.6em; }
+    .page__content h2 { font-size: 1.3em; }
+    .page__content th, .page__content td { padding: 8px 8px !important; font-size: 0.85em; }
+    .page__inner-wrap, .page__content { padding-left: 0; padding-right: 0; }
+    .initial-content, .page { padding-left: 0.9em; padding-right: 0.9em; }
+    .research-section-tags { gap: 12px 10px; }
+    .affiliation-logo { height: 36px; }
+    .theme-toggle { width: 34px; height: 34px; font-size: 16px; right: 0.4em; }
+    .greedy-nav { padding-right: 48px; }
+  }
+
   html[data-theme="dark"] body,
   html[data-theme="dark"] .masthead,
   html[data-theme="dark"] .page,
@@ -90,8 +108,28 @@
   html[data-theme="dark"] .pub-card,
   html[data-theme="dark"] .pub-card-preview-wrap { background: #1c1f25 !important; border-color: #2f333a !important; color: #e6e6e6 !important; }
   html[data-theme="dark"] .pub-card * { color: inherit; }
-  html[data-theme="dark"] .sidebar .author__urls-wrapper button,
-  html[data-theme="dark"] .author__urls { background: #1c1f25 !important; }
+  html[data-theme="dark"] .sidebar,
+  html[data-theme="dark"] .author__urls-wrapper,
+  html[data-theme="dark"] .sidebar .author__urls-wrapper button { background: transparent !important; box-shadow: none !important; }
+  @media (min-width: 1024px) {
+    html[data-theme="dark"] .author__urls { background: transparent !important; box-shadow: none !important; border: 0 !important; }
+  }
+  @media (max-width: 1023px) {
+    html[data-theme="dark"] .author__urls { background: #14161a !important; border-color: #2f333a !important; }
+  }
+  html[data-theme="dark"] .author__urls a,
+  html[data-theme="dark"] .author__urls li,
+  html[data-theme="dark"] .sidebar a { color: #e6e6e6 !important; }
+
+  /* Section headings + tags on About page */
+  html[data-theme="dark"] .page__content span[style*="#000;"] { color: #fff !important; -webkit-text-stroke-color: #fff !important; }
+  html[data-theme="dark"] .page__content span[style*="#63287d"] { color: #c9a8ff !important; -webkit-text-stroke-color: #c9a8ff !important; }
+  html[data-theme="dark"] .tag-mila { background: #c9a8ff !important; color: #1a1030 !important; }
+  html[data-theme="dark"] .page__content span[style*="#102e70"] { color: #ff5a5a !important; -webkit-text-stroke-color: #ff5a5a !important; }
+  html[data-theme="dark"] .tag-douglas { background: #d92b2b !important; color: #fff !important; }
+  html[data-theme="dark"] .page__content p:has(> span[style*="#63287d"]) + p a { color: #c9a8ff !important; }
+  html[data-theme="dark"] .page__content p:has(> span[style*="#102e70"]) + p a { color: #ff7a7a !important; }
+  html[data-theme="dark"] .page__content p:has(> span[style*="#000;"]) + p a { color: #fff !important; text-decoration: underline; }
   html[data-theme="dark"] .affiliation-logo { background: #fff; border-radius: 6px; padding: 2px 6px; }
   html[data-theme="dark"] .theme-toggle { border-color: rgba(255,255,255,0.35); }
 </style>
