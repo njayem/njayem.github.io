@@ -105,9 +105,27 @@
   html[data-theme="dark"] .page__content th,
   html[data-theme="dark"] .page__content td { border-color: #2f333a !important; }
   html[data-theme="dark"] .photo-frame { border-color: #e6e6e6 !important; background: #14161a !important; }
-  html[data-theme="dark"] .pub-card,
-  html[data-theme="dark"] .pub-card-preview-wrap { background: #1c1f25 !important; border-color: #2f333a !important; color: #e6e6e6 !important; }
-  html[data-theme="dark"] .pub-card * { color: inherit; }
+  html[data-theme="dark"] .fa-github,
+  html[data-theme="dark"] .fa-github-square { color: #fff !important; }
+
+  /* Recommendation cards stay light, like the research cards */
+  html[data-theme="dark"] .recommendation-card { background: #f9f9f9 !important; color: #000 !important; }
+  html[data-theme="dark"] .page__content .recommendation-card p,
+  html[data-theme="dark"] .recommendation-card .recommendation { color: #000 !important; }
+  html[data-theme="dark"] .recommendation-card .role { color: grey !important; }
+  html[data-theme="dark"] .recommendation-card .label,
+  html[data-theme="dark"] .recommendation-card .label a { color: #fff !important; }
+
+  /* Research cards stay exactly as in light mode; only the surroundings go dark */
+  html[data-theme="dark"] .page__content .pub-card { background: #f9f9f9 !important; color: #000 !important; }
+  html[data-theme="dark"] .page__content .pub-card .pub-title { color: #000 !important; }
+  html[data-theme="dark"] .page__content .pub-card .pub-meta { color: #888 !important; }
+  html[data-theme="dark"] .page__content .pub-card .pub-meta span { color: #333; }
+  html[data-theme="dark"] .page__content .pub-card .pub-abstract-text { color: #555 !important; }
+  html[data-theme="dark"] .page__content .pub-card .pub-abstract-label,
+  html[data-theme="dark"] .page__content .pub-card .pub-abstract-empty { color: #bbb !important; }
+  html[data-theme="dark"] .page__content .pub-card a:not([class*="btn"]):not(.pub-status-label) { color: #328de7; }
+  html[data-theme="dark"] .page__content .pub-card .pub-card-preview-wrap { background: #fff !important; }
   html[data-theme="dark"] .sidebar,
   html[data-theme="dark"] .author__urls-wrapper,
   html[data-theme="dark"] .sidebar .author__urls-wrapper button { background: transparent !important; box-shadow: none !important; }
