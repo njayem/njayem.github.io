@@ -156,7 +156,8 @@ redirect_from:
   .research-section-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 16px 14px;
+    padding: 6px 4px;
     margin: 0.8em 0 2em 0;
   }
   .page__content a { color: #328de7; }

@@ -29,4 +29,71 @@
 <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
+<!-- Dark mode: apply saved/system theme before paint -->
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem('theme');
+      if (!t) t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  })();
+</script>
+<style>
+  .masthead__menu { position: relative; }
+  .theme-toggle {
+    position: absolute;
+    top: 50%;
+    right: 0.5em;
+    transform: translateY(-50%);
+    width: 38px; height: 38px;
+    border-radius: 50%;
+    border: 1px solid rgba(128,128,128,0.4);
+    background: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 1;
+    z-index: 20;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+  .theme-toggle:hover { background: rgba(128,128,128,0.18); transform: translateY(-50%) scale(1.08); }
+  .greedy-nav { padding-right: 56px; }
+
+  html[data-theme="dark"] body,
+  html[data-theme="dark"] .masthead,
+  html[data-theme="dark"] .page,
+  html[data-theme="dark"] .initial-content,
+  html[data-theme="dark"] .page__footer,
+  html[data-theme="dark"] .greedy-nav,
+  html[data-theme="dark"] .greedy-nav .hidden-links { background: #14161a !important; color: #e6e6e6 !important; }
+  html[data-theme="dark"] .masthead { border-bottom-color: #2a2d33 !important; }
+  html[data-theme="dark"] .greedy-nav a,
+  html[data-theme="dark"] .masthead__menu-item a { color: #e6e6e6 !important; }
+  html[data-theme="dark"] .greedy-nav button { background: #2a2d33 !important; }
+  html[data-theme="dark"] .page__content,
+  html[data-theme="dark"] .page__content p,
+  html[data-theme="dark"] .page__content li,
+  html[data-theme="dark"] .page__content h1,
+  html[data-theme="dark"] .page__content h2,
+  html[data-theme="dark"] .page__content h3,
+  html[data-theme="dark"] .page__title,
+  html[data-theme="dark"] .archive__item-title,
+  html[data-theme="dark"] .author__name,
+  html[data-theme="dark"] .author__bio { color: #e6e6e6 !important; }
+  html[data-theme="dark"] .page__content h2 { border-bottom-color: #2a2d33 !important; }
+  html[data-theme="dark"] .page__content a { color: #6db3ff; }
+  html[data-theme="dark"] .page__content th { background: #22252b !important; color: #e6e6e6 !important; }
+  html[data-theme="dark"] .page__content td { background: #14161a; color: #e6e6e6 !important; }
+  html[data-theme="dark"] .page__content th,
+  html[data-theme="dark"] .page__content td { border-color: #2f333a !important; }
+  html[data-theme="dark"] .photo-frame { border-color: #e6e6e6 !important; background: #14161a !important; }
+  html[data-theme="dark"] .pub-card,
+  html[data-theme="dark"] .pub-card-preview-wrap { background: #1c1f25 !important; border-color: #2f333a !important; color: #e6e6e6 !important; }
+  html[data-theme="dark"] .pub-card * { color: inherit; }
+  html[data-theme="dark"] .sidebar .author__urls-wrapper button,
+  html[data-theme="dark"] .author__urls { background: #1c1f25 !important; }
+  html[data-theme="dark"] .affiliation-logo { background: #fff; border-radius: 6px; padding: 2px 6px; }
+  html[data-theme="dark"] .theme-toggle { border-color: rgba(255,255,255,0.35); }
+</style>
+
 <!-- end custom head snippets -->

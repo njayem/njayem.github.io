@@ -18,6 +18,26 @@
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
+      </button>
+      <script>
+        (function () {
+          var btn = document.getElementById('theme-toggle');
+          var icon = btn.querySelector('.theme-toggle__icon');
+          function sync() {
+            var dark = document.documentElement.getAttribute('data-theme') === 'dark';
+            icon.textContent = dark ? '☀️' : '🌙';
+          }
+          sync();
+          btn.addEventListener('click', function () {
+            var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', next);
+            try { localStorage.setItem('theme', next); } catch (e) {}
+            sync();
+          });
+        })();
+      </script>
     </div>
   </div>
 </div>
