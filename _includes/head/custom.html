@@ -60,11 +60,17 @@
   .theme-toggle:hover { background: rgba(128,128,128,0.18); transform: translateY(-50%) scale(1.08); }
   .greedy-nav { padding-right: 56px; }
 
+  /* Phones + tablets: reserve a 56px right-hand strip; toggle and pill are centred in it, so nothing overlaps content */
+  @media (max-width: 1023px) {
+    .initial-content, .page, .archive { padding-right: 56px !important; box-sizing: border-box; }
+    .breadcrumbs { padding-right: 56px; }
+  }
+
   /* Always reserve the scrollbar gutter so fixed UI sits in the same spot on short and long pages */
   html { overflow-y: scroll; scrollbar-gutter: stable; }
 
   /* Toggle + scroll pill share one right edge and one width, on every page and screen size */
-  :root { --ui-right: 6px; --ui-size: 38px; }
+  :root { --ui-right: 14px; --ui-size: 38px; }
   .theme-toggle, .scroll-nav { box-sizing: border-box !important; right: var(--ui-right) !important; width: var(--ui-size) !important; }
   .theme-toggle { height: var(--ui-size) !important; }
 
@@ -126,9 +132,7 @@
     .page__content h2 { font-size: 1.3em; }
     .page__content th, .page__content td { padding: 8px 8px !important; font-size: 0.85em; }
     .page__inner-wrap, .page__content { padding-left: 0; padding-right: 0; }
-    /* phones: reserve a right-hand gutter for the scroll pill so it never overlaps cards, tables or text */
-    .initial-content, .page, .archive { padding-left: 0.9em !important; padding-right: 52px !important; box-sizing: border-box; }
-    .breadcrumbs { padding-right: 52px; }
+    .initial-content, .page { padding-left: 0.9em; }
     .research-section-tags { gap: 12px 10px; }
     .greedy-nav { padding-right: 56px; }
   }

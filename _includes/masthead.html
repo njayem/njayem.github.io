@@ -33,7 +33,19 @@
           var down = document.getElementById('to-bottom');
           document.body.appendChild(nav);
           function H() { return Math.max(document.body.scrollHeight, document.documentElement.scrollHeight); }
+          function place() {
+            var size = 38, right = 9;
+            var vw = document.documentElement.clientWidth;
+            var main = document.getElementById('main');
+            if (vw >= 1024 && main) {
+              var gap = vw - main.getBoundingClientRect().right;
+              if (gap >= size + 16) { right = Math.round(gap / 2 - size / 2); }
+              else { right = Math.max(6, Math.round(gap / 2 - size / 2)); }
+            }
+            document.documentElement.style.setProperty('--ui-right', right + 'px');
+          }
           function chk() {
+            place();
             var y = window.pageYOffset || document.documentElement.scrollTop;
             var max = H() - window.innerHeight;
             nav.classList.toggle('show', max > 300);
@@ -43,6 +55,7 @@
           window.addEventListener('scroll', chk, { passive: true });
           window.addEventListener('resize', chk);
           window.addEventListener('load', chk);
+          document.addEventListener('DOMContentLoaded', chk);
           chk();
           up.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
           down.addEventListener('click', function () { window.scrollTo({ top: H(), behavior: 'smooth' }); });
