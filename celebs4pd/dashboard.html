@@ -1289,22 +1289,27 @@
 </script>
 
 <style>
-  .jump{position:fixed;right:20px;width:44px;height:44px;padding:0;display:flex;align-items:center;justify-content:center;border-radius:50%;border:1px solid rgba(0,0,0,.08);background:rgba(255,255,255,.88);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);color:#222;cursor:pointer;z-index:50;opacity:0;visibility:hidden;transform:translateY(10px) scale(.9);transition:opacity .25s ease,transform .25s ease,visibility .25s,background .2s ease,color .2s ease;box-shadow:0 4px 14px rgba(0,0,0,.16)}
-  .jump.show{opacity:1;visibility:visible;transform:translateY(0) scale(1)}
-  .jump:hover{background:#111;color:#fff;transform:translateY(-2px) scale(1.06)}
-  #jump-top{bottom:20px}#jump-bottom{bottom:76px}
-  @media (max-width:600px){.jump{width:40px;height:40px;right:12px}#jump-top{bottom:14px}#jump-bottom{bottom:62px}}
-  @media (prefers-color-scheme:dark){.jump{background:rgba(28,31,37,.88);color:#e6e6e6;border-color:rgba(255,255,255,.18)}.jump:hover{background:#fff;color:#111}}
+  .sn{position:fixed;right:18px;bottom:22px;display:flex;flex-direction:column;align-items:center;width:40px;border-radius:20px;background:rgba(255,255,255,.9);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border:1px solid rgba(0,0,0,.08);box-shadow:0 4px 16px rgba(0,0,0,.16);z-index:50;opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .25s ease,transform .25s ease,visibility .25s;overflow:hidden}
+  .sn.show{opacity:1;visibility:visible;transform:translateY(0)}
+  .sn button{width:100%;height:38px;padding:0;margin:0;display:flex;align-items:center;justify-content:center;background:transparent;border:0;color:#222;cursor:pointer;transition:background .18s ease,color .18s ease,opacity .18s ease}
+  .sn button:hover:not(:disabled){background:#111;color:#fff}
+  .sn button:disabled{opacity:.28;cursor:default}
+  .sn i{width:18px;height:1px;background:rgba(0,0,0,.15)}
+  @media (prefers-color-scheme:dark){.sn{background:rgba(28,31,37,.9);border-color:rgba(255,255,255,.18)}.sn button{color:#e6e6e6}.sn button:hover:not(:disabled){background:#fff;color:#111}.sn i{background:rgba(255,255,255,.2)}}
+  @media (max-width:600px){.sn{right:10px;bottom:14px;width:36px}.sn button{height:34px}}
 </style>
-<button id="jump-bottom" class="jump" type="button" aria-label="Go to bottom" title="Go to bottom"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>
-<button id="jump-top" class="jump" type="button" aria-label="Back to top" title="Back to top"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 15l6-6 6 6"/></svg></button>
+<div id="sn" class="sn" role="group" aria-label="Scroll">
+  <button id="sn-top" type="button" aria-label="Back to top" title="Back to top"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 15l6-6 6 6"/></svg></button>
+  <i></i>
+  <button id="sn-bottom" type="button" aria-label="Go to bottom" title="Go to bottom"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>
+</div>
 <script>
 (function(){
-  var up=document.getElementById('jump-top'),down=document.getElementById('jump-bottom');
-  function h(){return Math.max(document.body.scrollHeight,document.documentElement.scrollHeight);}
-  function chk(){var y=window.pageYOffset||document.documentElement.scrollTop,max=h()-window.innerHeight;up.classList.toggle('show',y>300);down.classList.toggle('show',max>400&&y<max-300);}
+  var nav=document.getElementById('sn'),up=document.getElementById('sn-top'),down=document.getElementById('sn-bottom');
+  function H(){return Math.max(document.body.scrollHeight,document.documentElement.scrollHeight);}
+  function chk(){var y=window.pageYOffset||document.documentElement.scrollTop,max=H()-window.innerHeight;nav.classList.toggle('show',max>300);up.disabled=y<80;down.disabled=y>max-80;}
   window.addEventListener('scroll',chk,{passive:true});window.addEventListener('resize',chk);window.addEventListener('load',chk);chk();
   up.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
-  down.addEventListener('click',function(){window.scrollTo({top:h(),behavior:'smooth'});});
+  down.addEventListener('click',function(){window.scrollTo({top:H(),behavior:'smooth'});});
 })();
 </script>
