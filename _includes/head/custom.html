@@ -60,8 +60,11 @@
   .theme-toggle:hover { background: rgba(128,128,128,0.18); transform: translateY(-50%) scale(1.08); }
   .greedy-nav { padding-right: 56px; }
 
+  /* Always reserve the scrollbar gutter so fixed UI sits in the same spot on short and long pages */
+  html { overflow-y: scroll; scrollbar-gutter: stable; }
+
   /* Toggle + scroll pill share one right edge and one width, on every page and screen size */
-  :root { --ui-right: 16px; --ui-size: 38px; }
+  :root { --ui-right: 6px; --ui-size: 38px; }
   .theme-toggle, .scroll-nav { box-sizing: border-box !important; right: var(--ui-right) !important; width: var(--ui-size) !important; }
   .theme-toggle { height: var(--ui-size) !important; }
 
