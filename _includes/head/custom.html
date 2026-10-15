@@ -58,6 +58,12 @@
   }
   .theme-toggle:hover { background: rgba(128,128,128,0.18); transform: translateY(-50%) scale(1.08); }
   .greedy-nav { padding-right: 56px; }
+  @media (min-width: 1024px) {
+    .theme-toggle { right: -18px; }
+  }
+  @media (min-width: 601px) and (max-width: 1023px) {
+    .theme-toggle { right: -6px; }
+  }
 
   /* Scroll navigation: one slim pill holding both arrows */
   .scroll-nav {
