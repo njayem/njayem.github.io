@@ -60,10 +60,9 @@
   .theme-toggle:hover { background: rgba(128,128,128,0.18); transform: translateY(-50%) scale(1.08); }
   .greedy-nav { padding-right: 56px; }
 
-  /* Phones + tablets: reserve a 56px right-hand strip; toggle and pill are centred in it, so nothing overlaps content */
+  /* Phones + tablets: no scroll pill, no reserved strip */
   @media (max-width: 1023px) {
-    .initial-content, .page, .archive { padding-right: 56px !important; box-sizing: border-box; }
-    .breadcrumbs { padding-right: 56px; }
+    .scroll-nav { display: none !important; }
   }
 
   /* Always reserve the scrollbar gutter so fixed UI sits in the same spot on short and long pages */
