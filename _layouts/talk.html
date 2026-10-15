@@ -8,7 +8,7 @@ layout: default
   {% include page__hero.html %}
 {% endif %}
 
-{% if site.breadcrumbs %}
+{% if site.breadcrumbs and page.url == "/research/" or site.breadcrumbs and page.url == "/recommendations/" %}
   {% unless paginator %}
     {% include breadcrumbs.html %}
   {% endunless %}

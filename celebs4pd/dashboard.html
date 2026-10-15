@@ -1289,14 +1289,15 @@
 </script>
 
 <style>
-  .jump{position:fixed;right:18px;width:42px;height:42px;border-radius:50%;border:1px solid rgba(128,128,128,.45);background:rgba(255,255,255,.92);color:#333;font-size:20px;line-height:1;cursor:pointer;z-index:50;opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .25s ease,transform .25s ease,visibility .25s;box-shadow:0 2px 8px rgba(0,0,0,.18)}
-  .jump.show{opacity:1;visibility:visible;transform:translateY(0)}
-  .jump:hover{transform:translateY(-2px) scale(1.06)}
-  #jump-top{bottom:18px}#jump-bottom{bottom:68px}
-  @media (prefers-color-scheme:dark){.jump{background:rgba(28,31,37,.95);color:#e6e6e6;border-color:rgba(255,255,255,.35)}}
+  .jump{position:fixed;right:20px;width:44px;height:44px;padding:0;display:flex;align-items:center;justify-content:center;border-radius:50%;border:1px solid rgba(0,0,0,.08);background:rgba(255,255,255,.88);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);color:#222;cursor:pointer;z-index:50;opacity:0;visibility:hidden;transform:translateY(10px) scale(.9);transition:opacity .25s ease,transform .25s ease,visibility .25s,background .2s ease,color .2s ease;box-shadow:0 4px 14px rgba(0,0,0,.16)}
+  .jump.show{opacity:1;visibility:visible;transform:translateY(0) scale(1)}
+  .jump:hover{background:#111;color:#fff;transform:translateY(-2px) scale(1.06)}
+  #jump-top{bottom:20px}#jump-bottom{bottom:76px}
+  @media (max-width:600px){.jump{width:40px;height:40px;right:12px}#jump-top{bottom:14px}#jump-bottom{bottom:62px}}
+  @media (prefers-color-scheme:dark){.jump{background:rgba(28,31,37,.88);color:#e6e6e6;border-color:rgba(255,255,255,.18)}.jump:hover{background:#fff;color:#111}}
 </style>
-<button id="jump-bottom" class="jump" type="button" aria-label="Go to bottom" title="Go to bottom">&darr;</button>
-<button id="jump-top" class="jump" type="button" aria-label="Back to top" title="Back to top">&uarr;</button>
+<button id="jump-bottom" class="jump" type="button" aria-label="Go to bottom" title="Go to bottom"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>
+<button id="jump-top" class="jump" type="button" aria-label="Back to top" title="Back to top"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 15l6-6 6 6"/></svg></button>
 <script>
 (function(){
   var up=document.getElementById('jump-top'),down=document.getElementById('jump-bottom');
