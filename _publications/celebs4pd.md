@@ -1,5 +1,5 @@
 ---
-title: "Enhancing Speech-Based Parkinson's Detection with Celebs4PD: A Corpus of Natural, In-the-Wild, Longitudinal Celebrity Speech"
+title: "Celebs4PD: A Demographically Matched Corpus of Longitudinal, In-the-Wild Speech for Responsible Parkinson’s Detection"
 collection: publications
 status: "in-preparation"
 tag: "Master's Thesis"
@@ -9,7 +9,7 @@ excerpt: "In Preparation · NeurIPS 2027 Evaluations & Datasets Track"
 order: 5
 venue: 'NeurIPS 2027 Evaluations & Datasets Track'
 paperurl: ''
-citation: "El-Mufti, N., Kersten-Oertel, M., & Ravanelli, M.* (in preparation). Enhancing Speech-Based Parkinson's Detection with Celebs4PD."
+citation: "El-Mufti, N., Kersten-Oertel, M., & Ravanelli, M.* (in preparation). Celebs4PD: A Demographically Matched Corpus of Longitudinal, In-the-Wild Speech for Responsible Parkinson’s Detection."
 preview_images: ["/images/celebs4pd-dataset.gif"]
 preview_style: "logo"
 dashboard_url: "/celebs4pd/dashboard.html"
