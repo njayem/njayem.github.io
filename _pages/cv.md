@@ -11,10 +11,10 @@ redirect_from:
 
 {% capture written_label %}'None'{% endcapture %}
 
-<br>
+<div style="height: 0.8em;"></div>
 
 Download a copy of Nadine El-Mufti's CV [<a href="https://njayem.github.io/files/Nadine-El-Mufti-CV.pdf" style="color: #3B9AFF;">here</a>].
 
-<br>
+<div style="height: 0.8em;"></div>
 
 <embed src="https://njayem.github.io/files/Nadine-El-Mufti-CV.pdf" type="application/pdf" width="100%" />
