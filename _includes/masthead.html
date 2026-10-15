@@ -21,7 +21,16 @@
       <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
         <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
       </button>
+      <button id="to-top" class="to-top" type="button" aria-label="Back to top" title="Back to top">↑</button>
       <script>
+        (function () {
+          var up = document.getElementById('to-top');
+          document.body.appendChild(up); // avoid transformed ancestors breaking position:fixed
+          function chk() { up.classList.toggle('show', (window.pageYOffset || document.documentElement.scrollTop) > 300); }
+          window.addEventListener('scroll', chk, { passive: true });
+          chk();
+          up.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+        })();
         (function () {
           var btn = document.getElementById('theme-toggle');
           var icon = btn.querySelector('.theme-toggle__icon');

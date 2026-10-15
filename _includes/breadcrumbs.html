@@ -43,37 +43,81 @@
 
 <style>
   .breadcrumbs {
-    font-size: 1.2em; /* Increase font size */
-    margin-bottom: 20px; /* Add some space below the breadcrumbs */
+    font-size: 0.85em;
+    margin-bottom: 18px;
   }
 
   .breadcrumbs ol {
     list-style: none;
     padding: 0;
     margin: 0;
+    width: 100%;
+    float: none;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    font-size: 1em;
   }
 
   .breadcrumbs li {
-    display: inline;
-    margin-right: 5px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
   }
 
+  /* chevron separator instead of "/" */
   .breadcrumbs .sep {
-    margin-right: 5px;
+    margin: 0;
+    font-size: 0;
+    line-height: 1;
+  }
+  .breadcrumbs .sep::before {
+    content: "\203A";
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #b5b5b5;
   }
 
-  .breadcrumbs .current {
-    font-weight: bold;
-  }
-
+  /* links = soft grey pills (same family as the table buttons) */
   .breadcrumbs a {
-    text-decoration: none;
-    color: #007bff; /* Link color */
+    display: inline-block;
+    padding: 5px 14px;
+    border-radius: 20px;
+    background: #f0f0f0;
+    color: #222 !important;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease;
+  }
+  .breadcrumbs a:hover {
+    background: #111;
+    color: #fff !important;
+    transform: translateY(-1px);
+    text-decoration: none !important;
   }
 
-  .breadcrumbs a:hover {
-    text-decoration: underline;
+  /* current page = black pill */
+  .breadcrumbs .current {
+    display: inline-block;
+    padding: 5px 14px;
+    border-radius: 20px;
+    background: #111;
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  html[data-theme="dark"] .breadcrumbs a { background: #23262c; color: #e6e6e6 !important; }
+  html[data-theme="dark"] .breadcrumbs a:hover { background: #fff; color: #111 !important; }
+  html[data-theme="dark"] .breadcrumbs .current { background: #e6e6e6; color: #111; }
+  html[data-theme="dark"] .breadcrumbs .sep::before { color: #666; }
+
+  @media (max-width: 600px) {
+    .breadcrumbs { font-size: 0.78em; }
+    .breadcrumbs a, .breadcrumbs .current { padding: 4px 11px; }
   }
 </style>
