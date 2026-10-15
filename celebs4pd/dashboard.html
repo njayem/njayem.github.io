@@ -1287,3 +1287,23 @@
       var last=0; for(var i=0;i<6;i++){ var th=Math.round(t.getBoundingClientRect().height); th=Math.max(104,Math.min(150,th)); if(th===last) break; f.style.height=(th-8)+'px'; last=th; } }
     fit(); window.addEventListener('resize',fit); if(document.fonts&&document.fonts.ready) document.fonts.ready.then(fit); })();
 </script>
+
+<style>
+  .jump{position:fixed;right:18px;width:42px;height:42px;border-radius:50%;border:1px solid rgba(128,128,128,.45);background:rgba(255,255,255,.92);color:#333;font-size:20px;line-height:1;cursor:pointer;z-index:50;opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .25s ease,transform .25s ease,visibility .25s;box-shadow:0 2px 8px rgba(0,0,0,.18)}
+  .jump.show{opacity:1;visibility:visible;transform:translateY(0)}
+  .jump:hover{transform:translateY(-2px) scale(1.06)}
+  #jump-top{bottom:18px}#jump-bottom{bottom:68px}
+  @media (prefers-color-scheme:dark){.jump{background:rgba(28,31,37,.95);color:#e6e6e6;border-color:rgba(255,255,255,.35)}}
+</style>
+<button id="jump-bottom" class="jump" type="button" aria-label="Go to bottom" title="Go to bottom">&darr;</button>
+<button id="jump-top" class="jump" type="button" aria-label="Back to top" title="Back to top">&uarr;</button>
+<script>
+(function(){
+  var up=document.getElementById('jump-top'),down=document.getElementById('jump-bottom');
+  function h(){return Math.max(document.body.scrollHeight,document.documentElement.scrollHeight);}
+  function chk(){var y=window.pageYOffset||document.documentElement.scrollTop,max=h()-window.innerHeight;up.classList.toggle('show',y>300);down.classList.toggle('show',max>400&&y<max-300);}
+  window.addEventListener('scroll',chk,{passive:true});window.addEventListener('resize',chk);window.addEventListener('load',chk);chk();
+  up.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+  down.addEventListener('click',function(){window.scrollTo({top:h(),behavior:'smooth'});});
+})();
+</script>

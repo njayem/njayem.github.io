@@ -27,7 +27,7 @@
         (function () {
           var up = document.getElementById('to-top');
           var down = document.getElementById('to-bottom');
-          document.body.appendChild(up); // avoid transformed ancestors breaking position:fixed
+          document.body.appendChild(up);
           document.body.appendChild(down);
           function chk() {
             var y = window.pageYOffset || document.documentElement.scrollTop;

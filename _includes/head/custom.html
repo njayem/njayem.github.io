@@ -84,10 +84,14 @@
 
   /* Global mobile safety net */
   html, body { max-width: 100%; overflow-x: hidden; }
-  .page__content img, .page__content video, .page__content iframe, .page__content svg { max-width: 100%; height: auto; }
+  :where(.page__content) :where(img, video, iframe, svg) { max-width: 100%; height: auto; }
   .page__content pre, .page__content code { overflow-x: auto; max-width: 100%; word-break: break-word; }
   .page__content, .page__content p, .page__content li, .page__content h1, .page__content h2, .page__content h3 { overflow-wrap: anywhere; }
-  .page__content table { display: block; max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .page__content table { width: 100%; max-width: 100%; }
+  @media (max-width: 700px) {
+    .page__content table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .page__content table .table-btn { white-space: nowrap; }
+  }
   @media (max-width: 600px) {
     .page__content h1, .page__title { font-size: 1.6em; }
     .page__content h2 { font-size: 1.3em; }
