@@ -33,16 +33,7 @@
           var down = document.getElementById('to-bottom');
           document.body.appendChild(nav);
           function H() { return Math.max(document.body.scrollHeight, document.documentElement.scrollHeight); }
-          function align() {
-            var t = document.getElementById('theme-toggle');
-            if (!t) return;
-            var r = t.getBoundingClientRect();
-            var vw = document.documentElement.clientWidth;
-            nav.style.width = r.width + 'px';
-            nav.style.right = Math.max(0, vw - r.right) + 'px';
-          }
           function chk() {
-            align();
             var y = window.pageYOffset || document.documentElement.scrollTop;
             var max = H() - window.innerHeight;
             nav.classList.toggle('show', max > 300);

@@ -40,11 +40,12 @@
   })();
 </script>
 <style>
-  .masthead__menu { position: relative; }
+  .masthead { position: relative; }
+  .masthead__menu { position: static; }
   .theme-toggle {
     position: absolute;
     top: 50%;
-    right: 0.5em;
+    right: 16px;
     transform: translateY(-50%);
     width: 38px; height: 38px;
     border-radius: 50%;
@@ -58,19 +59,13 @@
   }
   .theme-toggle:hover { background: rgba(128,128,128,0.18); transform: translateY(-50%) scale(1.08); }
   .greedy-nav { padding-right: 56px; }
-  @media (min-width: 1024px) {
-    .theme-toggle { right: -18px; }
-  }
-  @media (min-width: 601px) and (max-width: 1023px) {
-    .theme-toggle { right: -6px; }
-  }
 
   /* Scroll navigation: one slim pill holding both arrows */
   .scroll-nav {
     position: fixed;
-    right: 18px; bottom: 22px;
+    right: 16px; bottom: 22px;
     display: flex; flex-direction: column; align-items: center;
-    width: 40px;
+    width: 38px;
     border-radius: 20px;
     background: rgba(255,255,255,0.9);
     -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
@@ -97,7 +92,7 @@
   html[data-theme="dark"] .scroll-nav__btn:hover:not(:disabled) { background: #fff; color: #111; }
   html[data-theme="dark"] .scroll-nav__line { background: rgba(255,255,255,0.2); }
   @media (max-width: 600px) {
-    .scroll-nav { right: 10px; bottom: 14px; width: 36px; }
+    .scroll-nav { right: 16px; bottom: 14px; width: 38px; }
     .scroll-nav__btn { height: 34px; }
   }
 
@@ -125,8 +120,7 @@
     .page__inner-wrap, .page__content { padding-left: 0; padding-right: 0; }
     .initial-content, .page { padding-left: 0.9em; padding-right: 0.9em; }
     .research-section-tags { gap: 12px 10px; }
-    .theme-toggle { width: 34px; height: 34px; font-size: 16px; right: 0.4em; }
-    .greedy-nav { padding-right: 48px; }
+    .greedy-nav { padding-right: 56px; }
   }
 
   html[data-theme="dark"],
