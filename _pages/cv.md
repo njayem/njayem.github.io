@@ -11,14 +11,10 @@ redirect_from:
 
 {% capture written_label %}'None'{% endcapture %}
 
-<br>
-
 Download a copy of Nadine El-Mufti's CV [<a href="https://njayem.github.io/files/Nadine-El-Mufti-CV.pdf" style="color: #3B9AFF;">here</a>].
 
-<br>
-
 <style>
-  .cv-frame { position: relative; width: 100%; padding-top: 262%; background: #fff; }
+  .cv-frame { position: relative; width: 100%; padding-top: 259%; margin-top: 0.5em; background: #fff; }
   .cv-frame embed, .cv-frame iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
   .cv-mobile-note { display: none; }
   @media (max-width: 700px) { .cv-frame { display: none; } .cv-mobile-note { display: block; } }
