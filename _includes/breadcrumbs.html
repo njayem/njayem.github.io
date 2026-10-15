@@ -51,8 +51,6 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    width: 100%;
-    float: none;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -66,17 +64,18 @@
     padding: 0;
   }
 
-  /* chevron separator instead of "/" */
+  /* separator: small CSS-drawn chevron, perfectly centred */
   .breadcrumbs .sep {
-    margin: 0;
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin: 0 4px 0 2px;
     font-size: 0;
-    line-height: 1;
-  }
-  .breadcrumbs .sep::before {
-    content: "\203A";
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #b5b5b5;
+    line-height: 0;
+    border-top: 2px solid #b5b5b5;
+    border-right: 2px solid #b5b5b5;
+    transform: rotate(45deg);
+    flex: 0 0 auto;
   }
 
   /* links = soft grey pills (same family as the table buttons) */
@@ -114,7 +113,7 @@
   html[data-theme="dark"] .breadcrumbs a { background: #23262c; color: #e6e6e6 !important; }
   html[data-theme="dark"] .breadcrumbs a:hover { background: #fff; color: #111 !important; }
   html[data-theme="dark"] .breadcrumbs .current { background: #e6e6e6; color: #111; }
-  html[data-theme="dark"] .breadcrumbs .sep::before { color: #666; }
+  html[data-theme="dark"] .breadcrumbs .sep { border-color: #777; }
 
   @media (max-width: 600px) {
     .breadcrumbs { font-size: 0.78em; }

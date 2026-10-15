@@ -21,15 +21,28 @@
       <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
         <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
       </button>
+      <button id="to-bottom" class="to-bottom" type="button" aria-label="Go to bottom" title="Go to bottom">↓</button>
       <button id="to-top" class="to-top" type="button" aria-label="Back to top" title="Back to top">↑</button>
       <script>
         (function () {
           var up = document.getElementById('to-top');
+          var down = document.getElementById('to-bottom');
           document.body.appendChild(up); // avoid transformed ancestors breaking position:fixed
-          function chk() { up.classList.toggle('show', (window.pageYOffset || document.documentElement.scrollTop) > 300); }
+          document.body.appendChild(down);
+          function chk() {
+            var y = window.pageYOffset || document.documentElement.scrollTop;
+            var max = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight) - window.innerHeight;
+            up.classList.toggle('show', y > 300);
+            down.classList.toggle('show', max > 400 && y < max - 300);
+          }
           window.addEventListener('scroll', chk, { passive: true });
+          window.addEventListener('resize', chk);
+          window.addEventListener('load', chk);
           chk();
           up.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+          down.addEventListener('click', function () {
+            window.scrollTo({ top: Math.max(document.body.scrollHeight, document.documentElement.scrollHeight), behavior: 'smooth' });
+          });
         })();
         (function () {
           var btn = document.getElementById('theme-toggle');

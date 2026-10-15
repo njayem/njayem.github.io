@@ -1059,7 +1059,7 @@
 
   // nationality: donut of participant frequency (PD and Control combined); each slice is filled with its flag
   (function(){
-    const D = CHART.nationality, keys = catSort(D), N = 60, cx = 100, cy = 100, ro = 88, ri = 54, PULL = 7;
+    const D = CHART.nationality, keys = catSort(D), N = 60, cx = 100, cy = 100, ro = 84, ri = 52, PULLS = [4, 9, 15, 8, 16, 9, 15];  // each slice sits at its own distance; the small neighbours alternate near and far so none touches
     const tot = k => D[k].PD + D[k].Control;
     let defs = '', paths = '', a0 = -Math.PI / 2;
     const pt = (r, a) => `${(cx + r * Math.cos(a)).toFixed(2)} ${(cy + r * Math.sin(a)).toFixed(2)}`;
@@ -1067,10 +1067,10 @@
       const v = tot(k), a1 = a0 + v / N * 2 * Math.PI, lg = a1 - a0 > Math.PI ? 1 : 0, lab = LABEL[k] || k;
       defs += `<pattern id="natp${i}" patternContentUnits="objectBoundingBox" width="1" height="1"><use href="#${FLAG[k]}" width="1" height="1"/></pattern>`;
       const wd = `M${pt(ro, a0)} A${ro} ${ro} 0 ${lg} 1 ${pt(ro, a1)} L${pt(ri, a1)} A${ri} ${ri} 0 ${lg} 0 ${pt(ri, a0)} Z`, am = (a0 + a1) / 2, rm = (ro + ri) / 2;
-      paths += `<g transform="translate(${(PULL * Math.cos(am)).toFixed(2)} ${(PULL * Math.sin(am)).toFixed(2)})"><path d="${wd}" fill="url(#natp${i})" style="stroke:var(--surface)" stroke-width="3" stroke-linejoin="round" data-tip="${lab}: ${v} of ${N} participants (${(100 * v / N).toFixed(1)}%)"/><path d="${wd}" fill="none" style="stroke:var(--ink)" stroke-opacity=".3" stroke-width="1" stroke-linejoin="round" pointer-events="none"/></g>`;
+      paths += `<g transform="translate(${((PULLS[i] || 9) * Math.cos(am)).toFixed(2)} ${((PULLS[i] || 9) * Math.sin(am)).toFixed(2)})"><path d="${wd}" fill="url(#natp${i})" style="stroke:var(--surface)" stroke-width="3" stroke-linejoin="round" data-tip="${lab}: ${v} of ${N} participants (${(100 * v / N).toFixed(1)}%)"/><path d="${wd}" fill="none" style="stroke:var(--ink)" stroke-opacity=".3" stroke-width="1" stroke-linejoin="round" pointer-events="none"/></g>`;
       a0 = a1;
     });
-    const svg = `<svg viewBox="-8 -8 216 216" width="216" height="216" role="img" aria-label="Participants by nationality"><defs>${defs}</defs>${paths}<text x="${cx}" y="${cy + 4}" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="22" font-weight="600" style="fill:var(--ink)">${N}</text><text x="${cx}" y="${cy + 22}" text-anchor="middle" font-size="10" style="fill:var(--ink-muted)">participants</text></svg>`;
+    const svg = `<svg viewBox="-20 -20 240 240" width="232" height="232" role="img" aria-label="Participants by nationality"><defs>${defs}</defs>${paths}<text x="${cx}" y="${cy + 4}" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="22" font-weight="600" style="fill:var(--ink)">${N}</text><text x="${cx}" y="${cy + 22}" text-anchor="middle" font-size="10" style="fill:var(--ink-muted)">participants</text></svg>`;
     const rows = keys.map(k => `<div class="nat-r" data-tip="${LABEL[k] || k}: ${tot(k)} of ${N} participants (${(100 * tot(k) / N).toFixed(1)}%)"><svg width="16" height="16" aria-hidden="true"><use href="#${FLAG[k]}" width="16" height="16"/></svg><span class="nl">${LABEL[k] || k}</span><b>${tot(k)}</b></div>`).join('');
     const el = document.getElementById('natPct');
     el.innerHTML = `<div class="nat-donut">${svg}<div class="nat-leg">${rows}</div></div>`;
