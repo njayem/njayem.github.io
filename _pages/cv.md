@@ -18,8 +18,10 @@ Download a copy of Nadine El-Mufti's CV [<a href="https://njayem.github.io/files
 <br>
 
 <style>
-  .cv-embed { display: block; width: 100%; height: auto; aspect-ratio: 612 / 1604; border: 0; background: #fff; }
-  @media (max-width: 700px) { .cv-embed { display: none; } .cv-mobile-note { display: block !important; } }
+  .cv-frame { position: relative; width: 100%; padding-top: 262%; background: #fff; }
+  .cv-frame embed, .cv-frame iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+  .cv-mobile-note { display: none; }
+  @media (max-width: 700px) { .cv-frame { display: none; } .cv-mobile-note { display: block; } }
 </style>
-<p class="cv-mobile-note" style="display:none;">PDF preview isn't supported on most phones. Please use the download link above to view the CV.</p>
-<embed class="cv-embed" src="https://njayem.github.io/files/Nadine-El-Mufti-CV.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" type="application/pdf" width="100%" />
+<p class="cv-mobile-note">PDF preview isn't supported on most phones. Please use the download link above to view the CV.</p>
+<div class="cv-frame"><embed src="https://njayem.github.io/files/Nadine-El-Mufti-CV.pdf#toolbar=0&amp;navpanes=0&amp;view=FitH" type="application/pdf"></div>
