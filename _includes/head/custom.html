@@ -84,7 +84,6 @@
 
   /* Global mobile safety net */
   html, body { max-width: 100%; overflow-x: hidden; }
-  :where(.page__content) :where(img, video, iframe, svg) { max-width: 100%; height: auto; }
   .page__content pre, .page__content code { overflow-x: auto; max-width: 100%; word-break: break-word; }
   .page__content, .page__content p, .page__content li, .page__content h1, .page__content h2, .page__content h3 { overflow-wrap: anywhere; }
   .page__content table { width: 100%; max-width: 100%; }
@@ -99,7 +98,6 @@
     .page__inner-wrap, .page__content { padding-left: 0; padding-right: 0; }
     .initial-content, .page { padding-left: 0.9em; padding-right: 0.9em; }
     .research-section-tags { gap: 12px 10px; }
-    .affiliation-logo { height: 36px; }
     .theme-toggle { width: 34px; height: 34px; font-size: 16px; right: 0.4em; }
     .greedy-nav { padding-right: 48px; }
   }
@@ -188,7 +186,6 @@
   html[data-theme="dark"] .page__content p:has(> span[style*="#63287d"]) + p a { color: #c9a8ff !important; }
   html[data-theme="dark"] .page__content p:has(> span[style*="#102e70"]) + p a { color: #ff7a7a !important; }
   html[data-theme="dark"] .page__content p:has(> span[style*="#000;"]) + p a { color: #fff !important; text-decoration: underline; }
-  html[data-theme="dark"] .affiliation-logo { background: #fff; border-radius: 6px; padding: 2px 6px; }
   html[data-theme="dark"] .theme-toggle { border-color: rgba(255,255,255,0.35); }
 </style>
 
