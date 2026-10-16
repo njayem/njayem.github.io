@@ -513,7 +513,7 @@
   .sp-map .sp-lg{ margin:0; }
   .sp-lgrow{ display:flex; flex-wrap:wrap; align-items:center; gap:6px 28px; margin-top:6px; } .sp-lgrow .sp-lg{ margin:0; }
   #spMapSets{ flex-wrap:nowrap; gap:6px 14px; white-space:nowrap; } #spMapSets span{ flex:none; }
-  @media (max-width:480px){ #spMapSets{ gap:6px 10px; font-size:10.5px; } }
+  @media (max-width:560px){ #spMapSets{ flex-wrap:wrap; gap:6px 14px; } }
   .sp-map .sp-rowlab{ margin:0 0 -6px; }
   .sp-rowlab{ margin:0 0 12px; font:600 11px "IBM Plex Mono", ui-monospace, monospace; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-muted); }
   .sp-cells{ display:flex; flex-wrap:wrap; gap:8px; padding:12px; border-radius:14px; }
@@ -1784,7 +1784,7 @@
         return '<span class="sp-cell ' + (n <= H ? 'ml' : 'fm') + '" data-pair="' + n + '" data-set="' + s.key + '" data-tip="Pair ' + n + ' · ' + sex + ' · ' + fmt2(hrs[n - 1]) + ' h (PD ' + fmt2(pdH[n - 1]) + ' h, Control ' + fmt2(ctH[n - 1]) + ' h) · ' + rec[n - 1] + ' recordings · ' + s.name + '">' + n + '</span>';
       };
       $('spMap').innerHTML = sets.map(s => '<div class="sp-mrow" data-set="' + s.key + '" role="group" aria-label="' + s.name + ', ' + plural('pair', s.ids.length) + '"><div class="sp-cells ' + s.cls + '">' + s.ids.map(n => cell(n, s)).join('') + '</div></div>').join('') +
-        '<div class="sp-lgrow"><p class="sp-lg" id="spMapSets">' + sets.map(s => '<span><i class="' + s.cls + '"></i>' + s.name + ' · ' + plural('pair', s.ids.length) + '</span>').join('') + '</p>' +
+        '<div class="sp-lgrow"><p class="sp-lg" id="spMapSets">' + sets.map(s => '<span><i class="' + s.cls + '"></i>' + s.name + ' (n = ' + plural('pair', s.ids.length) + ')</span>').join('') + '</p>' +
         '<p class="sp-lg" id="spMapLg"><span><i class="ml"></i>Male</span><span><i class="fm"></i>Female</span></p></div>' +
         (out.length ? '<p class="sp-left" id="spLeft">' + (out.length === 1 ? 'Pair ' + (out[0] + 1) + ' has' : 'Pairs ' + out.map(p => p + 1).join(', ') + ' have') + ' only French audio, so ' + (out.length === 1 ? 'it is' : 'they are') + ' left out of every set.</p>' : '');
       wireTips($('splitter'), '.sp-cell');
