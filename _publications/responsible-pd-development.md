@@ -1,5 +1,5 @@
 ---
-title: "From Speech Biomarkers to Clinical Practice: Participatory Foresight for Responsible Clinical Deployment in Parkinson’s Disease"
+title: "From Speech Biomarkers to Clinical Practice: Participatory Foresight for Responsible AI Deployment in Parkinson’s Disease"
 collection: publications
 status: "in-preparation"
 tag: "Master's Thesis"
@@ -12,7 +12,7 @@ journal: "npj Digital Medicine, Nature Portfolio"
 paperurl: ''
 preview_images: ["/images/parkinsons.jpg"]
 preview_style: "edge"
-citation: "El-Mufti, N., Ravanelli, M., & Kersten-Oertel, M.* (in preparation). From Speech Biomarkers to Clinical Practice: Participatory Foresight for Responsible Clinical Deployment in Parkinson’s Disease."
+citation: "El-Mufti, N., Ravanelli, M., & Kersten-Oertel, M.* (in preparation). From Speech Biomarkers to Clinical Practice: Participatory Foresight for Responsible AI Deployment in Parkinson’s Disease."
 ---
 
 Paste abstract here.
