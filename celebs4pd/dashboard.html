@@ -233,9 +233,9 @@
   .hbar-seg:hover{ filter:brightness(0.92); }
 
   /* categorical tokens for waffle charts (not group or sex colours) */
-  :root{ --cat-ink:#ffffff; --train:#1f3b73; --train-ink:#ffffff; --valid:#a8d3f2; --valid-ink:#0b2a4a; --test:#c9a21c; --test-ink:#2b2200; --cat1:#7d5bbe; --cat2:#c9a21c; --cat3:#55a04a; --cat4:#a0704a; --cat5:#6b7b8c; --cat6:#c2434f; --cat7:#9a968a; }
-  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --cat-ink:#0d0d0d; --train:#5a82cf; --train-ink:#07142d; --valid:#9fcbee; --valid-ink:#0a2540; --test:#d9b53a; --test-ink:#241c00; --cat1:#9a7bd6; --cat2:#d9b53a; --cat3:#6cb860; --cat4:#b98760; --cat5:#8796a6; --cat6:#d65a66; --cat7:#a8a498; } }
-  :root[data-theme="dark"]{ --cat-ink:#0d0d0d; --train:#5a82cf; --train-ink:#07142d; --valid:#9fcbee; --valid-ink:#0a2540; --test:#d9b53a; --test-ink:#241c00; --cat1:#9a7bd6; --cat2:#d9b53a; --cat3:#6cb860; --cat4:#b98760; --cat5:#8796a6; --cat6:#d65a66; --cat7:#a8a498; }
+  :root{ --out:#c8453b; --cat-ink:#ffffff; --train:#1f3b73; --train-ink:#ffffff; --valid:#a8d3f2; --valid-ink:#0b2a4a; --test:#c9a21c; --test-ink:#2b2200; --cat1:#7d5bbe; --cat2:#c9a21c; --cat3:#55a04a; --cat4:#a0704a; --cat5:#6b7b8c; --cat6:#c2434f; --cat7:#9a968a; }
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --out:#e0675c; --cat-ink:#0d0d0d; --train:#5a82cf; --train-ink:#07142d; --valid:#9fcbee; --valid-ink:#0a2540; --test:#d9b53a; --test-ink:#241c00; --cat1:#9a7bd6; --cat2:#d9b53a; --cat3:#6cb860; --cat4:#b98760; --cat5:#8796a6; --cat6:#d65a66; --cat7:#a8a498; } }
+  :root[data-theme="dark"]{ --out:#e0675c; --cat-ink:#0d0d0d; --train:#5a82cf; --train-ink:#07142d; --valid:#9fcbee; --valid-ink:#0a2540; --test:#d9b53a; --test-ink:#241c00; --cat1:#9a7bd6; --cat2:#d9b53a; --cat3:#6cb860; --cat4:#b98760; --cat5:#8796a6; --cat6:#d65a66; --cat7:#a8a498; }
   .pyr{ display:flex; flex-direction:column; gap:16px; }
   .pyr-head{ display:grid; grid-template-columns:1fr 54px 1fr; gap:8px; font-size:11.5px; color:var(--ink-muted); }
   .pyr-head span:first-child{ text-align:right; } .pyr-head span:last-child{ text-align:left; }
@@ -491,6 +491,7 @@
   .sp-switch .trk{ position:relative; width:38px; height:22px; border-radius:999px; background:var(--baseline); transition:background .15s; flex:none; }
   .sp-switch .trk::after{ content:""; position:absolute; left:3px; top:3px; width:16px; height:16px; border-radius:50%; background:var(--surface); transition:transform .15s; }
   .sp-switch input:checked + .trk{ background:var(--test); }
+  .sp-switch input#spNoFr:checked + .trk{ background:var(--out); }
   .sp-switch input:checked + .trk::after{ transform:translateX(16px); }
   .sp-switch input:focus-visible + .trk{ outline:2px solid var(--ink-2); outline-offset:2px; }
   .sp-switch em{ font-style:normal; font-size:12px; color:var(--ink-muted); margin-left:6px; }
@@ -867,7 +868,7 @@
     <img id="footLogo" class="foot-logo" alt="Celebs4PD logo" width="84" height="64">
     <div class="foot-txt">
     <p>This research project is supported by the generosity of the Natural Sciences and Engineering Research Council of Canada (NSERC), through an Alexander Graham Bell CGS-M award, Agreement #110_2024_2025_Q4_137, and the Arbour Foundation.</p>
-    <p>Metadata (source links, speaker timestamps, annotations) and the code to rebuild the dataset from the original sources are available upon request under the <a class="dua" href="https://docs.google.com/document/d/1U2J4cyXZ97rIzRd70m2aaF8SSkQ3V0v4Sf9EZx8Tw8w/edit" target="_blank" rel="noopener">Celebs4PD Data Use Agreement</a>. Audio is not distributed and remains under its rights holders&rsquo; copyright.</p>
+    <p>The metadata and the code to rebuild the dataset are available upon request under a signed <a class="dua" href="https://docs.google.com/document/d/1U2J4cyXZ97rIzRd70m2aaF8SSkQ3V0v4Sf9EZx8Tw8w/edit" target="_blank" rel="noopener">Data Use Agreement</a> (DUA) for academic, non-commercial research. The audio itself is not distributed and remains under its rights holders&rsquo; copyright. It is rebuilt locally from the original public sources.</p>
     </div>
   </footer>
 
@@ -1818,7 +1819,7 @@
       const n = r.picks.length;
       box.dataset.count = String(n); box.dataset.total = String(r.total);
       $('spOptN').textContent = '';
-      $('spOptSub').textContent = 'Balance measures how closely each split reflects the overall dataset across diagnostic group, sex, ' + (state.noFr ? '' : 'language, ') + 'race, and nationality. ' + (r.have ? 'The top five most balanced configurations are shown above.' : 'Fewer than five configurations fall within \u00b10.05 h of the target' + (state.useTest ? 's' : '') + ', so the closest are shown above.');
+      $('spOptSub').textContent = 'Balance measures how well each split preserves the demographic composition of the full dataset (diagnostic group, sex, ' + (state.noFr ? '' : 'language, ') + 'race, and nationality), keeping the sets as matched and representative as possible. ' + (r.have ? 'The top five most balanced configurations are shown above.' : 'Fewer than five configurations fall within \u00b10.05 h of the target' + (state.useTest ? 's' : '') + ', so the closest are shown above.');
       drawRows();
       renderOption(r.picks[0], 0);
       syncPresets();
