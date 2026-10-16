@@ -233,9 +233,9 @@
   .hbar-seg:hover{ filter:brightness(0.92); }
 
   /* categorical tokens for waffle charts (not group or sex colours) */
-  :root{ --cat1:#7d5bbe; --cat2:#c9a21c; --cat3:#55a04a; --cat4:#a0704a; --cat5:#6b7b8c; --cat6:#c2434f; --cat7:#9a968a; }
-  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --cat1:#9a7bd6; --cat2:#d9b53a; --cat3:#6cb860; --cat4:#b98760; --cat5:#8796a6; --cat6:#d65a66; --cat7:#a8a498; } }
-  :root[data-theme="dark"]{ --cat1:#9a7bd6; --cat2:#d9b53a; --cat3:#6cb860; --cat4:#b98760; --cat5:#8796a6; --cat6:#d65a66; --cat7:#a8a498; }
+  :root{ --cat-ink:#ffffff; --train:#1f3b73; --train-ink:#ffffff; --valid:#a8d3f2; --valid-ink:#0b2a4a; --test:#c9a21c; --test-ink:#2b2200; --cat1:#7d5bbe; --cat2:#c9a21c; --cat3:#55a04a; --cat4:#a0704a; --cat5:#6b7b8c; --cat6:#c2434f; --cat7:#9a968a; }
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --cat-ink:#0d0d0d; --train:#5a82cf; --train-ink:#07142d; --valid:#9fcbee; --valid-ink:#0a2540; --test:#d9b53a; --test-ink:#241c00; --cat1:#9a7bd6; --cat2:#d9b53a; --cat3:#6cb860; --cat4:#b98760; --cat5:#8796a6; --cat6:#d65a66; --cat7:#a8a498; } }
+  :root[data-theme="dark"]{ --cat-ink:#0d0d0d; --train:#5a82cf; --train-ink:#07142d; --valid:#9fcbee; --valid-ink:#0a2540; --test:#d9b53a; --test-ink:#241c00; --cat1:#9a7bd6; --cat2:#d9b53a; --cat3:#6cb860; --cat4:#b98760; --cat5:#8796a6; --cat6:#d65a66; --cat7:#a8a498; }
   .pyr{ display:flex; flex-direction:column; gap:16px; }
   .pyr-head{ display:grid; grid-template-columns:1fr 54px 1fr; gap:8px; font-size:11.5px; color:var(--ink-muted); }
   .pyr-head span:first-child{ text-align:right; } .pyr-head span:last-child{ text-align:left; }
@@ -267,7 +267,7 @@
   @media (max-width:520px){ .nat-donut{ flex-direction:column; gap:16px; } }
   .view-bar{ display:flex; justify-content:flex-end; padding-top:18px; }
   .view-bar .seg{ margin:0; }
-  /* ---- Dataset at a glance ---- */
+  /* ---- Celebs4PD at a glance ---- */
   #glance .gl-card{ padding:0; overflow:hidden; }
   #glance table{ width:100%; border-collapse:collapse; }
   #glance tr.gl-group th{ text-align:left; padding:30px 28px 10px; font:600 11px "IBM Plex Mono", ui-monospace, monospace; letter-spacing:.09em; text-transform:uppercase; color:var(--ink-muted); background:transparent; border:0; border-bottom:1px solid var(--line); }
@@ -452,6 +452,147 @@
   footer a{ color:inherit; text-decoration:underline; text-underline-offset:2px; }
   footer a:hover{ color:var(--ink); }
   footer a.dua:hover{ color:var(--link); }
+  /* ---- Split explorer ---- */
+  #splitter .sp-note{ margin:0 0 28px; max-width:74ch; font-size:14.5px; line-height:1.65; color:var(--ink-2); }
+  #splitter .card{ padding:28px 30px; }
+  #splitter .card + .card{ margin-top:24px; }
+  #splitter .card h3{ font-size:14px; font-weight:600; margin:0 0 6px; }
+  #splitter .sp-sub{ margin:0 0 24px; max-width:70ch; font-size:12.5px; line-height:1.6; color:var(--ink-muted); }
+  #splitter h4{ margin:0; }
+  #splitter [hidden]{ display:none !important; }
+  /* configure */
+  .sp-read{ display:flex; flex-wrap:wrap; align-items:flex-end; gap:12px 48px; margin-bottom:28px; }
+  .sp-r{ display:flex; flex-direction:column; gap:4px; }
+  .sp-r .lg{ display:inline-flex; align-items:baseline; gap:7px; font-size:11.5px; text-transform:uppercase; letter-spacing:.07em; color:var(--ink-muted); }
+  .sp-r .lg em{ font-style:normal; font-size:12.5px; font-weight:600; letter-spacing:0; text-transform:none; color:var(--ink-2); font-variant-numeric:tabular-nums; }
+  .sp-r .lg::before{ content:""; align-self:center; width:10px; height:10px; border-radius:3px; background:var(--train); }
+  .sp-r.valid .lg::before{ background:var(--valid); }
+  .sp-r.test .lg::before{ background:var(--test); }
+  .sp-r .val{ font-size:14px; color:var(--ink-2); }
+  .sp-r b{ font-size:34px; font-weight:600; letter-spacing:-.02em; color:var(--ink); font-variant-numeric:tabular-nums; }
+  .sp-sliders{ display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:26px 48px; }
+  .sp-sl{ display:flex; flex-direction:column; gap:10px; min-width:0; }
+  .sp-sl-top{ display:flex; align-items:center; justify-content:space-between; gap:12px; }
+  .sp-sl label{ font-size:13px; font-weight:500; color:var(--ink); }
+  .sp-num{ display:inline-flex; align-items:center; gap:6px; font-size:13px; color:var(--ink-muted); }
+  .sp-num input, .sp-field select{ font:inherit; font-size:14px; color:var(--ink); background:var(--page); border:1px solid var(--line); border-radius:8px; padding:7px 10px; min-width:0; }
+  .sp-num input{ width:92px; text-align:right; font-variant-numeric:tabular-nums; }
+  .sp-range{ -webkit-appearance:none; appearance:none; width:100%; height:6px; margin:10px 0; border-radius:999px; cursor:pointer; background:linear-gradient(to right, var(--rc) var(--p,50%), var(--line) var(--p,50%)); }
+  .sp-range.t{ --rc:var(--train); } .sp-range.e{ --rc:var(--test); }
+  .sp-range::-webkit-slider-thumb{ -webkit-appearance:none; appearance:none; width:22px; height:22px; border-radius:50%; background:var(--surface); border:3px solid var(--rc); box-shadow:0 1px 4px rgba(0,0,0,.25); }
+  .sp-range::-moz-range-thumb{ width:16px; height:16px; border-radius:50%; background:var(--surface); border:3px solid var(--rc); box-shadow:0 1px 4px rgba(0,0,0,.25); }
+  .sp-range::-moz-range-track{ background:transparent; }
+  .sp-scale{ display:flex; justify-content:space-between; font-size:11.5px; color:var(--ink-muted); font-variant-numeric:tabular-nums; margin-top:-4px; }
+  .sp-ctl2{ display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:20px 40px; margin-top:30px; padding-top:26px; border-top:1px solid var(--line); }
+  .sp-sws{ display:flex; flex-direction:column; gap:16px; }
+  .sp-left{ margin:14px 0 0; font-size:12.5px; color:var(--ink-muted); }
+  .sp-switch{ display:inline-flex; align-items:center; gap:12px; cursor:pointer; font-size:13.5px; color:var(--ink); }
+  .sp-switch input{ position:absolute; opacity:0; width:1px; height:1px; }
+  .sp-switch .trk{ position:relative; width:38px; height:22px; border-radius:999px; background:var(--baseline); transition:background .15s; flex:none; }
+  .sp-switch .trk::after{ content:""; position:absolute; left:3px; top:3px; width:16px; height:16px; border-radius:50%; background:var(--surface); transition:transform .15s; }
+  .sp-switch input:checked + .trk{ background:var(--test); }
+  .sp-switch input:checked + .trk::after{ transform:translateX(16px); }
+  .sp-switch input:focus-visible + .trk{ outline:2px solid var(--ink-2); outline-offset:2px; }
+  .sp-switch em{ font-style:normal; font-size:12px; color:var(--ink-muted); margin-left:6px; }
+  .sp-field{ display:flex; flex-direction:column; gap:6px; font-size:12px; color:var(--ink-muted); }
+  .sp-field select{ max-width:100%; }
+  .sp-presets{ display:flex; flex-wrap:wrap; gap:8px; margin-top:24px; }
+  .sp-presets button{ font:inherit; font-size:12.5px; color:var(--ink-2); background:var(--surface); border:1px solid var(--line); border-radius:999px; padding:6px 14px; cursor:pointer; }
+  .sp-presets button:hover{ background:var(--hover); color:var(--ink); }
+  .sp-presets button[aria-pressed="true"]{ background:var(--hover); color:var(--ink); border-color:var(--baseline); font-weight:600; }
+  #splitter :is(button, input, select, summary):focus-visible{ outline:2px solid var(--ink-2); outline-offset:2px; }
+  /* selected option */
+  .sp-head{ display:flex; flex-wrap:wrap; align-items:flex-start; justify-content:space-between; gap:12px 24px; margin:0 0 14px; }
+  .sp-ht{ display:flex; flex-direction:column; gap:6px; min-width:0; }
+  #splitter .sp-ht h3{ margin:0; font-size:14px; }
+  .sp-dl{ font:inherit; font-size:12.5px; font-weight:500; color:var(--ink); background:var(--surface); border:1px solid var(--baseline); border-radius:999px; padding:7px 16px; cursor:pointer; white-space:nowrap; }
+  .sp-dl:hover{ background:var(--hover); }
+  .sp-head h4{ margin:0; font-size:15px; font-weight:600; }
+  .sp-delta{ font-size:12.5px; color:var(--ink-2); font-variant-numeric:tabular-nums; }
+  .sp-map{ display:flex; flex-direction:column; gap:14px; }
+  .sp-map .sp-lg{ margin:0; }
+  .sp-lgrow{ display:flex; flex-wrap:wrap; align-items:center; gap:6px 28px; margin-top:6px; } .sp-lgrow .sp-lg{ margin:0; }
+  #spMapSets{ flex-wrap:nowrap; gap:6px 14px; white-space:nowrap; } #spMapSets span{ flex:none; }
+  @media (max-width:480px){ #spMapSets{ gap:6px 10px; font-size:10.5px; } }
+  .sp-map .sp-rowlab{ margin:0 0 -6px; }
+  .sp-rowlab{ margin:0 0 12px; font:600 11px "IBM Plex Mono", ui-monospace, monospace; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-muted); }
+  .sp-cells{ display:flex; flex-wrap:wrap; gap:8px; padding:12px; border-radius:14px; }
+  .sp-cells.t{ background:var(--train); } .sp-cells.v{ background:var(--valid); } .sp-cells.e{ background:var(--test); }
+  .sp-cell{ display:inline-flex; align-items:center; justify-content:center; width:38px; height:34px; border-radius:8px; font:600 12px "IBM Plex Mono", ui-monospace, monospace; cursor:default; }
+  .sp-cell.ml{ background:var(--male); color:#fff; } .sp-cell.fm{ background:var(--female); color:#fff; }
+  .sp-mrow{ display:flex; flex-direction:column; gap:10px; }
+  .sp-mh{ display:flex; align-items:center; gap:8px; margin:0; font-size:13px; color:var(--ink-2); }
+  .sp-mh i{ width:10px; height:10px; border-radius:3px; flex:none; }
+  .sp-mh b{ font-weight:500; color:var(--ink); } .sp-mh span{ color:var(--ink-muted); font-size:12.5px; }
+  /* shape charts */
+  .sp-shape{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:38px 64px; margin-top:28px; align-items:start; }
+  .sp-wide{ grid-column:1 / -1; }
+  @media (max-width:900px){ .sp-shape{ grid-template-columns:minmax(0,1fr); } }
+  .sp-grp{ display:flex; flex-direction:column; gap:12px; min-width:0; }
+  .sp-grp > h4{ font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:.06em; color:var(--ink-muted); margin-bottom:4px; }
+  #splitter .sp-grp.sp-wide > h4{ margin-bottom:28px; }
+  .sp-grp > h4 small{ font-size:11.5px; font-weight:400; text-transform:none; letter-spacing:0; margin-left:8px; }
+  .sp-st, .sp-st2{ display:grid; grid-template-columns:96px minmax(0,1fr); align-items:center; gap:14px; }
+  .sp-st .n, .sp-st2 .n{ font-size:12.5px; color:var(--ink-2); }
+  .sp-st .b, .sp-st2 .b{ display:flex; gap:2px; min-width:0; }
+  .sp-st .b i, .sp-st2 .b i{ display:flex; align-items:center; justify-content:center; min-width:3px; font-style:normal; font:600 11px "IBM Plex Sans", sans-serif; font-variant-numeric:tabular-nums; overflow:hidden; white-space:nowrap; }
+  .sp-st .b i{ height:30px; border-radius:6px; }
+  .sp-st2 .b i{ height:24px; border-radius:5px; }
+  .sp-lg svg.fsw{ width:16px; height:11px; border-radius:2px; flex:none; box-shadow:0 0 0 1px rgba(0,0,0,.12); }
+  #splitter .card .sp-shapeh{ font-size:14px; font-weight:600; margin:34px 0 0; padding-top:30px; border-top:1px solid var(--line); }
+  .sp-st2 .b i.fg{ position:relative; overflow:hidden; color:#fff; background:var(--hover); }
+  .sp-st2 .b i.fg svg.fl{ position:absolute; inset:0; width:100%; height:100%; }
+  .sp-st2 .b i.fg span{ position:relative; }
+  .sp-st2 .b i.fg span:not(:empty){ background:rgba(18,18,18,.78); padding:1px 6px; border-radius:4px; }
+  .sp-st2 .b i.c1, .sp-lg i.c1{ background:var(--cat1); color:var(--cat-ink); } .sp-st2 .b i.c3, .sp-lg i.c3{ background:var(--cat3); color:var(--cat-ink); } .sp-st2 .b i.c4, .sp-lg i.c4{ background:var(--cat4); color:var(--cat-ink); } .sp-st2 .b i.c5, .sp-lg i.c5{ background:var(--cat5); color:var(--cat-ink); } .sp-st2 .b i.c6, .sp-lg i.c6{ background:var(--cat6); color:var(--cat-ink); }
+  .sp-st2 .b i.c2, .sp-lg i.c2{ background:var(--cat2); color:#1b1b1b; } .sp-st2 .b i.c7, .sp-lg i.c7{ background:var(--cat7); color:#1b1b1b; }
+  i.t{ background:var(--train); color:var(--train-ink); } i.v{ background:var(--valid); color:var(--valid-ink); } i.e{ background:var(--test); color:var(--test-ink); }
+  i.pd{ background:var(--pd); color:#fff; } i.ct{ background:var(--control); color:#fff; } i.ml{ background:var(--male); color:#fff; } i.fm{ background:var(--female); color:#fff; }
+  .sp-lg{ display:flex; flex-wrap:wrap; gap:6px 18px; margin:6px 0 0; font-size:11.5px; color:var(--ink-muted); }
+  .sp-lg span{ display:inline-flex; align-items:center; gap:6px; } .sp-lg i{ width:9px; height:9px; border-radius:2px; }
+  /* recordings per year */
+  .sp-tl{ display:grid; grid-template-columns:30px minmax(0,1fr); gap:10px; }
+  .sp-tl-y{ position:relative; height:160px; font-size:11px; color:var(--ink-muted); font-variant-numeric:tabular-nums; }
+  .sp-tl-y span{ position:absolute; right:0; transform:translateY(50%); line-height:1; }
+  .sp-tl-cols{ display:flex; gap:2px; height:160px; background:linear-gradient(var(--line),var(--line)) 0 0/100% 1px no-repeat, linear-gradient(var(--line),var(--line)) 0 50%/100% 1px no-repeat, linear-gradient(var(--baseline),var(--baseline)) 0 100%/100% 1px no-repeat; }
+  .sp-yr{ flex:1 1 0; min-width:0; display:flex; flex-direction:column-reverse; border-radius:2px; }
+  .sp-yr:hover{ background:var(--hover); }
+  .sp-yr i{ display:block; flex:none; width:100%; }
+  .sp-yr i + i{ margin-bottom:1px; }
+  .sp-yr i:last-child{ border-radius:2px 2px 0 0; }
+  .sp-tl-x{ position:relative; height:18px; margin-top:6px; font-size:11px; color:var(--ink-muted); font-variant-numeric:tabular-nums; }
+  .sp-tl-x span{ position:absolute; transform:translateX(-50%); }
+  /* options table */
+  #splitter .sp-balnote{ margin:14px 0 0; font-size:11.5px; line-height:1.6; color:var(--ink-muted); }
+  .sp-optn:empty{ display:none; } .sp-optn{ margin:0 0 14px; font-size:12.5px; color:var(--ink-muted); }
+  .sp-optbox{ overflow-x:auto; margin-top:28px; }
+  .sp-opts{ min-width:640px; }
+  .sp-opth, .sp-opt{ display:grid; grid-template-columns:var(--cols); align-items:center; gap:0 14px; }
+  .sp-opth{ min-width:640px; padding:0 16px 12px; font:600 11px "IBM Plex Mono", ui-monospace, monospace; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-muted); border-bottom:1px solid var(--line); }
+  .sp-opth span, .sp-opt span{ text-align:right; } .sp-opth span:first-child, .sp-opt span:first-child{ text-align:left; }
+  .sp-opt{ width:100%; height:52px; box-sizing:border-box; font:inherit; font-size:13.5px; color:var(--ink); background:none; border:0; border-radius:10px; padding:0 16px; cursor:pointer; text-align:left; font-variant-numeric:tabular-nums; }
+  .sp-opt:hover{ background:var(--hover); }
+  .sp-opt[aria-pressed="true"]{ background:var(--hover); box-shadow:inset 0 0 0 1.5px var(--baseline); }
+  .sp-opt .o-n{ font-weight:400; } .sp-opt .o-sex{ color:var(--ink-2); }
+  @media (max-width:640px){
+    #splitter .card{ padding:22px 18px; }
+    .sp-r b{ font-size:28px; }
+    .sp-cell{ width:34px; height:32px; }
+    .sp-st, .sp-st2{ grid-template-columns:72px minmax(0,1fr); gap:10px; }
+    .sp-read{ gap:12px 28px; }
+    .sp-tl{ grid-template-columns:24px minmax(0,1fr); gap:6px; } .sp-tl-cols{ gap:1px; }
+    .sp-opth{ display:none; }
+    .sp-opts{ min-width:0; }
+    .sp-optbox{ overflow-x:visible; }
+    .sp-opt{ grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px 16px; padding:14px; align-content:center; height:auto; }
+    .sp-opt span, .sp-opt span:first-child{ text-align:left; } .sp-opt .o-n{ grid-column:1 / -1; }
+    .sp-opt .o-train::before{ content:'Train  '; color:var(--ink-muted); } .sp-opt .o-valid::before{ content:'Validation  '; color:var(--ink-muted); }
+    .sp-opt .o-test::before{ content:'Test  '; color:var(--ink-muted); }
+    .sp-opt .o-pairs::before{ content:'Pairs  '; color:var(--ink-muted); }
+    .sp-opt .o-sex::before{ content:'Train M / F  '; color:var(--ink-muted); }
+    .sp-opt .o-bal::before{ content:'Balance  '; color:var(--ink-muted); }
+    .sp-opt .o-sex, .sp-opt .o-bal{ grid-column:1 / -1; }
+  }
 </style>
 
 <div class="wrap">
@@ -470,10 +611,10 @@
     <div class="hdr-tools"><div class="hdr-r"><a class="gh" href="https://github.com/njayem/Celebs4PD" target="_blank" rel="noopener" aria-label="View on GitHub" title="View on GitHub"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a><button type="button" id="themeBtn" class="theme-sw" role="switch" aria-checked="false" aria-label="Night mode"><svg class="ic sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M5.3 18.7L7 17M17 7l1.7-1.7"/></svg><svg class="ic moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg><span class="knob"></span></button></div><span class="ver"><select id="ver" class="chip" aria-label="Dataset version"><option value="1.0.0" selected>v1.0.0 &middot; latest</option></select></span></div>
   </header>
 
-  <div class="view-bar"><div class="seg" role="group" aria-label="Dashboard view"><button type="button" id="vGlance" aria-pressed="true">Summary</button><button type="button" id="vFull" aria-pressed="false">Full breakdown</button></div></div>
+  <div class="view-bar"><div class="seg" role="group" aria-label="Dashboard view"><button type="button" id="vGlance" aria-pressed="true">Summary</button><button type="button" id="vFull" aria-pressed="false">Full breakdown</button><button type="button" id="vSplit" aria-pressed="false">Split explorer</button></div></div>
 
   <section id="glance">
-    <div class="section-head"><h2>Dataset at a glance</h2></div>
+    <div class="section-head"><h2>Celebs4PD at a glance</h2></div>
     <div class="card gl-card">
       <div class="table-wrap">
         <table>
@@ -665,6 +806,63 @@
   </section>
   </div>
 
+  <section id="splitter" hidden>
+    <div class="section-head"><h2>How to split this dataset</h2></div>
+    <p class="sp-note">This dataset is designed to be split by participant pairs, which preserves demographic balance, limits the influence of potential confounders, and prevents speaker leakage. The split explorer helps you visualize and compare training, validation, and test configurations, and choose the participant pairs best suited to your research.</p>
+
+    <div class="card sp-conf">
+      <div class="sp-read" aria-live="polite">
+        <div class="sp-r train"><span class="lg">Train <em id="spPctT">80.0%</em></span><span class="val"><b id="spTargetT">110.88</b> h</span></div>
+        <div class="sp-r valid"><span class="lg">Validation <em id="spPctV">20.0%</em></span><span class="val"><b id="spTargetV">27.76</b> h</span></div>
+        <div class="sp-r test" id="spReadE" hidden><span class="lg">Test <em id="spPctE">10.0%</em></span><span class="val"><b id="spTargetE">13.86</b> h</span></div>
+      </div>
+      <div class="sp-sliders">
+        <div class="sp-sl">
+          <div class="sp-sl-top"><label for="spRange">Training audio</label>
+            <span class="sp-num"><input id="spNum" type="number" min="1" max="137" step="0.01" value="110.88" inputmode="decimal" aria-label="Training hours"> h</span></div>
+          <input class="sp-range t" id="spRange" type="range" min="1" max="137" step="0.01" value="110.88">
+          <div class="sp-scale"><span id="spMin">1 h</span><span id="spMax">137 h</span></div>
+        </div>
+        <div class="sp-sl" id="spTestRow" hidden>
+          <div class="sp-sl-top"><label for="spTestRange">Test audio</label>
+            <span class="sp-num"><input id="spTestNum" type="number" min="1" max="100" step="0.01" value="13.86" inputmode="decimal" aria-label="Test hours"> h</span></div>
+          <input class="sp-range e" id="spTestRange" type="range" min="1" max="100" step="0.01" value="13.86">
+          <div class="sp-scale"><span id="spTestMin">1 h</span><span id="spTestMax">100 h</span></div>
+        </div>
+      </div>
+      <div class="sp-ctl2">
+        <div class="sp-sws">
+          <label class="sp-switch" for="spTestOn"><input type="checkbox" id="spTestOn"><span class="trk" aria-hidden="true"></span><span class="lbl">Include a test set <em>optional</em></span></label>
+          <label class="sp-switch" for="spNoFr"><input type="checkbox" id="spNoFr"><span class="trk" aria-hidden="true"></span><span class="lbl">Leave out French recordings <em>optional</em></span></label>
+        </div>
+        <label class="sp-field" for="spSex">Sex balance
+          <select id="spSex">
+            <option value="any">Random</option>
+            <option value="eq" selected>Equal</option>
+          </select>
+        </label>
+      </div>
+      <div class="sp-presets" role="group" aria-label="Presets" id="spPresets"></div>
+    </div>
+
+    <div class="card">
+      <h3>Candidate splits</h3>
+      <p class="sp-optn" id="spOptN"></p>
+      <div class="sp-optbox"><div class="sp-opth" id="spOptHead" aria-hidden="true"></div><div class="sp-opts" id="spOpts" role="group" aria-label="Split options"></div></div>
+      <p class="sp-balnote" id="spOptSub"></p>
+    </div>
+
+    <div class="card sp-res">
+      <div class="sp-head">
+        <div class="sp-ht"><h3>Pair allocation per split</h3></div>
+        <button type="button" class="sp-dl" id="spDownload" title="Save this option as a JSON file listing every participant and the set it belongs to">Download split plan</button>
+      </div>
+      <div class="sp-map" id="spMap"></div>
+      <h3 class="sp-shapeh">Shape of the split</h3>
+      <div class="sp-shape" id="spShape"></div>
+    </div>
+
+  </section>
   <footer>
     <img id="footLogo" class="foot-logo" alt="Celebs4PD logo" width="84" height="64">
     <div class="foot-txt">
@@ -723,10 +921,10 @@
 
   // view switch: a basic-facts table by default, or the full breakdown
   (function(){
-    const g = document.getElementById('vGlance'), f = document.getElementById('vFull'), full = document.getElementById('full'), gl = document.getElementById('glance');
-    const set = on => { full.hidden = !on; gl.hidden = on; g.setAttribute('aria-pressed', String(!on)); f.setAttribute('aria-pressed', String(on)); };
-    g.addEventListener('click', () => set(false));
-    f.addEventListener('click', () => set(true));
+    const B = {glance: document.getElementById('vGlance'), full: document.getElementById('vFull'), split: document.getElementById('vSplit')};
+    const P = {glance: document.getElementById('glance'), full: document.getElementById('full'), split: document.getElementById('splitter')};
+    const set = v => { Object.keys(B).forEach(k => { P[k].hidden = (k !== v); B[k].setAttribute('aria-pressed', String(k === v)); }); };
+    Object.keys(B).forEach(k => B[k].addEventListener('click', () => set(k)));
   })();
 
   // dataset at a glance
@@ -751,7 +949,7 @@
     const R = (icon, k, v) => ['row', icon, k, v];
     const rows = [
       G('About'),
-      ['intro', '<strong>Celebs4PD</strong> is a longitudinal corpus of in-the-wild celebrity speech for research on speech-based Parkinson\u2019s disease (PD) detection. It comprises 700 recordings totaling 138.64 hours from 60 participants, sourced from publicly available media spanning 1959 to 2025. Of these, 642 recordings (91.7%) are in English and 58 (8.3%) are in French. The participants are organized into 30 <span style="white-space:nowrap">PD\u2013Control</span> pairs, matched on sex (100%), birth year within five years (97%), race (93%), and profession (87%).'],
+      ['intro', 'This dataset is a longitudinal corpus of in-the-wild celebrity speech for research on speech-based Parkinson\u2019s disease (PD) detection. It comprises 700 recordings totaling 138.64 hours from 60 participants, sourced from publicly available media spanning 1959 to 2025. Of these, 642 recordings (91.7%) are in English and 58 (8.3%) are in French. The participants are organized into 30 <span style="white-space:nowrap">PD\u2013Control</span> pairs, matched on sex (100%), birth year within five years (97%), race (93%), and profession (87%).'],
       G('Cohort'),
       R('people', 'Participants', `<b>${PD_N + CTRL_N}</b>` + split(PD_N, CTRL_N) + leg(PD_N, CTRL_N)),
       R('link', 'Matched PD\u2013Control pairs', `<b>${PD_N}</b>`),
@@ -1110,6 +1308,9 @@
   // hours = summed length of each participant's target-speaker WAV files; pairs 1-15 male, 16-30 female.
   (function(){
     const PH = {"control_01":[2.20089,19],"control_02":[0.7096,16],"control_03":[1.70256,13],"control_04":[2.60893,10],"control_05":[2.50567,8],"control_06":[1.36779,6],"control_07":[2.65638,7],"control_08":[2.5384,6],"control_09":[4.28942,11],"control_10":[4.25642,9],"control_11":[1.08993,13],"control_12":[2.91896,12],"control_13":[2.24319,22],"control_14":[2.23852,21],"control_15":[2.76557,19],"control_16":[2.85612,15],"control_17":[1.29541,7],"control_18":[2.53516,16],"control_19":[2.11991,5],"control_20":[2.27137,6],"control_21":[3.58588,5],"control_22":[2.7412,5],"control_23":[3.42714,7],"control_24":[4.16124,12],"control_25":[2.67434,5],"control_26":[3.14118,7],"control_27":[2.85055,6],"control_28":[1.52614,4],"control_29":[0.82484,11],"control_30":[1.58029,8],"pd_01":[6.42386,57],"pd_02":[4.16811,27],"pd_03":[1.24333,16],"pd_04":[2.68198,16],"pd_05":[2.31949,12],"pd_06":[2.80011,10],"pd_07":[5.43062,12],"pd_08":[3.10064,9],"pd_09":[2.18072,7],"pd_10":[1.39533,5],"pd_11":[0.3518,10],"pd_12":[3.19772,9],"pd_13":[0.47611,10],"pd_14":[2.60988,11],"pd_15":[0.52379,12],"pd_16":[3.74323,41],"pd_17":[0.66747,8],"pd_18":[2.62783,13],"pd_19":[0.87599,2],"pd_20":[0.75946,7],"pd_21":[2.19945,15],"pd_22":[0.2789,2],"pd_23":[0.41564,1],"pd_24":[6.19636,16],"pd_25":[0.6255,7],"pd_26":[4.03404,13],"pd_27":[1.25436,17],"pd_28":[0.43168,2],"pd_29":[1.24873,12],"pd_30":[0.69732,10]};
+    window.PAIR_PH = PH;
+    const PM = {"1":{"nat":["Dual Nationality","American"],"race":["Caucasian","Caucasian"],"fr":[0.0,0],"yc":{"1983":2,"1984":3,"1985":6,"1986":1,"1987":5,"1988":2,"1989":1,"1990":3,"1991":3,"1993":2,"1995":1,"1996":3,"1997":1,"1998":1,"1999":1,"2001":1,"2002":1,"2004":2,"2006":3,"2010":1,"2012":3,"2013":2,"2015":2,"2016":2,"2017":2,"2019":3,"2020":5,"2022":2,"2023":7,"2024":5},"en":[6.42386,57,2.20089,19],"eyc":{"1983":2,"1984":3,"1985":6,"1986":1,"1987":5,"1988":2,"1989":1,"1990":3,"1991":3,"1993":2,"1995":1,"1996":3,"1997":1,"1998":1,"1999":1,"2001":1,"2002":1,"2004":2,"2006":3,"2010":1,"2012":3,"2013":2,"2015":2,"2016":2,"2017":2,"2019":3,"2020":5,"2022":2,"2023":7,"2024":5}},"2":{"nat":["American","American"],"race":["African Descent","African Descent"],"fr":[0.0,0],"yc":{"1966":1,"1967":2,"1968":2,"1969":1,"1971":2,"1972":4,"1973":3,"1974":4,"1978":1,"1979":1,"1980":2,"1981":1,"1984":1,"1985":2,"1986":2,"1989":2,"1990":2,"1991":1,"1992":1,"2001":1,"2007":2,"2008":1,"2010":1,"2011":1,"2015":1,"2016":1},"en":[4.16811,27,0.7096,16],"eyc":{"1966":1,"1967":2,"1968":2,"1969":1,"1971":2,"1972":4,"1973":3,"1974":4,"1978":1,"1979":1,"1980":2,"1981":1,"1984":1,"1985":2,"1986":2,"1989":2,"1990":2,"1991":1,"1992":1,"2001":1,"2007":2,"2008":1,"2010":1,"2011":1,"2015":1,"2016":1}},"3":{"nat":["American","English"],"race":["Caucasian","Caucasian"],"fr":[0.0,0],"yc":{"1968":1,"1981":1,"1982":1,"1984":1,"1985":1,"1994":1,"1997":1,"2002":1,"2005":1,"2009":1,"2010":1,"2011":2,"2012":1,"2014":3,"2015":1,"2016":3,"2017":1,"2018":3,"2019":3,"2023":1},"en":[1.24333,16,1.70256,13],"eyc":{"1968":1,"1981":1,"1982":1,"1984":1,"1985":1,"1994":1,"1997":1,"2002":1,"2005":1,"2009":1,"2010":1,"2011":2,"2012":1,"2014":3,"2015":1,"2016":3,"2017":1,"2018":3,"2019":3,"2023":1}},"4":{"nat":["English","American"],"race":["Caucasian","Caucasian"],"fr":[0.0,0],"yc":{"1986":1,"1988":1,"1991":1,"1996":1,"2010":1,"2011":1,"2012":1,"2015":1,"2016":1,"2017":3,"2018":1,"2019":2,"2020":1,"2021":2,"2022":4,"2023":2,"2024":1,"2025":1},"en":[2.68198,16,2.60893,10],"eyc":{"1986":1,"1988":1,"1991":1,"1996":1,"2010":1,"2011":1,"2012":1,"2015":1,"2016":1,"2017":3,"2018":1,"2019":2,"2020":1,"2021":2,"2022":4,"2023":2,"2024":1,"2025":1}},"5":{"nat":["English","English"],"race":["Caucasian","Caucasian"],"fr":[0.0,0],"yc":{"1982":1,"1983":1,"1990":1,"1998":1,"2001":1,"2004":1,"2012":3,"2013":2,"2014":1,"2016":2,"2019":2,"2022":1,"2023":3},"en":[2.31949,12,2.50567,8],"eyc":{"1982":1,"1983":1,"1990":1,"1998":1,"2001":1,"2004":1,"2012":3,"2013":2,"2014":1,"2016":2,"2019":2,"2022":1,"2023":3}},"6":{"nat":["English","American"],"race":["Caucasian","Caucasian"],"fr":[0.0,0],"yc":{"2011":2,"2012":1,"2013":1,"2015":1,"2016":2,"2019":3,"2020":1,"2021":2,"2022":1,"2024":2},"en":[2.80011,10,1.36779,6],"eyc":{"2011":2,"2012":1,"2013":1,"2015":1,"2016":2,"2019":3,"2020":1,"2021":2,"2022":1,"2024":2}},"7":{"nat":["American","American"],"race":["Caucasian","Caucasian"],"fr":[0.0,0],"yc":{"1976":1,"1980":1,"1992":1,"2002":1,"2010":1,"2013":4,"2015":2,"2017":4,"2019":1,"2020":1,"2022":1,"2023":1},"en":[5.43062,12,2.65638,7],"eyc":{"1976":1,"1980":1,"1992":1,"2002":1,"2010":1,"2013":4,"2015":2,"2017":4,"2019":1,"2020":1,"2022":1,"2023":1}},"8":{"nat":["American","American"],"race":["Caucasian","Caucasian"],"fr":[0.0,0],"yc":{"2001":1,"2013":1,"2015":1,"2016":2,"2017":1,"2019":1,"2022":2,"2023":1,"2024":4,"2025":1},"en":[3.10064,9,2.5384,6],"eyc":{"2001":1,"2013":1,"2015":1,"2016":2,"2017":1,"2019":1,"2022":2,"2023":1,"2024":4,"2025":1}},"9":{"nat":["American","American"],"race":["African Descent","African Descent"],"fr":[0.0,0],"yc":{"2013":1,"2014":1,"2016":1,"2018":1,"2019":2,"2020":3,"2021":4,"2022":2,"2024":3},"en":[2.18072,7,4.28942,11],"eyc":{"2013":1,"2014":1,"2016":1,"2018":1,"2019":2,"2020":3,"2021":4,"2022":2,"2024":3}},"10":{"nat":["American","American"],"race":["Caucasian","Caucasian"],"fr":[0.0,0],"yc":{"2014":3,"2015":1,"2016":2,"2017":2,"2020":2,"2022":1,"2023":1,"2024":2},"en":[1.39533,5,4.25642,9],"eyc":{"2014":3,"2015":1,"2016":2,"2017":2,"2020":2,"2022":1,"2023":1,"2024":2}},"11":{"nat":["American","American"],"race":["African Descent","African Descent"],"fr":[0.0,0],"yc":{"1982":1,"1983":2,"1987":1,"1988":2,"1992":1,"1993":1,"1994":1,"1995":1,"1997":1,"2009":1,"2011":1,"2013":3,"2014":1,"2015":2,"2019":1,"2023":3},"en":[0.3518,10,1.08993,13],"eyc":{"1982":1,"1983":2,"1987":1,"1988":2,"1992":1,"1993":1,"1994":1,"1995":1,"1997":1,"2009":1,"2011":1,"2013":3,"2014":1,"2015":2,"2019":1,"2023":3}},"12":{"nat":["American","American"],"race":["African Descent","African Descent"],"fr":[0.0,0],"yc":{"1963":1,"1970":1,"1988":1,"2013":2,"2014":3,"2016":1,"2017":4,"2018":1,"2019":5,"2020":1,"2022":1},"en":[3.19772,9,2.91896,12],"eyc":{"1963":1,"1970":1,"1988":1,"2013":2,"2014":3,"2016":1,"2017":4,"2018":1,"2019":5,"2020":1,"2022":1}},"13":{"nat":["English","English"],"race":["Caucasian","Caucasian"],"fr":[0.51042,5],"yc":{"1967":1,"1970":1,"1973":2,"1982":1,"1985":1,"1987":1,"1988":1,"1989":1,"1990":1,"1993":1,"1996":1,"1998":1,"1999":1,"2006":1,"2010":6,"2012":2,"2014":4,"2016":1,"2023":4},"en":[0.47611,10,1.73277,17],"eyc":{"1967":1,"1970":1,"1973":2,"1982":1,"1987":1,"1988":1,"1989":1,"1993":1,"1996":1,"1998":1,"1999":1,"2006":1,"2010":6,"2012":2,"2014":3,"2016":1,"2023":2}},"14":{"nat":["American","American"],"race":["Caucasian","Caucasian"],"fr":[0.0,0],"yc":{"1979":1,"1990":1,"1993":1,"1997":1,"2007":1,"2010":2,"2012":2,"2015":3,"2016":2,"2017":3,"2019":2,"2021":2,"2022":1,"2023":2,"2024":8},"en":[2.60988,11,2.23852,21],"eyc":{"1979":1,"1990":1,"1993":1,"1997":1,"2007":1,"2010":2,"2012":2,"2015":3,"2016":2,"2017":3,"2019":2,"2021":2,"2022":1,"2023":2,"2024":8}},"15":{"nat":["French","French"],"race":["Caucasian","Caucasian"],"fr":[3.28936,31],"yc":{"1982":1,"1985":1,"1996":1,"2005":1,"2008":2,"2012":3,"2013":3,"2014":4,"2015":1,"2016":1,"2017":1,"2018":1,"2021":1,"2022":1,"2023":3,"2024":5,"2025":1},"en":[0.0,0,0.0,0],"eyc":{}},"16":{"nat":["American","American"],"race":["Caucasian","Caucasian"],"fr":[0.0,0],"yc":{"1968":1,"1970":1,"1974":1,"1977":1,"1979":1,"1983":2,"1987":1,"1989":2,"1990":2,"1993":1,"1995":1,"1996":1,"2003":1,"2009":2,"2013":20,"2014":2,"2016":1,"2017":2,"2018":1,"2019":1,"2020":2,"2022":4,"2023":4,"2024":1},"en":[3.74323,41,2.85612,15],"eyc":{"1968":1,"1970":1,"1974":1,"1977":1,"1979":1,"1983":2,"1987":1,"1989":2,"1990":2,"1993":1,"1995":1,"1996":1,"2003":1,"2009":2,"2013":20,"2014":2,"2016":1,"2017":2,"2018":1,"2019":1,"2020":2,"2022":4,"2023":4,"2024":1}},"17":{"nat":["Canadian","American"],"race":["Caucasian","Caucasian"],"fr":[0.0,0],"yc":{"2003":1,"2004":1,"2010":1,"2014":1,"2015":1,"2020":1,"2022":3,"2024":6},"en":[0.66747,8,1.29541,7],"eyc":{"2003":1,"2004":1,"2010":1,"2014":1,"2015":1,"2020":1,"2022":3,"2024":6}},"18":{"nat":["Canadian","English"],"race":["Indian Descent","Caucasian"],"fr":[0.0,0],"yc":{"2012":1,"2013":2,"2014":2,"2015":1,"2016":2,"2017":1,"2018":1,"2019":7,"2020":2,"2021":6,"2022":1,"2023":1,"2024":1,"2025":1},"en":[2.62783,13,2.53516,16],"eyc":{"2012":1,"2013":2,"2014":2,"2015":1,"2016":2,"2017":1,"2018":1,"2019":7,"2020":2,"2021":6,"2022":1,"2023":1,"2024":1,"2025":1}},"19":{"nat":["English","Dominican"],"race":["Caucasian","Hispanic Descent"],"fr":[0.0,0],"yc":{"2009":1,"2015":1,"2019":1,"2020":1,"2022":2,"2024":1},"en":[0.87599,2,2.11991,5],"eyc":{"2009":1,"2015":1,"2019":1,"2020":1,"2022":2,"2024":1}},"20":{"nat":["Australian","American"],"race":["Caucasian","Caucasian"],"fr":[0.0,0],"yc":{"1987":1,"2005":3,"2009":2,"2010":1,"2012":1,"2013":1,"2016":2,"2018":2},"en":[0.75946,7,2.27137,6],"eyc":{"1987":1,"2005":3,"2009":2,"2010":1,"2012":1,"2013":1,"2016":2,"2018":2}},"21":{"nat":["American","American"],"race":["Caucasian","Caucasian"],"fr":[0.0,0],"yc":{"1989":1,"1993":3,"1994":1,"1995":4,"1999":1,"2000":2,"2003":1,"2005":1,"2008":2,"2011":1,"2014":1,"2016":1,"2020":1},"en":[2.19945,15,3.58588,5],"eyc":{"1989":1,"1993":3,"1994":1,"1995":4,"1999":1,"2000":2,"2003":1,"2005":1,"2008":2,"2011":1,"2014":1,"2016":1,"2020":1}},"22":{"nat":["American","American"],"race":["African Descent","African Descent"],"fr":[0.0,0],"yc":{"2001":1,"2012":1,"2016":1,"2018":2,"2022":1,"2024":1},"en":[0.2789,2,2.7412,5],"eyc":{"2001":1,"2012":1,"2016":1,"2018":2,"2022":1,"2024":1}},"23":{"nat":["English","Dual Nationality"],"race":["Caucasian","Caucasian"],"fr":[0.0,0],"yc":{"1986":1,"1988":1,"1993":1,"2007":1,"2013":2,"2022":1,"2024":1},"en":[0.41564,1,3.42714,7],"eyc":{"1986":1,"1988":1,"1993":1,"2007":1,"2013":2,"2022":1,"2024":1}},"24":{"nat":["Canadian","American"],"race":["Caucasian","Caucasian"],"fr":[0.0,0],"yc":{"1987":1,"2006":1,"2015":3,"2016":2,"2017":2,"2020":10,"2021":3,"2022":1,"2024":5},"en":[6.19636,16,4.16124,12],"eyc":{"1987":1,"2006":1,"2015":3,"2016":2,"2017":2,"2020":10,"2021":3,"2022":1,"2024":5}},"25":{"nat":["American","American"],"race":["Caucasian","Caucasian"],"fr":[0.0,0],"yc":{"1980":1,"1985":1,"2005":1,"2012":2,"2013":4,"2018":2,"2019":1},"en":[0.6255,7,2.67434,5],"eyc":{"1980":1,"1985":1,"2005":1,"2012":2,"2013":4,"2018":2,"2019":1}},"26":{"nat":["Canadian","American"],"race":["Caucasian","Caucasian"],"fr":[0.0,0],"yc":{"2014":2,"2016":1,"2017":3,"2018":1,"2019":3,"2020":5,"2021":1,"2022":1,"2023":1,"2024":1,"2025":1},"en":[4.03404,13,3.14118,7],"eyc":{"2014":2,"2016":1,"2017":3,"2018":1,"2019":3,"2020":5,"2021":1,"2022":1,"2023":1,"2024":1,"2025":1}},"27":{"nat":["American","English"],"race":["Caucasian","Caucasian"],"fr":[0.0,0],"yc":{"2016":1,"2018":2,"2019":1,"2020":2,"2021":5,"2022":4,"2023":5,"2024":2,"2025":1},"en":[1.25436,17,2.85055,6],"eyc":{"2016":1,"2018":2,"2019":1,"2020":2,"2021":5,"2022":4,"2023":5,"2024":2,"2025":1}},"28":{"nat":["English","American"],"race":["Caucasian","Caucasian"],"fr":[0.0,0],"yc":{"1974":1,"1979":1,"1984":1,"2012":1,"2017":1,"2025":1},"en":[0.43168,2,1.52614,4],"eyc":{"1974":1,"1979":1,"1984":1,"2012":1,"2017":1,"2025":1}},"29":{"nat":["French","French"],"race":["Caucasian","Caucasian"],"fr":[2.06346,22],"yc":{"1959":1,"1965":1,"1969":2,"1971":1,"1977":1,"1979":2,"1984":2,"1985":1,"1986":1,"1988":2,"1989":1,"1993":1,"1996":2,"2004":1,"2008":1,"2010":2,"2016":1},"en":[0.0101,1,0.0,0],"eyc":{"2008":1}},"30":{"nat":["English","American"],"race":["Caucasian","Caucasian"],"fr":[0.0,0],"yc":{"1969":1,"1972":1,"1975":3,"1977":3,"1986":1,"1991":1,"1994":1,"2010":1,"2011":2,"2014":1,"2016":1,"2019":1,"2020":1},"en":[0.69732,10,1.58029,8],"eyc":{"1969":1,"1972":1,"1975":3,"1977":3,"1986":1,"1991":1,"1994":1,"2010":1,"2011":2,"2014":1,"2016":1,"2019":1,"2020":1}}};
+    window.PAIR_META = PM;
     const W = 1000, rowH = 19, top = 22, barH = 11, mid = 40, hx = 400, MX = 6.5, NM = 15;
     const xc = W / 2, S = hx / MX, yB = top + 30 * rowH;
     const font = 'font-family="IBM Plex Sans, sans-serif"', mono = 'font-family="IBM Plex Mono, monospace"';
@@ -1286,6 +1487,399 @@
     function fit(){ if(window.innerWidth<=640){ f.style.height=''; return; }
       var last=0; for(var i=0;i<6;i++){ var th=Math.round(t.getBoundingClientRect().height); th=Math.max(104,Math.min(150,th)); if(th===last) break; f.style.height=(th-8)+'px'; last=th; } }
     fit(); window.addEventListener('resize',fit); if(document.fonts&&document.fonts.ready) document.fonts.ready.then(fit); })();
+
+
+  // split explorer: choose the audio for train (and optionally test); validation is the rest. Pairs are matched with a meet-in-the-middle search over subset sums.
+  (function(){
+    const PH = window.PAIR_PH, PM = window.PAIR_META;
+    if (!PH || !PM) return;
+    const N = 30, H = 15, NOPT = 5, WIN = 0.05, PRE3 = 300;
+    const nn = n => String(n).padStart(2, '0');
+    const nmap = k => (typeof LABEL !== 'undefined' && LABEL[k]) || k;
+    const COMPS = [['lang', 'Language'], ['race', 'Race'], ['nat', 'Nationality']];
+    // the figures the explorer works on, once with every recording and once with the French recordings left out
+    const bundle = en => {
+      const b = { hrs: [], rec: [], pdH: [], ctH: [], pdR: [], ctR: [], yc: [], comp: {}, uni: [], out: [] };
+      for (let n = 1; n <= N; n++) {
+        const p = PH['pd_' + nn(n)], c = PH['control_' + nn(n)], v = en ? PM[n].en : [p[0], p[1], c[0], c[1]];
+        b.pdH.push(v[0]); b.pdR.push(v[1]); b.ctH.push(v[2]); b.ctR.push(v[3]); b.hrs.push(v[0] + v[2]); b.rec.push(v[1] + v[3]); b.yc.push(en ? PM[n].eyc : PM[n].yc);
+      }
+      b.hrs.forEach((h, i) => (h > 0 ? b.uni : b.out).push(i));
+      b.TOT = b.hrs.reduce((a, x) => a + x, 0); b.minPair = Math.min(...b.uni.map(i => b.hrs[i])); b.LO = Math.ceil(b.minPair * 100) / 100;
+      const per = { lang: {}, race: {}, nat: {} };
+      const add = (k, cat, n, h) => { (per[k][cat] = per[k][cat] || new Array(N).fill(0))[n - 1] += h; };
+      for (let n = 1; n <= N; n++) {
+        const m = PM[n];
+        add('lang', 'English', n, b.hrs[n - 1] - (en ? 0 : m.fr[0])); if (!en && m.fr[0] > 0) add('lang', 'French', n, m.fr[0]);
+        ['race', 'nat'].forEach(k => { add(k, nmap(m[k][0]), n, b.pdH[n - 1]); add(k, nmap(m[k][1]), n, b.ctH[n - 1]); });
+      }
+      COMPS.forEach(([k]) => {
+        b.comp[k] = Object.entries(per[k]).map(([name, h]) => ({ name, h, total: h.reduce((a, x) => a + x, 0) })).filter(c => c.total > 0)
+          .sort((x, y) => y.total - x.total || x.name.localeCompare(y.name));
+      });
+      let ymax = 0;
+      for (let y = YEARS[0]; y <= YEARS[1]; y++) ymax = Math.max(ymax, b.yc.reduce((a, o) => a + (o[y] || 0), 0));
+      b.ytop = Math.ceil(ymax / 25) * 25;
+      // one row of category totals per pair (PD / Control hours, male / female pair, language, race and nationality hours); a set's mix is the sum of its rows
+      const live = i => b.hrs[i] > 0, gr = [[b.pdH, b.ctH], [b.hrs.map((_, i) => (live(i) && i < H ? 1 : 0)), b.hrs.map((_, i) => (live(i) && i >= H ? 1 : 0))]];
+      if (!en) gr.push(b.comp.lang.map(c => c.h));
+      gr.push(b.comp.race.map(c => c.h)); gr.push(b.comp.nat.map(c => c.h));
+      b.GS = [0]; gr.forEach(g => b.GS.push(b.GS[b.GS.length - 1] + g.length));
+      b.C = b.GS[b.GS.length - 1]; b.F = new Float64Array(N * b.C); b.T = new Float64Array(b.C);
+      let col = 0; gr.forEach(g => { g.forEach(arr => { for (let i = 0; i < N; i++) { b.F[i * b.C + col] += arr[i]; b.T[col] += arr[i]; } col++; }); });
+      b.GT = b.GS.slice(0, -1).map((s0, g) => { let q = 0; for (let c = s0; c < b.GS[g + 1]; c++) q += b.T[c]; return q; });
+      return b;
+    };
+    // full-bleed (square-cornered) versions of the flags, for the bars
+    if (!document.getElementById('spBarFlags')) {
+      const g = (id, inner) => '<g id="b-' + id + '">' + inner + '</g>', inner = id => document.getElementById('f-' + id).innerHTML.split(' clip-path="url(#fclip)"').join('');
+      document.body.insertAdjacentHTML('beforeend', '<svg id="spBarFlags" width="0" height="0" style="position:absolute" aria-hidden="true"><defs>' + g('uk', '<use href="#f-uk" width="24" height="24"/>') + g('us', '<use href="#g-us"/>') + g('ca', '<use href="#g-ca"/>') + ['fr', 'en', 'do', 'au', 'dual'].map(id => g(id, inner(id))).join('') + '</defs></svg>');
+    }
+    const BUNDLES = { all: bundle(false), en: bundle(true) };
+    let hrs, rec, pdH, ctH, pdR, ctR, TOT, minPair, LO, comp, yc, ytop, uni, out, F, C, GS, GT, T;
+    const useData = b => { ({ hrs, rec, pdH, ctH, pdR, ctR, TOT, minPair, LO, comp, yc, ytop, uni, out, F, C, GS, GT, T } = b); };
+    useData(BUNDLES.all);
+    const $ = id => document.getElementById(id);
+    const fmt2 = v => fmt(v, 2), sgn = d => (d < -0.0005 ? '−' : '+') + fmt(Math.abs(d), 3) + ' h';
+    const sum = (arr, ids) => ids.reduce((a, n) => a + arr[n - 1], 0);
+
+    // ---- search: every subset of a list of pairs is split into two halves; sums of one half are sorted by male-minus-female count so a sex rule is a lookup
+    const build = (ids, withF) => {
+      const k = ids.length, M = 1 << k, S = new Float64Array(M), D = new Int8Array(M), FF = withF ? new Float64Array(M * C) : null;
+      for (let m = 1; m < M; m++) {
+        const low = m & -m, i = 31 - Math.clz32(low), p = ids[i]; S[m] = S[m ^ low] + hrs[p]; D[m] = D[m ^ low] + (p < H ? 1 : -1);
+        if (withF) { const o = m * C, q = (m ^ low) * C, r = p * C; for (let c = 0; c < C; c++) FF[o + c] = FF[q + c] + F[r + c]; }
+      }
+      return { M, S, D, F: FF };
+    };
+    // how far a set's mix is from the whole dataset's, averaged over the categories: half the summed gap between its shares and the dataset's shares
+    // (0 = the same mix as the dataset), then averaged over the sets
+    const mixGap = vs => {
+      let tot = 0;
+      for (let g = 0; g < GT.length; g++) {
+        let acc = 0;
+        for (const v of vs) {
+          let sv = 0; for (let c = GS[g]; c < GS[g + 1]; c++) sv += v[c];
+          if (sv <= 1e-9) { acc += 0.5; continue; }
+          let d = 0; for (let c = GS[g]; c < GS[g + 1]; c++) d += Math.abs(v[c] / sv - T[c] / GT[g]);
+          acc += d / 2;
+        }
+        tot += acc / vs.length;
+      }
+      return tot / GT.length;
+    };
+    const lb = (s, x) => { let lo = 0, hi = s.length; while (lo < hi) { const mid = (lo + hi) >> 1; if (s[mid] < x) lo = mid + 1; else hi = mid; } return lo; };
+    const ub = (s, x) => { let lo = 0, hi = s.length; while (lo < hi) { const mid = (lo + hi) >> 1; if (s[mid] <= x) lo = mid + 1; else hi = mid; } return lo; };
+    function solve(ids, target, mode, keep, win, rankK) {
+      const hL = ids.length >> 1, idsL = ids.slice(0, hL), idsR = ids.slice(hL), hR = idsR.length;
+      const L = build(idsL, rankK), R = build(idsR, rankK);
+      const order = new Uint32Array(R.M); for (let i = 0; i < R.M; i++) order[i] = i;
+      order.sort((x, y) => R.S[x] - R.S[y]);
+      const bucket = Array.from({ length: 2 * hR + 1 }, () => []);
+      for (let q = 0; q < R.M; q++) bucket[R.D[order[q]] + hR].push(order[q]);
+      const mkg = list => { const ix = Int32Array.from(list); return { ix, sums: Float64Array.from(ix, i => R.S[i]) }; };
+      const G = bucket.map(mkg), ALL = mkg(order);
+      const groupsOf = a => { if (mode === 'any') return [ALL]; const x = -L.D[a] + hR; return x >= 0 && x <= 2 * hR ? [G[x]] : []; };
+      const top = [];
+      const consider = (ad, a, b, d) => {
+        if (top.length === keep && ad >= top[keep - 1].ad) return;
+        let lo = 0, hi = top.length; while (lo < hi) { const mid = (lo + hi) >> 1; if (top[mid].ad <= ad) lo = mid + 1; else hi = mid; }
+        top.splice(lo, 0, { ad, a, b, d }); if (top.length > keep) top.pop();
+      };
+      for (let a = 0; a < L.M; a++) {
+        const need = target - L.S[a];
+        for (const g of groupsOf(a)) {
+          if (!g.sums.length) continue;
+          const i = lb(g.sums, need);
+          for (let j = i - 1; j <= i; j++) {
+            if (j < 0 || j >= g.sums.length) continue;
+            const b = g.ix[j];
+            if ((a === 0 && b === 0) || (a === L.M - 1 && b === R.M - 1)) continue;
+            const d = L.S[a] + R.S[b] - target;
+            consider(Math.abs(d), a, b, d);
+          }
+        }
+      }
+      if (!win) return { top, all: [], ranked: [], total: 0, idsL, idsR };
+      // every selection whose total lies within +/- win of the target (the empty and the full selection excluded)
+      const fullS = L.S[L.M - 1] + R.S[R.M - 1];
+      let total = 0;
+      for (let a = 0; a < L.M; a++) { const need = target - L.S[a]; for (const g of groupsOf(a)) if (g.sums.length) total += ub(g.sums, need + win) - lb(g.sums, need - win); }
+      if (Math.abs(target) <= win) total--;
+      if (Math.abs(fullS - target) <= win) total--;
+      const all = [], ranked = [], vec = new Float64Array(C), rest = new Float64Array(C);
+      for (let a = 0; a < L.M; a++) {
+        const need = target - L.S[a];
+        for (const g of groupsOf(a)) {
+          if (!g.sums.length) continue;
+          for (let j = lb(g.sums, need - win), je = ub(g.sums, need + win); j < je; j++) {
+            const b = g.ix[j];
+            if ((a === 0 && b === 0) || (a === L.M - 1 && b === R.M - 1)) continue;
+            const d = L.S[a] + R.S[b] - target;
+            if (!rankK) { all.push({ ad: Math.abs(d), a, b, d }); continue; }
+            const o = a * C, q = b * C;
+            for (let c = 0; c < C; c++) { vec[c] = L.F[o + c] + R.F[q + c]; rest[c] = T[c] - vec[c]; }
+            const sc = mixGap([vec, rest]), ad = Math.abs(d);
+            if (ranked.length === rankK) { const w = ranked[rankK - 1]; if (sc > w.sc || (sc === w.sc && ad >= w.ad)) continue; }
+            let lo = 0, hi = ranked.length; while (lo < hi) { const mid = (lo + hi) >> 1; const x = ranked[mid]; if (x.sc < sc || (x.sc === sc && x.ad <= ad)) lo = mid + 1; else hi = mid; }
+            ranked.splice(lo, 0, { sc, ad, a, b, d }); if (ranked.length > rankK) ranked.pop();
+          }
+        }
+      }
+      all.sort((x, y) => x.ad - y.ad || x.a - y.a || x.b - y.b);
+      return { top, all, ranked, total, idsL, idsR };
+    }
+    const members = (r, c) => { const out = []; r.idsL.forEach((p, i) => { if ((c.a >> i) & 1) out.push(p); }); r.idsR.forEach((p, i) => { if ((c.b >> i) & 1) out.push(p); }); return out; };
+    const state = { train: 110.88, test: Math.round(TOT * 0.1 * 100) / 100, useTest: false, noFr: false, mode: 'eq', sel: 0, res: null, n: 0 };
+
+    const labOf = (tr, te) => { const l = new Uint8Array(N).fill(2); out.forEach(p => { l[p] = 3; }); tr.forEach(p => { l[p] = 0; }); te.forEach(p => { l[p] = 1; }); return l; };
+    const getLab = e => e.lab || (e.lab = labOf(members(e.r, e.c), e.te || []));
+    // the mix of a set of pairs (category totals), and how far the whole split is from the dataset's mix
+    const vecOf = ids => { const v = new Float64Array(C); ids.forEach(p => { for (let c = 0; c < C; c++) v[c] += F[p * C + c]; }); return v; };
+    const scoreOf = (tr, te) => {
+      const vt = vecOf(tr), ve = te && te.length ? vecOf(te) : null, rest = new Float64Array(C);
+      for (let c = 0; c < C; c++) rest[c] = T[c] - vt[c] - (ve ? ve[c] : 0);
+      return mixGap(ve ? [vt, rest, ve] : [vt, rest]);
+    };
+    // the five most balanced selections among all that land within the window of the training target (with a test set: each completed
+    // with its most balanced test set within the window of the test target)
+    function search() {
+      const all = uni.slice(), useTest = state.useTest;
+      const r = solve(all, state.train, state.mode, NOPT, WIN, useTest ? PRE3 : NOPT);
+      const have = r.total >= NOPT, base = have ? r.ranked : r.top;
+      const entries = [];
+      base.forEach(c => {
+        const tr = members(r, c);
+        if (!useTest) { entries.push({ r, c, lab: null, dT: c.d, dE: 0, tot: c.ad, sc: have ? c.sc : scoreOf(tr) }); return; }
+        const inT = new Set(tr), rem = all.filter(p => !inT.has(p));
+        const s = solve(rem, state.test, state.mode, 1, WIN);
+        const cands = s.all.length ? s.all : s.top;
+        let best = null;
+        cands.forEach(e => {
+          const te = members(s, e), sc = scoreOf(tr, te);
+          if (!best || sc < best.sc - 1e-12 || (Math.abs(sc - best.sc) <= 1e-12 && e.ad < best.e.ad)) best = { e, te, sc };
+        });
+        if (best) entries.push({ r, c, te: best.te, lab: null, dT: c.d, dE: best.e.d, tot: c.ad + best.e.ad, sc: best.sc });
+      });
+      entries.sort(have ? (x, y) => x.sc - y.sc || x.tot - y.tot : (x, y) => x.tot - y.tot);
+      return { picks: entries.slice(0, NOPT), total: have ? r.total : Math.min(entries.length, NOPT), have };
+    }
+
+    const idsOf = (o, v) => { const lab = getLab(o), r = []; for (let n = 1; n <= N; n++) if (lab[n - 1] === v) r.push(n); return r; };
+    const modeText = { any: '', eq: ' with equal numbers of male and female pairs in the set' };
+    const SET = [['train', 'Train', 't'], ['valid', 'Validation', 'v'], ['test', 'Test', 'e']];
+    const setList = () => SET.slice(0, state.useTest ? 3 : 2);
+
+    const Y0 = YEARS[0], Y1 = YEARS[1], NY = Y1 - Y0 + 1;
+    const ycount = (ids, y) => ids.reduce((a, n) => a + (yc[n - 1][y] || 0), 0);
+    const plural = (k, x) => x + ' ' + k + (x === 1 ? '' : 's');
+
+    // ---- charts for the selected option
+    function renderShape(sets) {
+      const legend = items => '<p class="sp-lg">' + items.map(p => '<span><i class="' + p[1] + '"></i>' + p[0] + '</span>').join('') + '</p>';
+      const setLegend = legend(sets.map(s => [s.name, s.cls]));
+      const stack = (metric, label, vals, fmtV) => {
+        const tot = vals.reduce((a, b) => a + b, 0);
+        const segs = vals.map((v, i) => '<i class="' + sets[i].cls + '" style="flex:' + v.toFixed(5) + ' 1 0" data-metric="' + metric + '" data-set="' + sets[i].key + '" data-val="' + v.toFixed(8) + '" data-tip="' + label + ' · ' + sets[i].name + ' ' + fmtV(v) + ' (' + fmt(100 * v / tot, 1) + '% of the dataset)">' + (v / tot >= (fmtV(v).replace(/ (h|pairs?|rec\.)$/, '').length * 7 + 12) / 380 ? fmtV(v).replace(/ (h|pairs?|rec\.)$/, '') : '') + '</i>').join('');
+        return '<div class="sp-st"><span class="n">' + label + '</span><span class="b">' + segs + '</span></div>';
+      };
+      const two = (metric, label, parts, valsBySet, fmtV) => {
+        const rows = sets.map((s, i) => {
+          const [a, b] = valsBySet[i], t = a + b;
+          return '<div class="sp-st2"><span class="n">' + s.name + '</span><span class="b">' +
+            '<i class="' + parts[0][1] + '" style="flex:' + a.toFixed(5) + ' 1 0" data-metric="' + metric + '" data-set="' + s.key + '" data-part="' + parts[0][0] + '" data-val="' + a.toFixed(8) + '" data-tip="' + label + ' · ' + s.name + ' · ' + parts[0][0] + ' ' + fmtV(a) + ' (' + fmt(100 * a / t, 1) + '%)">' + (a / t >= 0.12 ? fmt(100 * a / t, 0) + '%' : '') + '</i>' +
+            '<i class="' + parts[1][1] + '" style="flex:' + b.toFixed(5) + ' 1 0" data-metric="' + metric + '" data-set="' + s.key + '" data-part="' + parts[1][0] + '" data-val="' + b.toFixed(8) + '" data-tip="' + label + ' · ' + s.name + ' · ' + parts[1][0] + ' ' + fmtV(b) + ' (' + fmt(100 * b / t, 1) + '%)">' + (b / t >= 0.12 ? fmt(100 * b / t, 0) + '%' : '') + '</i></span></div>';
+        }).join('');
+        return '<div class="sp-grp" data-g="' + metric + '" role="group" aria-label="' + label + '"><h4>' + ({ diag: 'By diagnostic group', sex: 'By sex' })[metric] + '</h4>' + rows + legend(parts) + '</div>';
+      };
+      const FLAGS = { lang: { English: 'f-uk', French: 'f-fr' }, nat: { American: 'f-us', English: 'f-en', Canadian: 'f-ca', 'Canadian–American': 'f-dual', French: 'f-fr', Dominican: 'f-do', Australian: 'f-au' } };
+      // a row of small flag icons, repeated along the segment (so even a narrow segment shows the start of its flag)
+      const flagSvg = (id, cls, w, h) => '<svg class="' + cls + '"' + (w ? ' width="' + w + '" height="' + h + '"' : '') + ' viewBox="0 0 24 24" preserveAspectRatio="none" aria-hidden="true"><use href="#' + id + '" width="24" height="24"/></svg>';
+      const DARKSKIN = ['#A06A44', '#4B2E1E'];
+      const group = (key, title) => {
+        const cats = comp[key], setH = sets.map(s => sum(hrs, s.ids));
+        const fillOf = c => key === 'race' ? SKIN[c.name] : FLAGS[key][c.name];
+        const rows = sets.map((s, si) => {
+          const segs = cats.map(c => {
+            const hv = s.ids.reduce((a, n) => a + c.h[n - 1], 0);
+            if (!(hv > 0)) return '';
+            const pc = 100 * hv / setH[si], lab = pc >= 12 ? fmt(pc, 0) + '%' : '';
+            return '<i' + (key === 'race' ? '' : ' class="fg"') + ' style="flex:' + hv.toFixed(5) + ' 1 0' + (key === 'race' ? ';background:' + SKIN[c.name] + ';color:' + (DARKSKIN.includes(SKIN[c.name]) ? '#fff' : '#2b2b2b') : '') + '" data-comp="' + key + '" data-cat="' + c.name + '" data-set="' + s.key + '" data-h="' + String(hv) + '" data-pct="' + String(pc) + '" data-fill="' + fillOf(c) + '" data-tip="' + title + ' · ' + c.name + ' · ' + s.name + ' ' + fmt2(hv) + ' h (' + fmt(pc, 1) + '% of its audio)">' + (key === 'race' ? lab : '<svg class="fl" viewBox="0 0 24 24" preserveAspectRatio="none" aria-hidden="true"><use href="#b-' + fillOf(c).slice(2) + '" width="24" height="24"/></svg><span>' + lab + '</span>') + '</i>';
+          }).join('');
+          return '<div class="sp-st2"><span class="n">' + s.name + '</span><span class="b">' + segs + '</span></div>';
+        }).join('');
+        const legend = '<p class="sp-lg">' + cats.map(c => '<span data-cat="' + c.name + '">' + (key === 'race' ? '<i style="background:' + SKIN[c.name] + '"></i>' : flagSvg(fillOf(c), 'fsw', 16, 11)) + c.name + '</span>').join('') + '</p>';
+        return '<div class="sp-grp" data-g="' + key + '" role="group" aria-label="' + title + '"><h4>By ' + title.toLowerCase() + '</h4>' + rows + legend + '</div>';
+      };
+      const timeline = () => {
+        const cols = [];
+        for (let y = Y0; y <= Y1; y++) {
+          const cn = sets.map(s => ycount(s.ids, y)), tot = cn.reduce((a, b) => a + b, 0);
+          const tip = y + ' · ' + (tot ? plural('recording', tot) + ' · ' + sets.map((s, i) => s.name + ' ' + cn[i]).join(' · ') : 'no recordings');
+          const segs = sets.map((s, i) => cn[i] ? '<i class="' + s.cls + '" style="height:' + (100 * cn[i] / ytop).toFixed(3) + '%"></i>' : '').join('');
+          cols.push('<div class="sp-yr" data-year="' + y + '" data-total="' + tot + '"' + sets.map((s, i) => ' data-' + s.cls + '="' + cn[i] + '"').join('') + ' data-tip="' + tip + '">' + segs + '</div>');
+        }
+        const xl = [1960, 1980, 2000, 2020].map(y => '<span style="left:' + (100 * (y - Y0 + 0.5) / NY).toFixed(3) + '%">' + y + '</span>').join('');
+        const yl = [ytop, ytop / 2, 0].map(v => '<span style="bottom:' + (100 * v / ytop) + '%">' + v + '</span>').join('');
+        return '<div class="sp-grp sp-wide" data-g="years"><h4>Recordings per year</h4><div class="sp-tl"><div class="sp-tl-y" aria-hidden="true">' + yl + '</div><div><div class="sp-tl-cols">' + cols.join('') + '</div><div class="sp-tl-x" aria-hidden="true">' + xl + '</div></div></div>' + setLegend + '</div>';
+      };
+      const hh = sets.map(s => sum(hrs, s.ids)), pp = sets.map(s => s.ids.length), rr = sets.map(s => sum(rec, s.ids));
+      const share = '<div class="sp-grp" data-g="share" role="group" aria-label="Hours, pairs and recordings"><h4>By volume of data</h4>' + stack('hours', 'Hours', hh, v => fmt2(v) + ' h') + stack('pairs', 'Pairs', pp, v => v + (v === 1 ? ' pair' : ' pairs')) + stack('recs', 'Recordings', rr, v => v + ' rec.') + setLegend + '</div>';
+      const diag = two('diag', 'PD and Control hours', [['PD', 'pd'], ['Control', 'ct']], sets.map(s => [sum(pdH, s.ids), sum(ctH, s.ids)]), v => fmt2(v) + ' h');
+      const sex = two('sex', 'Male and female pairs', [['Male', 'ml'], ['Female', 'fm']], sets.map(s => [s.ids.filter(n => n <= H).length, s.ids.filter(n => n > H).length]), v => v + (v === 1 ? ' pair' : ' pairs'));
+      $('spShape').innerHTML = share + diag + sex + group('race', 'Race') + group('nat', 'Nationality') + (state.noFr ? '' : group('lang', 'Language')) + timeline();
+      wireTips($('splitter'), '#spShape [data-tip]');
+    }
+
+    // ---- the split plan: a JSON file with one block per set (train, valid, test), each listing its participants with their traits, plus an info block
+    const bal = o => Math.round(1000 * (1 - o.sc)) / 10;
+    function buildPlan(o, idx) {
+      const mk = e => setList().map(([key]) => ({ key, ids: idsOf(e, key === 'train' ? 0 : key === 'test' ? 1 : 2) }));
+      const sets = mk(o), r4 = x => Math.round(x * 1e4) / 1e4, r2 = x => Math.round(x * 100) / 100;
+      const plan = {
+        info: {
+          dataset: 'Celebs4PD', split_by: 'participant pair',
+          train_hours_target: state.train, valid_hours_target: r2(TOT - state.train - (state.useTest ? state.test : 0)), test_hours_target: state.useTest ? state.test : null,
+          sex_balance: state.mode === 'eq' ? 'equal' : 'random', exclude_french: state.noFr, left_out_pairs: out.map(p => p + 1), option: idx + 1, balance_percent: bal(o), summary: {}
+        }
+      };
+      sets.forEach(s => {
+        const block = {}, hh = sum(hrs, s.ids);
+        s.ids.forEach(n => {
+          [['pd_', 'PD'], ['control_', 'Control']].forEach(([pre, ptype]) => {
+            const sid = pre + nn(n), isPD = ptype === 'PD';
+            block[sid] = { ptype, sex: n <= H ? 'Male' : 'Female', pair: n, hours: (isPD ? pdH : ctH)[n - 1], recordings: (isPD ? pdR : ctR)[n - 1] };
+          });
+        });
+        plan[s.key] = block;
+        plan.info.summary[s.key] = { pairs: s.ids.length, participants: 2 * s.ids.length, recordings: sum(rec, s.ids), hours: r4(hh), share_percent: Math.round(1000 * hh / TOT) / 10 };
+      });
+      // the other options of the list (best balanced first), as pair numbers only
+      plan.other_options = {};
+      state.res.picks.forEach((e, k) => {
+        if (k === idx) return;
+        const o2 = {};
+        mk(e).forEach(s => { o2[s.key + '_pairs'] = s.ids; o2[s.key + '_hours'] = r4(sum(hrs, s.ids)); });
+        o2.balance_percent = bal(e);
+        plan.other_options['option_' + (k + 1)] = o2;
+      });
+      const share = sets.map(s => Math.round(100 * sum(hrs, s.ids) / TOT)).join('-');
+      return { plan, filename: 'celebs4pd_split_' + share + (state.noFr ? '_english' : '') + '_option' + (idx + 1) + '.json' };
+    }
+    async function downloadPlan() {
+      if (!state.res || !state.res.picks.length) return;
+      const { plan, filename } = buildPlan(state.res.picks[state.sel], state.sel), text = JSON.stringify(plan, null, 2).replace(/\[\s+([^\[\]{}]*?)\s+\]/g, (m, inner) => '[' + inner.replace(/\s*\n\s*/g, ' ') + ']').replace(/\{\s+("[^"{}]*":[^{}]*?)\s+\}/g, (m, inner) => '{ ' + inner.replace(/\s*\n\s*/g, ' ') + ' }') + '\n';
+      let dl = null;
+      try { dl = window.claude && window.claude.use ? await window.claude.use('downloads') : null; } catch (e) { dl = null; }
+      if (dl) { try { await dl.save({ filename, data: text }); } catch (e) { /* the viewer declined, or saving is unavailable here */ } return; }
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(new Blob([text], { type: 'application/json' })); a.download = filename; a.hidden = true;
+      document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+    }
+
+    function renderOption(o, idx) {
+      const sets = setList().map(([key, name, cls]) => ({ key, name, cls, ids: idsOf(o, key === 'train' ? 0 : key === 'test' ? 1 : 2) }));
+      const cell = (n, s) => {
+        const sex = n <= H ? 'Male' : 'Female';
+        return '<span class="sp-cell ' + (n <= H ? 'ml' : 'fm') + '" data-pair="' + n + '" data-set="' + s.key + '" data-tip="Pair ' + n + ' · ' + sex + ' · ' + fmt2(hrs[n - 1]) + ' h (PD ' + fmt2(pdH[n - 1]) + ' h, Control ' + fmt2(ctH[n - 1]) + ' h) · ' + rec[n - 1] + ' recordings · ' + s.name + '">' + n + '</span>';
+      };
+      $('spMap').innerHTML = sets.map(s => '<div class="sp-mrow" data-set="' + s.key + '" role="group" aria-label="' + s.name + ', ' + plural('pair', s.ids.length) + '"><div class="sp-cells ' + s.cls + '">' + s.ids.map(n => cell(n, s)).join('') + '</div></div>').join('') +
+        '<div class="sp-lgrow"><p class="sp-lg" id="spMapSets">' + sets.map(s => '<span><i class="' + s.cls + '"></i>' + s.name + ' · ' + plural('pair', s.ids.length) + '</span>').join('') + '</p>' +
+        '<p class="sp-lg" id="spMapLg"><span><i class="ml"></i>Male</span><span><i class="fm"></i>Female</span></p></div>' +
+        (out.length ? '<p class="sp-left" id="spLeft">' + (out.length === 1 ? 'Pair ' + (out[0] + 1) + ' has' : 'Pairs ' + out.map(p => p + 1).join(', ') + ' have') + ' only French audio, so ' + (out.length === 1 ? 'it is' : 'they are') + ' left out of every set.</p>' : '');
+      wireTips($('splitter'), '.sp-cell');
+      document.querySelectorAll('#spOpts .sp-opt').forEach(b => b.setAttribute('aria-pressed', String(+b.dataset.opt === idx)));
+      renderShape(sets);
+    }
+
+    function drawRows() {
+      const picks = state.res.picks;
+      $('spOpts').innerHTML = picks.map((o, i) => {
+        const tr = idsOf(o, 0), va = idsOf(o, 2), te = idsOf(o, 1), m = tr.filter(q => q <= H).length;
+        return '<button type="button" class="sp-opt" style="--cols:' + state.cols + '" data-opt="' + i + '" data-dt="' + o.dT.toFixed(6) + '" data-de="' + o.dE.toFixed(6) + '" data-bal="' + (1 - o.sc).toFixed(8) + '" aria-pressed="' + (i === state.sel) + '"><span class="o-n">Option ' + (i + 1) + '</span><span class="o-train">' + fmt2(sum(hrs, tr)) + ' h</span><span class="o-valid">' + fmt2(sum(hrs, va)) + ' h</span>' +
+          (state.useTest ? '<span class="o-test">' + fmt2(sum(hrs, te)) + ' h</span>' : '') +
+          '<span class="o-pairs">' + tr.length + ' / ' + va.length + (state.useTest ? ' / ' + te.length : '') + '</span><span class="o-sex">' + m + ' M · ' + (tr.length - m) + ' F</span><span class="o-bal">' + fmt(100 * (1 - o.sc), 1) + '%</span></button>';
+      }).join('');
+    }
+    $('spOpts').addEventListener('click', e => { const b = e.target.closest('.sp-opt'); if (!b || !state.res) return; state.sel = +b.dataset.opt; renderOption(state.res.picks[state.sel], state.sel); });
+
+    function render() {
+      const t = state.train, e = state.useTest ? state.test : 0, v = TOT - t - e;
+      $('spTargetT').textContent = fmt2(t); $('spTargetV').textContent = fmt2(v); $('spTargetE').textContent = fmt2(e);
+      $('spPctT').textContent = fmt(100 * t / TOT, 1) + '%'; $('spPctV').textContent = fmt(100 * v / TOT, 1) + '%'; $('spPctE').textContent = fmt(100 * e / TOT, 1) + '%';
+      $('spReadE').hidden = !state.useTest;
+      const r = state.res = search();
+      state.sel = 0;
+      const box = $('spOpts');
+      if (!r.picks.length) { box.innerHTML = ''; $('spOptHead').innerHTML = ''; $('spOptN').textContent = 'No selection found. Try another target or sex-balance setting.'; $('spOptSub').textContent = ''; $('spMap').innerHTML = ''; $('spShape').innerHTML = ''; $('splitter').dataset.render = String(++state.n); return; }
+      state.cols = state.useTest ? '1fr 1fr 1fr 1fr 1fr 1.1fr 1fr' : '1fr 1fr 1fr 1fr 1.1fr 1fr';
+      $('spOptHead').style.setProperty('--cols', state.cols);
+      $('spOptHead').innerHTML = '<span>Option</span><span>Train</span><span>Validation</span>' + (state.useTest ? '<span>Test</span>' : '') + '<span>Pairs</span><span>Train M / F</span><span>Balance</span>';
+      const n = r.picks.length;
+      box.dataset.count = String(n); box.dataset.total = String(r.total);
+      $('spOptN').textContent = '';
+      $('spOptSub').textContent = 'Balance measures how closely each split reflects the overall dataset across diagnostic group, sex, ' + (state.noFr ? '' : 'language, ') + 'race, and nationality. ' + (r.have ? 'The top five most balanced configurations are shown above.' : 'Fewer than five configurations fall within \u00b10.05 h of the target' + (state.useTest ? 's' : '') + ', so the closest are shown above.');
+      drawRows();
+      renderOption(r.picks[0], 0);
+      syncPresets();
+      $('splitter').dataset.render = String(++state.n);
+    }
+
+    // ---- controls
+    const rnd = x => Math.round(x * 100) / 100;
+    const maxTrain = () => Math.floor((TOT - minPair * (state.useTest ? 2 : 1)) * 100) / 100;
+    const maxTest = () => Math.max(LO, Math.floor((TOT - state.train - minPair) * 100) / 100);
+    const clampT = x => Math.min(maxTrain(), Math.max(LO, rnd(x)));
+    const clampE = x => Math.min(maxTest(), Math.max(LO, rnd(x)));
+    function syncControls(skip) {
+      $('spRange').min = LO; $('spRange').max = maxTrain(); $('spNum').min = LO; $('spNum').max = maxTrain();
+      $('spMin').textContent = fmt(LO, LO < 0.5 ? 2 : 0) + ' h'; $('spMax').textContent = fmt(maxTrain(), 0) + ' h';
+      if (skip !== 'range') $('spRange').value = state.train;
+      if (skip !== 'num') $('spNum').value = state.train.toFixed(2);
+      $('spTestRow').hidden = !state.useTest;
+      $('spTestRange').min = LO; $('spTestRange').max = maxTest(); $('spTestNum').min = LO; $('spTestNum').max = maxTest();
+      $('spTestMin').textContent = fmt(LO, LO < 0.5 ? 2 : 0) + ' h'; $('spTestMax').textContent = fmt(maxTest(), 0) + ' h';
+      if (skip !== 'trange') $('spTestRange').value = state.test;
+      if (skip !== 'tnum') $('spTestNum').value = state.test.toFixed(2);
+      $('spTestOn').checked = state.useTest;
+      [$('spRange'), $('spTestRange')].forEach(r => r.style.setProperty('--p', (100 * (r.value - r.min) / (r.max - r.min)).toFixed(2) + '%'));
+    }
+    let timer = 0;
+    const schedule = () => { clearTimeout(timer); timer = setTimeout(render, state.useTest ? 80 : 16); };
+    const setTrain = (x, from) => { state.train = clampT(x); state.test = clampE(state.test); syncControls(from); schedule(); };
+    const setTest = (x, from) => { state.test = clampE(x); syncControls(from); schedule(); };
+    const presetDefs = () => state.useTest
+      ? [['80 / 10 / 10', 0.8, 0.1], ['70 / 15 / 15', 0.7, 0.15], ['60 / 20 / 20', 0.6, 0.2]]
+      : [['80 / 20', 0.8], ['70 / 30', 0.7], ['90 / 10', 0.9]];
+    function buildPresets() {
+      $('spPresets').innerHTML = presetDefs().map(p => {
+        const t = rnd(TOT * p[1]), e = p[2] === undefined ? '' : rnd(TOT * p[2]);
+        return '<button type="button" data-pt="' + (100 * p[1]) + '" data-pe="' + (p[2] === undefined ? '' : 100 * p[2]) + '" data-h="' + t + '" data-e="' + e + '" aria-pressed="false">' + p[0] + '</button>';
+      }).join('');
+    }
+    function syncPresets() {
+      document.querySelectorAll('#spPresets button').forEach(b => b.setAttribute('aria-pressed', String(Math.abs(+b.dataset.pt - 100 * state.train / TOT) < 0.05 && (!state.useTest || Math.abs(+b.dataset.pe - 100 * state.test / TOT) < 0.05))));
+    }
+    buildPresets();
+    $('spPresets').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; state.train = clampT(+b.dataset.h); if (state.useTest) state.test = clampE(+b.dataset.e); syncControls(); schedule(); });
+    $('spRange').addEventListener('input', e => setTrain(+e.target.value, 'range'));
+    $('spNum').addEventListener('input', e => { if (e.target.value !== '' && !isNaN(+e.target.value)) setTrain(+e.target.value, 'num'); });
+    $('spNum').addEventListener('change', () => { syncControls(); });
+    $('spTestRange').addEventListener('input', e => setTest(+e.target.value, 'trange'));
+    $('spTestNum').addEventListener('input', e => { if (e.target.value !== '' && !isNaN(+e.target.value)) setTest(+e.target.value, 'tnum'); });
+    $('spTestNum').addEventListener('change', () => { syncControls(); });
+    $('spTestOn').addEventListener('change', e => { state.useTest = e.target.checked; if (state.useTest) state.train = clampT(state.train); state.test = clampE(state.test); buildPresets(); syncControls(); schedule(); });
+    $('spNoFr').addEventListener('change', e => {
+      const f = state.train / TOT, g = state.test / TOT;
+      state.noFr = e.target.checked; useData(BUNDLES[state.noFr ? 'en' : 'all']);
+      state.train = clampT(f * TOT); state.test = clampE(g * TOT);
+      buildPresets(); syncControls(); schedule();
+    });
+    $('spDownload').addEventListener('click', downloadPlan);
+    $('spSex').addEventListener('change', e => { state.mode = e.target.value; schedule(); });
+    syncControls();
+    render();
+  })();
 </script>
 
 <style>
