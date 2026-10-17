@@ -12,7 +12,7 @@ paperurl: ''
 citation: "El-Mufti, N., Kersten-Oertel, M., & Ravanelli, M.* (in preparation). Celebs4PD: A Demographically Matched Corpus of Longitudinal, In-the-Wild Speech for Responsible Parkinson’s Detection."
 preview_images: ["/images/celebs4pd-dataset.gif"]
 preview_style: "logo"
-dashboard_url: "/celebs4pd/dashboard.html"
+dashboard_url: "/files/celebs4pd_dashboard.html"
 ---
 
 Paste abstract here.
