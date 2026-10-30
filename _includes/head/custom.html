@@ -109,6 +109,17 @@
     .scroll-nav__btn { height: 34px; }
   }
 
+  /* Mobile: center page content to match desktop layout */
+  @media (max-width: 924px) {
+    #main { margin-left: auto !important; margin-right: auto !important; }
+    .archive, .page { margin-left: auto !important; margin-right: auto !important; float: none !important; }
+    .research-cards-wrapper { align-items: center !important; }
+    .sidebar { text-align: center; }
+    .author__avatar, .author__content, .author__urls-wrapper { display: block; text-align: center; }
+    .author__avatar img { margin: 0 auto; }
+    .author__urls { text-align: left; display: inline-block; }
+  }
+
   /* Global mobile safety net */
   html, body { max-width: 100%; overflow-x: hidden; }
   .page__content pre, .page__content code { overflow-x: auto; max-width: 100%; word-break: break-word; }
