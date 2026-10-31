@@ -375,7 +375,7 @@ As my work in ethics, governance, and responsible AI has grown, so has my curios
   <tr>
     <td>Arbour Foundation Master's Scholarship</td>
     <td>Fondation Arbour</td>
-    <td>Sep 2025 –<br>Sep 2027</td>
+    <td>Sep&nbsp;2025&nbsp;–<br>Sep&nbsp;2027</td>
     <td>CAD 43,000</td>
     <td><a href="https://www.fondationarbour.com/bourses/" target="_blank" class="table-btn">View</a></td>
   </tr>
@@ -437,67 +437,67 @@ As my work in ethics, governance, and responsible AI has grown, so has my curios
   <tr>
     <td>Member</td>
     <td>The International Association for Safe & Ethical AI (IASEAI)</td>
-    <td>Sep 2026 – Present</td>
+    <td>Sep 2026 –<br>Present</td>
     <td><a href="https://www.iaseai.org/about" target="_blank" class="table-btn">Link</a></td>
   </tr>
   <tr>
     <td>Member</td>
     <td>Arabs in Neuroscience (AiN)</td>
-    <td>Apr 2026 – Present</td>
+    <td>Apr 2026 –<br>Present</td>
     <td><a href="https://www.arabsinneuro.org/about/" target="_blank" class="table-btn">Link</a></td>
   </tr>
   <tr>
     <td>Member</td>
     <td>The Levantines</td>
-    <td>Feb 2026 – Present</td>
+    <td>Feb 2026 –<br>Present</td>
     <td><a href="https://levantine-connect--thelevantines.replit.app/" target="_blank" class="table-btn">Link</a></td>
   </tr>
   <tr>
     <td>Member</td>
     <td>Association Étudiante de Mila (AÉM), Mila - Quebec AI Institute</td>
-    <td>Oct 2025 – Present</td>
+    <td>Oct 2025 –<br>Present</td>
     <td><a href="https://www.concordia.ca/about/administration-governance/board-senate/senate/membership.html" target="_blank" class="table-btn">Link</a></td>
   </tr>
   <tr>
     <td>Subcommittee Member</td>
     <td>Standing Committee on Research, Graduate Students' Association (GSA), Concordia University</td>
-    <td>Sep 2025 – Present</td>
+    <td>Sep 2025 –<br>Present</td>
     <td><a href="https://www.concordia.ca/about/administration-governance/board-senate/senate/membership.html" target="_blank" class="table-btn">Link</a></td>
   </tr>
   <tr>
     <td>Member</td>
     <td>Arbour Foundation Scholars</td>
-    <td>Sep 2025 – Present</td>
+    <td>Sep 2025 –<br>Present</td>
     <td><a href="https://www.fondationarbour.com/en/" target="_blank" class="table-btn">Link</a></td>
   </tr>
   <tr>
     <td>Member</td>
     <td>Golden Key International Honour Society</td>
-    <td>Sep 2025 – Present</td>
+    <td>Sep 2025 –<br>Present</td>
     <td><a href="https://www.goldenkey.org/" target="_blank" class="table-btn">Link</a></td>
   </tr>
   <tr>
     <td>Organizer</td>
     <td>Brainhack MTL, Concordia University x McGill University</td>
-    <td>Jul 2025 – Jul 2026</td>
+    <td>Jul 2025 –<br>Jul 2026</td>
     <td><a href="https://brainhackmtl.github.io/winter2026/" target="_blank" class="table-btn">Link</a></td>
   </tr>
   <tr>
     <td>Subcommittee Member</td>
     <td>Concordia Council on Student Life (CCSL), Graduate Students' Association (GSA), Concordia University</td>
-    <td>Jan 2025 – Apr 2025</td>
+    <td>Jan 2025 –<br>Apr 2025</td>
     <td><a href="https://www.concordia.ca/offices/ccsl.html" target="_blank" class="table-btn">Link</a></td>
   </tr>
   <tr>
     <td>Mentee</td>
     <td>GEMinAI Program, Concordia University's Applied AI Institute</td>
-    <td>Oct 2024 – May 2025</td>
+    <td>Oct 2024 –<br>May 2025</td>
     <td><a href="https://www.concordia.ca/research/applied-ai-institute/initiatives/geminai.html" target="_blank" class="table-btn">Link</a></td>
   </tr>
   <tr>
     <td>Ambassador</td>
     <td>School of Graduate Studies, Concordia University</td>
-    <td>Sep 2024 – May 2026</td>
+    <td>Sep 2024 –<br>May 2026</td>
     <td><a href="https://api.unibuddy.co/og/concordia-university-postgraduate/buddies/students/66df5f6635b519411372b26b?buddyPosition=share" target="_blank" class="table-btn">Link</a></td>
   </tr>
 </table>
