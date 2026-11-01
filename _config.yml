@@ -329,6 +329,11 @@ tag_archive:
 #     tag: /tags/:name/
 
 
+# Extra scripts
+after_footer_scripts:
+  - /assets/js/mobile-fixes.js
+
+
 # HTML Compression
 # - http://jch.penibelst.de/
 compress_html:
