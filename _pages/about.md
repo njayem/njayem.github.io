@@ -38,9 +38,16 @@ redirect_from:
   }
   @media (max-width: 768px) {
     .photo-frame {
-      width: 65vw !important;
-      max-width: 240px !important;
+      width: 75vw !important;
+      max-width: 280px !important;
       border-width: 8px !important;
+      overflow: hidden !important;
+      box-sizing: border-box !important;
+    }
+    .photo-img {
+      width: 100% !important;
+      height: 100% !important;
+      display: block !important;
     }
   }
   .photo-img {
