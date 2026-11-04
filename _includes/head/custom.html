@@ -116,7 +116,7 @@
     .research-cards-wrapper { align-items: center !important; }
     .sidebar { text-align: center; }
     .author__avatar, .author__content, .author__urls-wrapper { display: block; text-align: center; }
-    .author__avatar img { margin: 0 auto; }
+    .author__avatar img { display: block !important; margin: 0 auto !important; max-width: 100% !important; height: auto !important; }
     .author__urls { text-align: left; display: inline-block; }
   }
 
@@ -233,6 +233,44 @@
   html[data-theme="dark"] .page__content p:has(> span[style*="#000;"]) + p a { color: #fff !important; text-decoration: underline; }
   html[data-theme="dark"] .affiliation-marquee { background: #fff !important; border-radius: 12px; }
   html[data-theme="dark"] .theme-toggle { border-color: rgba(255,255,255,0.35); }
+
+  /* Mobile: separate hamburger from theme-toggle */
+  /* Hamburger = first <button> inside .greedy-nav (no class in this theme) */
+  @media (max-width: 1024px) {
+    .greedy-nav { padding-right: 100px !important; }
+    .greedy-nav > button {
+      position: absolute !important;
+      right: 56px !important;
+      top: 50% !important;
+      transform: translateY(-50%) !important;
+    }
+    .theme-toggle {
+      right: 10px !important;
+    }
+  }
+
+  /* Mobile: profile image must never overflow or get clipped */
+  @media (max-width: 1024px) {
+    .author__avatar {
+      display: block !important;
+      text-align: center !important;
+      overflow: visible !important;
+      width: auto !important;
+    }
+    .author__avatar img {
+      display: block !important;
+      margin: 0 auto !important;
+      max-width: 120px !important;
+      width: 120px !important;
+      height: 120px !important;
+      object-fit: cover !important;
+      border-radius: 50% !important;
+    }
+    .sidebar, .sidebar.sticky { 
+      overflow: visible !important; 
+      text-align: center !important;
+    }
+  }
 </style>
 
 <!-- end custom head snippets -->
