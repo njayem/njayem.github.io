@@ -36,6 +36,13 @@ redirect_from:
     overflow: visible;
     background: #fff;
   }
+  @media (max-width: 768px) {
+    .photo-frame {
+      width: 65vw !important;
+      max-width: 240px !important;
+      border-width: 8px !important;
+    }
+  }
   .photo-img {
     width: 100%;
     height: 100%;
