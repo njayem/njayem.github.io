@@ -38,8 +38,8 @@ redirect_from:
   }
   @media (max-width: 768px) {
     .photo-frame {
-      width: 75vw !important;
-      max-width: 280px !important;
+      width: 85vw !important;
+      max-width: 320px !important;
       border-width: 8px !important;
       overflow: hidden !important;
       box-sizing: border-box !important;
