@@ -920,7 +920,7 @@
 <div id="tip"></div>
 
 <script>
-  // Measured on 2026-10-13: WAV headers of the 700 built recordings and of the 700 full recordings; subject demographics from demographics.json.
+  // Measured from the built dataset: WAV headers of every built recording and of every full recording; subject demographics from demographics.json.
   const GROUPS = [
     {name:"Female with PD",  kind:"pd",      rec:166, dataset:26.06, gb:8.27},
     {name:"Male with PD",    kind:"pd",      rec:223, dataset:38.90, gb:12.35},
@@ -930,7 +930,7 @@
   const TOTAL = {rec:700, dataset:138.64, gb:44.02};
   const PD_N = 30, CTRL_N = 30, F_N = 30, M_N = 30;
   const YEARS = [1959, 2025];
-  // Spoken language of the 700 recordings: counts, hours of target-speaker audio (WAV lengths) and participants with at least one recording in the language.
+  // Spoken language of the recordings: counts, hours of target-speaker audio (WAV lengths) and participants with at least one recording in the language.
   const LANG = [
     {name:"English", flag:"f-uk", rec:642, hours:132.77855, subj:57, pull:5},
     {name:"French",  flag:"f-fr", rec:58,  hours:5.86320,   subj:5, bands:["#0055A4", "#ffffff", "#EF4135"], pull:9}
@@ -1179,7 +1179,7 @@
     });
   })();
 
-  // grouped bars: PD and Control side by side, with each group's share of its 30 participants
+  // grouped bars: PD and Control side by side, with each group's share of its participants
   const pct = (v, n) => Math.round(100 * v / n);
   const pdTip = (k, v) => `PD: ${v} of ${PD_N} participants (${pct(v, PD_N)}%)`;
   const ctTip = (k, v) => `Control: ${v} of ${CTRL_N} participants (${pct(v, CTRL_N)}%)`;
