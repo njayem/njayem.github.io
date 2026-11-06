@@ -592,6 +592,28 @@
     .sp-opt .o-bal::before{ content:'Balance  '; color:var(--ink-muted); }
     .sp-opt .o-sex, .sp-opt .o-bal{ grid-column:1 / -1; }
   }
+
+  /* Cite button (preview) */
+  .cite-wrap{ position:relative; }
+  .cite-btn{ display:flex; align-items:center; gap:7px; height:34px; padding:0 14px 0 11px; border-radius:999px; border:1px solid var(--line); background:var(--surface); color:var(--ink-2); font:600 13px "IBM Plex Sans", sans-serif; cursor:pointer; transition:color .12s, background .12s; }
+  .cite-btn:hover, .cite-btn[aria-expanded="true"]{ color:var(--ink); background:var(--hover); }
+  .cite-btn:focus-visible, .cite-tab:focus-visible, .cite-copy:focus-visible, .cite-dl:focus-visible{ outline:2px solid var(--ink-2); outline-offset:2px; }
+  .cite-btn svg{ width:15px; height:15px; fill:currentColor; }
+  .cite-pop{ position:absolute; top:calc(100% + 10px); right:0; width:min(430px, calc(100vw - 32px)); z-index:50; background:var(--surface); border:1px solid var(--line); border-radius:12px; box-shadow:0 10px 30px rgba(11,11,11,.14); padding:14px 14px 12px; text-align:left; }
+  .cite-pop[hidden]{ display:none; }
+  .cite-title{ font-size:11.5px; color:var(--ink-muted); text-transform:uppercase; letter-spacing:.04em; margin-bottom:10px; }
+  .cite-tabs{ display:flex; flex-wrap:wrap; gap:4px; margin-bottom:10px; }
+  .cite-tab{ border:1px solid var(--line); background:transparent; color:var(--ink-muted); font:500 12.5px "IBM Plex Sans", sans-serif; padding:4px 11px; border-radius:999px; cursor:pointer; }
+  .cite-tab:hover{ color:var(--ink); background:var(--hover); }
+  .cite-tab[aria-selected="true"]{ background:var(--ink); color:var(--surface); border-color:var(--ink); }
+  .cite-text{ margin:0; padding:11px 12px; border:1px solid var(--line); border-radius:8px; background:var(--page); color:var(--ink-2); font:400 11.5px/1.55 "IBM Plex Mono", monospace; max-height:250px; overflow:auto; white-space:pre-wrap; overflow-wrap:anywhere; user-select:all; }
+  .cite-foot{ display:flex; align-items:center; justify-content:flex-end; gap:10px; margin-top:10px; flex-wrap:wrap; }
+  .cite-acts{ display:flex; gap:8px; flex:none; }
+  .cite-copy, .cite-dl{ display:flex; align-items:center; gap:6px; border:1px solid var(--line); font:600 12.5px "IBM Plex Sans", sans-serif; padding:7px 13px; border-radius:999px; cursor:pointer; }
+  .cite-copy{ background:var(--ink); color:var(--surface); }
+  .cite-dl{ background:var(--surface); color:var(--ink-2); font:500 12px "IBM Plex Mono", monospace; padding:7px 11px; }
+  .cite-dl:hover{ color:var(--ink); background:var(--hover); }
+  .cite-copy svg, .cite-dl svg{ width:14px; height:14px; fill:none; stroke:currentColor; stroke-width:1.9; stroke-linecap:round; stroke-linejoin:round; }
 </style>
 
 <div class="wrap">
@@ -607,7 +629,7 @@
         <h1>Celebs4PD</h1>
       </div>
     </div>
-    <div class="hdr-tools"><div class="hdr-r"><a class="gh" href="https://github.com/njayem/Celebs4PD" target="_blank" rel="noopener" aria-label="View on GitHub" title="View on GitHub"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a><button type="button" id="themeBtn" class="theme-sw" role="switch" aria-checked="false" aria-label="Night mode"><svg class="ic sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M5.3 18.7L7 17M17 7l1.7-1.7"/></svg><svg class="ic moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg><span class="knob"></span></button></div><span class="ver"><select id="ver" class="chip" aria-label="Dataset version"><option value="1.0.0" selected>v1.0.0 &middot; latest</option></select></span></div>
+    <div class="hdr-tools"><div class="hdr-r"><a class="gh" href="https://github.com/njayem/Celebs4PD" target="_blank" rel="noopener" aria-label="View on GitHub" title="View on GitHub"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a><div class="cite-wrap" id="citeWrap"><button type="button" class="cite-btn" id="citeBtn" aria-expanded="false" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18v-5.2C4 8.7 6.3 6.2 9.8 5.6l.5 1.9C8.4 8 7.4 9.1 7.3 10.8H10V18H4zm10 0v-5.2c0-4.1 2.3-6.6 5.8-7.2l.5 1.9c-1.9.5-2.9 1.6-3 3.3H20V18h-6z"/></svg>Cite</button><div class="cite-pop" id="citePop" role="dialog" aria-label="Cite this dataset" hidden></div></div><button type="button" id="themeBtn" class="theme-sw" role="switch" aria-checked="false" aria-label="Night mode"><svg class="ic sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M5.3 18.7L7 17M17 7l1.7-1.7"/></svg><svg class="ic moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg><span class="knob"></span></button></div><span class="ver"><select id="ver" class="chip" aria-label="Dataset version"><option value="1.0.0" selected>v1.0.0 &middot; latest</option></select></span></div>
   </header>
 
   <div class="view-bar"><div class="seg" role="group" aria-label="Dashboard view"><button type="button" id="vGlance" aria-pressed="true">Summary</button><button type="button" id="vFull" aria-pressed="false">Full breakdown</button><button type="button" id="vSplit" aria-pressed="false">Split explorer</button></div></div>
@@ -1879,4 +1901,47 @@
     syncControls();
     render();
   })();
+</script>
+
+<script>
+(function () {
+  var TITLE = "Celebs4PD: A Demographically Matched Corpus of Longitudinal, In-the-Wild Speech for Responsible Parkinson’s Detection";
+  var DOI = "10.5281/zenodo.23385546", LINK = "https://doi.org/" + DOI;
+  var FORMATS = [
+    { label: "BibTeX", file: "celebs4pd.bib", mime: "application/x-bibtex",
+      text: "@dataset{elmufti2027celebs4pd,\n  author    = {El-Mufti, Nadine and Kersten-Oertel, Marta and Ravanelli, Mirco},\n  title     = {" + TITLE.replace("’", "'") + "},\n  year      = {2027},\n  version   = {1.0.0},\n  publisher = {Zenodo},\n  doi       = {" + DOI + "},\n  url       = {" + LINK + "}\n}" },
+    { label: "RIS", file: "celebs4pd.ris", mime: "application/x-research-info-systems",
+      text: "TY  - DATA\nAU  - El-Mufti, Nadine\nAU  - Kersten-Oertel, Marta\nAU  - Ravanelli, Mirco\nTI  - " + TITLE + "\nPY  - 2027\nPB  - Zenodo\nET  - 1.0.0\nDO  - " + DOI + "\nUR  - " + LINK + "\nER  - " }
+  ];
+  var COPY = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg>';
+  var OK = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>';
+  var DL = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7.5 10.5L12 15l4.5-4.5M5 19.5h14"/></svg>';
+  var btn = document.getElementById("citeBtn"), pop = document.getElementById("citePop"), cur = FORMATS[0];
+  pop.innerHTML = '<div class="cite-title">Cite this dataset</div><div class="cite-tabs" role="tablist"></div><pre class="cite-text"></pre>' +
+    '<div class="cite-foot">' +
+    '<span class="cite-acts"><button type="button" class="cite-dl">' + DL + '<span></span></button><button type="button" class="cite-copy">' + COPY + '<span>Copy</span></button></span></div>';
+  var tabs = pop.querySelector(".cite-tabs"), text = pop.querySelector(".cite-text"), copy = pop.querySelector(".cite-copy"), dl = pop.querySelector(".cite-dl");
+  FORMATS.forEach(function (f) {
+    var b = document.createElement("button"); b.type = "button"; b.className = "cite-tab"; b.setAttribute("role", "tab"); b.textContent = f.label;
+    b.onclick = function () { cur = f; show(); }; f.btn = b; tabs.appendChild(b);
+  });
+  function show() {
+    text.textContent = cur.text; dl.querySelector("span").textContent = cur.file;
+    FORMATS.forEach(function (f) { f.btn.setAttribute("aria-selected", String(f === cur)); });
+  }
+  show();
+  function setOpen(o) { pop.hidden = !o; btn.setAttribute("aria-expanded", String(o)); }
+  btn.onclick = function (e) { e.stopPropagation(); setOpen(pop.hidden); };
+  document.addEventListener("click", function (e) { if (!pop.hidden && !pop.contains(e.target)) setOpen(false); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") setOpen(false); });
+  dl.onclick = function () {
+    var a = document.createElement("a"); a.href = window.URL.createObjectURL(new Blob([cur.text + "\n"], { type: cur.mime + ";charset=utf-8" }));
+    a.download = cur.file; document.body.appendChild(a); a.click(); a.remove();
+  };
+  copy.onclick = function () {
+    var done = function () { copy.innerHTML = OK + "<span>Copied</span>"; setTimeout(function () { copy.innerHTML = COPY + "<span>Copy</span>"; }, 1600); };
+    var fallback = function () { var r = document.createRange(); r.selectNodeContents(text); var s = getSelection(); s.removeAllRanges(); s.addRange(r); try { document.execCommand("copy"); done(); } catch (e) {} };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(cur.text).then(done, fallback); else fallback();
+  };
+})();
 </script>
