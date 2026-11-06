@@ -74,8 +74,7 @@ author_profile: true
 
   .pub-title {
     font-size: 0.95em;
-    font-weight: 900;
-    -webkit-text-stroke: 0.6px #000;
+    font-weight: 700;
     color: #000;
     margin: 0.6em 0 0.5em 0;
     line-height: 1.4;
@@ -173,7 +172,7 @@ author_profile: true
     justify-content: space-between;
     align-items: baseline;
     font-size: 0.72em;
-    font-weight: 900;
+    font-weight: 700;
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: #999;
@@ -192,7 +191,7 @@ author_profile: true
 
   .pub-abstract-label {
     font-size: 0.78em;
-    font-weight: 900;
+    font-weight: 700;
     color: #bbb;
     text-transform: uppercase;
     letter-spacing: 0.08em;
@@ -371,7 +370,17 @@ author_profile: true
       padding: 1em 1.1em;
     }
     .pub-card-preview-wrap.edge-to-edge { padding: 0; }
-    .pub-dashboard-hero-btn { margin: 0.4em auto 1.1em auto; }
+    .pub-dashboard-hero-btn {
+      margin: 0.4em auto 1.1em auto;
+      position: relative;
+      font-size: 0.72em;
+      gap: 6px;
+      padding: 7px 15px;
+      box-shadow: 0 3px 10px rgba(26, 86, 196, 0.30);
+    }
+    .pub-dashboard-hero-btn svg { width: 12px; height: 12px; }
+    /* keeps a comfortable tap area around the smaller button */
+    .pub-dashboard-hero-btn::after { content: ""; position: absolute; inset: -9px -8px; }
     .pub-footer { margin-top: 1.1em; }
   }
 </style>
@@ -411,19 +420,19 @@ author_profile: true
   {% endif %}
   <p class="pub-title">{{ pub.title }}</p>
   {% unless pub.hide_authors %}
-  <p class="pub-meta"><strong style="color:#aaa;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip | replace: "El-Mufti, N.", "<span style='font-weight:900;font-size:1.08em;color:#000;-webkit-text-stroke:0.6px #000;'>El-Mufti, N.</span>" | replace: "*", "<sup style='font-weight:900;font-size:0.9em;color:#000;'>*</sup>" }}</span></p>
+  <p class="pub-meta"><strong style="color:#aaa;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip | replace: "El-Mufti, N.", "<span style='font-weight:700;font-size:1.08em;color:#000;'>El-Mufti, N.</span>" | replace: "*", "<sup style='font-weight:700;font-size:0.9em;color:#000;'>*</sup>" }}</span></p>
   {% endunless %}
   {% if pub.venue %}
-  <p class="pub-meta"><strong style="color:#aaa;">Venue:</strong> <span{% if pub.venue == "Coming soon" %} style="font-style:italic; font-weight:400; color:#aaa;"{% else %} style="font-weight:900; color:#000;"{% endif %}>{{ pub.venue }}</span></p>
+  <p class="pub-meta"><strong style="color:#aaa;">Venue:</strong> <span{% if pub.venue == "Coming soon" %} style="font-style:italic; font-weight:400; color:#aaa;"{% else %} style="font-weight:700; color:#000;"{% endif %}>{{ pub.venue }}</span></p>
   {% endif %}
   {% if pub.journal %}
-  <p class="pub-meta"><strong style="color:#aaa;">Journal:</strong> <span{% if pub.journal == "Coming soon" %} style="font-style:italic; font-weight:400; color:#aaa;"{% else %} style="font-weight:900; color:#000;"{% endif %}>{{ pub.journal }}</span></p>
+  <p class="pub-meta"><strong style="color:#aaa;">Journal:</strong> <span{% if pub.journal == "Coming soon" %} style="font-style:italic; font-weight:400; color:#aaa;"{% else %} style="font-weight:700; color:#000;"{% endif %}>{{ pub.journal }}</span></p>
   {% endif %}
   {% if pub.proceedings %}
-  <p class="pub-meta"><strong style="color:#aaa;">Proceedings:</strong> <span{% if pub.proceedings == "Coming soon" %} style="font-style:italic; font-weight:400; color:#aaa;"{% else %} style="font-weight:900; color:#000;"{% endif %}>{{ pub.proceedings }}</span></p>
+  <p class="pub-meta"><strong style="color:#aaa;">Proceedings:</strong> <span{% if pub.proceedings == "Coming soon" %} style="font-style:italic; font-weight:400; color:#aaa;"{% else %} style="font-weight:700; color:#000;"{% endif %}>{{ pub.proceedings }}</span></p>
   {% endif %}
   {% unless pub.hide_peer_reviewed %}
-  <p class="pub-meta"><strong style="color:#aaa;">Peer-Reviewed:</strong> <span style="font-weight:900; color:#000;">{% if pub.peer_reviewed %}Yes{% else %}No{% endif %}</span></p>
+  <p class="pub-meta"><strong style="color:#aaa;">Peer-Reviewed:</strong> <span style="font-weight:700; color:#000;">{% if pub.peer_reviewed %}Yes{% else %}No{% endif %}</span></p>
   {% endunless %}
   <hr class="pub-divider">
   <p class="pub-abstract-label">Abstract</p>
@@ -470,19 +479,19 @@ author_profile: true
   {% endif %}
   <p class="pub-title">{{ pub.title }}</p>
   {% unless pub.hide_authors %}
-  <p class="pub-meta"><strong style="color:#aaa;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip | replace: "El-Mufti, N.", "<span style='font-weight:900;font-size:1.08em;color:#000;-webkit-text-stroke:0.6px #000;'>El-Mufti, N.</span>" | replace: "*", "<sup style='font-weight:900;font-size:0.9em;color:#000;'>*</sup>" }}</span></p>
+  <p class="pub-meta"><strong style="color:#aaa;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip | replace: "El-Mufti, N.", "<span style='font-weight:700;font-size:1.08em;color:#000;'>El-Mufti, N.</span>" | replace: "*", "<sup style='font-weight:700;font-size:0.9em;color:#000;'>*</sup>" }}</span></p>
   {% endunless %}
   {% if pub.venue %}
-  <p class="pub-meta"><strong style="color:#aaa;">Venue:</strong> <span{% if pub.venue == "Coming soon" %} style="font-style:italic; font-weight:400; color:#aaa;"{% else %} style="font-weight:900; color:#000;"{% endif %}>{{ pub.venue }}</span></p>
+  <p class="pub-meta"><strong style="color:#aaa;">Venue:</strong> <span{% if pub.venue == "Coming soon" %} style="font-style:italic; font-weight:400; color:#aaa;"{% else %} style="font-weight:700; color:#000;"{% endif %}>{{ pub.venue }}</span></p>
   {% endif %}
   {% if pub.journal %}
-  <p class="pub-meta"><strong style="color:#aaa;">Journal:</strong> <span{% if pub.journal == "Coming soon" %} style="font-style:italic; font-weight:400; color:#aaa;"{% else %} style="font-weight:900; color:#000;"{% endif %}>{{ pub.journal }}</span></p>
+  <p class="pub-meta"><strong style="color:#aaa;">Journal:</strong> <span{% if pub.journal == "Coming soon" %} style="font-style:italic; font-weight:400; color:#aaa;"{% else %} style="font-weight:700; color:#000;"{% endif %}>{{ pub.journal }}</span></p>
   {% endif %}
   {% if pub.proceedings %}
-  <p class="pub-meta"><strong style="color:#aaa;">Proceedings:</strong> <span{% if pub.proceedings == "Coming soon" %} style="font-style:italic; font-weight:400; color:#aaa;"{% else %} style="font-weight:900; color:#000;"{% endif %}>{{ pub.proceedings }}</span></p>
+  <p class="pub-meta"><strong style="color:#aaa;">Proceedings:</strong> <span{% if pub.proceedings == "Coming soon" %} style="font-style:italic; font-weight:400; color:#aaa;"{% else %} style="font-weight:700; color:#000;"{% endif %}>{{ pub.proceedings }}</span></p>
   {% endif %}
   {% unless pub.hide_peer_reviewed %}
-  <p class="pub-meta"><strong style="color:#aaa;">Peer-Reviewed:</strong> <span style="font-weight:900; color:#000;">{% if pub.peer_reviewed %}Yes{% else %}No{% endif %}</span></p>
+  <p class="pub-meta"><strong style="color:#aaa;">Peer-Reviewed:</strong> <span style="font-weight:700; color:#000;">{% if pub.peer_reviewed %}Yes{% else %}No{% endif %}</span></p>
   {% endunless %}
   <hr class="pub-divider">
   <p class="pub-abstract-label">Abstract</p>
@@ -530,19 +539,19 @@ author_profile: true
   {% endif %}
   <p class="pub-title">{{ pub.title }}</p>
   {% unless pub.hide_authors %}
-  <p class="pub-meta"><strong style="color:#aaa;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip | replace: "El-Mufti, N.", "<span style='font-weight:900;font-size:1.08em;color:#000;-webkit-text-stroke:0.6px #000;'>El-Mufti, N.</span>" | replace: "*", "<sup style='font-weight:900;font-size:0.9em;color:#000;'>*</sup>" }}</span></p>
+  <p class="pub-meta"><strong style="color:#aaa;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip | replace: "El-Mufti, N.", "<span style='font-weight:700;font-size:1.08em;color:#000;'>El-Mufti, N.</span>" | replace: "*", "<sup style='font-weight:700;font-size:0.9em;color:#000;'>*</sup>" }}</span></p>
   {% endunless %}
   {% if pub.venue %}
-  <p class="pub-meta"><strong style="color:#aaa;">Venue:</strong> <span{% if pub.venue == "Coming soon" %} style="font-style:italic; font-weight:400; color:#aaa;"{% else %} style="font-weight:900; color:#000;"{% endif %}>{{ pub.venue }}</span></p>
+  <p class="pub-meta"><strong style="color:#aaa;">Venue:</strong> <span{% if pub.venue == "Coming soon" %} style="font-style:italic; font-weight:400; color:#aaa;"{% else %} style="font-weight:700; color:#000;"{% endif %}>{{ pub.venue }}</span></p>
   {% endif %}
   {% if pub.journal %}
-  <p class="pub-meta"><strong style="color:#aaa;">Journal:</strong> <span{% if pub.journal == "Coming soon" %} style="font-style:italic; font-weight:400; color:#aaa;"{% else %} style="font-weight:900; color:#000;"{% endif %}>{{ pub.journal }}</span></p>
+  <p class="pub-meta"><strong style="color:#aaa;">Journal:</strong> <span{% if pub.journal == "Coming soon" %} style="font-style:italic; font-weight:400; color:#aaa;"{% else %} style="font-weight:700; color:#000;"{% endif %}>{{ pub.journal }}</span></p>
   {% endif %}
   {% if pub.proceedings %}
-  <p class="pub-meta"><strong style="color:#aaa;">Proceedings:</strong> <span{% if pub.proceedings == "Coming soon" %} style="font-style:italic; font-weight:400; color:#aaa;"{% else %} style="font-weight:900; color:#000;"{% endif %}>{{ pub.proceedings }}</span></p>
+  <p class="pub-meta"><strong style="color:#aaa;">Proceedings:</strong> <span{% if pub.proceedings == "Coming soon" %} style="font-style:italic; font-weight:400; color:#aaa;"{% else %} style="font-weight:700; color:#000;"{% endif %}>{{ pub.proceedings }}</span></p>
   {% endif %}
   {% unless pub.hide_peer_reviewed %}
-  <p class="pub-meta"><strong style="color:#aaa;">Peer-Reviewed:</strong> <span style="font-weight:900; color:#000;">{% if pub.peer_reviewed %}Yes{% else %}No{% endif %}</span></p>
+  <p class="pub-meta"><strong style="color:#aaa;">Peer-Reviewed:</strong> <span style="font-weight:700; color:#000;">{% if pub.peer_reviewed %}Yes{% else %}No{% endif %}</span></p>
   {% endunless %}
   <hr class="pub-divider">
   <p class="pub-abstract-label">Abstract</p>
@@ -595,19 +604,19 @@ author_profile: true
   {% endif %}
   <p class="pub-title">{{ pub.title }}</p>
   {% unless pub.hide_authors %}
-  <p class="pub-meta"><strong style="color:#aaa;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip | replace: "El-Mufti, N.", "<span style='font-weight:900;font-size:1.08em;color:#000;-webkit-text-stroke:0.6px #000;'>El-Mufti, N.</span>" | replace: "*", "<sup style='font-weight:900;font-size:0.9em;color:#000;'>*</sup>" }}</span></p>
+  <p class="pub-meta"><strong style="color:#aaa;">Authors:</strong> <span>{{ pub.citation | split: '(' | first | strip | replace: "El-Mufti, N.", "<span style='font-weight:700;font-size:1.08em;color:#000;'>El-Mufti, N.</span>" | replace: "*", "<sup style='font-weight:700;font-size:0.9em;color:#000;'>*</sup>" }}</span></p>
   {% endunless %}
   {% if pub.venue %}
-  <p class="pub-meta"><strong style="color:#aaa;">Venue:</strong> <span{% if pub.venue == "Coming soon" %} style="font-style:italic; font-weight:400; color:#aaa;"{% else %} style="font-weight:900; color:#000;"{% endif %}>{{ pub.venue }}</span></p>
+  <p class="pub-meta"><strong style="color:#aaa;">Venue:</strong> <span{% if pub.venue == "Coming soon" %} style="font-style:italic; font-weight:400; color:#aaa;"{% else %} style="font-weight:700; color:#000;"{% endif %}>{{ pub.venue }}</span></p>
   {% endif %}
   {% if pub.journal %}
-  <p class="pub-meta"><strong style="color:#aaa;">Journal:</strong> <span{% if pub.journal == "Coming soon" %} style="font-style:italic; font-weight:400; color:#aaa;"{% else %} style="font-weight:900; color:#000;"{% endif %}>{{ pub.journal }}</span></p>
+  <p class="pub-meta"><strong style="color:#aaa;">Journal:</strong> <span{% if pub.journal == "Coming soon" %} style="font-style:italic; font-weight:400; color:#aaa;"{% else %} style="font-weight:700; color:#000;"{% endif %}>{{ pub.journal }}</span></p>
   {% endif %}
   {% if pub.proceedings %}
-  <p class="pub-meta"><strong style="color:#aaa;">Proceedings:</strong> <span{% if pub.proceedings == "Coming soon" %} style="font-style:italic; font-weight:400; color:#aaa;"{% else %} style="font-weight:900; color:#000;"{% endif %}>{{ pub.proceedings }}</span></p>
+  <p class="pub-meta"><strong style="color:#aaa;">Proceedings:</strong> <span{% if pub.proceedings == "Coming soon" %} style="font-style:italic; font-weight:400; color:#aaa;"{% else %} style="font-weight:700; color:#000;"{% endif %}>{{ pub.proceedings }}</span></p>
   {% endif %}
   {% unless pub.hide_peer_reviewed %}
-  <p class="pub-meta"><strong style="color:#aaa;">Peer-Reviewed:</strong> <span style="font-weight:900; color:#000;">{% if pub.peer_reviewed %}Yes{% else %}No{% endif %}</span></p>
+  <p class="pub-meta"><strong style="color:#aaa;">Peer-Reviewed:</strong> <span style="font-weight:700; color:#000;">{% if pub.peer_reviewed %}Yes{% else %}No{% endif %}</span></p>
   {% endunless %}
   <hr class="pub-divider">
   <p class="pub-abstract-label">Abstract</p>

@@ -1,3 +1,4 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Celebs4PD Dashboard</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
 <style>
@@ -601,6 +602,7 @@
   .cite-btn svg{ width:15px; height:15px; fill:currentColor; }
   .cite-pop{ position:absolute; top:calc(100% + 10px); right:0; width:min(430px, calc(100vw - 32px)); z-index:50; background:var(--surface); border:1px solid var(--line); border-radius:12px; box-shadow:0 10px 30px rgba(11,11,11,.14); padding:14px 14px 12px; text-align:left; }
   .cite-pop[hidden]{ display:none; }
+  @media (max-width:560px){ .cite-lab{ display:none; } .cite-btn{ width:34px; padding:0; justify-content:center; } .cite-wrap{ position:static; } .cite-pop{ position:fixed; left:16px; right:16px; width:auto; } }
   .cite-title{ font-size:11.5px; color:var(--ink-muted); text-transform:uppercase; letter-spacing:.04em; margin-bottom:10px; }
   .cite-tabs{ display:flex; flex-wrap:wrap; gap:4px; margin-bottom:10px; }
   .cite-tab{ border:1px solid var(--line); background:transparent; color:var(--ink-muted); font:500 12.5px "IBM Plex Sans", sans-serif; padding:4px 11px; border-radius:999px; cursor:pointer; }
@@ -614,6 +616,14 @@
   .cite-dl{ background:var(--surface); color:var(--ink-2); font:500 12px "IBM Plex Mono", monospace; padding:7px 11px; }
   .cite-dl:hover{ color:var(--ink); background:var(--hover); }
   .cite-copy svg, .cite-dl svg{ width:14px; height:14px; fill:none; stroke:currentColor; stroke-width:1.9; stroke-linecap:round; stroke-linejoin:round; }
+
+  /* Header adapts instead of overflowing: the controls drop under the version chip only when they no longer fit beside it */
+  @media (max-width:720px){
+    header.top{ display:flex; flex-direction:row; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:10px 14px; }
+    header.top .ver{ order:1; flex:0 1 auto; max-width:100%; }
+    header.top .hdr-r{ order:2; margin-left:auto; flex:none; }
+    header.top .brand{ order:3; flex:1 1 100%; justify-content:center; }
+  }
 </style>
 
 <div class="wrap">
@@ -629,7 +639,7 @@
         <h1>Celebs4PD</h1>
       </div>
     </div>
-    <div class="hdr-tools"><div class="hdr-r"><a class="gh" href="https://github.com/njayem/Celebs4PD" target="_blank" rel="noopener" aria-label="View on GitHub" title="View on GitHub"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a><div class="cite-wrap" id="citeWrap"><button type="button" class="cite-btn" id="citeBtn" aria-expanded="false" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18v-5.2C4 8.7 6.3 6.2 9.8 5.6l.5 1.9C8.4 8 7.4 9.1 7.3 10.8H10V18H4zm10 0v-5.2c0-4.1 2.3-6.6 5.8-7.2l.5 1.9c-1.9.5-2.9 1.6-3 3.3H20V18h-6z"/></svg>Cite</button><div class="cite-pop" id="citePop" role="dialog" aria-label="Cite this dataset" hidden></div></div><button type="button" id="themeBtn" class="theme-sw" role="switch" aria-checked="false" aria-label="Night mode"><svg class="ic sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M5.3 18.7L7 17M17 7l1.7-1.7"/></svg><svg class="ic moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg><span class="knob"></span></button></div><span class="ver"><select id="ver" class="chip" aria-label="Dataset version"><option value="1.0.0" selected>v1.0.0 &middot; latest</option></select></span></div>
+    <div class="hdr-tools"><div class="hdr-r"><a class="gh" href="https://github.com/njayem/Celebs4PD" target="_blank" rel="noopener" aria-label="View on GitHub" title="View on GitHub"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a><div class="cite-wrap" id="citeWrap"><button type="button" class="cite-btn" id="citeBtn" aria-expanded="false" aria-haspopup="dialog" aria-label="Cite this dataset" title="Cite this dataset"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18v-5.2C4 8.7 6.3 6.2 9.8 5.6l.5 1.9C8.4 8 7.4 9.1 7.3 10.8H10V18H4zm10 0v-5.2c0-4.1 2.3-6.6 5.8-7.2l.5 1.9c-1.9.5-2.9 1.6-3 3.3H20V18h-6z"/></svg><span class="cite-lab">Cite</span></button><div class="cite-pop" id="citePop" role="dialog" aria-label="Cite this dataset" hidden></div></div><button type="button" id="themeBtn" class="theme-sw" role="switch" aria-checked="false" aria-label="Night mode"><svg class="ic sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M5.3 18.7L7 17M17 7l1.7-1.7"/></svg><svg class="ic moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg><span class="knob"></span></button></div><span class="ver"><select id="ver" class="chip" aria-label="Dataset version"><option value="1.0.0" selected>v1.0.0 &middot; latest</option></select></span></div>
   </header>
 
   <div class="view-bar"><div class="seg" role="group" aria-label="Dashboard view"><button type="button" id="vGlance" aria-pressed="true">Summary</button><button type="button" id="vFull" aria-pressed="false">Full breakdown</button><button type="button" id="vSplit" aria-pressed="false">Split explorer</button></div></div>
@@ -1909,7 +1919,7 @@
   var DOI = "10.5281/zenodo.23385546", LINK = "https://doi.org/" + DOI;
   var FORMATS = [
     { label: "BibTeX", file: "celebs4pd.bib", mime: "application/x-bibtex",
-      text: "@dataset{elmufti2027celebs4pd,\n  author    = {El-Mufti, Nadine and Kersten-Oertel, Marta and Ravanelli, Mirco},\n  title     = {" + TITLE.replace("’", "'") + "},\n  year      = {2027},\n  version   = {1.0.0},\n  publisher = {Zenodo},\n  doi       = {" + DOI + "},\n  url       = {" + LINK + "}\n}" },
+      text: "@dataset{elmufti2027celebs4pd,\n  author    = {El-Mufti, Nadine and Kersten-Oertel, Marta and Ravanelli, Mirco},\n  title     = {" + TITLE.replace("Celebs4PD", "{Celebs4PD}").replace("Parkinson’s", "{Parkinson}'s") + "},\n  year      = {2027},\n  version   = {1.0.0},\n  publisher = {Zenodo},\n  doi       = {" + DOI + "},\n  url       = {" + LINK + "}\n}" },
     { label: "RIS", file: "celebs4pd.ris", mime: "application/x-research-info-systems",
       text: "TY  - DATA\nAU  - El-Mufti, Nadine\nAU  - Kersten-Oertel, Marta\nAU  - Ravanelli, Mirco\nTI  - " + TITLE + "\nPY  - 2027\nPB  - Zenodo\nET  - 1.0.0\nDO  - " + DOI + "\nUR  - " + LINK + "\nER  - " }
   ];
@@ -1931,8 +1941,11 @@
   }
   show();
   function setOpen(o) { pop.hidden = !o; btn.setAttribute("aria-expanded", String(o)); }
-  btn.onclick = function (e) { e.stopPropagation(); setOpen(pop.hidden); };
-  document.addEventListener("click", function (e) { if (!pop.hidden && !pop.contains(e.target)) setOpen(false); });
+  btn.onclick = function (e) {
+    e.stopPropagation(); setOpen(pop.hidden);
+    pop.style.top = (!pop.hidden && window.matchMedia('(max-width:560px)').matches) ? (btn.getBoundingClientRect().bottom + 10) + 'px' : '';
+  };
+  document.addEventListener("click", function (e) { if (!pop.hidden && !pop.contains(e.target) && !e.target.closest("#themeBtn")) setOpen(false); });
   document.addEventListener("keydown", function (e) { if (e.key === "Escape") setOpen(false); });
   dl.onclick = function () {
     var a = document.createElement("a"); a.href = window.URL.createObjectURL(new Blob([cur.text + "\n"], { type: cur.mime + ";charset=utf-8" }));
