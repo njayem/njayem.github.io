@@ -495,7 +495,9 @@
   .sp-switch input:focus-visible + .trk{ outline:2px solid var(--ink-2); outline-offset:2px; }
   .sp-switch em{ font-style:normal; font-size:12px; color:var(--ink-muted); margin-left:6px; }
   .sp-field{ display:flex; flex-direction:column; gap:6px; font-size:12px; color:var(--ink-muted); }
-  .sp-field select{ max-width:100%; }
+  .sp-field select{ max-width:100%; appearance:none; -webkit-appearance:none; padding-right:34px; cursor:pointer; }
+  .sp-sel{ position:relative; display:inline-block; max-width:100%; }
+  .sp-sel::after{ content:""; position:absolute; right:14px; top:50%; width:6px; height:6px; border-right:1.5px solid var(--ink-2); border-bottom:1.5px solid var(--ink-2); transform:translateY(-70%) rotate(45deg); pointer-events:none; }
   .sp-presets{ display:flex; flex-wrap:wrap; gap:8px; margin-top:24px; }
   .sp-presets button{ font:inherit; font-size:12.5px; color:var(--ink-2); background:var(--surface); border:1px solid var(--line); border-radius:999px; padding:6px 14px; cursor:pointer; }
   .sp-presets button:hover{ background:var(--hover); color:var(--ink); }
@@ -867,10 +869,10 @@
           <label class="sp-switch" for="spNoFr"><input type="checkbox" id="spNoFr"><span class="trk" aria-hidden="true"></span><span class="lbl">Leave out French recordings <em>optional</em></span></label>
         </div>
         <label class="sp-field" for="spSex">Sex balance
-          <select id="spSex">
+          <span class="sp-sel"><select id="spSex">
             <option value="any">Random</option>
             <option value="eq" selected>Equal</option>
-          </select>
+          </select></span>
         </label>
       </div>
       <div class="sp-presets" role="group" aria-label="Presets" id="spPresets"></div>
