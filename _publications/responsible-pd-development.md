@@ -11,6 +11,8 @@ order: 6
 journal: "npj Digital Medicine, Nature Portfolio"
 paperurl: ''
 citation: "El-Mufti, N., Ravanelli, M., & Kersten-Oertel, M.* (in preparation). Participatory Foresight for Responsible Deployment of Speech Biomarkers in Parkinson Disease."
+preview_images: ["/images/participatory-foresight.png"]
+preview_style: "edge"
 ---
 
 Paste abstract here.
