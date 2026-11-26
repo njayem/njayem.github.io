@@ -20,6 +20,8 @@ author_profile: true
   @media (max-width: 700px) { .proj-card { width: 100%; } .proj-card-body { padding: 1.1em; } }
 </style>
 
+<br>
+
 {% assign cards = site.projects | where: "project_card", true | sort: "order" %}
 <div class="proj-cards">
 {% for p in cards %}
@@ -32,7 +34,7 @@ author_profile: true
         {% if p.papers %}<span class="proj-count">{{ p.papers.size }} papers</span>{% endif %}
       </div>
       <p class="proj-card-title">{{ p.title }}</p>
-      <p class="proj-card-summary">{{ p.card_summary }}</p>
+      {% if p.card_intro_include %}{% assign in_card = true %}{% include {{ p.card_intro_include }} %}{% else %}<p class="proj-card-summary">{{ p.card_summary }}</p>{% endif %}
       {% if p.expand_include %}
       <button class="proj-cta proj-toggle" type="button" onclick="projToggle(this)" aria-expanded="false">Project Overview</button>
       <div class="proj-expand">
@@ -57,6 +59,6 @@ author_profile: true
   (function () {
     var id = location.hash.slice(1);
     var card = id && document.getElementById(id);
-    if (card && card.classList.contains('proj-card')) { card.classList.add('open'); card.scrollIntoView(); }
+    if (card && card.classList.contains('proj-card')) { card.scrollIntoView(); }
   })();
 </script>

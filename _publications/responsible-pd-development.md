@@ -13,8 +13,6 @@ paperurl: ''
 citation: "El-Mufti, N., Ravanelli, M., & Kersten-Oertel, M.* (in preparation). Participatory Foresight for Responsible Deployment of Speech Biomarkers in Parkinson Disease."
 preview_images: ["/images/participatory-foresight.png"]
 preview_style: "edge"
-project_url: "/projects/participatory-foresight/"
-project_label: "Project Overview"
 ---
 
-{% include participatory-foresight-abstract.html %}
+Paste abstract here.

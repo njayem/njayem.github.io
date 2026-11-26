@@ -1,6 +1,5 @@
 {% comment %} HEARD project content, shared by the Projects card (expanded) and /projects/heard/ {% endcomment %}
-<p class="proj-tags">Responsible AI · Clinical Speech AI · Parkinson’s Disease</p>
-<p class="proj-lead">This project examines the scientific, ethical, and societal conditions under which speech-based AI for Parkinson’s disease can be responsibly introduced into clinical practice.</p>
+{% unless in_card %}{% include heard-intro.html %}{% endunless %}
 {% if include.hero %}<div class="proj-hero">
   <img src="/images/heard/heard-logo.png" alt="Drawing of a woman wearing an upside-down red tulip as a hat that half hides her face, in front of grey speech waveforms">
   <p class="caption">{% include heard-caption.html %}</p>
@@ -32,12 +31,14 @@
     <p class="num">Paper 2 · In preparation</p>
     <p class="title">Celebs4PD: A Demographically Matched Corpus of Longitudinal, In-the-Wild Speech for Responsible Parkinson’s Detection</p>
     <p class="role">A demographically matched corpus of longitudinal, in-the-wild speech designed to investigate whether domain-relevant pretraining improves clinical Parkinson’s disease detection and reduces reliance on scarce clinical data.</p>
+    <a class="proj-btn" href="/projects/celebs4pd/">Project Overview</a>
     <a class="proj-btn hero" href="/files/celebs4pd_dashboard.html" target="_blank">View Dashboard</a>
   </div>
   <div class="proj-paper prep">
     <p class="num">Paper 3 · In preparation</p>
     <p class="title">Confounders Before Conclusions: Auditing What Speech Foundation Models Hear in Parkinson’s Disease</p>
     <p class="role">A systematic investigation of the extent to which speech foundation models rely on disease-related speech characteristics rather than demographic, linguistic, and recording-related confounders, with an emphasis on robustness, generalisability, and the validity of the auditing methodology itself.</p>
+    <a class="proj-btn" href="/projects/confounders-before-conclusions/">Project Overview</a>
   </div>
   <div class="proj-paper prep">
     <p class="num">Paper 4 · In preparation</p>

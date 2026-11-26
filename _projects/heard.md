@@ -7,12 +7,17 @@ card_status: "Master's Thesis · In Progress"
 card_image: "/images/heard/heard-logo.png"
 card_id: "heard"
 expand_include: "heard-body.html"
+card_intro_include: "heard-intro.html"
 card_caption_include: "heard-caption.html"
 papers: ["accepted", "prep", "prep", "prep"]
 card_summary: "Holistic Evaluation and Accountability for Reliable Diagnostics. Establishing the scientific and ethical foundations for the responsible deployment of speech AI in Parkinson’s disease."
 excerpt: "Holistic Evaluation and Accountability for Reliable Diagnostics. Establishing the scientific and ethical foundations for the responsible deployment of speech AI in Parkinson’s disease."
-share: true
+share: false
 comments: false
+trail:
+  - title: "Projects"
+    url: "/projects/"
+trail_current: "HEARD"
 ---
 
 {% include project-page-style.html %}

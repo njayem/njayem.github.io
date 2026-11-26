@@ -100,38 +100,79 @@
   }
 
   /* Dark mode: like the Research cards, project cards and project pages stay light; only the surroundings go dark */
-  html[data-theme="dark"] .page__content .proj-card,
-  html[data-theme="dark"] .page__content .proj-page { background: #f9f9f9 !important; color: #222 !important; }
-  html[data-theme="dark"] .page__content .proj-page { padding: 1.6em 1.8em; border-radius: 12px; }
-  html[data-theme="dark"] .page__content .proj-card p,
-  html[data-theme="dark"] .page__content .proj-page p,
-  html[data-theme="dark"] .page__content .proj-card li,
-  html[data-theme="dark"] .page__content .proj-page li { color: #222 !important; }
-  html[data-theme="dark"] .page__content .proj-card .proj-tags,
-  html[data-theme="dark"] .page__content .proj-page .proj-tags { color: #888 !important; }
-  html[data-theme="dark"] .page__content .proj-card .caption,
-  html[data-theme="dark"] .page__content .proj-page .caption { color: #999 !important; }
-  html[data-theme="dark"] .page__content .proj-card h2,
-  html[data-theme="dark"] .page__content .proj-page h2 { color: #999 !important; border-bottom: none !important; }
-  html[data-theme="dark"] .page__content .proj-card .proj-paper .role,
-  html[data-theme="dark"] .page__content .proj-page .proj-paper .role { color: #444 !important; }
-  html[data-theme="dark"] .page__content .proj-card .proj-works div,
-  html[data-theme="dark"] .page__content .proj-page .proj-works div,
-  html[data-theme="dark"] .page__content .proj-card .proj-flow div,
-  html[data-theme="dark"] .page__content .proj-page .proj-flow div { color: #555 !important; }
-  html[data-theme="dark"] .page__content .proj-card .proj-footer .label,
-  html[data-theme="dark"] .page__content .proj-page .proj-footer .label { color: #aaa !important; }
-  html[data-theme="dark"] .page__content .proj-card .proj-paper.accepted .num,
-  html[data-theme="dark"] .page__content .proj-page .proj-paper.accepted .num,
-  html[data-theme="dark"] .page__content .proj-card .proj-paper.done .num,
-  html[data-theme="dark"] .page__content .proj-page .proj-paper.done .num,
-  html[data-theme="dark"] .page__content .proj-card .proj-paper.submitted .num,
-  html[data-theme="dark"] .page__content .proj-page .proj-paper.submitted .num { color: white !important; }
-  html[data-theme="dark"] .page__content .proj-card .proj-paper.prep .num,
-  html[data-theme="dark"] .page__content .proj-page .proj-paper.prep .num { color: #4a3000 !important; }
-  html[data-theme="dark"] .page__content .heard .proj-back a { color: #b51f1e !important; }
+  html[data-theme="dark"] .page__content .proj-card, html[data-theme="dark"] .archive .proj-card,
+  html[data-theme="dark"] .page__content .proj-page, html[data-theme="dark"] .archive .proj-page { background: #f9f9f9 !important; color: #222 !important; }
+  html[data-theme="dark"] .page__content .proj-page, html[data-theme="dark"] .archive .proj-page { padding: 1.6em 1.8em; border-radius: 12px; }
+  html[data-theme="dark"] .page__content .proj-card p, html[data-theme="dark"] .archive .proj-card p,
+  html[data-theme="dark"] .page__content .proj-page p, html[data-theme="dark"] .archive .proj-page p,
+  html[data-theme="dark"] .page__content .proj-card li, html[data-theme="dark"] .archive .proj-card li,
+  html[data-theme="dark"] .page__content .proj-page li, html[data-theme="dark"] .archive .proj-page li { color: #222 !important; }
+  html[data-theme="dark"] .page__content .proj-card .proj-tags, html[data-theme="dark"] .archive .proj-card .proj-tags,
+  html[data-theme="dark"] .page__content .proj-page .proj-tags, html[data-theme="dark"] .archive .proj-page .proj-tags { color: #888 !important; }
+  html[data-theme="dark"] .page__content .proj-card .caption, html[data-theme="dark"] .archive .proj-card .caption,
+  html[data-theme="dark"] .page__content .proj-page .caption, html[data-theme="dark"] .archive .proj-page .caption { color: #999 !important; }
+  html[data-theme="dark"] .page__content .proj-card h2, html[data-theme="dark"] .archive .proj-card h2,
+  html[data-theme="dark"] .page__content .proj-page h2, html[data-theme="dark"] .archive .proj-page h2 { color: #999 !important; border-bottom: none !important; }
+  html[data-theme="dark"] .page__content .proj-card .proj-paper .role, html[data-theme="dark"] .archive .proj-card .proj-paper .role,
+  html[data-theme="dark"] .page__content .proj-page .proj-paper .role, html[data-theme="dark"] .archive .proj-page .proj-paper .role { color: #444 !important; }
+  html[data-theme="dark"] .page__content .proj-card .proj-works div, html[data-theme="dark"] .archive .proj-card .proj-works div,
+  html[data-theme="dark"] .page__content .proj-page .proj-works div, html[data-theme="dark"] .archive .proj-page .proj-works div,
+  html[data-theme="dark"] .page__content .proj-card .proj-flow div, html[data-theme="dark"] .archive .proj-card .proj-flow div,
+  html[data-theme="dark"] .page__content .proj-page .proj-flow div, html[data-theme="dark"] .archive .proj-page .proj-flow div { color: #555 !important; }
+  html[data-theme="dark"] .page__content .proj-card .proj-footer .label, html[data-theme="dark"] .archive .proj-card .proj-footer .label,
+  html[data-theme="dark"] .page__content .proj-page .proj-footer .label, html[data-theme="dark"] .archive .proj-page .proj-footer .label { color: #aaa !important; }
+  html[data-theme="dark"] .page__content .proj-card .proj-paper.accepted .num, html[data-theme="dark"] .archive .proj-card .proj-paper.accepted .num,
+  html[data-theme="dark"] .page__content .proj-page .proj-paper.accepted .num, html[data-theme="dark"] .archive .proj-page .proj-paper.accepted .num,
+  html[data-theme="dark"] .page__content .proj-card .proj-paper.done .num, html[data-theme="dark"] .archive .proj-card .proj-paper.done .num,
+  html[data-theme="dark"] .page__content .proj-page .proj-paper.done .num, html[data-theme="dark"] .archive .proj-page .proj-paper.done .num,
+  html[data-theme="dark"] .page__content .proj-card .proj-paper.submitted .num, html[data-theme="dark"] .archive .proj-card .proj-paper.submitted .num,
+  html[data-theme="dark"] .page__content .proj-page .proj-paper.submitted .num, html[data-theme="dark"] .archive .proj-page .proj-paper.submitted .num { color: white !important; }
+  html[data-theme="dark"] .page__content .proj-card .proj-paper.prep .num, html[data-theme="dark"] .archive .proj-card .proj-paper.prep .num,
+  html[data-theme="dark"] .page__content .proj-page .proj-paper.prep .num, html[data-theme="dark"] .archive .proj-page .proj-paper.prep .num { color: #4a3000 !important; }
+  html[data-theme="dark"] .page__content .heard .proj-back a, html[data-theme="dark"] .archive .heard .proj-back a { color: #b51f1e !important; }
   @media (max-width: 700px) {
-    html[data-theme="dark"] .page__content .proj-page { padding: 1.1em 1em; }
+    html[data-theme="dark"] .page__content .proj-page, html[data-theme="dark"] .archive .proj-page { padding: 1.1em 1em; }
   }
   @media (max-width: 700px) { .proj-card-caption { padding: 0.8em 1.1em 0 1.1em; } .proj-works { grid-template-columns: 1fr; } }
+
+  /* Minimal colour: colour only on status tags and the artwork; black text one weight lighter; grey buttons like the Recommendations name tags */
+  .proj-cta, .heard .proj-cta { background: #666666; }
+  .proj-cta:hover, .heard .proj-cta:hover { background: #4d4d4d; }
+  .proj-cta:focus-visible { outline-color: #666666; }
+  /* Coming soon chip on paper overview pages */
+  .proj-soon { text-align: center; margin: -0.6em 0 1.2em 0; }
+  .proj-soon span { display: inline-block; padding: 1px 10px; border: 1px solid #e2e4e8; border-radius: 4px; color: #6b7280; font-size: 12px; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; }
+  html[data-theme="dark"] .page__content .proj-soon span, html[data-theme="dark"] .archive .proj-soon span { color: #6b7280 !important; }
+  /* Paper overview pages: description */
+  .proj-desc { max-width: 720px; margin: 2.2em auto 0 auto; padding-top: 2em; border-top: 1px solid #ececec; }
+  .proj-desc-label { font-size: 0.72em; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #999; margin: 0 0 1em 0; text-align: center; }
+  .proj-desc-text p { font-size: 1.06em; line-height: 1.8; color: #555; margin: 0 0 1.1em 0; }
+  .proj-desc-text p:first-child { font-size: 1.16em; line-height: 1.7; color: #444; }
+  html[data-theme="dark"] .page__content .proj-desc-text p, html[data-theme="dark"] .archive .proj-desc-text p { color: #555 !important; }
+  html[data-theme="dark"] .page__content .proj-desc-text p:first-child, html[data-theme="dark"] .archive .proj-desc-text p:first-child { color: #444 !important; }
+  @media (max-width: 700px) {
+    .proj-desc-text p:first-child { font-size: 1.08em; }
+  }
+  /* Buttons always centred */
+  .proj-cta, .proj-collapse { display: block; width: fit-content; margin-left: auto; margin-right: auto; }
+  /* Authors under the image, same style as the Research cards */
+  .proj-authors { font-size: 0.85em; line-height: 1.5; margin: -0.8em 0 1.4em 0; text-align: center; }
+  .proj-authors b, html[data-theme="dark"] .page__content .proj-authors b, html[data-theme="dark"] .archive .proj-authors b { color: #8a8f94 !important; font-weight: 700; }
+  .proj-authors span, html[data-theme="dark"] .page__content .proj-authors span, html[data-theme="dark"] .archive .proj-authors span { color: #666666 !important; }
+  .proj-authors strong { color: #666666; font-weight: 600; }
+  /* Tags as soft-edged rectangles */
+  .proj-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .proj-tags { gap: 6px; }
+  .proj-tags span { display: inline-block; padding: 0 7px; border: 1px solid #e2e4e8; border-radius: 4px; background: transparent; color: #6b7280; font-size: 12px; font-weight: 500; line-height: 1.7; letter-spacing: 0.01em; }
+  html[data-theme="dark"] .page__content .proj-tags span, html[data-theme="dark"] .archive .proj-tags span { color: #6b7280 !important; }
+  /* Caption shows under the artwork in both states */
+  .proj-card-caption, .proj-card.open .proj-card-caption { display: block; }
+  .proj-btn, .heard .proj-btn, .proj-paper .proj-btn, .heard .proj-paper .proj-btn,
+  .heard .proj-paper.done .proj-btn, .heard .proj-paper.accepted .proj-btn, .heard .proj-paper.submitted .proj-btn, .heard .proj-paper.prep .proj-btn,
+  html[data-theme="dark"] .page__content .proj-btn, html[data-theme="dark"] .archive .proj-btn { color: #666666 !important; font-weight: 600; }
+  .proj-flow b, .heard .proj-flow b { color: #666666; font-weight: 700; }
+  .proj-works .n, .heard .proj-works .n { color: #666666; font-weight: 700; }
+  .proj-works b { color: #666666; font-weight: 600; }
+  .proj-paper .title { color: #666666; font-weight: 600; }
+  .heard .proj-back a, html[data-theme="dark"] .page__content .heard .proj-back a, html[data-theme="dark"] .archive .heard .proj-back a { color: #666666 !important; }
 </style>
