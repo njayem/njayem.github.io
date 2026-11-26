@@ -13,6 +13,7 @@ papers: ["accepted", "prep", "prep", "prep"]
 card_summary: "Holistic Evaluation and Accountability for Reliable Diagnostics. Establishing the scientific and ethical foundations for the responsible deployment of speech AI in Parkinson’s disease."
 excerpt: "Holistic Evaluation and Accountability for Reliable Diagnostics. Establishing the scientific and ethical foundations for the responsible deployment of speech AI in Parkinson’s disease."
 share: false
+pager: false
 comments: false
 trail:
   - title: "Projects"

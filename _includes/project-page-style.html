@@ -153,6 +153,18 @@
   @media (max-width: 700px) {
     .proj-desc-text p:first-child { font-size: 1.08em; }
   }
+  /* Previous / Next at the bottom of project pages: small pills like the navigation trail */
+  .pagination { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+  .pagination::before, .pagination::after { display: none !important; } /* the theme's clearfix would sit between the two pills */
+  .pagination .pagination--pager { float: none; width: auto; margin: 0 !important; display: inline-block; padding: 5px 14px; border: none; border-radius: 20px !important;
+    background: #f0f0f0; color: #222 !important; font-size: 0.75em; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; text-decoration: none !important;
+    transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease; }
+  .pagination .pagination--pager:first-child::before { content: "‹ "; }
+  .pagination .pagination--pager:last-child::after { content: " ›"; }
+  .pagination .pagination--pager:hover { background: #111; color: #fff !important; transform: translateY(-1px); }
+  .pagination .pagination--pager.disabled { visibility: hidden; }
+  html[data-theme="dark"] .pagination .pagination--pager { background: #23262c; color: #e6e6e6 !important; }
+  html[data-theme="dark"] .pagination .pagination--pager:hover { background: #fff; color: #111 !important; }
   /* Buttons always centred */
   .proj-cta, .proj-collapse { display: block; width: fit-content; margin-left: auto; margin-right: auto; }
   /* Authors under the image, same style as the Research cards */
@@ -162,9 +174,10 @@
   .proj-authors strong { color: #666666; font-weight: 600; }
   /* Tags as soft-edged rectangles */
   .proj-tags { display: flex; flex-wrap: wrap; gap: 8px; }
-  .proj-tags { gap: 6px; }
-  .proj-tags span { display: inline-block; padding: 0 7px; border: 1px solid #e2e4e8; border-radius: 4px; background: transparent; color: #6b7280; font-size: 12px; font-weight: 500; line-height: 1.7; letter-spacing: 0.01em; }
-  html[data-theme="dark"] .page__content .proj-tags span, html[data-theme="dark"] .archive .proj-tags span { color: #6b7280 !important; }
+  .proj-tags { gap: 8px; margin-top: 1em !important; font-size: 1em !important; } /* tags use the same size as the status badges */
+  .proj-tags span { display: inline-block; padding: 3px 12px; border: 1px solid #e2e4e8; border-radius: 20px; background: #f3f4f6; color: #555; font-size: 0.7em; font-weight: 600; line-height: 1.5; transition: transform 0.2s ease; cursor: default; letter-spacing: 0.01em; }
+  .proj-tags span:hover { transform: translateY(-2px); } /* pill tags, like the Research Topics tags on the About page */
+  html[data-theme="dark"] .page__content .proj-tags span, html[data-theme="dark"] .archive .proj-tags span { color: #555 !important; }
   /* Caption shows under the artwork in both states */
   .proj-card-caption, .proj-card.open .proj-card-caption { display: block; }
   .proj-btn, .heard .proj-btn, .proj-paper .proj-btn, .heard .proj-paper .proj-btn,
