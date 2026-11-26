@@ -10,7 +10,7 @@ trail:
   - title: "Projects"
     url: "/projects/"
   - title: "HEARD"
-    url: "/projects/#heard"
+    url: "/projects/heard/"
 trail_current: "Celebs4PD"
 ---
 

@@ -6,7 +6,6 @@ order: 1
 card_status: "Master's Thesis · In Progress"
 card_image: "/images/heard/heard-logo.png"
 card_id: "heard"
-expand_include: "heard-body.html"
 card_intro_include: "heard-intro.html"
 card_caption_include: "heard-caption.html"
 papers: ["accepted", "prep", "prep", "prep"]

@@ -12,7 +12,7 @@ author_profile: true
   .proj-cards { display: flex; flex-direction: column; align-items: center; gap: 28px; margin-top: 20px; padding-bottom: 20px; }
   .proj-card { background: #f9f9f9; border-radius: 12px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); width: 84%;
     overflow: hidden; transition: transform 0.2s ease, box-shadow 0.2s ease; }
-  .proj-card:hover { transform: scale(1.02); box-shadow: 0 8px 22px rgba(0,0,0,0.15); }
+  .proj-card:hover { transform: scale(1.05); box-shadow: 0 8px 16px rgba(0,0,0,0.2); } /* same hover as the Recommendations cards */
   .proj-card-img { width: 100%; aspect-ratio: 16 / 9; object-fit: contain; background: white; display: block; }
   .proj-card-body { padding: 1.4em 2em 1.6em 2em; }
   .proj-card-title { font-weight: 700; font-size: 1.1em; margin: 0.5em 0 0.4em 0; }
@@ -26,7 +26,7 @@ author_profile: true
 <div class="proj-cards">
 {% for p in cards %}
   <div class="proj-card heard" id="{{ p.card_id }}">
-    {% if p.card_image %}{% if p.expand_include %}<img class="proj-card-img" src="{{ p.card_image }}" alt="{{ p.title }}">{% else %}<a href="{{ p.url }}"><img class="proj-card-img" src="{{ p.card_image }}" alt="{{ p.title }}"></a>{% endif %}{% endif %}
+    {% if p.card_image %}<a href="{{ p.url }}"><img class="proj-card-img" src="{{ p.card_image }}" alt="{{ p.title }}"></a>{% endif %}
     {% if p.card_caption_include %}<p class="caption proj-card-caption">{% include {{ p.card_caption_include }} %}</p>{% endif %}
     <div class="proj-card-body">
       <div class="proj-badges">
@@ -34,31 +34,10 @@ author_profile: true
         {% if p.papers %}<span class="proj-count">{{ p.papers.size }} papers</span>{% endif %}
       </div>
       <p class="proj-card-title">{{ p.title }}</p>
-      {% if p.card_intro_include %}{% assign in_card = true %}{% include {{ p.card_intro_include }} %}{% else %}<p class="proj-card-summary">{{ p.card_summary }}</p>{% endif %}
-      {% if p.expand_include %}
-      <button class="proj-cta proj-toggle" type="button" onclick="projToggle(this)" aria-expanded="false">Project Overview</button>
-      <div class="proj-expand">
-        {% include {{ p.expand_include }} %}
-        <button class="proj-cta proj-collapse" type="button" onclick="projToggle(this)">Show less</button>
-      </div>
-      {% else %}
-      <a class="proj-cta" href="{{ p.url }}">Project Overview</a>
-      {% endif %}
+      {% if p.card_intro_include %}{% include {{ p.card_intro_include }} %}{% else %}<p class="proj-card-summary">{{ p.card_summary }}</p>{% endif %}
+      <a class="proj-cta" href="{{ p.url }}">Read more</a>
     </div>
   </div>
 {% endfor %}
 </div>
 
-<script>
-  function projToggle(btn) {
-    var card = btn.closest('.proj-card');
-    var open = card.classList.toggle('open');
-    card.querySelector('.proj-toggle').setAttribute('aria-expanded', open);
-    if (!open) card.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
-  (function () {
-    var id = location.hash.slice(1);
-    var card = id && document.getElementById(id);
-    if (card && card.classList.contains('proj-card')) { card.scrollIntoView(); }
-  })();
-</script>

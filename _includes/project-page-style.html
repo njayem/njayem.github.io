@@ -87,11 +87,6 @@
   .proj-card-caption { display: none; font-size: 0.72em; color: #999; font-style: italic; line-height: 1.5; margin: 0; padding: 0.8em 2.6em 0 2.6em; text-align: center; }
   .proj-card.open .proj-card-caption { display: block; } /* under the artwork, once the card is open */
   /* Projects card that opens into the full project, in place */
-  .proj-expand { display: none; text-align: left; margin-top: 0.4em; }
-  .proj-card.open .proj-expand { display: block; }
-  .proj-card.open .proj-card-summary { display: none; } /* the opening paragraph says it in full */
-  .proj-card.open .proj-toggle { display: none; } /* the button disappears once the card is open; Show less at the bottom closes it */
-  .proj-collapse { display: block; margin: 1.6em auto 0 auto; }
   @media (max-width: 700px) {
     .proj-flow { grid-template-columns: 1fr 1fr; }
     .proj-works { grid-template-columns: 1fr 1fr; }
@@ -166,7 +161,7 @@
   html[data-theme="dark"] .pagination .pagination--pager { background: #23262c; color: #e6e6e6 !important; }
   html[data-theme="dark"] .pagination .pagination--pager:hover { background: #fff; color: #111 !important; }
   /* Buttons always centred */
-  .proj-cta, .proj-collapse { display: block; width: fit-content; margin-left: auto; margin-right: auto; }
+  .proj-cta { display: block; width: fit-content; margin-left: auto; margin-right: auto; }
   /* Authors under the image, same style as the Research cards */
   .proj-authors { font-size: 0.85em; line-height: 1.5; margin: -0.8em 0 1.4em 0; text-align: center; }
   .proj-authors b, html[data-theme="dark"] .page__content .proj-authors b, html[data-theme="dark"] .archive .proj-authors b { color: #8a8f94 !important; font-weight: 700; }
@@ -188,4 +183,17 @@
   .proj-works b { color: #666666; font-weight: 600; }
   .proj-paper .title { color: #666666; font-weight: 600; }
   .heard .proj-back a, html[data-theme="dark"] .page__content .heard .proj-back a, html[data-theme="dark"] .archive .heard .proj-back a { color: #666666 !important; }
+
+  /* Dark mode for full project pages: the page itself turns dark (no light box), like the rest of the site */
+  html[data-theme="dark"] .page__content .heard.proj-page { background: transparent !important; color: #e6e6e6 !important; padding: 0 !important; border-radius: 0 !important; }
+  html[data-theme="dark"] .page__content .heard.proj-page p, html[data-theme="dark"] .page__content .heard.proj-page li, html[data-theme="dark"] .page__content .heard.proj-page .proj-lead, html[data-theme="dark"] .page__content .heard.proj-page .proj-desc-text p:first-child { color: #e6e6e6 !important; }
+  html[data-theme="dark"] .page__content .heard.proj-page .proj-paper .role, html[data-theme="dark"] .page__content .heard.proj-page .proj-flow div, html[data-theme="dark"] .page__content .heard.proj-page .proj-works div, html[data-theme="dark"] .page__content .heard.proj-page .proj-desc-text p { color: #b8bcc2 !important; }
+  html[data-theme="dark"] .page__content .heard.proj-page .proj-paper .title, html[data-theme="dark"] .page__content .heard.proj-page .proj-flow b, html[data-theme="dark"] .page__content .heard.proj-page .proj-works .n, html[data-theme="dark"] .page__content .heard.proj-page .proj-works b, html[data-theme="dark"] .page__content .heard.proj-page .proj-btn, html[data-theme="dark"] .page__content .heard.proj-page .proj-authors span, html[data-theme="dark"] .page__content .heard.proj-page .proj-authors strong { color: #e6e6e6 !important; }
+  html[data-theme="dark"] .page__content .heard.proj-page h2, html[data-theme="dark"] .page__content .heard.proj-page .proj-desc-label, html[data-theme="dark"] .page__content .heard.proj-page .proj-footer .label, html[data-theme="dark"] .page__content .heard.proj-page .caption, html[data-theme="dark"] .page__content .heard.proj-page .proj-authors b { color: #9aa0a6 !important; }
+  html[data-theme="dark"] .page__content .heard.proj-page .proj-section, html[data-theme="dark"] .page__content .heard.proj-page .proj-paper, html[data-theme="dark"] .page__content .heard.proj-page .proj-desc, html[data-theme="dark"] .page__content .heard.proj-page .proj-footer, html[data-theme="dark"] .page__content .heard.proj-page .proj-footer-group + .proj-footer-group { border-color: #2a2d33 !important; }
+  html[data-theme="dark"] .page__content .heard.proj-page .proj-tags span { background: #23262c !important; border-color: #33363c !important; color: #d0d4da !important; }
+  html[data-theme="dark"] .page__content .heard.proj-page .proj-soon span, html[data-theme="dark"] .page__content .heard.proj-page .proj-count { border-color: #33363c !important; color: #b8bcc2 !important; }
+  html[data-theme="dark"] .page__content .heard.proj-page .proj-paper.accepted .num, html[data-theme="dark"] .page__content .heard.proj-page .proj-paper.done .num, html[data-theme="dark"] .page__content .heard.proj-page .proj-paper.submitted .num { color: #fff !important; }
+  html[data-theme="dark"] .page__content .heard.proj-page .proj-paper.prep .num { color: #4a3000 !important; }
+  html[data-theme="dark"] .page__content .heard.proj-page .proj-footer .proj-logos a { background: #fff; border-radius: 12px; padding: 8px 10px; } /* logos keep their colours on a white backing, as on the About page */
 </style>
