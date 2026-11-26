@@ -12,7 +12,7 @@ comments: false
 ---
 
 {% include project-page-style.html %}
-<div class="heard" markdown="0">
+<div class="heard proj-page" markdown="0">
 
 <p class="proj-back"><a href="/projects/#heard">HEARD</a> · <a href="/research/">Research</a></p>
 

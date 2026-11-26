@@ -393,6 +393,12 @@ author_profile: true
   .status-review .pub-preprint-btn:hover, .status-review .pub-access-btn:hover, .status-review .pub-dashboard-hero-btn:hover { background: #c75d10; }
   .status-prep .pub-preprint-btn, .status-prep .pub-access-btn, .status-prep .pub-dashboard-hero-btn { background: #ffb627; color: #4a3000 !important; box-shadow: none; }
   .status-prep .pub-preprint-btn:hover, .status-prep .pub-access-btn:hover, .status-prep .pub-dashboard-hero-btn:hover { background: #f0a30f; }
+
+  /* Dark mode keeps the status colour on the Abstract label */
+  html[data-theme="dark"] .page__content .pub-card.status-peer .pub-abstract-label { color: #2a7d30 !important; }
+  html[data-theme="dark"] .page__content .pub-card.status-accepted .pub-abstract-label { color: #5aa463 !important; }
+  html[data-theme="dark"] .page__content .pub-card.status-review .pub-abstract-label { color: #e8711a !important; }
+  html[data-theme="dark"] .page__content .pub-card.status-prep .pub-abstract-label { color: #d18b00 !important; }
 </style>
 
 {% assign sorted_pubs = site.publications | sort: 'order' %}

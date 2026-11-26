@@ -85,4 +85,40 @@
     .proj-footer .proj-logos { flex-wrap: wrap; gap: 32px; }
     .proj-footer .proj-logos img, .proj-footer .proj-logos.funding img { height: 56px; }
   }
+
+  /* Dark mode: like the Research cards, project cards and project pages stay light; only the surroundings go dark */
+  html[data-theme="dark"] .page__content .proj-card,
+  html[data-theme="dark"] .page__content .proj-page { background: #f9f9f9 !important; color: #222 !important; }
+  html[data-theme="dark"] .page__content .proj-page { padding: 1.6em 1.8em; border-radius: 12px; }
+  html[data-theme="dark"] .page__content .proj-card p,
+  html[data-theme="dark"] .page__content .proj-page p,
+  html[data-theme="dark"] .page__content .proj-card li,
+  html[data-theme="dark"] .page__content .proj-page li { color: #222 !important; }
+  html[data-theme="dark"] .page__content .proj-card .proj-tags,
+  html[data-theme="dark"] .page__content .proj-page .proj-tags { color: #888 !important; }
+  html[data-theme="dark"] .page__content .proj-card .caption,
+  html[data-theme="dark"] .page__content .proj-page .caption { color: #999 !important; }
+  html[data-theme="dark"] .page__content .proj-card h2,
+  html[data-theme="dark"] .page__content .proj-page h2 { color: #999 !important; border-bottom: none !important; }
+  html[data-theme="dark"] .page__content .proj-card .proj-paper .role,
+  html[data-theme="dark"] .page__content .proj-page .proj-paper .role { color: #444 !important; }
+  html[data-theme="dark"] .page__content .proj-card .proj-works div,
+  html[data-theme="dark"] .page__content .proj-page .proj-works div,
+  html[data-theme="dark"] .page__content .proj-card .proj-flow div,
+  html[data-theme="dark"] .page__content .proj-page .proj-flow div { color: #555 !important; }
+  html[data-theme="dark"] .page__content .proj-card .proj-footer .label,
+  html[data-theme="dark"] .page__content .proj-page .proj-footer .label { color: #aaa !important; }
+  html[data-theme="dark"] .page__content .proj-card .proj-paper.accepted .num,
+  html[data-theme="dark"] .page__content .proj-page .proj-paper.accepted .num,
+  html[data-theme="dark"] .page__content .proj-card .proj-paper.done .num,
+  html[data-theme="dark"] .page__content .proj-page .proj-paper.done .num,
+  html[data-theme="dark"] .page__content .proj-card .proj-paper.submitted .num,
+  html[data-theme="dark"] .page__content .proj-page .proj-paper.submitted .num { color: white !important; }
+  html[data-theme="dark"] .page__content .proj-card .proj-paper.prep .num,
+  html[data-theme="dark"] .page__content .proj-page .proj-paper.prep .num { color: #4a3000 !important; }
+  html[data-theme="dark"] .page__content .heard .proj-back a { color: #b51f1e !important; }
+  @media (max-width: 700px) {
+    html[data-theme="dark"] .page__content .proj-page { padding: 1.1em 1em; }
+  }
+  @media (max-width: 700px) { .proj-card-caption { padding: 0.8em 1.1em 0 1.1em; } .proj-works { grid-template-columns: 1fr; } }
 </style>

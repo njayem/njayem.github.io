@@ -16,7 +16,7 @@ comments: false
 ---
 
 {% include project-page-style.html %}
-<div class="heard" markdown="0">
+<div class="heard proj-page" markdown="0">
 
 <span class="proj-status">Master's thesis · in progress</span>
 
