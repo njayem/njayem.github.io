@@ -184,6 +184,18 @@
   .proj-paper .title { color: #666666; font-weight: 600; }
   .heard .proj-back a, html[data-theme="dark"] .page__content .heard .proj-back a, html[data-theme="dark"] .archive .heard .proj-back a { color: #666666 !important; }
 
+  /* One type scale on every project page and card:
+     lead 1.12em, body 1em, secondary 0.9em, labels and links 0.8em, tags and badges 0.7em, captions 0.72em */
+  .heard .proj-lead, .heard .proj-desc-text p:first-child { font-size: 1.12em; line-height: 1.65; }
+  .heard .proj-section p, .heard .proj-section li, .heard .proj-desc-text p { font-size: 1em; line-height: 1.75; }
+  .heard .proj-paper .role, .heard .proj-flow div, .heard .proj-works div { font-size: 0.9em; }
+  .heard .proj-paper .num { font-size: 0.7em; } /* paper status badges, same size as the other badges */
+  .heard .proj-section h2, .heard .proj-desc-label, .heard .proj-footer .label { font-size: 0.8em; }
+  .heard .proj-btn, .heard .proj-cta { font-size: 0.8em; }
+  .heard .proj-authors { font-size: 0.85em; }
+  .heard .proj-soon span { font-size: 0.7em; padding: 3px 10px; line-height: 1.5; }
+  .heard .caption, .heard .proj-card-caption { font-size: 0.72em; }
+
   /* Dark mode for full project pages: the page itself turns dark (no light box), like the rest of the site */
   html[data-theme="dark"] .page__content .heard.proj-page { background: transparent !important; color: #e6e6e6 !important; padding: 0 !important; border-radius: 0 !important; }
   html[data-theme="dark"] .page__content .heard.proj-page p, html[data-theme="dark"] .page__content .heard.proj-page li, html[data-theme="dark"] .page__content .heard.proj-page .proj-lead, html[data-theme="dark"] .page__content .heard.proj-page .proj-desc-text p:first-child { color: #e6e6e6 !important; }
