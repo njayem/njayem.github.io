@@ -1,0 +1,88 @@
+<style>
+  /* Project pages: open layout, one accent colour per project, status colours on status labels only */
+  .proj-hero { text-align: center; margin: 1.2em 0 2em 0; }
+  .proj-hero img { width: 100%; max-width: 720px; border-radius: 10px; }
+  .proj-hero .caption { font-size: 0.72em; color: #999; font-style: italic; margin-top: 0.6em; }
+  .proj-status { display: inline-block; padding: 3px 10px; border-radius: 4px; font-size: 0.7em; font-weight: 700;
+    letter-spacing: 0.06em; text-transform: uppercase; color: white; background: #1a56c4; }
+  .proj-tags { color: #888; font-weight: 600; font-size: 0.82em; margin: 0.7em 0 0.2em 0; letter-spacing: 0.02em; }
+  .proj-lead { font-size: 1.12em; line-height: 1.65; margin: 1em 0; }
+  .proj-section { padding: 1.8em 0 0.4em 0; border-top: 1px solid #eee; margin-top: 1.4em; }
+  .proj-section h2 { margin: 0 0 0.8em 0; font-size: 0.8em; font-weight: 700; letter-spacing: 0.12em;
+    text-transform: uppercase; color: #999; border-bottom: none; }
+  .proj-section p, .proj-section li { line-height: 1.7; }
+  .proj-section li { margin-bottom: 0.5em; }
+  .proj-papers { display: flex; flex-direction: column; }
+  .proj-paper { padding: 1.1em 0; border-bottom: 1px solid #f2f2f2; }
+  .proj-paper:last-child { border-bottom: none; }
+  .proj-paper .num { display: inline-block; font-size: 0.68em; font-weight: 700; letter-spacing: 0.08em;
+    text-transform: uppercase; padding: 2px 8px; border-radius: 4px; }
+  .proj-paper .title { font-weight: 700; font-size: 1.02em; margin: 0.55em 0 0.45em 0; line-height: 1.4; }
+  .proj-paper .meta { font-size: 0.82em; color: #888; margin: 0 0 0.4em 0; }
+  .proj-paper .role { font-size: 0.93em; margin: 0; color: #444; line-height: 1.6; }
+  /* Paper status, same on every page: published green, accepted pale green, submitted orange, in preparation mango yellow */
+  .proj-paper.done .num { background: #2a7d30; color: white; }
+  .proj-paper.submitted .num { background: #e8711a; color: white; }
+  .proj-paper.accepted .num { background: #5aa463; color: white; }
+  .proj-paper.prep .num { background: #ffb627; color: #4a3000; }
+  /* Links inside a page read as text links; the main call to action is a filled button */
+  .proj-btn { display: inline-block; font-weight: 700; font-size: 0.85em; text-decoration: none !important;
+    margin: 0.6em 1.2em 0 0; color: #1a56c4 !important; background: none; padding: 0; }
+  .proj-btn::after { content: " →"; }
+  .proj-btn:hover { text-decoration: underline !important; }
+  .proj-paper.done .proj-btn { color: #2a7d30 !important; }
+  .proj-cta { display: inline-block; color: white !important; font-weight: 700; font-size: 0.82em; padding: 7px 18px;
+    border-radius: 20px; text-decoration: none !important; background: #1a56c4; margin-top: 0.9em;
+    transition: transform 0.2s ease; }
+  .proj-cta:hover { transform: scale(1.05); }
+  .proj-flow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; margin: 0.4em 0 0.6em 0; }
+  .proj-flow div { font-size: 0.9em; color: #555; line-height: 1.55; }
+  .proj-flow b { display: block; color: #1a56c4; font-size: 1.55em; font-weight: 800; letter-spacing: -0.01em; line-height: 1.1; margin-bottom: 0.35em; }
+  .proj-logos { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 28px; margin-top: 1em; }
+  .proj-logos img { width: 170px; height: auto; }
+  .proj-back { font-size: 0.85em; }
+  /* Paper count next to the status badge */
+  .proj-badges { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+  .proj-count { display: inline-flex; align-items: center; padding: 3px 10px; border-radius: 4px;
+    border: 1px solid #e3e3e3; font-size: 0.7em; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #666; }
+  /* HEARD: the red of the tulip in the artwork */
+  .heard .proj-status { background: #f9d3d2; color: #a3201f; }
+  .proj-status.prep, .heard .proj-status.prep { background: #ffb627; color: #4a3000; }
+  .heard .proj-btn { color: #df2b2a !important; }
+  .heard .proj-paper.done .proj-btn { color: #2a7d30 !important; }
+  .heard .proj-cta { background: #df2b2a; }
+  .heard .proj-flow b { color: #df2b2a; }
+  .heard .proj-back a { color: #b51f1e; }
+  .heard .proj-paper.prep .proj-btn, .proj-paper.prep .proj-btn { color: #d18b00 !important; }
+  .heard .proj-paper.submitted .proj-btn, .proj-paper.submitted .proj-btn { color: #e8711a !important; }
+  .heard .proj-paper.accepted .proj-btn, .proj-paper.accepted .proj-btn { color: #5aa463 !important; }
+  /* How HEARD works: numbered grid */
+  .proj-works { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px 28px; margin-top: 0.4em; }
+  .proj-works div { font-size: 0.9em; color: #555; line-height: 1.55; }
+  .proj-works .n { display: block; font-size: 3em; font-weight: 800; color: #1a56c4; line-height: 1; margin-bottom: 0.25em; letter-spacing: -0.02em; }
+  .heard .proj-works .n { color: #df2b2a; }
+  .proj-works b { display: block; color: #222; font-size: 1.02em; margin-bottom: 0.3em; }
+  /* Footer: logos only */
+  .proj-footer { border-top: 1px solid #eee; margin-top: 2.6em; padding: 44px 0 24px 0; text-align: center; }
+  .proj-footer .label { font-size: 0.72em; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #aaa; margin: 64px 0 30px 0; }
+  .proj-footer .label:first-child { margin-top: 0; }
+  .proj-footer .proj-logos { gap: 64px; flex-wrap: nowrap; margin: 0; }
+  /* Both rows: every logo the same height, the same gap between them */
+  .proj-footer .proj-logos a { display: inline-flex; align-items: center; }
+  .proj-footer .proj-logos img, .proj-footer .proj-logos.funding img { height: 72px; width: auto; max-width: none; }
+  .proj-card-caption { display: none; font-size: 0.72em; color: #999; font-style: italic; line-height: 1.5; margin: 0; padding: 0.8em 2.6em 0 2.6em; text-align: center; }
+  .proj-card.open .proj-card-caption { display: block; } /* under the artwork, once the card is open */
+  /* Projects card that opens into the full project, in place */
+  .proj-expand { display: none; text-align: left; margin-top: 0.4em; }
+  .proj-card.open .proj-expand { display: block; }
+  .proj-card.open .proj-card-summary { display: none; } /* the opening paragraph says it in full */
+  .proj-toggle { cursor: pointer; border: none; font-family: inherit; }
+  .proj-card.open .proj-toggle { display: none; } /* the button disappears once the card is open; Show less at the bottom closes it */
+  .proj-collapse { display: block; margin: 1.6em auto 0 auto; }
+  @media (max-width: 700px) {
+    .proj-flow { grid-template-columns: 1fr 1fr; }
+    .proj-works { grid-template-columns: 1fr 1fr; }
+    .proj-footer .proj-logos { flex-wrap: wrap; gap: 32px; }
+    .proj-footer .proj-logos img, .proj-footer .proj-logos.funding img { height: 56px; }
+  }
+</style>

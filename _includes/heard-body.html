@@ -1,0 +1,76 @@
+{% comment %} HEARD project content, shared by the Projects card (expanded) and /projects/heard/ {% endcomment %}
+<p class="proj-tags">Responsible AI · Clinical Speech AI · Parkinson’s Disease</p>
+<p class="proj-lead">This project examines the scientific, ethical, and societal conditions under which speech-based AI for Parkinson’s disease can be responsibly introduced into clinical practice.</p>
+{% if include.hero %}<div class="proj-hero">
+  <img src="/images/heard/heard-logo.png" alt="Drawing of a woman wearing an upside-down red tulip as a hat that half hides her face, in front of grey speech waveforms">
+  <p class="caption">{% include heard-caption.html %}</p>
+</div>{% endif %}
+
+<div class="proj-section">
+<h2>Research Motivation</h2>
+<p>Speech changes can emerge early in Parkinson’s disease, offering opportunities for accessible, non-invasive screening and remote monitoring. Yet strong predictive performance does not necessarily indicate that a model has learned the underlying signatures of disease. It may instead rely on demographic characteristics, recording conditions, or other sources of variation unrelated to pathology. HEARD places this distinction at the centre of its research, examining not only what these models learn, but what constitutes sufficient evidence to justify their use in clinical practice.</p>
+</div>
+
+<div class="proj-section">
+<h2>Four papers, one question</h2>
+<div class="proj-flow">
+  <div><b>Anticipating</b>the societal and ethical implications of clinical AI</div>
+  <div><b>Designing</b>datasets that account for confounding factors</div>
+  <div><b>Examining</b>what speech foundation models learn beyond disease</div>
+  <div><b>Establishing</b>conditions for deployment through stakeholder participation</div>
+</div>
+<br>
+<div class="proj-papers">
+  <div class="proj-paper accepted">
+    <p class="num">Paper 1 · Accepted</p>
+    <p class="title">Futures Before Failures: Design Fictions for Anticipatory Fairness in Surgical AI</p>
+    <p class="role">An exploration of design fiction as a methodological approach to anticipating fairness failures in clinical AI, establishing the anticipatory perspective that informs the broader HEARD research programme.</p>
+    <a class="proj-btn green" href="https://papers.miccai.org/miccai-2026-sat/paper/FAIMI-BRIDGE-EPIMI_029.pdf" target="_blank">Read Paper</a>
+    <a class="proj-btn" href="https://drive.google.com/file/d/18kHqOOvSsw4ruTA1kL34I7K38P1nsnpl/view" target="_blank">Poster Highlights</a>
+  </div>
+  <div class="proj-paper prep">
+    <p class="num">Paper 2 · In preparation</p>
+    <p class="title">Celebs4PD: A Demographically Matched Corpus of Longitudinal, In-the-Wild Speech for Responsible Parkinson’s Detection</p>
+    <p class="role">A demographically matched corpus of longitudinal, in-the-wild speech designed to investigate whether domain-relevant pretraining improves clinical Parkinson’s disease detection and reduces reliance on scarce clinical data.</p>
+    <a class="proj-btn hero" href="/files/celebs4pd_dashboard.html" target="_blank">View Dashboard</a>
+  </div>
+  <div class="proj-paper prep">
+    <p class="num">Paper 3 · In preparation</p>
+    <p class="title">Confounders Before Conclusions: Auditing What Speech Foundation Models Hear in Parkinson’s Disease</p>
+    <p class="role">A systematic investigation of the extent to which speech foundation models rely on disease-related speech characteristics rather than demographic, linguistic, and recording-related confounders, with an emphasis on robustness, generalisability, and the validity of the auditing methodology itself.</p>
+  </div>
+  <div class="proj-paper prep">
+    <p class="num">Paper 4 · In preparation</p>
+    <p class="title">Participatory Foresight for Responsible Deployment of Speech Biomarkers in Parkinson Disease</p>
+    <p class="role">A participatory investigation of the conditions under which speech biomarkers for Parkinson’s disease may be responsibly deployed, bringing together empirical evidence and the perspectives of those involved in, and affected by, their use.</p>
+    <a class="proj-btn" href="/projects/participatory-foresight/">Project Overview</a>
+  </div>
+</div>
+</div>
+
+<div class="proj-section">
+<h2>Methodological Foundations</h2>
+<div class="proj-works">
+  <div><span class="n">01</span><b>Confounder-aware study design</b>Individuals with Parkinson’s disease and controls are matched on demographic and recording-related characteristics to mitigate known sources of confounding.</div>
+  <div><span class="n">02</span><b>Quantifying methodological trade-offs</b>Comparative training strategies examine the relationship between confounder control, data availability, and predictive performance.</div>
+  <div><span class="n">03</span><b>Auditing the audit</b>Controlled shortcut injection experiments assess the sensitivity of the auditing methodology to known sources of confounding.</div>
+  <div><span class="n">04</span><b>Independent external validation</b>Models are evaluated across previously unseen datasets, recording environments and devices, with decision thresholds and calibration parameters held fixed.</div>
+  <div><span class="n">05</span><b>Transparency and reproducibility</b>Evaluation protocols are specified in advance, with systematic documentation of experimental decisions, random sampling, and model predictions.</div>
+  <div><span class="n">06</span><b>Participatory governance</b>The conditions for responsible clinical deployment are informed by the perspectives, priorities, and lived experiences of those the technology is intended to serve.</div>
+</div>
+</div>
+
+<div class="proj-footer">
+  <p class="label">Conducted at</p>
+  <div class="proj-logos">
+    <a href="https://www.concordia.ca/" target="_blank"><img src="/images/heard/concordia.svg" alt="Concordia University"></a>
+    <a href="https://ap-lab.ca" target="_blank"><img src="/images/heard/applied-perception-lab.svg" alt="Applied Perception Lab"></a>
+    <a href="https://mila.quebec/en/" target="_blank"><img src="/images/heard/mila.svg" alt="Mila – Quebec AI Institute"></a>
+    <a href="https://sites.google.com/site/mircoravanelli/" target="_blank"><img src="/images/heard/conversational-ai-lab.svg" alt="Conversational AI Lab"></a>
+  </div>
+  <p class="label">Supported by</p>
+  <div class="proj-logos funding">
+    <a href="https://www.nserc-crsng.gc.ca/" target="_blank"><img src="/images/heard/nserc.png" alt="Natural Sciences and Engineering Research Council of Canada (NSERC)"></a>
+    <a href="https://www.fondationarbour.com/en/" target="_blank"><img src="/images/heard/arbour.png" alt="The Arbour Foundation"></a>
+  </div>
+</div>
