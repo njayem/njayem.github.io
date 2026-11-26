@@ -31,10 +31,12 @@
   .proj-btn::after { content: " →"; }
   .proj-btn:hover { text-decoration: underline !important; }
   .proj-paper.done .proj-btn { color: #2a7d30 !important; }
-  .proj-cta { display: inline-block; color: white !important; font-weight: 700; font-size: 0.82em; padding: 7px 18px;
-    border-radius: 20px; text-decoration: none !important; background: #1a56c4; margin-top: 0.9em;
-    transition: transform 0.2s ease; }
-  .proj-cta:hover { transform: scale(1.05); }
+  .proj-cta { display: inline-block; color: white !important; font-weight: 700; font-size: 0.8em; padding: 6px 16px;
+    border: none; border-radius: 20px; box-shadow: none; outline: none; font-family: inherit; line-height: inherit; cursor: pointer;
+    text-decoration: none !important; background: #1a56c4; margin-top: 0.8em; white-space: nowrap;
+    transition: transform 0.2s ease, background 0.2s ease; }
+  .proj-cta:hover { transform: scale(1.08); }
+  .proj-cta:focus-visible { outline: 2px solid #df2b2a; outline-offset: 2px; }
   .proj-flow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; margin: 0.4em 0 0.6em 0; }
   .proj-flow div { font-size: 0.9em; color: #555; line-height: 1.55; }
   .proj-flow b { display: block; color: #1a56c4; font-size: 1.55em; font-weight: 800; letter-spacing: -0.01em; line-height: 1.1; margin-bottom: 0.35em; }
@@ -51,6 +53,7 @@
   .heard .proj-btn { color: #df2b2a !important; }
   .heard .proj-paper.done .proj-btn { color: #2a7d30 !important; }
   .heard .proj-cta { background: #df2b2a; }
+  .heard .proj-cta:hover { background: #b51f1e; }
   .heard .proj-flow b { color: #df2b2a; }
   .heard .proj-back a { color: #b51f1e; }
   .heard .proj-paper.prep .proj-btn, .proj-paper.prep .proj-btn { color: #d18b00 !important; }
@@ -76,7 +79,6 @@
   .proj-expand { display: none; text-align: left; margin-top: 0.4em; }
   .proj-card.open .proj-expand { display: block; }
   .proj-card.open .proj-card-summary { display: none; } /* the opening paragraph says it in full */
-  .proj-toggle { cursor: pointer; border: none; font-family: inherit; }
   .proj-card.open .proj-toggle { display: none; } /* the button disappears once the card is open; Show less at the bottom closes it */
   .proj-collapse { display: block; margin: 1.6em auto 0 auto; }
   @media (max-width: 700px) {
