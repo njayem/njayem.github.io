@@ -207,5 +207,8 @@
   html[data-theme="dark"] .page__content .heard.proj-page .proj-soon span, html[data-theme="dark"] .page__content .heard.proj-page .proj-count { border-color: #33363c !important; color: #b8bcc2 !important; }
   html[data-theme="dark"] .page__content .heard.proj-page .proj-paper.accepted .num, html[data-theme="dark"] .page__content .heard.proj-page .proj-paper.done .num, html[data-theme="dark"] .page__content .heard.proj-page .proj-paper.submitted .num { color: #fff !important; }
   html[data-theme="dark"] .page__content .heard.proj-page .proj-paper.prep .num { color: #4a3000 !important; }
-  html[data-theme="dark"] .page__content .heard.proj-page .proj-footer .proj-logos a { background: #fff; border-radius: 12px; padding: 8px 10px; } /* logos keep their colours on a white backing, as on the About page */
+  /* Dark mode: both logo groups sit in one white rounded rectangle, as the About page's affiliations, and look as in light mode */
+  html[data-theme="dark"] .page__content .heard.proj-page .proj-footer-inner { background: #fff; border-radius: 12px; padding: 28px 12px; width: fit-content; max-width: 100%; margin: 0 auto; box-sizing: border-box; }
+  html[data-theme="dark"] .page__content .heard.proj-page .proj-footer .proj-footer-group .label { color: #aaa !important; }
+  html[data-theme="dark"] .page__content .heard.proj-page .proj-footer-group + .proj-footer-group { border-color: #ddd !important; }
 </style>
