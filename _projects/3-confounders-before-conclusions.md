@@ -20,7 +20,7 @@ trail_current: "Confounders Before Conclusions"
 <div class="proj-hero">
   <img src="/images/confounders-before-conclusions.png" alt="Confounders Before Conclusions overview">
 </div>
-<p class="proj-authors"><b>Authors:</b> <span><strong>El-Mufti, N.</strong>, Ravanelli, M., &amp; Kersten-Oertel, M.</span></p>
+<p class="proj-authors"><b>Authors:</b> <span><strong>El-Mufti, N.</strong>, Kersten-Oertel, M., &amp; Ravanelli, M.</span></p>
 <p class="proj-soon"><span>Coming soon</span></p>
 
 <div class="proj-desc">
